@@ -1,32 +1,53 @@
 [
+
   {
-    "titulo": "🧪 PRUEBA NUEVA EDICIÓN 2025 🧪",
-    "portada": "img/banderaglbt+.webp",
-    "archivo": "pdfs/magazine_93.pdf"
+    "titulo": "Revista Septiembre",
+    "portada": "img/revista_septiembre.png",
+    "archivo": "pdfs/revista_septiembre.pdf"
   },
   {
-    "titulo": "Edición 2023",
-    "portada": "img/banderaglbt+.webp",
-    "archivo": "pdfs/magazine_102.pdf"
+    "titulo": "Magazine 113",
+    "portada": "img/magazine_113.png",
+    "archivo": "pdfs/magazine_113.pdf"
   },
   {
-    "titulo": "Edición 2022",
-    "portada": "img/banderaglbt+.webp",
-    "archivo": "pdfs/magazine_105.pdf"
-  },
-  {
-    "titulo": "Edición 2024",
-    "portada": "img/banderaglbt+.webp",
+    "titulo": "Magazine 111",
+    "portada": "img/magazine_111.png",
     "archivo": "pdfs/gm_111.pdf"
   },
   {
-    "titulo": "Edición 2023",
-    "portada": "img/banderaglbt+.webp",
+    "titulo": "Magazine 108",
+    "portada": "img/magazine_108.png",
+    "archivo": "pdfs/magazine_108.pdf"
+  },
+  {
+    "titulo": "Magazine 105",
+    "portada": "img/magazine_105.png",
+    "archivo": "pdfs/magazine_105.pdf"
+  },
+  {
+    "titulo": "Magazine 102",
+    "portada": "img/magazine_102.png",
+    "archivo": "pdfs/magazine_102.pdf"
+  },
+  {
+    "titulo": "Magazine 99",
+    "portada": "img/magazine_99.png",
+    "archivo": "pdfs/magazine_99.pdf"
+  },
+  {
+    "titulo": "Magazine 96",
+    "portada": "img/magazine_96.png",
+    "archivo": "pdfs/magazine_96.pdf"
+  },
+  {
+    "titulo": "Magazine 93",
+    "portada": "img/magazine_93.png",
     "archivo": "pdfs/magazine_93.pdf"
   },
   {
-    "titulo": "Edición 2022",
-    "portada": "img/banderaglbt+.webp",
-    "archivo": "pdfs/magazine_96.pdf"
-  }
+    "titulo": "Magazine 85",
+    "portada": "img/magazine_85.png",
+    "archivo": "pdfs/magazine_85.pdf"
+  }    
 ]

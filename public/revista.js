@@ -31,7 +31,7 @@ fetch("revista.json")
 
     contenedorFlip.innerHTML = `
       <iframe 
-        src="FlowPaper/index.html?PDF=${archivo}"
+        src="FlowPaper/index.html?PDF=/${archivo}"
         style="width:100%; height:100%; border:none;">
       </iframe>
     `;
