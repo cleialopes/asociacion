@@ -1,0 +1,22 @@
+# Node modules (por si usas Node)
+node_modules/
+
+# Archivos temporales del sistema o editores
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Archivos sensibles
+usuarios.json
+eventos.json
+
+# Archivos subidos
+uploads/
+
+# Logs
+*.log
+
+# Configuración local
+.env
+
+public/pdfs/*.pdf
