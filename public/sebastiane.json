@@ -11,11 +11,12 @@
   "2024": {
     "Ganadora": [
       {
-        "titulo": "Bagger Drama",
-        "director": "Piet Baumgartner",
-        "pais": "Suiza",
-        "imagen": "img/bagger-drama.jpg",
-        "descripcion": "Una familia tiene dificultades para hablar de sentimientos, amor o intimidad..."
+        "titulo": "Reas",
+        "director": "Lola Arias",
+        "pais": "Argentina-Alemania-Suiza",
+        "año": "2024 | 82’",
+        "imagen": "img/sebastiane2024_reas.jpg",
+        "descripcion": "Yoseli tiene un tatuaje de la Torre Eiffel en la espalda y siempre quiso viajar, pero fue detenida en el aeropuerto por tráfico de drogas. Nacho es un hombre trans que fue detenido por estafa y armó una banda de rock en la cárcel. Dulces o rudxs, rubixs o rapados, cis o trans, detenidxs hace tiempo o recién ingresadxs: en este musical híbrido, todxs recrean sus vidas en una prisión de Buenos Aires."
       }
     ],
     "New Directors": [
@@ -23,65 +24,145 @@
         "titulo": "Bagger Drama",
         "director": "Piet Baumgartner",
         "pais": "Suiza",
-        "imagen": "img/bagger-drama.jpg",
-        "descripcion": "Una familia tiene dificultades para hablar de sentimientos, amor o intimidad..."
+        "año": "2024 | 94’",
+        "imagen": "img/sebastiane2024_bagger_drama.jpg",
+        "descripcion": "Una familia tiene dificultades para hablar de sentimientos, amor o intimidad. El negocio familiar —alquilar, vender y reparar excavadoras— exige toda su atención. Todos tienen que arrimar el hombro. Cuando la hija muere en un accidente, la familia se colapsa. El hijo prefiere irse a Estados Unidos antes que hacerse cargo de la empresa. El padre se enamora de la nueva directora del coro y la madre se encuentra de repente sola."
       },
        {
-        "titulo": "Bagger Drama",
-        "director": "Piet Baumgartner",
-        "pais": "Suiza",
-        "imagen": "img/bagger-drama.jpg",
-        "descripcion": "Una familia tiene dificultades para hablar de sentimientos, amor o intimidad..."
+        "titulo": "Por donde pasa el silencio / As silence pass by",
+        "director": "Sandra Romero",
+        "pais": "España",
+        "año": "2024 | 98’",
+        "imagen": "img/sebastiane2024_por_donde_pasa_el_silencio.jpg",
+        "descripcion": "Antonio tiene que volver a Écija, una ciudad en el interior de Andalucía, después de mucho tiempo. Es Semana Santa. Allí se reencuentra con su familia y con su hermano mellizo Javier que tiene una discapacidad física y necesita su ayuda. Antonio tendrá que manejar esta situación y enfrentase a una difícil decisión: quedarse y ayudar a los suyos o volver a la vida que ha construido fuera."
       }
     ],
     "Horizontes Latinos": [
       {
-        "titulo": "Bagger Drama",
-        "director": "Piet Baumgartner",
-        "pais": "Suiza",
-        "imagen": "img/bagger-drama.jpg",
-        "descripcion": "Una familia tiene dificultades para hablar de sentimientos, amor o intimidad..."
+        "titulo": "Cidade; Campo",
+        "director": "Juliana Rojas",
+        "pais": "Brasil-Alemania-Francia",
+        "año": "2024 | 119’",
+        "imagen": "img/sebastiane2024_cidade_campo.jpg",
+        "descripcion": "Dos historias de migración entre la ciudad y el campo. En la primera parte, después de que la rotura de una presa de residuos inunde su pueblo natal, Joana, una trabajadora rural, se traslada a São Paulo para buscar a su hermana Tania, que vive con su nieto Jaime. Joana lucha por prosperar en la ciudad obrera. En la segunda parte, tras la muerte de su padre, del que estaba distanciada, Flavia se traslada a su granja con su esposa Mara. La naturaleza obliga a las dos mujeres a enfrentarse a frustraciones y a lidiar con viejos recuerdos y fantasmas."
+      },
+      {
+        "titulo": "Los domingos mueren más personas / Most people die on Sundays",
+        "director": "Iair Said",
+        "pais": "Argentina-Italia-España",
+        "año": "2024 | 75’",
+        "imagen": "img/sebastiane2024_Los_domingos_mueren_maas_personas.jpg",
+        "descripcion": "Cuando David regresa a su casa de Buenos Aires se entera de que su madre ha decidido desconectar a Bernardo, su padre, que yace en coma. David se debate entre la estrecha convivencia con su madre, perturbada por el dolor de la inminente pérdida de su marido, y un feroz deseo de mitigar su angustia existencial. Pasa los días aprendiendo a conducir, oscilando entre el pasado y el presente e intentando mantener relaciones sexuales con cualquiera que le preste un mínimo de atención."
+      },
+      {
+        "titulo": "El jockey / Kill the Jockey",
+        "director": "Luis Ortega",
+        "pais": "Argentina-México-España-Dinamarca-EEUU",
+        "año": "2024 | 96’",
+        "imagen": "img/sebastiane2024_el_jockey.jpg",
+        "descripcion": "Remo Manfredini es un jockey legendario, pero su comportamiento autodestructivo empieza a eclipsar su talento y a amenazar su relación con Abril, su novia. El día de la carrera más importante de su vida, que saldará las deudas con su jefe mafioso Sirena, sufre un grave accidente, desaparece del hospital y vaga por las calles de Buenos Aires. Liberado de su identidad, empieza a descubrir quién es realmente. Pero Sirena quiere encontrarlo, vivo o muerto."
+      },
+      {
+        "titulo": "Ramón y Ramón",
+        "director": "Salvador del Solar",
+        "pais": "Perú-España-Uruguay",
+        "año": "2024 | 100’",
+        "imagen": "img/sebastiane2024_ramon_y_ramon.webp",
+        "descripcion": "Tras recibir las cenizas de su padre, con quien mantenía una relación distante, Ramón conoce a Mateo durante el confinamiento. A pesar de sus diferencias, surge una profunda conexión que los lleva a cuestionarse. Mateo decide acompañar a Ramón en un viaje para esparcir las cenizas en Huancayo. En esa travesía, Ramón descubre que buscaba respuestas a las preguntas equivocadas y que debe sanarse para seguir adelante."
       }
     ],
     "Zabaltegi": [
       {
-        "titulo": "Bagger Drama",
-        "director": "Piet Baumgartner",
-        "pais": "Suiza",
-        "imagen": "img/bagger-drama.jpg",
-        "descripcion": "Una familia tiene dificultades para hablar de sentimientos, amor o intimidad..."
+        "titulo": "I saw the TV glow",
+        "director": "Jane Schoenbrun",
+        "pais": "EEUU",
+        "año": "2024 | 100’",
+        "imagen": "img/sebastiane2024_i_saw_the_tv_glow.jpeg",
+        "descripcion": "Owen es un adolescente que trata de afrontar la vida en un barrio residencial de las afueras cuando su compañera de clase le habla de un misterioso programa de televisión nocturno: una visión de un mundo sobrenatural por debajo del suyo. En el pálido resplandor de la televisión, la idea que Owen tiene de la realidad comienza a quebrarse"
+      },
+      {
+        "titulo": "My Boku no Ohisama / My sunshine",
+        "director": "Hiroshi Okuyama",
+        "pais": "Japón-Francia",
+        "año": "2024 | 100’",
+        "imagen": "img/sebastiane2024_my_boku_no_ohisama.jpg",
+        "descripcion": "En una pequeña isla japonesa, la vida gira en torno al cambio de las estaciones. El invierno es la época del hockey sobre hielo en la escuela, pero a Takuya no le entusiasma demasiado. Su verdadero interés radica en Sakura, una estrella emergente del patinaje artístico de Tokio, por la que empieza a sentir auténtica fascinación. Arakawa, entrenador y antiguo campeón, ve potencial en Takuya y decide orientarle para que forme dúo con Sakura en una próxima competición."
+      },
+      {
+        "titulo": "Sombra grande / Big shadow",
+        "director": "Maximiliano Schonfeld",
+        "pais": "Argentina",
+        "año": "2024 | 83’",
+        "imagen": "img/sebastiane2024_sombra_grande.jpg",
+        "descripcion": "Hace unos años apareció un hombre que decía hablar una lengua aparentemente perdida: el Chaná. Al poco tiempo se editaron diccionarios y la lengua se pudo recuperar completamente. Este hombre también ubicó a los Chaná en el mismo lugar donde hoy los descendientes de alemanes del Volga, en la provincia de Entre Ríos, van perdiendo inexorablemente su dialecto."
       }
     ],
     "Perlak": [
       {
-        "titulo": "Bagger Drama",
-        "director": "Piet Baumgartner",
-        "pais": "Suiza",
-        "imagen": "img/bagger-drama.jpg",
-        "descripcion": "Una familia tiene dificultades para hablar de sentimientos, amor o intimidad..."
+        "titulo": "Emilia Pérez",
+        "director": "Jacques Audiard",
+        "pais": "Francia",
+        "año": "2024 | 130’",
+        "imagen": "img/sebastiane2024_emilia_paerez.jpg",
+        "descripcion": "Sobrecualificada e infravalorada, Rita es abogada de un gran bufete que está más interesado en sacar a los criminales del atolladero que en llevarlos ante la justicia. Un día, se le presenta una salida inesperada cuando Manitas, el líder de un cártel, la contrata para que le ayude a retirarse de sus negocios y hacer realidad un plan que lleva años preparando en secreto: convertirse en la mujer que siempre ha soñado ser."
       }
     ],
     "Made in Spain": [
       {
-        "titulo": "Bagger Drama",
-        "director": "Piet Baumgartner",
-        "pais": "Suiza",
-        "imagen": "img/bagger-drama.jpg",
-        "descripcion": "Una familia tiene dificultades para hablar de sentimientos, amor o intimidad..."
+        "titulo": "Norberta",
+        "director": "Sonia Escolano, Belén López Albert",
+        "pais": "España",
+        "año": "2024 | 89’",
+        "imagen": "img/sebastiane2024_norberta.jpg",
+        "descripcion": "Norberto lleva toda una vida con María. Viven en un barrio humilde y conocen a sus vecinos desde hace décadas, pero ambos tienen un secreto que pocos saben: de vez en cuando, atracan. Con ello cumplimentan su pensión y ayudan a algún que otro amigo. Pero Norberto necesita dar un giro para sentirse vivo, libre, para sentirse ELLA misma. Una confesión inesperada que pondrá en jaque toda su vida y la de su entorno."
+      },
+      {
+        "titulo": "Orgullo vieja",
+        "director": "Chema Rodríguez",
+        "pais": "España",
+        "año": "2024 | 104’",
+        "imagen": "img/sebastiane2024_orgullo_vieja.jpg",
+        "descripcion": "Pepa, Antoñita, Pepi, Esperanza, Remedios, Kiska, Catalina y Rafaela son mujeres del barrio de Triana, Sevilla, de entre 68 y 97 años de edad. Todas comparten un sueño: quieren ser monologuistas, triunfar en el mundo del espectáculo y reivindicar que las mujeres mayores merecen respeto y visibilidad. Para ello, han creado un espectáculo titulado Orgullo vieja. La película muestra el proceso de creación de la compañía, los ensayos, el estreno en Sevilla y sus viajes por el resto de Andalucía."
+      },
+      {
+        "titulo": "Reir, cantar, tal vez llorar / To laugh, to sing, perhaps to cry",
+        "director": "Marc Ferrer",
+        "pais": "España",
+        "año": "2024 | 75'",
+        "imagen": "img/sebastiane2024_reircantar_tal_vez_llorar.jpg",
+        "descripcion": "Toñi, una mujer trans de mediana edad, pide en una iglesia a un santo milagroso tener un novio, y así es como aparece en su vida Lahcen, un joven y guapo marroquí inmigrante que acaba de llegar a Barcelona, del que se enamorará. Esta relación provocará un gran escándalo en su comunidad de vecinos, movidos por la envidia y la desconfianza."
       }
     ],
     "Fuera de concurso": [
       {
-        "titulo": "Bagger Drama",
-        "director": "Piet Baumgartner",
-        "pais": "Suiza",
-        "imagen": "img/bagger-drama.jpg",
-        "descripcion": "Una familia tiene dificultades para hablar de sentimientos, amor o intimidad..."
+        "titulo": "Querer",
+        "director": "Alauda Ruiz de Azúa",
+        "pais": "España",
+        "año": "2024 | 212′",
+        "imagen": "img/sebastiane2024_querer.jpg",
+        "descripcion": "Tras 30 años de matrimonio y dos hijos en común, Miren abandona el domicilio conyugal y denuncia a su marido por violación continuada. Esta grave acusación obliga a los hijos a elegir entre creer a su madre o apoyar a un padre que defiende su inocencia. Un viaje familiar que avanza en paralelo al judicial con un mismo objetivo: conocer la verdad. Miniserie de 4 capítulos."
+      },
+      {
+        "titulo": "Yo, adicto",
+        "director": "Javier Giner, Elena Trapé",
+        "pais": "España",
+        "año": "2024 | 240′",
+        "imagen": "img/sebastiane2024_yo_adicto.jpg",
+        "descripcion": "Yo, adicto cuenta cómo Javier Giner, profesional del audiovisual, decide a los 30 años ingresar voluntariamente en un centro de desintoxicación. En el momento de máxima oscuridad, tomará la decisión de pedir ayuda profesional movido por un instinto de supervivencia desesperada. Sin saberlo, ese gesto le cambiará la vida convirtiéndole en una nueva persona. Miniserie de seis episodios."
       }
     ]
   },
   "2023": {
-    "Ganadora": [],
+    "Ganadora": [
+      {
+        "titulo": "",
+        "director": "",
+        "pais": "",
+        "año": "",
+        "imagen": "",
+        "descripcion": ""
+      }
+    ],
     "New Directors": [],
     "Horizontes Latinos": [],
     "Zabaltegi": [],
