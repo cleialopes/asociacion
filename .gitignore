@@ -20,3 +20,5 @@ uploads/
 .env
 
 public/pdfs/*.pdf
+
+git-filter-repo/
