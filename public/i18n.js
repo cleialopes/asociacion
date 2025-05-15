@@ -11,7 +11,10 @@ const traducciones = {
       "email": "Email: contacto@asociacionxyz.org",
       "footer.contacto": "Contacto",
       "footer.companeros": "Compañeros de viaje",
-      "footer.redes": "Redes sociales"
+      "footer.redes": "Redes sociales",
+      "sebastiane.titulo": "Sebastiane",
+      "sebastiane.quees": "¿Qué es?",
+      "sebastiane.descripcion": "El Premio Sebastiane es el reconocimiento a la mejor película LGTBI del Festival de San Sebastián en cualquiera de las secciones oficiales a concurso y que refleje los valores y la realidad de lesbianas, gais, transexuales y bisexuales."
     },
     eu: {
       "menu.sebastiane": "Sebastiane",
@@ -25,7 +28,10 @@ const traducciones = {
       "email": "Emaila: kontaktua@asoziazioaeus.org",
       "footer.contacto": "Harremana",
       "footer.companeros": "Bidaiako lagunak",
-      "footer.redes": "Sare sozialak"
+      "footer.redes": "Sare sozialak",
+      "sebastiane.titulo": "Sebastiane",
+      "sebastiane.quees": "Zer da?",
+      "sebastiane.descripcion": "Sebastiane saria Donostiako Zinemaldiko lehiaketako edozein ataletan parte hartzen duten LGTBI film onenei ematen zaie, lesbianen, gayen, transexualen eta bisexualen errealitatea eta balioak islatzen dituztenei."
     },
     en: {
       "menu.sebastiane": "Sebastiane",
@@ -39,10 +45,13 @@ const traducciones = {
       "email": "Email: contact@asociacionxyz.org",
       "footer.contacto": "Contact",
       "footer.companeros": "Partners",
-      "footer.redes": "Social Media"
+      "footer.redes": "Social Media",
+      "sebastiane.titulo": "Sebastiane",
+      "sebastiane.quees": "What is it?",
+      "sebastiane.descripcion": "The Sebastiane Award is given to the best LGTBI film of the San Sebastián Festival in any of the official competitive sections and that reflects the values and reality of lesbians, gays, transsexuals, and bisexuals."
     }
   };
-  
+
   function cambiarIdioma(lang) {
     const t = traducciones[lang];
     document.querySelectorAll('[data-i18n]').forEach(el => {
@@ -50,7 +59,7 @@ const traducciones = {
       if (t[clave]) el.textContent = t[clave];
     });
   }
-  
+
   document.addEventListener('DOMContentLoaded', () => {
     const selector = document.getElementById('lang-selector');
     if (selector) {
@@ -59,14 +68,13 @@ const traducciones = {
         templateSelection: formatLangOption,
         minimumResultsForSearch: Infinity
       });
-  
+
       $(selector).on('change', function () {
         cambiarIdioma(this.value);
       });
     }
   });
-  
+
   function formatLangOption(option) {
     return option.text;
   }
-  

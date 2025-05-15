@@ -6,7 +6,6 @@ document.getElementById('header').innerHTML = `
         <img src="img/logo1.png" alt="Logo" class="logo" />
       </a>
       <nav class="menu">
-      <a href="sebastiane.html" data-i18n="menu.Comición"></a>
         <a href="sebastiane.html" data-i18n="menu.sebastiane">Sebastiane</a>
         <a href="sebastiane_latino.html" data-i18n="menu.latino">Sebastiane Latino</a>
         <a href="encuentros.html" data-i18n="menu.eventos">Encuentros</a>

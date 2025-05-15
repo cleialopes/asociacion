@@ -2,6 +2,8 @@ let noticiasCargadas = 0;
 const noticiasPorLote = 8;
 let todasLasNoticias = [];
 
+const idioma = localStorage.getItem("idioma") || "es";
+
 fetch('noticias.json')
   .then(res => res.json())
   .then(noticias => {
@@ -15,15 +17,17 @@ function mostrarNoticias() {
   const siguienteLote = todasLasNoticias.slice(noticiasCargadas, noticiasCargadas + noticiasPorLote);
 
   siguienteLote.forEach(noticia => {
+    const titulo = noticia.titulo[idioma] || noticia.titulo["es"];
+    const descripcion = noticia.descripcion[idioma] || noticia.descripcion["es"];
+    const imagen = noticia.imagenes?.[0] || "img/imagen-defecto.webp";
+    const fotografo = noticia.fotografo || "";
+
     const card = document.createElement("div");
     card.className = "noticia";
     card.innerHTML = `
-      <img src="${noticia.imagen}" alt="${noticia.titulo}" class="noticia-imagen">
-      <h3>${noticia.titulo}</h3>
-      <p>${noticia.descripcion}</p>
-      <span class="fecha">${noticia.fecha}</span>
-      <a href="noticia.html?id=${noticia.id}" class="btn-leer">Seguir leyendo</a>
-    `;
+  <img src="${imagen}" alt="${titulo}" class="noticia-imagen">
+  <h3><a href="ver-noticia.html?id=${noticia.id}">${titulo}</a></h3>
+`;
     contenedor.appendChild(card);
   });
 
@@ -35,3 +39,14 @@ function mostrarNoticias() {
 }
 
 document.getElementById("btn-cargar-mas").addEventListener("click", mostrarNoticias);
+
+function traducir(clave) {
+  const traducciones = {
+    leer_mas: {
+      es: "Seguir leyendo",
+      eu: "Irakurri gehiago",
+      en: "Read more"
+    }
+  };
+  return traducciones[clave]?.[idioma] || clave;
+}

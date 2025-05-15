@@ -185,6 +185,87 @@
   margin-bottom: 15px;
 }
 
+/* ver-noticia */
+.carrusel {
+  position: relative;
+  max-width: 800px;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.carrusel-contenedor {
+  position: relative;
+  height: 100%;
+}
+
+.carrusel-imagen {
+  display: none;
+  width: 100%;
+  border-radius: 8px;
+  transition: opacity 0.5s ease;
+}
+
+.carrusel-imagen.activa {
+  display: block;
+}
+
+.carrusel-flecha {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+  padding: 10px 14px;
+  z-index: 2;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.carrusel-flecha:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carrusel-flecha.izquierda {
+  left: 10px;
+}
+
+.carrusel-flecha.derecha {
+  right: 10px;
+}
+
+.fotografo {
+  font-size: 0.85em;
+  color: #666;
+  font-style: italic;
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
+
+.btn-leer {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 16px;
+  background-color: #ea8d4a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-leer:hover {
+  background-color: #c06c2d;
+}
+
+.contenido-noticia {
+  margin-bottom: 30px;
+}
+
 /* sebastiane */
 .carrusel-anios {
   position: relative; /* <-- esto es lo importante */
@@ -319,14 +400,15 @@
 }
 
 .peliculas-seccion {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   margin-bottom: 30px;
 }
 
 .pelicula {
   display: flex;
+  justify-content: center;
   gap: 20px;
   padding: 15px;
   background-color: #fff8ee;
@@ -335,9 +417,28 @@
 }
 
 .pelicula img {
-  width: 120px;
+  width: 200px;
   border-radius: 4px;
   object-fit: cover;
+}
+
+main {
+  padding: 0 20px;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ea8d4a;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.banner img {
+  display: block;
+  width: 100%;
+  height: 300px;
+  border-radius: 15px;
 }
  
 /* revista */

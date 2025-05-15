@@ -1,118 +1,84 @@
 [
-    {
-        "id": 1,
-        "titulo": "Festival Internacional anuncia programación 2025",
-        "descripcion": "El festival contará con más de 100 proyecciones...",
-        "contenido": "Esta es la noticia completa del festival internacional. Aquí se incluye más detalle sobre las proyecciones, invitados, actividades, etc.",
-        "fecha": "2025-05-01",
-        "imagen": "img/banderaglbt+.webp"
+  {
+    "id": 1,
+    "titulo": {
+      "es": "Entrega del 25 Sebastiane a Reas de Lola Arias",
+      "eu": "25. Sebastiane, sari-banaketa: Lola Ariasek zuzendatutako Reas filmari",
+      "en": ""
     },
-    {
-        "id": 2,
-        "titulo": "Festival Internacional anuncia programación 2025",
-        "descripcion": "El festival contará con más de 100 proyecciones...",
-        "contenido": "Esta es la noticia completa del festival internacional. Aquí se incluye más detalle sobre las proyecciones, invitados, actividades, etc.",
-        "fecha": "2025-05-01",
-        "imagen": "img/banderaglbt+.webp"
+    "descripcion": {
+      "es": "El viernes 27 de septiembre en el Bidassoa Taproom, y con la presencia del alcalde de la ciudad Eneko Goia, la diputada de Cultura de Gipuzkoa Goizane Álvarez y los equipos de las películas candidatas de la 25 edición y antiguos ganadores del premio, se entregó el Premio Sebastiane a la película que mejor representa los valores LGBTIQA+ en la 72 edición del Festival Internacional de San Sebastián.",
+      "eu": "Irailaren 27an, Bidassoa Taproom-en, hiriko alkate Eneko Goia, Gipuzkoako Kultura diputatu Goizane Álvarez eta 25. edizioko film hautagaietako eta sariaren antzinako irabazleen taldeak bertan zirela, LGBTIQA+ baloreak hobekien ordezkatzen dituen filmari Sebastiane Saria eman zitzaion Donostiako Nazioarteko Zinemaldiaren 72. edizioan.",
+      "en": ""
     },
-    {
-        "id": 3,
-        "titulo": "Festival Internacional anuncia programación 2025",
-        "descripcion": "El festival contará con más de 100 proyecciones...",
-        "contenido": "Esta es la noticia completa del festival internacional. Aquí se incluye más detalle sobre las proyecciones, invitados, actividades, etc.",
-        "fecha": "2025-05-01",
-        "imagen": "img/banderaglbt+.webp"
+    "contenido": {
+      "es": "Presente el jurade del 25 Sebastián con su presidenta Ana Castillo y Eneko Sagardoy, se otorgó el premio a Reas de Lola Arias, quien recibió el galardón junto al elenco principal de la película. Fue, en palabras del jurado : “por su representación a través de la música de la realidad de las mujeres y hombres trans en las prisiones argentinas que luchan por vivir una vida plena y feliz en una sociedad punitiva”. Recogieron el galardón el equipo de Reas, incluida su directora. En su 25 aniversario, el Bidassoa Taproom se llenó de socies de GEHITU, profesionales de la industria del cine y vecines de Donosti para celebrar 25 años de colas de cine, de reivindicación y libertad.",
+      "eu": "Ana Castillo presidentearekin eta Eneko Sagardoyrekin batera, Donostiako 25eko zina aurkeztu zen, eta Reas de Lola Arias-i eman zitzaion saria, filmeko talde nagusiarekin batera. Epaimahaiaren hitzetan, “zigortzen duen gizarte batean bizitza betea eta zoriontsua bizitzeko borrokan ari diren Argentinako espetxeetako trans emakume eta gizonen errealitatea musikaren bidez antzezteagatik” izan zen. Reaseko taldeak jaso zuen saria, zuzendaria barne. 25. urteurrenean, Bidassoa Taproom GEHITUko bazkidez, zinema-industriako profesionalez eta Donostiako bizilagunez bete zen, 25 urte zine-ilaraz, aldarrikapenez eta askatasunez beterik ospatzeko.",
+      "en": ""
     },
-    {
-        "id": 4,
-        "titulo": "Festival Internacional anuncia programación 2025",
-        "descripcion": "El festival contará con más de 100 proyecciones...",
-        "contenido": "Esta es la noticia completa del festival internacional. Aquí se incluye más detalle sobre las proyecciones, invitados, actividades, etc.",
-        "fecha": "2025-05-01",
-        "imagen": "img/banderaglbt+.webp"
+    "fecha": "2025-05-01",
+    "imagenes": [
+      "img/gala-25-Sebastiane-reas-1.jpg",
+      "img/gala-25-Sebastiane-reas-2.jpg",
+      "img/gala-25-Sebastiane-reas-3.jpg",
+      "img/gala-25-Sebastiane-reas-4.jpg",
+      "img/gala-25-Sebastiane-reas-5.jpg",
+      "img/gala-25-Sebastiane-reas-6.jpg",
+      "img/gala-25-Sebastiane-reas-7.jpg",
+      "img/gala-25-Sebastiane-reas-8.jpg",
+      "img/gala-25-Sebastiane-reas-9.jpg",
+      "img/gala-25-Sebastiane-reas-10.jpg"
+    ],
+    "fotografo": "Jose Agustín Fontán"
+  },
+  {
+    "id": 2,
+    "titulo": {
+      "es": "",
+      "eu": "",
+      "en": ""
     },
-    {
-        "id": 5,
-        "titulo": "Festival Internacional anuncia programación 2025",
-        "descripcion": "El festival contará con más de 100 proyecciones...",
-        "fecha": "2025-05-01",
-        "imagen": "img/banderaglbt+.webp"
+    "descripcion": {
+      "es": "",
+      "eu": "",
+      "en": ""
     },
-    {
-        "id": 6,
-        "titulo": "Sebastiane Latino 2025 abre convocatoria",
-        "descripcion": "Ya están abiertas las inscripciones para películas...",
-        "fecha": "2025-04-25",
-        "imagen": "img/banderaglbt+.webp"
+    "contenido": {
+      "es": "",
+      "eu": "",
+      "en": ""
     },
-    {
-        "id": 7,
-        "titulo": "Nueva colaboración con Fundación Diversa",
-        "descripcion": "Se firma acuerdo de cooperación cultural...",
-        "fecha": "2025-04-20",
-        "imagen": "img/banderaglbt+.webp"
+    "fecha": "2025-05-01",
+    "imagenes": [
+      "img/foto.jpg",
+      "img/",
+      "img/"
+    ],
+    "fotografo": ""
+  },
+  {
+    "id": 2,
+    "titulo": {
+      "es": "",
+      "eu": "",
+      "en": ""
     },
-    {
-        "id": 8,
-        "titulo": "Entrevista a la directora de Cine Queer Europa",
-        "descripcion": "Analiza los retos del cine LGBTQ+ en la actualidad...",
-        "fecha": "2025-04-18",
-        "imagen": "img/banderaglbt+.webp"
+    "descripcion": {
+      "es": "",
+      "eu": "",
+      "en": ""
     },
-    {
-        "id": 9,
-        "titulo": "Festival Internacional anuncia programación 2025",
-        "descripcion": "El festival contará con más de 100 proyecciones...",
-        "fecha": "2025-05-01",
-        "imagen": "img/banderaglbt+.webp"
+    "contenido": {
+      "es": "",
+      "eu": "",
+      "en": ""
     },
-    {
-        "id": 10,
-        "titulo": "Sebastiane Latino 2025 abre convocatoria",
-        "descripcion": "Ya están abiertas las inscripciones para películas...",
-        "fecha": "2025-04-25",
-        "imagen": "img/banderaglbt+.webp"
-    },
-    {
-        "id": 11,
-        "titulo": "Nueva colaboración con Fundación Diversa",
-        "descripcion": "Se firma acuerdo de cooperación cultural...",
-        "fecha": "2025-04-20",
-        "imagen": "img/banderaglbt+.webp"
-    },
-    {
-        "id": 12,
-        "titulo": "Entrevista a la directora de Cine Queer Europa",
-        "descripcion": "Analiza los retos del cine LGBTQ+ en la actualidad...",
-        "fecha": "2025-04-18",
-        "imagen": "img/banderaglbt+.webp"
-    },
-    {
-        "id": 13,  
-        "titulo": "Festival Internacional anuncia programación 2025",
-        "descripcion": "El festival contará con más de 100 proyecciones...",
-        "fecha": "2025-05-01",
-        "imagen": "img/banderaglbt+.webp"
-    },
-    {
-        "id": 14,
-        "titulo": "Sebastiane Latino 2025 abre convocatoria",
-        "descripcion": "Ya están abiertas las inscripciones para películas...",
-        "fecha": "2025-04-25",
-        "imagen": "img/banderaglbt+.webp"
-    },
-    {
-        "id": 15,
-        "titulo": "Nueva colaboración con Fundación Diversa",
-        "descripcion": "Se firma acuerdo de cooperación cultural...",
-        "fecha": "2025-04-20",
-        "imagen": "img/banderaglbt+.webp"
-    },
-    {
-        "id": 16,
-        "titulo": "Entrevista a la directora de Cine Queer Europa",
-        "descripcion": "Analiza los retos del cine LGBTQ+ en la actualidad...",
-        "fecha": "2025-04-18",
-        "imagen": "img/banderaglbt+.webp"
-    }
+    "fecha": "2025-05-01",
+    "imagenes": [
+      "img/foto.jpg",
+      "img/",
+      "img/"
+    ],
+    "fotografo": ""
+  }
 ]

@@ -11,12 +11,25 @@
   "2024": {
     "Ganadora": [
       {
-        "titulo": "Reas",
-        "director": "Lola Arias",
-        "pais": "Argentina-Alemania-Suiza",
-        "año": "2024 | 82’",
+        "titulo": {
+          "es": "Reas",
+          "en": "Reas",
+          "eu": "Reas"
+        },       
+        "pais": {
+          "es":"Argentina-Alemania-Suiza",
+          "en":"Argentina-Germany-Switzerland",
+          "eu":"Argentina-Alemania-Suitza"
+        },
+        "director": {
+          "es": "Mariano Cattaneo"
+        },
         "imagen": "img/sebastiane2024_reas.jpg",
-        "descripcion": "Yoseli tiene un tatuaje de la Torre Eiffel en la espalda y siempre quiso viajar, pero fue detenida en el aeropuerto por tráfico de drogas. Nacho es un hombre trans que fue detenido por estafa y armó una banda de rock en la cárcel. Dulces o rudxs, rubixs o rapados, cis o trans, detenidxs hace tiempo o recién ingresadxs: en este musical híbrido, todxs recrean sus vidas en una prisión de Buenos Aires."
+        "descripcion": {
+          "es": "Yoseli tiene un tatuaje de la Torre Eiffel en la espalda y siempre quiso viajar, pero fue detenida en el aeropuerto por tráfico de drogas. Nacho es un hombre trans que fue detenido por estafa y armó una banda de rock en la cárcel. Dulces o rudxs, rubixs o rapados, cis o trans, detenidxs hace tiempo o recién ingresadxs: en este musical híbrido, todxs recrean sus vidas en una prisión de Buenos Aires.",
+          "en": "Yoseli has a tattoo of the Eiffel Tower on her back and always wanted to travel, but was arrested at the airport for drug trafficking. Nacho is a trans man who was arrested for fraud and started a rock band in prison. Sweet or ruddy, blond or shaved, cis or trans, long-detained or newly arrested: in this hybrid musical, everyone recreates their lives in a Buenos Aires prison.",
+          "eu": "Yoselik Eiffel Dorrearen tatuajea du bizkarrean eta beti bidaiatu nahi izan zuen, baina aireportuan atxilotu zuten droga trafikoagatik. Nacho iruzurgatik atxilotu eta kartzelan rock talde bat sortu zuen trans gizon bat da. Gozoa ala gogorra, ilehoria edo bizarra, cis ala trans, aspaldian atxilotua edo onartu berria: musikal hibrido honetan bakoitzak bere bizitza birsortzen du Buenos Airesko espetxe batean."
+        }
       }
     ],
     "New Directors": [
@@ -155,6 +168,29 @@
   "2023": {
     "Ganadora": [
       {
+        "titulo": {
+          "es": "",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"",
+          "en":"",
+          "eu":""
+        },
+        "director": {
+          "es": ""
+        },
+        "imagen": "",
+        "descripcion": {
+          "es": "",
+          "en": "",
+          "eu": ""
+        }
+      }
+    ],
+    "New Directors": [
+      {
         "titulo": "",
         "director": "",
         "pais": "",
@@ -163,53 +199,376 @@
         "descripcion": ""
       }
     ],
-    "New Directors": [],
-    "Horizontes Latinos": [],
-    "Zabaltegi": [],
-    "Perlak": [],
-    "Made in Spain": [],
-    "Fuera de concurso": []
+    "Horizontes Latinos": [
+      {
+        "titulo": "",
+        "director": "",
+        "pais": "",
+        "año": "",
+        "imagen": "",
+        "descripcion": ""
+      }
+    ],
+    "Zabaltegi": [
+      {
+        "titulo": "",
+        "director": "",
+        "pais": "",
+        "año": "",
+        "imagen": "",
+        "descripcion": ""
+      }
+    ],
+    "Perlak": [
+      {
+        "titulo": "",
+        "director": "",
+        "pais": "",
+        "año": "",
+        "imagen": "",
+        "descripcion": ""
+      }
+    ],
+    "Made in Spain": [
+      {
+        "titulo": "",
+        "director": "",
+        "pais": "",
+        "año": "",
+        "imagen": "",
+        "descripcion": ""
+      }
+    ],
+    "Fuera de concurso": [
+      {
+        "titulo": "",
+        "director": "",
+        "pais": "",
+        "año": "",
+        "imagen": "",
+        "descripcion": ""
+      }
+    ]
   },
   "2022": {
-    "Ganadora": [],
-    "New Directors": [],
-    "Horizontes Latinos": [],
-    "Zabaltegi": [],
-    "Perlak": [],
-    "Made in Spain": [],
-    "Fuera de concurso": []
+    "Ganadora": [
+      {
+        "titulo": "",
+        "director": "",
+        "pais": "",
+        "año": "",
+        "imagen": "",
+        "descripcion": ""
+      }
+    ],
+    "New Directors": [
+      {
+        "titulo": "",
+        "director": "",
+        "pais": "",
+        "año": "",
+        "imagen": "",
+        "descripcion": ""
+      }
+    ],
+    "Horizontes Latinos": [
+      {
+        "titulo": "",
+        "director": "",
+        "pais": "",
+        "año": "",
+        "imagen": "",
+        "descripcion": ""
+      }
+    ],
+    "Zabaltegi": [
+      {
+        "titulo": "",
+        "director": "",
+        "pais": "",
+        "año": "",
+        "imagen": "",
+        "descripcion": ""
+      }
+    ],
+    "Perlak": [
+      {
+        "titulo": "",
+        "director": "",
+        "pais": "",
+        "año": "",
+        "imagen": "",
+        "descripcion": ""
+      }
+    ],
+    "Made in Spain": [
+      {
+        "titulo": "",
+        "director": "",
+        "pais": "",
+        "año": "",
+        "imagen": "",
+        "descripcion": ""
+      }
+    ],
+    "Fuera de concurso": [
+      {
+        "titulo": "",
+        "director": "",
+        "pais": "",
+        "año": "",
+        "imagen": "",
+        "descripcion": ""
+      }
+    ]
   },
   "2021": {
-    "Ganadora": [],
-    "New Directors": [],
-    "Horizontes Latinos": [],
-    "Zabaltegi": [],
-    "Perlak": [],
-    "Made in Spain": [],
-    "Fuera de concurso": []
+    "Ganadora": [
+      {
+        "titulo": "",
+        "director": "",
+        "pais": "",
+        "año": "",
+        "imagen": "",
+        "descripcion": ""
+      }
+    ],
+    "New Directors": [
+      {
+        "titulo": "",
+        "director": "",
+        "pais": "",
+        "año": "",
+        "imagen": "",
+        "descripcion": ""
+      }
+    ],
+    "Horizontes Latinos": [
+      {
+        "titulo": "",
+        "director": "",
+        "pais": "",
+        "año": "",
+        "imagen": "",
+        "descripcion": ""
+      }
+    ],
+    "Zabaltegi": [
+      {
+        "titulo": "",
+        "director": "",
+        "pais": "",
+        "año": "",
+        "imagen": "",
+        "descripcion": ""
+      }
+    ],
+    "Perlak": [
+      {
+        "titulo": "",
+        "director": "",
+        "pais": "",
+        "año": "",
+        "imagen": "",
+        "descripcion": ""
+      }
+    ],
+    "Made in Spain": [
+      {
+        "titulo": "",
+        "director": "",
+        "pais": "",
+        "año": "",
+        "imagen": "",
+        "descripcion": ""
+      }
+    ],
+    "Fuera de concurso": [
+      {
+        "titulo": "",
+        "director": "",
+        "pais": "",
+        "año": "",
+        "imagen": "",
+        "descripcion": ""
+      }
+    ]
   },
   "2020": {
-    "Ganadora": [],
-    "New Directors": [],
-    "Horizontes Latinos": [],
-    "Zabaltegi": [],
-    "Perlak": [],
-    "Made in Spain": [],
-    "Fuera de concurso": []
+    "Ganadora": [
+      {
+        "titulo": "",
+        "director": "",
+        "pais": "",
+        "año": "",
+        "imagen": "",
+        "descripcion": ""
+      }
+    ],
+    "New Directors": [
+      {
+        "titulo": "",
+        "director": "",
+        "pais": "",
+        "año": "",
+        "imagen": "",
+        "descripcion": ""
+      }
+    ],
+    "Horizontes Latinos": [
+      {
+        "titulo": "",
+        "director": "",
+        "pais": "",
+        "año": "",
+        "imagen": "",
+        "descripcion": ""
+      }
+    ],
+    "Zabaltegi": [
+      {
+        "titulo": "",
+        "director": "",
+        "pais": "",
+        "año": "",
+        "imagen": "",
+        "descripcion": ""
+      }
+    ],
+    "Perlak": [
+      {
+        "titulo": "",
+        "director": "",
+        "pais": "",
+        "año": "",
+        "imagen": "",
+        "descripcion": ""
+      }
+    ],
+    "Made in Spain": [
+      {
+        "titulo": "",
+        "director": "",
+        "pais": "",
+        "año": "",
+        "imagen": "",
+        "descripcion": ""
+      }
+    ],
+    "Fuera de concurso": [
+      {
+        "titulo": "",
+        "director": "",
+        "pais": "",
+        "año": "",
+        "imagen": "",
+        "descripcion": ""
+      }
+    ]
   },
   "2019": {
-    "Ganadora": [],
-    "New Directors": [],
-    "Horizontes Latinos": [],
-    "Zabaltegi": [],
-    "Perlak": [],
-    "Made in Spain": [],
-    "Fuera de concurso": []
+    "Ganadora": [
+      {
+        "titulo": "",
+        "director": "",
+        "pais": "",
+        "año": "",
+        "imagen": "",
+        "descripcion": ""
+      }
+    ],
+    "New Directors": [
+      {
+        "titulo": "",
+        "director": "",
+        "pais": "",
+        "año": "",
+        "imagen": "",
+        "descripcion": ""
+      }
+    ],
+    "Horizontes Latinos": [
+      {
+        "titulo": "",
+        "director": "",
+        "pais": "",
+        "año": "",
+        "imagen": "",
+        "descripcion": ""
+      }
+    ],
+    "Zabaltegi": [
+      {
+        "titulo": "",
+        "director": "",
+        "pais": "",
+        "año": "",
+        "imagen": "",
+        "descripcion": ""
+      }
+    ],
+    "Perlak": [
+      {
+        "titulo": "",
+        "director": "",
+        "pais": "",
+        "año": "",
+        "imagen": "",
+        "descripcion": ""
+      }
+    ],
+    "Made in Spain": [
+      {
+        "titulo": "",
+        "director": "",
+        "pais": "",
+        "año": "",
+        "imagen": "",
+        "descripcion": ""
+      }
+    ],
+    "Fuera de concurso": [
+      {
+        "titulo": "",
+        "director": "",
+        "pais": "",
+        "año": "",
+        "imagen": "",
+        "descripcion": ""
+      }
+    ]
   },
   "2018": {
-    "Ganadora": [],
-    "New Directors": [],
-    "Horizontes Latinos": [],
+    "Ganadora": [
+      {
+        "titulo": "",
+        "director": "",
+        "pais": "",
+        "año": "",
+        "imagen": "",
+        "descripcion": ""
+      }
+    ],
+    "New Directors": [
+      {
+        "titulo": "",
+        "director": "",
+        "pais": "",
+        "año": "",
+        "imagen": "",
+        "descripcion": ""
+      }
+    ],
+    "Horizontes Latinos": [
+      {
+        "titulo": "",
+        "director": "",
+        "pais": "",
+        "año": "",
+        "imagen": "",
+        "descripcion": ""
+      }
+    ],
     "Zabaltegi": [],
     "Perlak": [],
     "Made in Spain": [],

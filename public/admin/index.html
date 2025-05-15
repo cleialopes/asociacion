@@ -6,58 +6,107 @@
   <link rel="stylesheet" href="admin.css" />
 </head>
 <body>
-  <h1>Panel de Administración</h1>
-  <form id="form-evento">
-    <input type="text" name="titulo" placeholder="Título del evento" required />
-    <textarea name="descripcion" placeholder="Descripción" required></textarea>
-    <input type="file" name="imagen" />
-    <button type="submit">Subir</button>
-  </form>
 
-  <script>
-    document.getElementById("form-evento").addEventListener("submit", async (e) => {
-      e.preventDefault();
-      const formData = new FormData(e.target);
-      const res = await fetch('/api/eventos', {
-        method: 'POST',
-        body: formData
-      });
-      alert('Evento subido');
-      e.target.reset();
-      cargarEventos();
-    });
-  
-    async function cargarEventos() {
-      const res = await fetch('/api/eventos');
-      const eventos = await res.json();
-      const contenedor = document.getElementById('lista-eventos');
-      contenedor.innerHTML = '';
-      eventos.forEach((ev, i) => {
-        const div = document.createElement('div');
-        div.innerHTML = `
-          <p><strong>${ev.titulo}</strong>: ${ev.descripcion}</p>
-          ${ev.imagen ? `<img src="${ev.imagen}" width="100" />` : ''}
-          <button onclick="eliminarEvento(${i})">Eliminar</button>
-          <hr/>
-        `;
-        contenedor.appendChild(div);
-      });
-    }
-  
-    async function eliminarEvento(index) {
-      if (confirm("¿Seguro que deseas eliminar este evento?")) {
-        await fetch(`/api/eventos/${index}`, { method: 'DELETE' });
-        cargarEventos();
-      }
-    }
-  
-    // Crear contenedor
-    const div = document.createElement('div');
-    div.innerHTML = `<h2>Eventos existentes</h2><div id="lista-eventos"></div>`;
-    document.body.appendChild(div);
-  
-    // Cargar eventos al cargar la página
-    cargarEventos();
-  </script>
+  <h2>Actualizar banner</h2>
+  <div class="contenedor-banner">
+    <form id="form-banner" enctype="multipart/form-data">
+      <label>Tipo:
+        <select name="tipo">
+          <option value="imagen">Imagen</option>
+          <option value="video">Video</option>
+        </select>
+      </label><br>
+      <label>Archivo:
+        <input type="file" name="archivo" />
+      </label><br>
+      <label>
+        <input type="checkbox" name="mostrar" /> Mostrar
+      </label><br>
+      <button type="submit">Guardar</button>
+      <button id="btn-eliminar-banner">Eliminar banner</button>
+    </form>
+
+    <div class="vista-banner">
+      <h3>Vista previa del banner:</h3>
+      <div id="preview-banner"></div>
+    </div>
+  </div>
+
+  <h2>Gestión Sebastiane</h2>
+
+<div class="gestion-sebastiane">
+  <!-- FORMULARIO -->
+  <div class="formulario">
+    <form id="form-sebastiane" enctype="multipart/form-data">
+      <div class="form-grid">
+        <div class="columna-form">
+          <div class="bloque-form">
+            <label>Año:</label>
+            <select name="anio" id="anio-sebastiane">
+              <script>
+                for (let a = 2025; a >= 2000; a--) {
+                  document.write(`<option value="${a}">${a}</option>`);
+                }
+              </script>
+            </select>
+
+            <label>Sección:</label>
+            <select name="seccion" id="seccion-sebastiane">
+              <option>Ganadora</option>
+              <option>New Directors</option>
+              <option>Horizontes Latinos</option>
+              <option>Zabaltegi</option>
+              <option>Perlak</option>
+              <option>Made in Spain</option>
+              <option>Fuera de concurso</option>
+            </select>
+          </div>
+
+          <div class="bloque-form">
+            <h4>Título</h4>
+            <input type="text" name="titulo_es" placeholder="Título (ES)" required />
+            <input type="text" name="titulo_en" placeholder="Título (EN)" />
+            <input type="text" name="titulo_eu" placeholder="Título (EU)" />
+
+            <h4>Director</h4>
+            <input type="text" name="director_es" placeholder="Director (ES)" required />
+            <input type="text" name="director_en" placeholder="Director (EN)" />
+            <input type="text" name="director_eu" placeholder="Director (EU)" />
+          </div>
+        </div>
+
+        <div class="columna-form">
+          <div class="bloque-form">
+            <h4>País</h4>
+            <input type="text" name="pais_es" placeholder="País (ES)" required />
+            <input type="text" name="pais_en" placeholder="País (EN)" />
+            <input type="text" name="pais_eu" placeholder="País (EU)" />
+
+            <h4>Descripción</h4>
+            <textarea name="descripcion_es" placeholder="Descripción (ES)" required></textarea>
+            <textarea name="descripcion_en" placeholder="Descripción (EN)"></textarea>
+            <textarea name="descripcion_eu" placeholder="Descripción (EU)"></textarea>
+          </div>
+
+          <div class="bloque-form">
+            <label>Imagen:</label>
+            <input type="file" name="imagen" />
+          </div>
+        </div>
+      </div>
+
+      <button type="submit">Añadir película</button>
+    </form>
+  </div>
+
+  <!-- LISTADO -->
+  <div class="peliculas-listado">
+    <h3>Películas añadidas:</h3>
+    <div id="lista-sebastiane"></div>
+  </div>
+</div>
+
+  <script src="admin.js"></script>
+
 </body>
 </html>

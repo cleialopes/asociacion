@@ -53,48 +53,101 @@ app.get('/logout', (req, res) => {
   });
 });
 
-// API de eventos (igual que antes)
-app.post('/api/eventos', upload.single('imagen'), (req, res) => {
-  const evento = {
-    titulo: req.body.titulo,
-    descripcion: req.body.descripcion,
-    imagen: req.file ? `/uploads/${req.file.filename}` : null
-  };
-
-  let eventos = [];
+// Ruta GET del banner
+app.get('/api/banner', (req, res) => {
   try {
-    eventos = JSON.parse(fs.readFileSync('eventos.json', 'utf-8'));
-  } catch (e) {}
-
-  eventos.push(evento);
-  fs.writeFileSync('eventos.json', JSON.stringify(eventos));
-  res.json({ ok: true });
+    const data = fs.readFileSync('banner.json', 'utf-8');
+    res.json(JSON.parse(data));
+  } catch (e) {
+    res.json({ mostrar: false, tipo: "", url: "" });
+  }
 });
 
-app.get('/api/eventos', (req, res) => {
-  let eventos = [];
-  try {
-    eventos = JSON.parse(fs.readFileSync('eventos.json', 'utf-8'));
-  } catch (e) {}
+// Ruta POST del banner (con imagen o video)
+app.post('/api/banner', upload.single('archivo'), (req, res) => {
+  const mostrar = req.body.mostrar === 'true';
+  const tipo = req.body.tipo;
+  let url = req.body.url || "";
 
-  res.json(eventos);
-});
-
-// Ruta para eliminar evento por índice
-app.delete('/api/eventos/:index', (req, res) => {
-  let eventos = [];
-  try {
-    eventos = JSON.parse(fs.readFileSync('eventos.json', 'utf-8'));
-  } catch (e) {}
-
-  const index = parseInt(req.params.index);
-  if (isNaN(index) || index < 0 || index >= eventos.length) {
-    return res.status(400).json({ error: 'Índice inválido' });
+  if (req.file) {
+    url = `/uploads/${req.file.filename}`;
   }
 
-  eventos.splice(index, 1);
-  fs.writeFileSync('eventos.json', JSON.stringify(eventos));
+  const banner = { mostrar, tipo, url };
+  fs.writeFileSync('banner.json', JSON.stringify(banner));
   res.json({ ok: true });
+
+});
+
+// Esto "elimina" el banner al dejarlo oculto y vacío.
+app.delete('/api/banner', (req, res) => {
+  const banner = {
+    mostrar: false,
+    tipo: "",
+    url: ""
+  };
+  fs.writeFileSync('banner.json', JSON.stringify(banner));
+  res.json({ ok: true });
+});
+
+// API Sebastiane
+const SEBASTIANE_JSON = 'sebastiane.json';
+
+app.get('/api/sebastiane/:anio/:seccion', (req, res) => {
+  const { anio, seccion } = req.params;
+  try {
+    const data = JSON.parse(fs.readFileSync(SEBASTIANE_JSON, 'utf-8'));
+    const lista = data[anio]?.[seccion] || [];
+    res.json(lista);
+  } catch (e) {
+    res.status(500).json([]);
+  }
+});
+
+app.post('/api/sebastiane/:anio/:seccion', upload.single('imagen'), (req, res) => {
+  const { anio, seccion } = req.params;
+  const { titulo, director, pais, descripcion } = req.body;
+  const imagen = req.file ? `/uploads/${req.file.filename}` : "";
+
+  const pelicula = { titulo, director, pais, descripcion, imagen };
+
+  let data = {};
+  try {
+    data = JSON.parse(fs.readFileSync(SEBASTIANE_JSON, 'utf-8'));
+  } catch (e) {}
+
+  if (!data[anio]) data[anio] = {};
+  if (!data[anio][seccion]) data[anio][seccion] = [];
+
+  data[anio][seccion].push(pelicula);
+
+  fs.writeFileSync(SEBASTIANE_JSON, JSON.stringify(data, null, 2));
+  res.json({ ok: true });
+});
+
+app.delete('/api/sebastiane/:anio/:seccion/:index', (req, res) => {
+  const { anio, seccion, index } = req.params;
+  try {
+    const data = JSON.parse(fs.readFileSync(SEBASTIANE_JSON, 'utf-8'));
+    if (data[anio] && data[anio][seccion]) {
+      data[anio][seccion].splice(index, 1);
+      fs.writeFileSync(SEBASTIANE_JSON, JSON.stringify(data, null, 2));
+      res.json({ ok: true });
+    } else {
+      res.status(404).json({ error: "No encontrado" });
+    }
+  } catch (e) {
+    res.status(500).json({ error: "Error al eliminar" });
+  }
+});
+
+app.get('/api/sebastiane', (req, res) => {
+  try {
+    const data = JSON.parse(fs.readFileSync('sebastiane.json', 'utf-8'));
+    res.json(data);
+  } catch (e) {
+    res.status(500).json({});
+  }
 });
 
 app.listen(3000, () => console.log('Servidor en http://localhost:3000'));
