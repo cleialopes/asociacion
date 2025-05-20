@@ -4,7 +4,7 @@ fetch("revista.json")
     const contenedor = document.getElementById("lista-revistas");
     data.forEach(revista => {
       const div = document.createElement("div");
-      div.className = "revista";
+      div.className = "revista modo-claro-oscuro";
       div.innerHTML = `
         <img src="${revista.portada}" alt="${revista.titulo}">
         <h2>${revista.titulo}</h2>

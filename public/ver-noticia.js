@@ -14,18 +14,40 @@ fetch("noticias.json")
       const contenido = noticia.contenido?.[idioma] || noticia.descripcion?.[idioma] || "";
       const imagenes = noticia.imagenes || [];
       const fotografo = noticia.fotografo || "";
+      let videoURL = noticia.video_url;
+      if (videoURL?.includes("youtube.com/watch?v=")) {
+        const id = videoURL.split("v=")[1].split("&")[0];
+        videoURL = `https://www.youtube.com/embed/${id}?modestbranding=1&rel=0`;
+      }
+      if (videoURL?.includes("youtu.be/")) {
+        const id = videoURL.split("/").pop();
+        videoURL = `https://www.youtube.com/embed/${id}?modestbranding=1&rel=0`;
+      }
+      if (videoURL?.includes("youtube.com/embed/") && !videoURL.includes("modestbranding")) {
+        videoURL += "?modestbranding=1&rel=0";
+      }
 
-      const galeriaHTML = `
-        <div class="carrusel">
-          <button class="carrusel-flecha izquierda">‹</button>
-          <div class="carrusel-contenedor">
-            ${imagenes.map((src, index) => `
-              <img src="${src}" alt="${titulo}" class="carrusel-imagen ${index === 0 ? 'activa' : ''}">
-            `).join('')}
-          </div>
-          <button class="carrusel-flecha derecha">›</button>
-        </div>
-      `;
+      const galeriaHTML =
+        noticia.video_local
+          ? `<div class="video-contenedor">
+              <video controls>
+                <source src="${noticia.video_local}" type="video/mp4">
+                Tu navegador no soporta el video.
+              </video>
+            </div>`
+          : videoURL
+          ? `<div class="video-contenedor">
+              <iframe src="${videoURL}" frameborder="0" allowfullscreen></iframe>
+            </div>`
+          : `<div class="carrusel">
+              <button class="carrusel-flecha izquierda">‹</button>
+              <div class="carrusel-contenedor">
+                ${imagenes.map((src, index) => `
+                  <img src="${src}" alt="${titulo}" class="carrusel-imagen ${index === 0 ? 'activa' : ''}">
+                `).join('')}
+              </div>
+              <button class="carrusel-flecha derecha">›</button>
+            </div>`;
 
       contenedor.innerHTML = `
         <h1>${titulo}</h1>
@@ -37,24 +59,30 @@ fetch("noticias.json")
         <a href="noticias.html" class="btn-leer">← ${traducir("volver")}</a>
       `;
 
-      // 🔁 Carrusel funcional
-      let indice = 0;
+      // 🔁 Carrusel funcional solo si existe
       const imagenesCarrusel = document.querySelectorAll(".carrusel-imagen");
-      const mostrarImagen = (i) => {
-        imagenesCarrusel.forEach((img, index) =>
-          img.classList.toggle("activa", index === i)
-        );
-      };
+      const flechaIzquierda = document.querySelector(".carrusel-flecha.izquierda");
+      const flechaDerecha = document.querySelector(".carrusel-flecha.derecha");
 
-      document.querySelector(".carrusel-flecha.izquierda").addEventListener("click", () => {
-        indice = (indice - 1 + imagenesCarrusel.length) % imagenesCarrusel.length;
-        mostrarImagen(indice);
-      });
+      if (imagenesCarrusel.length > 0 && flechaIzquierda && flechaDerecha) {
+        let indice = 0;
 
-      document.querySelector(".carrusel-flecha.derecha").addEventListener("click", () => {
-        indice = (indice + 1) % imagenesCarrusel.length;
-        mostrarImagen(indice);
-      });
+        const mostrarImagen = (i) => {
+          imagenesCarrusel.forEach((img, index) =>
+            img.classList.toggle("activa", index === i)
+          );
+        };
+
+        flechaIzquierda.addEventListener("click", () => {
+          indice = (indice - 1 + imagenesCarrusel.length) % imagenesCarrusel.length;
+          mostrarImagen(indice);
+        });
+
+        flechaDerecha.addEventListener("click", () => {
+          indice = (indice + 1) % imagenesCarrusel.length;
+          mostrarImagen(indice);
+        });
+      }
 
     } else {
       contenedor.innerHTML = "<p>Noticia no encontrada.</p>";

@@ -6,19 +6,14 @@
   <title>Premio Sebastiane</title>
   <link rel="stylesheet" href="styles.css" />
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" /><!-- Select2 CSS -->
-  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script><!-- Select2 JS -->
   <script src="https://kit.fontawesome.com/43d19060f3.js" crossorigin="anonymous"></script> <!--para que se vea la i-->
+  <link rel="icon" type="image/x-icon" href="img/cropped-icono_favicon.png" />
+
 </head>
 <body>
   <div id="header"></div>
 
   <main>
-    <section id="nosotros">
-      <h2 data-i18n="nosotros">Quiénes somos</h2>
-      <p data-i18n="descripcion">Somos una asociación dedicada a promover...</p>
-    </section>
-
     <section id="enlaces-imagenes">
       <a href="sebastiane.html">
         <img src="img/sebastiane1.jpg" alt="Ir a Sebastiane" class="clickeable" />
@@ -33,47 +28,13 @@
       <h2 data-i18n="eventos">Últimas Noticias</h2>
       <div id="contenedor-noticias"></div>
     </section>
+
+    <section id="patrocinadores"></section>
   </main>
-
-  <section class="patrocinadores">
-  <h2>Organizadores</h2>
-  <div class="grupo-patrocinadores">
-    <a href="https://www.organizador1.com" target="_blank">
-      <img src="img/patrocinio.jpg" alt="Organizador 1">
-    </a>
-    <a href="https://www.organizador2.com" target="_blank">
-      <img src="img/patrocinio.jpg" alt="Organizador 2">
-    </a>
-  </div>
-
-  <h2>Patrocinios</h2>
-  <div class="grupo-patrocinadores">
-    <a href="https://www.patrocinador1.com" target="_blank">
-      <img src="img/patrocinio.jpg" alt="Patrocinador 1">
-    </a>
-    <a href="https://www.patrocinador2.com" target="_blank">
-      <img src="img/patrocinio.jpg" alt="Patrocinador 2">
-    </a>
-  </div>
-
-  <h2>Colaboradores</h2>
-  <div class="grupo-patrocinadores">
-    <a href="https://www.colaborador1.com" target="_blank">
-      <img src="img/patrocinio.jpg" alt="Colaborador 1">
-    </a>
-    <a href="https://www.colaborador2.com" target="_blank">
-      <img src="img/patrocinio.jpg" alt="Colaborador 2">
-    </a>
-    <a href="https://www.colaborador3.com" target="_blank">
-      <img src="img/patrocinio.jpg" alt="Colaborador 3">
-    </a>
-  </div>
-</section>
-
-
   <div id="footer"></div>
 
   <script src="componentes.js"></script>
   <script src="i18n.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
