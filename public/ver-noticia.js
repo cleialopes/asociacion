@@ -11,10 +11,13 @@ fetch("noticias.json")
     if (noticia) {
       const titulo = noticia.titulo[idioma] || noticia.titulo["es"];
       const descripcion = noticia.descripcion?.[idioma] || noticia.descripcion?.["es"] || "";
-      const contenido = noticia.contenido?.[idioma] || noticia.descripcion?.[idioma] || "";
+      const contenidoBloques = noticia.contenido?.[idioma] || noticia.contenido?.["es"] || [];
+      const contenidoHTML = renderizarContenido(contenidoBloques);
+
       const imagenes = noticia.imagenes || [];
       const fotografo = noticia.fotografo || "";
       let videoURL = noticia.video_url;
+
       if (videoURL?.includes("youtube.com/watch?v=")) {
         const id = videoURL.split("v=")[1].split("&")[0];
         videoURL = `https://www.youtube.com/embed/${id}?modestbranding=1&rel=0`;
@@ -55,11 +58,11 @@ fetch("noticias.json")
         <div class="galeria-imagenes">${galeriaHTML}</div>
         ${fotografo ? `<p class="fotografo">Foto: ${fotografo}</p>` : ""}
         <p class="fecha">${noticia.fecha}</p>
-        <div class="contenido-noticia">${contenido}</div>
+        <div class="contenido-noticia">${contenidoHTML}</div>
         <a href="noticias.html" class="btn-leer">← ${traducir("volver")}</a>
       `;
 
-      // 🔁 Carrusel funcional solo si existe
+      // Carrusel funcional
       const imagenesCarrusel = document.querySelectorAll(".carrusel-imagen");
       const flechaIzquierda = document.querySelector(".carrusel-flecha.izquierda");
       const flechaDerecha = document.querySelector(".carrusel-flecha.derecha");
@@ -102,4 +105,12 @@ function traducir(clave) {
     }
   };
   return traducciones[clave]?.[idioma] || clave;
+}
+
+function renderizarContenido(bloques) {
+  return bloques.map(bloque => {
+    const tag = bloque.tipo;
+    const texto = bloque.texto;
+    return `<${tag}>${texto}</${tag}>`;
+  }).join("");
 }
