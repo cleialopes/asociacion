@@ -1,0 +1,269 @@
+{
+  "2025": {
+    "Ganadora": [
+      {
+        "titulo": {
+          "es": "",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"",
+          "en":"",
+          "eu":""
+        },
+        "año": "",
+        "director": {
+          "es": ""
+        },
+        "imagen": "",
+        "descripcion": {
+          "es": "",
+          "en": "",
+          "eu": ""
+        }
+      }
+    ],
+    "candidatas": [
+      {
+       "titulo": {
+          "es": "",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"",
+          "en":"",
+          "eu":""
+        },
+        "año": "",
+        "director": {
+          "es": ""
+        },
+        "imagen": "",
+        "descripcion": {
+          "es": "",
+          "en": "",
+          "eu": ""
+        }
+      }
+    ]
+  },
+  "2024": {
+     "Ganadora": [
+      {
+        "titulo": {
+          "es": "",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"",
+          "en":"",
+          "eu":""
+        },
+        "año": "",
+        "director": {
+          "es": ""
+        },
+        "imagen": "",
+        "descripcion": {
+          "es": "",
+          "en": "",
+          "eu": ""
+        }
+      }
+    ],
+    "candidatas": [
+      {
+        "titulo": {
+          "es": "",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"",
+          "en":"",
+          "eu":""
+        },
+        "año": "",
+        "director": {
+          "es": ""
+        },
+        "imagen": "",
+        "descripcion": {
+          "es": "",
+          "en": "",
+          "eu": ""
+        }
+      }
+    ]
+  },
+  "2023": {
+    "Ganadora": [
+      {
+        "titulo": {
+          "es": "Transfariana",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"Colombia, Francia",
+          "en":"",
+          "eu":""
+        },
+        "año": " 2023 | 150’",
+        "director": {
+          "es": "Joris Lachaise"
+        },
+        "imagen": "img/transfariana.jpg",
+        "descripcion": {
+          "es": "El documental lleva un título híbrido que mezcla “trans” con “fariana”, el término que designa a las mujeres miembros de las FARC. El relato comienza en La Picota, un penal de alta seguridad, donde Jaison Murillo, comandante y portavoz de las FARC, se casó con Laura Katalina, una mujer transgénero y exprostituta, sentenciada a cadena perpetua. Tras la oposición inicial de los guerrilleros, esta “boda rebelde” propició un diálogo sin precedentes entre guerrilleros y miembros transexuales de las asociaciones de la zona de tolerancia en Bogotá, Santa Fé. Poco a poco, sus historias se entrelazan, y sus luchas convergen y componen un conmovedor fresco histórico en un contexto de transición política.",
+          "en": "",
+          "eu": ""
+        }
+      }
+    ],
+    "candidatas": [
+      {
+       "titulo": {
+          "es": "Almamula",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"Argentina, Francia, Italia",
+          "en":"",
+          "eu":""
+        },
+        "año": "2023 | 95’",
+        "director": {
+          "es": "Juan Sebastian Torales"
+        },
+        "imagen": "img/almamula.jpg",
+        "descripcion": {
+          "es": "Tras un ataque homófobo, Nino y su familia se mudan a una casa rural en medio de un bosque encantado por Almamula, un monstruo que se lleva a quienes cometen pecados carnales. En un mundo de susurros, deseos no expresados y plegarias, la curiosidad y los impulsos de Nino salen a la superficie.",
+          "en": "",
+          "eu": ""
+        }
+      },
+      {
+       "titulo": {
+          "es": "Cross Dreamers",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"Argentina",
+          "en":"",
+          "eu":""
+        },
+        "año": "2022 | 78’",
+        "director": {
+          "es": "Soledad Velasco"
+        },
+        "imagen": "img/cross-dreamers.webp",
+        "descripcion": {
+          "es": "Ornella, Mabel, Paula y Mirna son protagonistas de la noche crossdresser de Buenos Aires y Rosario. Cada una, sin embargo, vive de manera diferente esta identidad desdoblada: mientras algunas querrían no volver nunca a su vida de varón, otras se sienten bien en la dualidad. Pero el deseo se enfrenta a menudo con los límites de una sociedad menos libre de lo que se piensa, y a cada una le espera un recorrido muy personal.",
+          "en": "",
+          "eu": ""
+        }
+      },
+      {
+       "titulo": {
+          "es": "El filo de las tijeras",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"Argentina ",
+          "en":"",
+          "eu":""
+        },
+        "año": "2023 | 69’",
+        "director": {
+          "es": "David Marcial Valverdi"
+        },
+        "imagen": "img/el_filo_de_las_tijeras.jpg",
+        "descripcion": {
+          "es": "Como si estuviera llenando el perfil de una aplicación de citas, el director disecciona su historia y construye un registro de deseo. Mezclando animación y documental hace converger imágenes de su infancia en una peluquería del conurbano bonaerense, los códigos del cruising de finales de los 90 y la cotidianidad de la trieja de la que formó parte durante siete años.",
+          "en": "",
+          "eu": ""
+        }
+      },
+      {
+        "titulo": {
+          "es": "El silencio de los hombres",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"Argentina",
+          "en":"",
+          "eu":""
+        },
+        "año": "2023 | 79’",
+        "director": {
+          "es": "Lucía Lubarsky"
+        },
+        "imagen": "img/el_silencio_de_los_hombres.jpg",
+        "descripcion": {
+          "es": "Un padre y un hijo atravesados por mandatos familiares deciden finalmente hablar. Bicho, Emma y Andrés ponen en crisis lo que se espera de ellos por ser varones. La directora parte de los hombres de su familia para llegar a desconocidos. Indaga en los miedos, complicidades, contradicciones y violencias que viven como varones. ¿Qué les toca afrontar?",
+          "en": "",
+          "eu": ""
+        }
+      }
+    ]
+  },
+  "2022": {
+    "Ganadora": [
+      {
+       "titulo": {
+          "es": "Sublime",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"Argentina",
+          "en":"",
+          "eu":""
+        },
+        "año": "2022 | 100’",
+        "director": {
+          "es": "Mariano Biasin"
+        },
+        "imagen": "img/sublime.webp",
+        "descripcion": {
+          "es": "Manuel (16) vive en un pueblo de la costa. Tiene una banda de rock con sus mejores amigos. Uno de ellos es Felipe, que es como un hermano desde pequeñitos. Manuel está de novio con Azul, relación que están explorando con intensidad. Cuando llega el momento de tener su primera vez juntos, Manuel siente algo nuevo que le hace ver a Felipe con otros ojos.",
+          "en": "",
+          "eu": ""
+        }
+      }
+    ],
+    "candidatas": [
+      {
+        "titulo": {
+          "es": "",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"",
+          "en":"",
+          "eu":""
+        },
+        "año": "",
+        "director": {
+          "es": ""
+        },
+        "imagen": "",
+        "descripcion": {
+          "es": "",
+          "en": "",
+          "eu": ""
+        }
+      }
+    ]
+  }
+  
+}

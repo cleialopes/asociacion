@@ -19,12 +19,12 @@
         { "tipo": "p", "texto": "¡Felicidades al equipo de Reas!" }
       ],
       "en": [
-        { "tipo": "h1", "texto": "" },
+        { "tipo": "h3", "texto": "" },
         { "tipo": "p", "texto": "" },
         { "tipo": "p", "texto": "" }
       ],
       "eu": [
-        { "tipo": "h1", "texto": "" },
+        { "tipo": "h3", "texto": "" },
         { "tipo": "p", "texto": "" },
         { "tipo": "p", "texto": "" }
       ]
@@ -72,7 +72,7 @@
         { "tipo": "p", "texto": "En esta edición, el Festival cuenta con el apoyo de Basquetour, la Agencia Vasca de Turismo." }
       ],
       "en": [
-        { "tipo": "h1", "texto": "" },
+        { "tipo": "h3", "texto": "" },
         { "tipo": "p", "texto": "" },
         { "tipo": "p", "texto": "" }
       ],
@@ -191,12 +191,12 @@
         { "tipo": "p", "texto": "Con la convocatoria de la duodécima edición del galardón, cuyo ganador se dará a conocer en agosto, GEHITU, las entidades colaboradoras y el Festival de San Sebastián continúan apoyando al cine latinoamericano LGTBIQA+ en el marco del Festival. Por ello, durante la 72ª edición, que se celebrará del 20 al 28 de septiembre, se entregará el 25° Premio Sebastiane y se realizará el X Encuentro de Festivales de Cine LGTBIQA+ Iberoamericanos, que reunirá a más de 20 certámenes de España y Latinoamérica." }
       ],
       "en": [
-        { "tipo": "h1", "texto": "" },
+        { "tipo": "h3", "texto": "" },
         { "tipo": "p", "texto": "" },
         { "tipo": "p", "texto": "" }
       ],
       "eu": [
-        { "tipo": "h1", "texto": "" },
+        { "tipo": "h3", "texto": "" },
         { "tipo": "p", "texto": "" },
         { "tipo": "p", "texto": "" }
       ]
@@ -230,12 +230,12 @@
         { "tipo": "p", "texto": "Profundizando en esta vocación latina del premio Sebastiane, a parte de conceder el 12 Sebastiane Latino a la mejor película LGTBIAQ+ latina del año, Gehitu organizará en colaboración con el Festival de San Sebastián el X Encuentro de Festivales de Cine LGTBI Iberoamericanos." }
       ],
       "en": [
-        { "tipo": "h1", "texto": "" },
+        { "tipo": "h3", "texto": "" },
         { "tipo": "p", "texto": "" },
         { "tipo": "p", "texto": "" }
       ],
       "eu": [
-        { "tipo": "h1", "texto": "" },
+        { "tipo": "h3", "texto": "" },
         { "tipo": "p", "texto": "" },
         { "tipo": "p", "texto": "" }
       ]
@@ -269,26 +269,26 @@
         { "tipo": "p", "texto": "El Premio Sebastiane Latino es el reconocimiento al mejor estreno de cine latino LGTBI del año y que refleje los valores y la realidad de lesbianas, gais, transexuales y bisexuales. La diversidad y calidad de las películas este año prometen un futuro brillante para la cinematografía latinoamericana." }
       ],
       "en": [
-        { "tipo": "h1", "texto": "" },
+        { "tipo": "h3", "texto": "" },
         { "tipo": "p", "texto": "" },
         { "tipo": "p", "texto": "" }
       ],
       "eu": [
-        { "tipo": "h1", "texto": "" },
+        { "tipo": "h3", "texto": "" },
         { "tipo": "p", "texto": "" },
         { "tipo": "p", "texto": "" }
       ]
     },
     "fecha": "2025-05-01",
     "imagenes": [
-      "img/@mambru_fotos3.jpg",
-      "img/@mambru_fotos1.jpg",
-      "img/@mambru_fotos2.jpg"
+      "img/premio-sebastiane-latino-en-el lesgaicinemad3.jpg",
+      "img/premio-sebastiane-latino-en-el lesgaicinemad2.jpg",
+      "img/premio-sebastiane-latino-en-el lesgaicinemad1.jpg"
       
     ],
     "video_url": "",
     "video_local": "",
-    "fotografo": "@mambru_fotos"
+    "fotografo": "@mambru"
   },
   {
     "id": 8,
@@ -313,12 +313,12 @@
         { "tipo": "p", "texto": "La memoria escondida (España, 2022), documental de José Luis Pecharromán, que nos ofrece un acercamiento al colectivo LGTBIQ+ al final del franquismo y la transición española a través del testimonio de cuatro miembros del colectivo LGTBIQ+, ya mayores." }
       ],
       "en": [
-        { "tipo": "h1", "texto": "" },
+        { "tipo": "h3", "texto": "" },
         { "tipo": "p", "texto": "" },
         { "tipo": "p", "texto": "" }
       ],
       "eu": [
-        { "tipo": "h1", "texto": "" },
+        { "tipo": "h3", "texto": "" },
         { "tipo": "p", "texto": "" },
         { "tipo": "p", "texto": "" }
       ]
@@ -365,12 +365,12 @@
         { "tipo": "p", "texto": "All us of Desconocidos/All of us Strangers se estrenará en España el próximo mes de Febrero." }
       ],
       "en": [
-        { "tipo": "h1", "texto": "" },
+        { "tipo": "h3", "texto": "" },
         { "tipo": "p", "texto": "" },
         { "tipo": "p", "texto": "" }
       ],
       "eu": [
-        { "tipo": "h1", "texto": "" },
+        { "tipo": "h3", "texto": "" },
         { "tipo": "p", "texto": "" },
         { "tipo": "p", "texto": "" }
       ]
@@ -386,6 +386,573 @@
   },
   {
     "id": 10,
+    "titulo": {
+      "es": "Siete cintas compiten por la 8ª Espiga Arco Iris en la SEMINCI",
+      "eu": "",
+      "en": ""
+    },
+    "descripcion": {
+      "es": "Entre ellas, dos películas españolas, “On the go” (estreno nacional) y “La estafa del amor” (estreno mundial)",
+      "eu": "",
+      "en": ""
+    },
+    "contenido": {
+      "es": [
+        { "tipo": "p", "texto": "El Premio Sebastiane está en la 68 SEMINCI. En esta edición de la Semana Internacional de Cine de Valladolid se otorgará, por octavo año, la Espiga Arco Iris de la mano de la Fundación Triángulo, galardón con el que se reconoce a la película de cualquiera de sus secciones que contribuya a dar visibilidad a la diversidad sexual y la identidad de género." },
+        { "tipo": "h3", "texto": "Compiten por la Espiga Arco Iris, dos candidatas de la Seccion oficial:" },
+        { "tipo": "p", "texto": "“Desconocidos / All of Us Strangers” (Reino Unido, Estados Unidos. 2023) del británico Andrew Haigh, que narra la historia de sexo entre dos vecinos solteros y desconocidos. Basada libremente en la novela Strangers, de Taichi Yamada, hace una reflexión sobre cómo el amor, sea como sea este, acaba por definir lo que somos." },
+        { "tipo": "p", "texto": "La otra candidata de la Sección Oficial, “How to have sex” (Reino Unido, Grecia. 2023) es la ópera prima de Molly Manning Walker, que ganó en Cannes el Premio Un Certain Regard. Cuenta la historia de tres amigas británicas, que tras acabar el instituto, se escapan a una isla griega a emborracharse, follar y bailar hasta que el cuerpo aguante. Da una vuelta de tuerca feminista a las películas de pérdida de la virginidad y cuestiona las presiones sociales sobre las mujeres que subyacen en las liturgias de desinhibición típicas de estos contextos." },
+        { "tipo": "p", "texto": "En la Sección oficial cortometrajes, compite “27” (Francia, Hungría), Palma de Oro en Cannes, donde Flóra Anna Buda plasma la precariedad y las dificultades de emancipación de los jóvenes en el tránsito a ser adulto, con la sexualidad femenina como hilo conductor." },
+        { "tipo": "p", "texto": "En la sección Punto de encuentro está la cinta española “On the go” (2023). Mención Especial del Jurado Joven en el Festival de Locarno y probablemente la película más indie de esta Seminci. Sus directoras, María Gisèle Royo y Julia de Castro, se embarcan en su primer largometraje en un cine underground libre, desacomplejado y descaradamente queer, desde una irrenunciable idiosincracia andaluza." },
+        { "tipo": "p", "texto": "En Tiempo de historia veremos la también española “La estafa del amor” (2023), de Virginia García del Pino, una película en directo en la que la premisa inicial permite lanzar una reflexión colectiva sobre enamoramientos, romanticismos y demás aristas del corazón humano. Rodado a lo largo de dos fines de semana en la Cineteca de Madrid, el filme actualiza y reformula la Encuesta sobre el amor de Pasolini, para abordar las relaciones en la era de Tinder e Instagram en un cruce de sociología, antropología y cine." },
+        { "tipo": "h3", "texto": "En Alquimias compiten dos trabajos:" },
+        { "tipo": "p", "texto": "Por un lado “Femme” (Reino Unido. 2023), que cuenta la vida de Jules y cómo su carrera como drag queen se vienen abajo tras sufrir un brutal ataque homófobo después de una actuación. Meses después, ya recuperado físicamente, reconoce a su atacante, por casualidad, en una sauna gay. Sin maquillaje Jules resulta irreconocible, así que decide acercarse a ese hombre y descubrir quién es. Comienza entonces una aventura sexual con el fin de vengarse. Lo que empezó como un premiado cortometraje homónimo se ha convertido en el primer largo de Sam H. Freeman y Ng Choon Ping, un thriller erótico y transgresor que explora matices y tabúes de unas identidades fluidas." },
+        { "tipo": "p", "texto": "Por otra parte, “Tres hermanos” (Argentina, Chile. 2023), Gran Premio del Jurado en el Festival de Mar del Plata. Ambientada en plena cordillera andina, muestra a tres hermanos que se enfrentan a la naturaleza y a sí mismos. Francisco J. Paparella firma un trepidante y febril cruce entre wéstern y thriller poblado por personajes ásperos y complejos, donde moldea masculinidades desfasadas a las que mueve la mera supervivencia." }
+      ],
+      "en": [
+        { "tipo": "h3", "texto": "" },
+        { "tipo": "p", "texto": "" },
+        { "tipo": "p", "texto": "" }
+      ],
+      "eu": [
+        { "tipo": "h3", "texto": "" },
+        { "tipo": "p", "texto": "" },
+        { "tipo": "p", "texto": "" }
+      ]
+    },
+    "fecha": "2025-05-01",
+    "imagenes": [
+      "img/EspigaArcoIris2023-1.jpeg",
+      "img/EspigaArcoIris2023-2.png",
+      "img/EspigaArcoIris2023-3.jpg",
+      "img/EspigaArcoIris2023-4.png",
+      "img/EspigaArcoIris2023-5.jpg",
+      "img/EspigaArcoIris2023-6.png",
+      "img/EspigaArcoIris2023-7.png",
+      "img/EspigaArcoIris2023-8.jpg"
+    ],
+    "video_url": "",
+    "video_local": "",
+    "fotografo": ""
+  },
+  {
+    "id": 11,
+    "titulo": {
+      "es": "Entrevista al equipo de Pedágio (Brasil-Portugal, 2023)",
+      "eu": "",
+      "en": ""
+    },
+    "descripcion": {
+      "es": "",
+      "eu": "",
+      "en": ""
+    },
+    "contenido": {
+      "es": [
+        { "tipo": "h3", "texto": "" },
+        { "tipo": "p", "texto": "" },
+        { "tipo": "p", "texto": "" }
+      ],
+      "en": [
+        { "tipo": "h3", "texto": "" },
+        { "tipo": "p", "texto": "" },
+        { "tipo": "p", "texto": "" }
+      ],
+      "eu": [
+        { "tipo": "h3", "texto": "" },
+        { "tipo": "p", "texto": "" },
+        { "tipo": "p", "texto": "" }
+      ]
+    },
+    "fecha": "2025-05-01",
+    "imagenes": [
+      "img/entrevista-al-equipo-de-pedágio-brasil-portugal-2023.jpg"
+    ],
+    "video_url": "https://www.youtube.com/watch?v=pNlsa17DjdI",
+    "video_local": "",
+    "fotografo": ""
+  },
+  {
+    "id": 12,
+    "titulo": {
+      "es": "20 especies de abejas, de Estibalitz Urresola, gana el 24 Sebastiane",
+      "eu": "",
+      "en": ""
+    },
+    "descripcion": {
+      "es": "",
+      "eu": "",
+      "en": ""
+    },
+    "contenido": {
+      "es": [
+        { "tipo": "h3", "texto": "" },
+        { "tipo": "p", "texto": "La víspera de la clausura del 71 Festival de San Sebastián se entrega el 23 Sebastiane, el premio LGTBI del festival. Uno de los premios queer más antiguo en los Festivales de cine de categoría A." },
+        { "tipo": "p", "texto": "Desde hace 24 años lo entrega la asociación LGTBI local (GEHITU) y busca aquella producción cinematográfica presentada en el Festival de San Sebastián que mejor refleje las realidades, libertades y progresos sociales del colectivo LGTBI. En palabras de su director, Nicolás Subirán: “Los premios desarrollan su labor durante todo el año y esta actividad se refleja  durante el Festival donostiarra”" },
+        { "tipo": "p", "texto": "“20.000 especies de abejas” (2023) dirigida por Estibaliz Urresola Solaguren, ha ganado el  24 Sebastiane porque, en palabras del jurado, “ilustra de manera diáfana la transición que hacen las infancias trans y sus familias, creando referentes y vínculos de empatía para todos ellos y para todes nosotres.”" },
+        { "tipo": "p", "texto": "El jurado ha decidido también otorgar una Mención Honorífica a la película “Gabi, 8 urtetik 13 urtera / Gabi: Between Ages 8 and 13” (2023) dirigida por Engeli Broberg y proyectada en la nueva sección Infantil, “por acercar a todes les publiques con delicia, pedagogía y sencillez el tema de las infancias Trans.” Así mismo el Jurado desea “hacer constar su agradecimiento al Comité de Selección del Zinemaldia por la selección que ha realizado de las producciones LGTBI+ de esta edición”" }
+      ],
+      "en": [
+        { "tipo": "h3", "texto": "" },
+        { "tipo": "p", "texto": "" },
+        { "tipo": "p", "texto": "" }
+      ],
+      "eu": [
+        { "tipo": "h3", "texto": "" },
+        { "tipo": "p", "texto": "" },
+        { "tipo": "p", "texto": "" }
+      ]
+    },
+    "fecha": "2025-05-01",
+    "imagenes": [
+      "img/20.000-especies-de-abejas1.jpeg",
+      "img/20.000-especies-de-abejas2.jpg"
+    ],
+    "video_url": "",
+    "video_local": "",
+    "fotografo": ""
+  },
+  {
+    "id": 13,
+    "titulo": {
+      "es": "‘Transfariana’ de Joris Lachaise, recibirá el 11 Premio Sebastiane Latino",
+      "eu": "",
+      "en": ""
+    },
+    "descripcion": {
+      "es": "El galardón concedido por la asociación Gehitu reconoce la película latina que mejor representa la diversidad sexual y de género.",
+      "eu": "",
+      "en": ""
+    },
+    "contenido": {
+      "es": [
+        
+        { "tipo": "p", "texto": "De entre las cinco finalistas del 11 Sebastiane Latino el jurado ha elegido a Transfariana de Joris Lachaise. Un estudiante de filosofía francés que ha acabado haciendo cine documental. En 2009 codirigió Comme un oiseau dans un aquarim con Thomas Rousillon. En 2011 dirigió Convention: Mur noir/Trous blancs una película sobre el 50 aniversario de la independencia de Malí que ganó el premio FIFAI y fue seleccionado para el États généraux du documentaire de Lussas, Francia." },
+        { "tipo": "p", "texto": "En 2014, su la película Ce qu’il reste de la folie se realizó en un hospital psiquiátrico en Senegal y ganó el Gran Premio en el festival FID de Marsella antes de ser seleccionado para numerosos festivales alrededor el mundo. La película se estrenó en los cines franceses en junio de 2016." },
+        { "tipo": "p", "texto": "Con Transfariana ha participado en Panorama de la Berlinale en 2023 y ahora ha conseguido alzarse con el premio a la mejor película LGTBIAQ+ del año en Latinoamérica." },
+        { "tipo": "p", "texto": "El galardón le será entregado a Joris Lachaise el 23 noviembre en el marco del LESGAICINEMAD, dentro de una colaboración entre el festival LGTBIAQ+ madrileño y los Premios Sebastiane." },
+        { "tipo": "h3", "texto": "Transfariana" },
+        { "tipo": "p", "texto": "Colombia | Francia" },
+        { "tipo": "p", "texto": "2022 | 150’" },
+        { "tipo": "p", "texto": "Laura Katalina Zamora, Jaison Murillo Pachón, Daniela “Lulú” Maldonado Salamanca, Máximo Castellanos Peña, Yurani Muñoz Ríos" },
+        { "tipo": "p", "texto": "El documental lleva un título híbrido que mezcla “trans” con “fariana”, el término que designa a las mujeres trans miembros de las FARC. El relato comienza en La Picota, un penal de alta seguridad, donde Jaison Murillo, comandante y portavoz de las FARC, se casó con Laura Katalina, una mujer transgénero y ex prostituta, sentenciada a cadena perpetua. Tras la oposición inicial de los guerrilleros, esta “boda rebelde” propició un diálogo sin precedentes entre guerrilleros y miembros transexuales de las asociaciones de la zona de tolerancia en Bogotá, Santa Fé. Poco a poco, sus historias se entrelazan, y sus luchas convergen y componen un conmovedor fresco histórico en un contexto de transición política." },
+        { "tipo": "p", "texto": "Dirección + guión | Joris Lachaise" },
+        { "tipo": "p", "texto": "Diseño sonoro + Asistente dirección | Julia Rostagni" },
+        { "tipo": "p", "texto": "Sonido | Bertrand Wolff" },
+        { "tipo": "p", "texto": "Edición de sonido | Gil Savoy" },
+        { "tipo": "p", "texto": "Edición | Jérémy Gravayat, Joris Lachaise" },
+        { "tipo": "p", "texto": "Postproducción | Matthieu Weil" },
+        { "tipo": "p", "texto": "Producción  | Raphaèle Dumas, Line Peyron, Guillermo Quintero" }
+      ],
+      "en": [
+        { "tipo": "h3", "texto": "" },
+        { "tipo": "p", "texto": "" },
+        { "tipo": "p", "texto": "" }
+      ],
+      "eu": [
+        { "tipo": "h3", "texto": "" },
+        { "tipo": "p", "texto": "" },
+        { "tipo": "p", "texto": "" }
+      ]
+    },
+    "fecha": "2025-05-01",
+    "imagenes": [
+      "img/Transfariana1.jpg",
+      "img/Transfariana2.jpg",
+      "img/Transfariana3.jpg",
+      "img/Transfariana4.jpg"
+    ],
+    "video_url": "",
+    "video_local": "",
+    "fotografo": ""
+  },
+  {
+    "id": 14,
+    "titulo": {
+      "es": "Entrevista a Christian Petzold, director de Roter Himmel",
+      "eu": "",
+      "en": ""
+    },
+    "descripcion": {
+      "es": "",
+      "eu": "",
+      "en": ""
+    },
+    "contenido": {
+      "es": [
+        { "tipo": "h3", "texto": "" },
+        { "tipo": "p", "texto": "" },
+        { "tipo": "p", "texto": "" }
+      ],
+      "en": [
+        { "tipo": "h3", "texto": "" },
+        { "tipo": "p", "texto": "" },
+        { "tipo": "p", "texto": "" }
+      ],
+      "eu": [
+        { "tipo": "h3", "texto": "" },
+        { "tipo": "p", "texto": "" },
+        { "tipo": "p", "texto": "" }
+      ]
+    },
+    "fecha": "2025-05-01",
+    "imagenes": [
+      "img/entrevista-christianpetzold.png",
+      "",
+      ""
+    ],
+    "video_url": "https://www.youtube.com/watch?v=XSR95f0nMw8",
+    "video_local": "",
+    "fotografo": ""
+  },
+  {
+    "id": 15,
+    "titulo": {
+      "es": "Doce títulos optan al XXIV Premio Sebastiane",
+      "eu": "",
+      "en": ""
+    },
+    "descripcion": {
+      "es": "El próximo 29 de septiembre la asociación Gehitu hará entrega del Premio Sebastiane 2023 a aquella producción cinematográfica presentada en el Festival de San Sebastián que mejor refleje las realidades, libertades y progresos sociales del colectivo LGTBI.",
+      "eu": "",
+      "en": ""
+    },
+    "contenido": {
+      "es": [
+        { "tipo": "p", "texto": "Dicho premio, que este año celebra su 24 edición, será elegido entre doce candidatas. Esta selección contará con dos producciones de la Sección Oficial, una de New Directors, dos de Horizontes Latinos, dos de Zabaltegi-Tabakalera. Así mismo, dos de las películas de Perlak junto a dos de las producciones de Zinemira y, por primera vez, una de Cine Infantil de la 70 edición del Festival comparten la terna. Dos cortometrajes de Nest y una de las proyecciones de Zabaltegi-Tabakalera más otra del Velódromo estarán fuera de concurso." },
+        { "tipo": "h3", "texto": "Sebastiane y Anteros son la imagen de los 24 Premios Sebastiane. Un equipo conformado por aio aio design studio & markel gonzalez ha creado un relato que en sus palabras pretende:" },
+        { "tipo": "p", "texto": "“Sacar a Sebastiane de su faceta de mártir y convertirlo en el destinatario de las flechas de amor de Anteros, un mito olvidado, que representa el amor correspondido y profundo contrariamente a lo que hace su hermano Eros (Cupido), que representa el amor ciego e inmaduro.Anteros es el amor incondicional sano que no excluye y sólo ama de manera madura siendo sabedor de las diferencias de cada persona y aceptándolas tal y como son bajo sus alas.Nuestro relato consiste en materializar todos estos símbolos, de manera que Sebastiane y Anteros son el amor recíproco, dando pie a cualquier tipo de amor que se quiera representar.”" },
+        { "tipo": "p", "texto": "El jurado de los 24 premios Sebastiane vuelve a ser mixto este año. Compuesto por profesionales de la industria cinematográfica de largo recorrido en el apoyo al cine LGTBIQA+ y por asociades de GEHITU." },
+        { "tipo": "h3", "texto": "ARANTXA ECHEVARRÍA" },
+        { "tipo": "p", "texto": "Ganadora de dos Goyas (directora novel y actriz secundaria para Carolina Yuste) en 2019 con su primer largometraje Carmen y Lola. También ha dirigido en 2021 a Belén Rueda y José Coronado en la comedia La Familia Perfecta numero 1 en Netflix España y numero 2 en Netflix mundial. En televisión ha estado al frente, entre otros, del último capítulo de la serie El Cid y de los capítulos 4 y 5 de la serie Días mejores, ambas para Amazon prime." },
+        { "tipo": "p", "texto": "Su segunda película de autor, Chinas, que se estrenará el 6 de Octubre del 2023, aborda el tema de la segunda generación de chinos en España." },
+        { "tipo": "h3", "texto": "JOSE MARI GOENAGA BALERDI" },
+        { "tipo": "p", "texto": "Este miembro de la productora Moriarti Produkzioak ha desarrolado su carrera en ella, alternando la escritura de guion, la dirección y la producción, en colaboración con sus socios Aitor Arregi y Jon Garaño.        Su último largometraje, La trinchera infinita, obtuvo, entre otros, el premio al mejor guion y la Concha de Plata a la mejor dirección en el Festival de San Sebastián, 2 premios Goya y fue la candidata española en los Oscar 2020. Handia le valió el Goya al mejor guion original. Con anterioridad, Goenaga había coescrito y codirigido Loreak y 80 egunean (premio Sebastiane)." },
+        { "tipo": "p", "texto": "En la actualidad tiene pendiente de estreno la serie Balenciaga sobre el famoso modista vasco. Además, este año Moriarti rodará Marco, película que ha coescrito, y para el año que viene prepara Maspalomas, largometraje con el que vuelve al cine de temática LGTBIQ+.d" },
+        { "tipo": "p", "texto": "La entrega del 24 premio Sebastiane tendrá lugar en la Galeria KUR frente al Kursaal, el viernes 29 de septiembre, a las 19:00h y contará de nuevo con el apoyo del Centro Comercial URBIL de la mano de Ona Catering y Txakoli Inazio Urruzola." },
+         { "tipo": "h3", "texto": "El Premio Sebastiane de GEHITU quiere destacar la participación de 16 festivales de 5 países en el VIII Encuentro de Festivales de Cine LGTBI Iberoamericanos." },
+        { "tipo": "p", "texto": "Esta cita se celebrará entre los días 25 y 27 de septiembre, en colaboración con el Festival de San Sebastián y  con MUGEN GAINETIK." },
+        { "tipo": "p", "texto": "En esta edición van a participar festivales de Argentina, Chile, México, Paraguay, Perú y Uruguay. Dentro de los peninsulares, la Comunidad Valenciana estará representada por primera vez." },
+        { "tipo": "p", "texto": "Los encuentros contarán con talleres para poner en común nuevas dinámicas de producción y programación y mesas redondas que analizarán, por ejemplo, la representación de las disidencias sexuales y de género en el audiovisual iberoamericano. Se contará con la participación del Festival Crossover Series, que organiza la Diputación Foral de Gipuzkoa." },
+        { "tipo": "p", "texto": "Como otros años y en colaboración con Mugen Gainetik, acercaremos la realidad latinoamericana a través del cine a la población guipuzcoana. La ganadora del 10 Sebastiane Latino, Sublime, del argentino Mariano Biasin, se proyectará en Deba, Errentería e Irún con la colaboración del Festival CineDiverso de Argentina." },
+        { "tipo": "h3", "texto": "La red de Festivales LGTBIAQ+ que conforman el Encuentro mantendrá reuniones conjuntas con la CAACI y con el POC2 (Programmers of Colour Collective):" },
+        { "tipo": "p", "texto": "En el caso de la CAACI (Autoridades Audiovisuales y Cinematográficas de Iberoamérica), en el marco de sus reflexiones sobre la diversidad, y con el POC2 (Programmers of Colour Collective, compuesto por programadores de festivales que son POC [personas de color], mujeres y TSLGBTQ+), reflexionaremos sobre su objetivo de abogar por grupos de programación más inclusivos en todo el mundo." },
+        { "tipo": "h3", "texto": "En el marco de estos 9 Encuentros de Festivales LGTBIAQ+ latinos, también se llevarán a cabo dos actividades que los abrirán al público, la industria y la prensa presente en el 71 Festival de San Sebastián:" },
+        { "tipo": "p", "texto": "El lunes 25 de septiembre, los festivales se encontrarán en una recepción organizada con el Dioni’s pub. La celebración se abrirá al público a las 20:00h." },
+        { "tipo": "p", "texto": "El martes 26 de septiembre, los encuentros se clausurarán con un MEETING LGTBIAQ+ internacional, con la colaboración de Tabakalera y Kutxa Kultur, y destinado a la industria y prensa que quiera compartir un momento de intercambio diverso dentro del Festival de San Sebastián. Podremos brindar por la mejor película con Vichy Catalán y agua de Mondáriz." },
+        { "tipo": "h3", "texto": "Como todos los años, el Magazine de GEHITU de septiembre se dedica al cine y sirve a la vez de catalogo de las 11 candidatas al 24 Premio Sebastiane." },
+        { "tipo": "p", "texto": "Sus contenidos como la web y redes sociales del 24 Sebastiane sirven de reflexión sobre el cine LGTBIAQ+ y de altavoz para las 5 películas finalistas del 11 Premio Sebasitiane Latino, que busca la mejor producción LGTBIAQ+ Latam de 2023." },
+        { "tipo": "p", "texto": "A lo largo del 71 Festival de San Sebatián se contará en www.premiosebastiane.com y las redes sociales del 24 Sebastiane con la presencia de las 11 candidatas a recibir el 29 de Septiembre el trofeo de 2023." },
+        { "tipo": "p", "texto": "Es un placer poder anunciar que Transfariana, producción de Colombia y Francia, dirigida por Joris Lachaise ha sido la ganadora de 11 Edición de los Sebastiane Latino, cuyo galardón le será entregado el próximo noviembre en el LESGAICINEMAD con la colaboración de Hoteles Axel." },
+        { "tipo": "p", "texto": "El trabajo en común del 71 Festival de San Sebastián y los 24 Premios Sebastiane junto a la asistencia continuada a las salas de cine quiere ser un estímulo que nos de fuerzas a todes para contrarrestrar los intentos de hacer retroceder los caminos avanzados." }
+      ],
+      "en": [
+        { "tipo": "h3", "texto": "" },
+        { "tipo": "p", "texto": "" },
+        { "tipo": "p", "texto": "" }
+      ],
+      "eu": [
+        { "tipo": "h3", "texto": "" },
+        { "tipo": "p", "texto": "" },
+        { "tipo": "p", "texto": "" }
+      ]
+    },
+    "fecha": "2025-05-01",
+    "imagenes": [
+      "img/premio-sebastiane-2023-1.jpg",
+      "img/premio-sebastiane-2023-2.jpg",
+      "img/premio-sebastiane-2023-3.jpg",
+      "img/premio-sebastiane-2023-4.jpg",
+      "img/premio-sebastiane-2023-5.jpg",
+      "img/premio-sebastiane-2023-6.jpg",
+      "img/premio-sebastiane-2023-7.jpg",
+      "img/premio-sebastiane-2023-8.jpg",
+      "img/premio-sebastiane-2023-9.jpg",
+      "img/premio-sebastiane-2023-10.jpg",
+      "img/premio-sebastiane-2023-11.jpg",
+      "img/premio-sebastiane-2023-12.jpg",
+      "img/premio-sebastiane-2023-13.jpg",
+      "img/premio-sebastiane-2023-14.jpg",
+      "img/premio-sebastiane-2023-15.jpg",
+      "img/premio-sebastiane-2023-16.jpg",
+      "img/premio-sebastiane-2023-17.jpg",
+      "img/premio-sebastiane-2023-18.jpg",
+      "img/premio-sebastiane-2023-19.jpg"
+    ],
+    "video_url": "",
+    "video_local": "",
+    "fotografo": ""
+  },
+  {
+    "id": 16,
+    "titulo": {
+      "es": "Cinco películas competirán por el XI Premio Sebastiane Latino",
+      "eu": "",
+      "en": ""
+    },
+    "descripcion": {
+      "es": "El galardón que concede GEHITU reconocerá el título que mejor represente la diversidad sexual y de género",
+      "eu": "",
+      "en": ""
+    },
+    "contenido": {
+      "es": [
+        { "tipo": "h3", "texto": "" },
+        { "tipo": "p", "texto": "Un jurado compuesto por integrantes de GEHITU, asociación de gais, lesbianas, transexuales y bisexuales del País Vasco, ha elegido cinco películas latinoamericanas como finalistas del XI Premio Sebastiane Latino, que se entregará durante la 71ª edición del Festival de San Sebastián. Los títulos seleccionados son Almamula, Cross Dreamers, El filo de las tijeras, El silencio de los hombres y Transfariana. El galardón se concede al largometraje latinoamericano que mejor represente la defensa de las reivindicaciones y valores de la comunidad LGTBIQA+. En 2023 dos directoras y tres directores representan esta defensa a lo largo y ancho del continente con cuatro producciones procedentes de Argentina y una de Colombia." },
+        { "tipo": "p", "texto": "“Esta selección refleja la pluralidad y diversidad de las realidades LGTBIAQ+ y particularmente de las personas trans”, señala GEHITU. El colectivo destaca que esta representación demuestra que “la LGTBI-fobia viene de la mano de las masculinidades tóxicas y que una y otra se disuelven gracias a la formación, la información y el diálogo ciudadano”. Y añade que, con su persistencia, “pierde toda la sociedad y no sólo las personas LGTBIAQ+”." },
+        { "tipo": "p", "texto": "En 2022 el Sebastiane Latino recayó en la producción argentina Sublime, de Mariano Biasin, que cuenta la vida de un adolescente que descubre nuevos deseos hacia otro miembro de su cuadrilla con el que toca música en un grupo. Será la película que tradicionalmente se proyecta en diversas poblaciones de Guipúzcoa (Deba, Errenteria e Irun) durante el primer fin de semana del Festival de San Sebastián." },
+        { "tipo": "p", "texto": "Con la convocatoria de la undécima edición del galardón, cuyo ganador se dará a conocer en agosto, GEHITU continúa apoyando al cine latinoamericano LGTBIQA+ en el marco del Festival de San Sebastián. Asimismo, durante la 71ª edición, que se celebrará del 22 al 30 de septiembre, se entregará el Premio Sebastiane y se llevará a cabo el IX Encuentro de Festivales de Cine LGTBIQA+ Iberoamericanos (hipervínculo), que reunirá a más de 20 representantes de festivales de España y Latinoamérica." },
+         { "tipo": "h3", "texto": "Almamula" },
+        { "tipo": "p", "texto": "Argentina, Francia, Italia | 2023  95’" },
+        { "tipo": "p", "texto": "Juan Sebastian Torales" },
+        { "tipo": "p", "texto": "Tras un ataque homófobo, Nino y su familia se mudan a una casa rural en medio de un bosque encantado por Almamula, un monstruo que se lleva a quienes cometen pecados carnales. En un mundo de susurros, deseos no expresados y plegarias, la curiosidad y los impulsos de Nino salen a la superficie." },
+        { "tipo": "h3", "texto": "Cross Dreamers" },
+        { "tipo": "p", "texto": "Argentina, | 2022  78’" },
+        { "tipo": "p", "texto": "Soledad Velasco" },
+        { "tipo": "p", "texto": "Ornella, Mabel, Paula y Mirna son protagonistas de la noche crossdresser de Buenos Aires y Rosario. Cada una, sin embargo, vive de manera diferente esta identidad desdoblada: mientras algunas querrían no volver nunca a su vida de varón, otras se sienten bien en la dualidad. Pero el deseo se enfrenta a menudo con los límites de una sociedad menos libre de lo que se piensa, y a cada una le espera un recorrido muy personal." },
+         { "tipo": "h3", "texto": "El filo de las tijeras" },
+        { "tipo": "p", "texto": "Argentina | 2023 | 69’" },
+        { "tipo": "p", "texto": "David Marcial Valverdi" },
+        { "tipo": "p", "texto": "Como si estuviera llenando el perfil de una aplicación de citas, el director disecciona su historia y construye un registro de deseo. Mezclando animación y documental hace converger imágenes de su infancia en una peluquería del conurbano bonaerense, los códigos del cruising de finales de los 90 y la cotidianidad de la trieja de la que formó parte durante siete años." },
+        { "tipo": "h3", "texto": "El silencio de los hombres" },
+        { "tipo": "p", "texto": "Argentina | 2023 | 79’" },
+        { "tipo": "p", "texto": "Lucía Lubarsky" },
+        { "tipo": "p", "texto": "Un padre y un hijo atravesados por mandatos familiares deciden finalmente hablar. Bicho, Emma y Andrés ponen en crisis lo que se espera de ellos por ser varones. La directora parte de los hombres de su familia para llegar a desconocidos. Indaga en los miedos, complicidades, contradicciones y violencias que viven como varones. ¿Qué les toca afrontar?" },
+        { "tipo": "h3", "texto": "Transfariana" },
+        { "tipo": "p", "texto": "Colombia, Francia | 2023 | 150’" },
+        { "tipo": "p", "texto": "Joris Lachaise" },
+        { "tipo": "p", "texto": "El documental lleva un título híbrido que mezcla “trans” con “fariana”, el término que designa a las mujeres miembros de las FARC. El relato comienza en La Picota, un penal de alta seguridad, donde Jaison Murillo, comandante y portavoz de las FARC, se casó con Laura Katalina, una mujer transgénero y exprostituta, sentenciada a cadena perpetua. Tras la oposición inicial de los guerrilleros, esta “boda rebelde” propició un diálogo sin precedentes entre guerrilleros y miembros transexuales de las asociaciones de la zona de tolerancia en Bogotá, Santa Fé. Poco a poco, sus historias se entrelazan, y sus luchas convergen y componen un conmovedor fresco histórico en un contexto de transición política." }
+      ],
+      "en": [
+        { "tipo": "h3", "texto": "" },
+        { "tipo": "p", "texto": "" },
+        { "tipo": "p", "texto": "" }
+      ],
+      "eu": [
+        { "tipo": "h3", "texto": "" },
+        { "tipo": "p", "texto": "" },
+        { "tipo": "p", "texto": "" }
+      ]
+    },
+    "fecha": "2025-05-01",
+    "imagenes": [
+      "img/Sebastiane-latino-11-1.jpg",
+      "img/Sebastiane-latino-11-2.jpg",
+      "img/Sebastiane-latino-11-3.jpg",
+      "img/Sebastiane-latino-11-4.jpg",
+      "img/Sebastiane-latino-11-5.jpg",
+      "img/Sebastiane-latino-11-6.jpg"
+    ],
+    "video_url": "",
+    "video_local": "",
+    "fotografo": ""
+  },
+  {
+    "id": 17,
+    "titulo": {
+      "es": "Something you said last night, de Luis de Filippis, gana el 23 Sebastiane",
+      "eu": "",
+      "en": ""
+    },
+    "descripcion": {
+      "es": "La víspera de la clausura del 70 Festival de San Sebastián se entrega el 23 Sebastiane, el premio LGTBI del festival. Uno de los premios queer más antiguo en los Festivales de cine de categoría A.",
+      "eu": "",
+      "en": ""
+    },
+    "contenido": {
+      "es": [
+        
+        { "tipo": "p", "texto": "Desde hace 23 años lo entrega la asociación LGTBI local (GEHITU) y busca aquella producción cinematográfica presentada en el Festival de San Sebastián que mejor refleje las realidades, libertades y progresos sociales del colectivo LGTBI. En palabras de su director, Nicolás Subirán: “Los premios desarrollan su labor durante todo el año y esta actividad se refleja en tres ejes durante el Festivale donostiarra”" },
+        { "tipo": "p", "texto": "Entrega del galardón del 10 Sebastiane Latino que premia la película latinoamericana de 2022 que mejor representa la diversidad sexual y de género. Este año esa producción es SUBLIME de Mariano Biasin, y el equipo de la película recibió su galardón el miércoles 21 de septiembre durante su aplaudido pase de Horizontes Latinos." },
+        { "tipo": "p", "texto": "La organización del 8 Encuentro Festivales LGTBI Iberoamericanos en colaboración con Industria de San Sebastián. En 2022 Han participado 23 festivales, 4 telemáticamente. De ellos estaban los 13 españoles y 6 latinos de 5 países." },
+        { "tipo": "p", "texto": "Estos encuentros han servido para tejer nuevas redes y alianza. En este 2022 se ha reflexionado sobre Cine LGTBIQA+ en Latinoamérica y las estrategias para una industria inclusiva o sobre las masculinidades en el cine del continente. También se han analizado dos casos de éxito de películas que pasaron por LABS de estos festivales (Mi vacío y yo de Adrián Silvestre y La amiga de mi amiga de Zaida Carmona)." },
+        { "tipo": "p", "texto": "En palabras de Jose Luis Rebordinos (director de San Sebastian): “los premios Sebastane tienen todo el apoyo de San Sebastián con el deseo de que un día dejen de ser necesarios”" },
+        { "tipo": "h3", "texto": "Este año la selección del 23 Sebastiane contó con producciones en prácticamente todas las secciones del festival:" },
+        { "tipo": "p", "texto": "Dos de la Sección Oficial, una de New Directors, cuatro de Horizontes Latinos, tres de Made in Spain. Así mismo la película que inaugural de Perlak más una de las proyecciones del Velódromo de la 70 edición del Festival comparten la terna. Dos cortometrajes de Zabaltegi-Tabakalera y una de Nest estarán fuera de concurso." },
+        { "tipo": "p", "texto": "La película elegido en 2022 ha sido la canadiense Something You Said Last Night de Luis de Filippis y su elección a corrido a cargo de un jurado mixto. Por un lado, asociados de Gehitu y por otro dos programadores y productores internacionales, Joâo Federici y la presidenta Hebe Tabachnik. Entre otras cosas el jurado ha destacado: “que la película muestra con crudeza y cariño la cotidianidad de las agridulces relaciones familiares a través de la mirada íntima y transgénero de la dirección”." }
+      ],
+      "en": [
+        { "tipo": "h3", "texto": "" },
+        { "tipo": "p", "texto": "" },
+        { "tipo": "p", "texto": "" }
+      ],
+      "eu": [
+        { "tipo": "h3", "texto": "" },
+        { "tipo": "p", "texto": "" },
+        { "tipo": "p", "texto": "" }
+      ]
+    },
+    "fecha": "2025-05-01",
+    "imagenes": [
+      "img/something-you-said-last-night.jpg"
+    ],
+    "video_url": "",
+    "video_local": "",
+    "fotografo": ""
+  },
+  {
+    "id": 18,
+    "titulo": {
+      "es": "Entrevista con Esti Urrusola, directora de 20000 especias de abejas",
+      "eu": "",
+      "en": ""
+    },
+    "descripcion": {
+      "es": "",
+      "eu": "",
+      "en": ""
+    },
+    "contenido": {
+      "es": [
+        { "tipo": "h3", "texto": "" },
+        { "tipo": "p", "texto": "" },
+        { "tipo": "p", "texto": "" }
+      ],
+      "en": [
+        { "tipo": "h3", "texto": "" },
+        { "tipo": "p", "texto": "" },
+        { "tipo": "p", "texto": "" }
+      ],
+      "eu": [
+        { "tipo": "h3", "texto": "" },
+        { "tipo": "p", "texto": "" },
+        { "tipo": "p", "texto": "" }
+      ]
+    },
+    "fecha": "2025-05-01",
+    "imagenes": [
+      "img/entrevista-con-esti.jpg"
+    ],
+    "video_url": "https://www.youtube.com/watch?v=AGN5JOPDFvE",
+    "video_local": "",
+    "fotografo": ""
+  },
+  {
+    "id": 19,
+    "titulo": {
+      "es": "Juan Pablo González. Director de Dos Estaciones.",
+      "eu": "",
+      "en": ""
+    },
+    "descripcion": {
+      "es": "",
+      "eu": "",
+      "en": ""
+    },
+    "contenido": {
+      "es": [
+        { "tipo": "h3", "texto": "" },
+        { "tipo": "p", "texto": "" },
+        { "tipo": "p", "texto": "" }
+      ],
+      "en": [
+        { "tipo": "h3", "texto": "" },
+        { "tipo": "p", "texto": "" },
+        { "tipo": "p", "texto": "" }
+      ],
+      "eu": [
+        { "tipo": "h3", "texto": "" },
+        { "tipo": "p", "texto": "" },
+        { "tipo": "p", "texto": "" }
+      ]
+    },
+    "fecha": "2025-05-01",
+    "imagenes": [
+      "img/juan-pablo-gonzález.jpg"
+    ],
+    "video_url": "https://www.youtube.com/watch?v=TarwarAyasM",
+    "video_local": "",
+    "fotografo": ""
+  },
+  {
+    "id": 20,
+    "titulo": {
+      "es": "‘Sublime’, de Mariano Biasin, recibirá el 10 Premio Sebastiane Latino",
+      "eu": "",
+      "en": ""
+    },
+    "descripcion": {
+      "es": "El galardón concedido por la asociación Gehitu reconoce la película latina que mejor representa la diversidad sexual y de género.",
+      "eu": "",
+      "en": ""
+    },
+    "contenido": {
+      "es": [
+        { "tipo": "p", "texto": "La película Sublime, dirigida por el cineasta argentino Mariano Biasin, recibirá el décimo Premio Sebastiane Latino que otorga un jurado compuesto por integrantes de GEHITU, la Asociación de Gais, Lesbianas, Trans, Bisexuales e Intersexuales del País Vasco. La entrega del galardón, organizada por el colectivo para distinguir a la película latinoamericana de 2022 que mejor representa la diversidad sexual y de género, tendrá lugar durante la 70ª edición del Festival de San Sebastián." },
+        { "tipo": "p", "texto": "Sublime, producción argentina que participó en la sección Generation 14plus del Festival de Berlín, es el debut en el largometraje del director Mariano Biasin (Buenos Aires, 1980). El filme, que este año formará parte de la sección Horizontes Latinos del Festival de San Sebastián, está protagonizado por un chico de 16 años, Manuel, que es bajista en un grupo en el que también toca Felipe, un amigo de la infancia. Manuel sale con Azul, una chica con la que mantiene una intensa relación, pero un día sucede algo que le hace ver a Felipe con otros ojos." },
+        { "tipo": "h3", "texto": "El jurado de GEHITU ha decidido que:" },
+        { "tipo": "p", "texto": "• Por ser una película que refleja los cambios que la lucha del colectivo ha conseguido en la vida cotidiana." },
+        { "tipo": "p", "texto": "• Por ser una película donde romanticismo, adolescencia, música, miedo y deseo se dan la mano para contarnos una historia positiva, entrañable y visualmente atractiva que, además, no hubiese tenido el mismo final en épocas pasadas." },
+        { "tipo": "p", "texto": "• En tiempos en los que series como Élite están en boca de todxs, nos recuerda que crecer es tener miedo, afrontar la vida y atreverse." },
+        { "tipo": "p", "texto": "• Asimismo, que como el filme consigue hacer darnos cuenta, vía su naturalidad, de los avances del colectivo en los últimos diez años." },
+        { "tipo": "p", "texto": "Sublime, de Mariano Biasin, es merecedora del 10 Sebastiane Latino." }
+      ],
+      "en": [
+        { "tipo": "h3", "texto": "" },
+        { "tipo": "p", "texto": "" },
+        { "tipo": "p", "texto": "" }
+      ],
+      "eu": [
+        { "tipo": "h3", "texto": "" },
+        { "tipo": "p", "texto": "" },
+        { "tipo": "p", "texto": "" }
+      ]
+    },
+    "fecha": "2025-05-01",
+    "imagenes": [
+      "img/sublime-10-remio-ebastiane-latino1.jpg",
+      "img/sublime-10-remio-ebastiane-latino2.jpg",
+      "img/sublime-10-remio-ebastiane-latino3.jpg"
+    ],
+    "video_url": "",
+    "video_local": "",
+    "fotografo": "",
+    "anio_url": "noticias.html?anio=2022"
+  },
+   {
+    "id": 21,
+    "titulo": {
+      "es": "Cinco películas competirán por el X Premio Sebastiane Latino",
+      "eu": "",
+      "en": ""
+    },
+    "descripcion": {
+      "es": "El galardón que concede GEHITU reconocerá el título que mejor represente la diversidad sexual y de género",
+      "eu": "",
+      "en": ""
+    },
+    "contenido": {
+      "es": [
+        { "tipo": "h3", "texto": "" },
+        { "tipo": "p", "texto": "Un jurado compuesto por integrantes de GEHITU, asociación de gais, lesbianas, transexuales y bisexuales del País Vasco, ha elegido cinco películas latinoamericanas como finalistas del X Premio Sebastiane Latino, que se entregará durante la 70ª edición del Festival de San Sebastián. Los títulos seleccionados son Errante corazón (Ámame), Marte Um (Mars One), Petit mal, Sublime y Un varón." },
+        { "tipo": "p", "texto": "" },
+        { "tipo": "p", "texto": "" },
+        { "tipo": "p", "texto": "" },
+        { "tipo": "p", "texto": "" }
+      ],
+      "en": [
+        { "tipo": "h3", "texto": "" },
+        { "tipo": "p", "texto": "" },
+        { "tipo": "p", "texto": "" }
+      ],
+      "eu": [
+        { "tipo": "h3", "texto": "" },
+        { "tipo": "p", "texto": "" },
+        { "tipo": "p", "texto": "" }
+      ]
+    },
+    "fecha": "2025-05-01",
+    "imagenes": [
+      "",
+      "",
+      ""
+    ],
+    "video_url": "",
+    "video_local": "",
+    "fotografo": ""
+  },
+   {
+    "id": 22,
     "titulo": {
       "es": "",
       "eu": "",
@@ -403,12 +970,12 @@
         { "tipo": "p", "texto": "" }
       ],
       "en": [
-        { "tipo": "h1", "texto": "" },
+        { "tipo": "h3", "texto": "" },
         { "tipo": "p", "texto": "" },
         { "tipo": "p", "texto": "" }
       ],
       "eu": [
-        { "tipo": "h1", "texto": "" },
+        { "tipo": "h3", "texto": "" },
         { "tipo": "p", "texto": "" },
         { "tipo": "p", "texto": "" }
       ]
@@ -422,5 +989,45 @@
     "video_url": "",
     "video_local": "",
     "fotografo": ""
+  },
+   {
+    "id": 23,
+    "titulo": {
+      "es": "",
+      "eu": "",
+      "en": ""
+    },
+    "descripcion": {
+      "es": "",
+      "eu": "",
+      "en": ""
+    },
+    "contenido": {
+      "es": [
+        { "tipo": "h3", "texto": "" },
+        { "tipo": "p", "texto": "" },
+        { "tipo": "p", "texto": "" }
+      ],
+      "en": [
+        { "tipo": "h3", "texto": "" },
+        { "tipo": "p", "texto": "" },
+        { "tipo": "p", "texto": "" }
+      ],
+      "eu": [
+        { "tipo": "h3", "texto": "" },
+        { "tipo": "p", "texto": "" },
+        { "tipo": "p", "texto": "" }
+      ]
+    },
+    "fecha": "2025-05-01",
+    "imagenes": [
+      "",
+      "",
+      ""
+    ],
+    "video_url": "",
+    "video_local": "",
+    "fotografo": "",
+    "anio_url": "noticias.html?anio=2025"
   }
 ]

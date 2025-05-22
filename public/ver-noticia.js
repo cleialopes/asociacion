@@ -30,6 +30,10 @@ fetch("noticias.json")
         videoURL += "?modestbranding=1&rel=0";
       }
 
+      const anioLink = noticia.anio_url
+  ? `<a href="${noticia.anio_url}" class="enlace-anio">Ver noticias de ${new Date(noticia.fecha).getFullYear()}</a>`
+  : "";
+
       const galeriaHTML =
         noticia.video_local
           ? `<div class="video-contenedor">
@@ -54,6 +58,7 @@ fetch("noticias.json")
 
       contenedor.innerHTML = `
         <h1>${titulo}</h1>
+        ${anioLink}
         <p class="descripcion">${descripcion}</p>
         <div class="galeria-imagenes">${galeriaHTML}</div>
         ${fotografo ? `<p class="fotografo">Foto: ${fotografo}</p>` : ""}

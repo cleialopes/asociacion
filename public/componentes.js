@@ -2,20 +2,26 @@
 document.getElementById('header').innerHTML = `
   <header class="header">
     <div class="contenedor-header">
-  <div class="header-left">
-    <button id="menu-toggle" class="hamburguesa" aria-label="Abrir menú">
-      <i class="fa-solid fa-bars"></i>
-    </button>
-    <select id="lang-selector">
-      <option value="es">ES</option>
-      <option value="eu">EU</option>
-      <option value="en">EN</option>
-    </select>
-    <button id="modo-toggle" class="modo-toggle" aria-label="Cambiar modo">
-      <i class="fa-solid fa-moon"></i> <!-- Luna por defecto -->
-    </button>
-  </div>
-</div>
+      <div class="header-left">
+        <button id="menu-toggle" class="hamburguesa" aria-label="Abrir menú">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <select id="lang-selector">
+          <option value="es">ES</option>
+          <option value="eu">EU</option>
+          <option value="en">EN</option>
+        </select>
+        <button id="modo-toggle" class="modo-toggle" aria-label="Cambiar modo">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+
+      <!-- Enlace a Premio Sebastiane -->
+      <div class="header-center">
+        <a href="index.html" class="titulo-principal">Premio Sebastiane</a>
+      </div>
+    </div>
+
     <div id="menu-desplegable" class="menu-desplegable oculto">
       <nav class="menu-column">
         <a href="info.html" data-i18n="menu.info">Info</a>
@@ -28,6 +34,7 @@ document.getElementById('header').innerHTML = `
     </div>
   </header>
 `;
+
 
 
 document.getElementById('footer').innerHTML = `
@@ -113,13 +120,23 @@ fetch('patrocinadores.json')
   const menu = document.getElementById("menu-desplegable");
   const modoToggle = document.getElementById("modo-toggle");
 
+  // Mostrar/ocultar menú al hacer clic en el botón
   if (toggle && menu) {
     toggle.addEventListener("click", () => {
       menu.classList.toggle("oculto");
     });
+
+    // Cerrar el menú si se hace clic fuera
+    document.addEventListener("click", function(event) {
+      if (!menu.classList.contains("oculto") &&
+          !menu.contains(event.target) &&
+          !toggle.contains(event.target)) {
+        menu.classList.add("oculto");
+      }
+    });
   }
 
-  // Cargar modo desde localStorage si existe
+  // Cargar modo desde localStorage
   if (localStorage.getItem('modo') === 'oscuro') {
     document.body.classList.add('dark-mode');
     if (modoToggle) {
@@ -127,6 +144,7 @@ fetch('patrocinadores.json')
     }
   }
 
+  // Cambiar modo claro/oscuro
   if (modoToggle) {
     modoToggle.addEventListener("click", () => {
       document.body.classList.toggle("dark-mode");

@@ -150,4 +150,13 @@ app.get('/api/sebastiane', (req, res) => {
   }
 });
 
+app.get('/api/sebastiane_latino', (req, res) => {
+  try {
+    const data = fs.readFileSync('sebastiane_latino.json', 'utf-8');
+    res.json(JSON.parse(data));
+  } catch (e) {
+    res.status(500).json({});
+  }
+});
+
 app.listen(3000, () => console.log('Servidor en http://localhost:3000'));
