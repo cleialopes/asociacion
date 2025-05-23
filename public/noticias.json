@@ -42,7 +42,8 @@
       "img/gala-25-Sebastiane-reas-9.jpg",
       "img/gala-25-Sebastiane-reas-10.jpg"
     ],
-    "fotografo": "Jose Agustín Fontán"
+    "fotografo": "Jose Agustín Fontán",
+    "anio_url":""
   },
   {
     "id": 2,
@@ -87,7 +88,8 @@
       "img/Una-proyección-2.jpg",
       "img/Una-proyección-1.webp"
     ],
-    "fotografo": ""
+    "fotografo": "",
+     "anio_url":""
   },
   {
     "id": 3,
@@ -126,7 +128,8 @@
     ],
     "video_url": "https://www.youtube.com/embed/Vfm7xux7Ido",
     "video_local": "",
-    "fotografo": ""
+    "fotografo": "",
+     "anio_url":""
   },
   {
     "id": 4,
@@ -167,7 +170,8 @@
     ],
     "video_url": "",
     "video_local": "",
-    "fotografo": ""
+    "fotografo": "",
+     "anio_url":""
   },
   {
     "id": 5,
@@ -207,7 +211,8 @@
     ],
     "video_url": "",
     "video_local": "",
-    "fotografo": ""
+    "fotografo": "",
+     "anio_url":""
   },
   {
     "id": 6,
@@ -246,7 +251,8 @@
     ],
     "video_url": "",
     "video_local": "",
-    "fotografo": ""
+    "fotografo": "",
+     "anio_url":""
   },
   {
     "id": 7,
@@ -288,7 +294,8 @@
     ],
     "video_url": "",
     "video_local": "",
-    "fotografo": "@mambru"
+    "fotografo": "@mambru",
+     "anio_url":""
   },
   {
     "id": 8,
@@ -336,7 +343,8 @@
     ],
     "video_url": "",
     "video_local": "",
-    "fotografo": ""
+    "fotografo": "",
+     "anio_url":""
   },
   {
     "id": 9,
@@ -382,7 +390,8 @@
     ],
     "video_url": "",
     "video_local": "",
-    "fotografo": ""
+    "fotografo": "",
+     "anio_url":""
   },
   {
     "id": 10,
@@ -433,7 +442,8 @@
     ],
     "video_url": "",
     "video_local": "",
-    "fotografo": ""
+    "fotografo": "",
+     "anio_url":""
   },
   {
     "id": 11,
@@ -470,7 +480,8 @@
     ],
     "video_url": "https://www.youtube.com/watch?v=pNlsa17DjdI",
     "video_local": "",
-    "fotografo": ""
+    "fotografo": "",
+     "anio_url":""
   },
   {
     "id": 12,
@@ -510,7 +521,8 @@
     ],
     "video_url": "",
     "video_local": "",
-    "fotografo": ""
+    "fotografo": "",
+     "anio_url":""
   },
   {
     "id": 13,
@@ -530,19 +542,7 @@
         { "tipo": "p", "texto": "De entre las cinco finalistas del 11 Sebastiane Latino el jurado ha elegido a Transfariana de Joris Lachaise. Un estudiante de filosofía francés que ha acabado haciendo cine documental. En 2009 codirigió Comme un oiseau dans un aquarim con Thomas Rousillon. En 2011 dirigió Convention: Mur noir/Trous blancs una película sobre el 50 aniversario de la independencia de Malí que ganó el premio FIFAI y fue seleccionado para el États généraux du documentaire de Lussas, Francia." },
         { "tipo": "p", "texto": "En 2014, su la película Ce qu’il reste de la folie se realizó en un hospital psiquiátrico en Senegal y ganó el Gran Premio en el festival FID de Marsella antes de ser seleccionado para numerosos festivales alrededor el mundo. La película se estrenó en los cines franceses en junio de 2016." },
         { "tipo": "p", "texto": "Con Transfariana ha participado en Panorama de la Berlinale en 2023 y ahora ha conseguido alzarse con el premio a la mejor película LGTBIAQ+ del año en Latinoamérica." },
-        { "tipo": "p", "texto": "El galardón le será entregado a Joris Lachaise el 23 noviembre en el marco del LESGAICINEMAD, dentro de una colaboración entre el festival LGTBIAQ+ madrileño y los Premios Sebastiane." },
-        { "tipo": "h3", "texto": "Transfariana" },
-        { "tipo": "p", "texto": "Colombia | Francia" },
-        { "tipo": "p", "texto": "2022 | 150’" },
-        { "tipo": "p", "texto": "Laura Katalina Zamora, Jaison Murillo Pachón, Daniela “Lulú” Maldonado Salamanca, Máximo Castellanos Peña, Yurani Muñoz Ríos" },
-        { "tipo": "p", "texto": "El documental lleva un título híbrido que mezcla “trans” con “fariana”, el término que designa a las mujeres trans miembros de las FARC. El relato comienza en La Picota, un penal de alta seguridad, donde Jaison Murillo, comandante y portavoz de las FARC, se casó con Laura Katalina, una mujer transgénero y ex prostituta, sentenciada a cadena perpetua. Tras la oposición inicial de los guerrilleros, esta “boda rebelde” propició un diálogo sin precedentes entre guerrilleros y miembros transexuales de las asociaciones de la zona de tolerancia en Bogotá, Santa Fé. Poco a poco, sus historias se entrelazan, y sus luchas convergen y componen un conmovedor fresco histórico en un contexto de transición política." },
-        { "tipo": "p", "texto": "Dirección + guión | Joris Lachaise" },
-        { "tipo": "p", "texto": "Diseño sonoro + Asistente dirección | Julia Rostagni" },
-        { "tipo": "p", "texto": "Sonido | Bertrand Wolff" },
-        { "tipo": "p", "texto": "Edición de sonido | Gil Savoy" },
-        { "tipo": "p", "texto": "Edición | Jérémy Gravayat, Joris Lachaise" },
-        { "tipo": "p", "texto": "Postproducción | Matthieu Weil" },
-        { "tipo": "p", "texto": "Producción  | Raphaèle Dumas, Line Peyron, Guillermo Quintero" }
+        { "tipo": "p", "texto": "El galardón le será entregado a Joris Lachaise el 23 noviembre en el marco del LESGAICINEMAD, dentro de una colaboración entre el festival LGTBIAQ+ madrileño y los Premios Sebastiane." }
       ],
       "en": [
         { "tipo": "h3", "texto": "" },
@@ -564,7 +564,8 @@
     ],
     "video_url": "",
     "video_local": "",
-    "fotografo": ""
+    "fotografo": "",
+    "anio_url": "sebastiane_latino.html?anio=2022"
   },
   {
     "id": 14,
@@ -597,13 +598,12 @@
     },
     "fecha": "2025-05-01",
     "imagenes": [
-      "img/entrevista-christianpetzold.png",
-      "",
-      ""
+      "img/entrevista-christianpetzold.png"
     ],
     "video_url": "https://www.youtube.com/watch?v=XSR95f0nMw8",
     "video_local": "",
-    "fotografo": ""
+    "fotografo": "",
+     "anio_url":""
   },
   {
     "id": 15,
@@ -681,7 +681,8 @@
     ],
     "video_url": "",
     "video_local": "",
-    "fotografo": ""
+    "fotografo": "",
+     "anio_url":""
   },
   {
     "id": 16,
@@ -701,28 +702,8 @@
         { "tipo": "p", "texto": "Un jurado compuesto por integrantes de GEHITU, asociación de gais, lesbianas, transexuales y bisexuales del País Vasco, ha elegido cinco películas latinoamericanas como finalistas del XI Premio Sebastiane Latino, que se entregará durante la 71ª edición del Festival de San Sebastián. Los títulos seleccionados son Almamula, Cross Dreamers, El filo de las tijeras, El silencio de los hombres y Transfariana. El galardón se concede al largometraje latinoamericano que mejor represente la defensa de las reivindicaciones y valores de la comunidad LGTBIQA+. En 2023 dos directoras y tres directores representan esta defensa a lo largo y ancho del continente con cuatro producciones procedentes de Argentina y una de Colombia." },
         { "tipo": "p", "texto": "“Esta selección refleja la pluralidad y diversidad de las realidades LGTBIAQ+ y particularmente de las personas trans”, señala GEHITU. El colectivo destaca que esta representación demuestra que “la LGTBI-fobia viene de la mano de las masculinidades tóxicas y que una y otra se disuelven gracias a la formación, la información y el diálogo ciudadano”. Y añade que, con su persistencia, “pierde toda la sociedad y no sólo las personas LGTBIAQ+”." },
         { "tipo": "p", "texto": "En 2022 el Sebastiane Latino recayó en la producción argentina Sublime, de Mariano Biasin, que cuenta la vida de un adolescente que descubre nuevos deseos hacia otro miembro de su cuadrilla con el que toca música en un grupo. Será la película que tradicionalmente se proyecta en diversas poblaciones de Guipúzcoa (Deba, Errenteria e Irun) durante el primer fin de semana del Festival de San Sebastián." },
-        { "tipo": "p", "texto": "Con la convocatoria de la undécima edición del galardón, cuyo ganador se dará a conocer en agosto, GEHITU continúa apoyando al cine latinoamericano LGTBIQA+ en el marco del Festival de San Sebastián. Asimismo, durante la 71ª edición, que se celebrará del 22 al 30 de septiembre, se entregará el Premio Sebastiane y se llevará a cabo el IX Encuentro de Festivales de Cine LGTBIQA+ Iberoamericanos (hipervínculo), que reunirá a más de 20 representantes de festivales de España y Latinoamérica." },
-         { "tipo": "h3", "texto": "Almamula" },
-        { "tipo": "p", "texto": "Argentina, Francia, Italia | 2023  95’" },
-        { "tipo": "p", "texto": "Juan Sebastian Torales" },
-        { "tipo": "p", "texto": "Tras un ataque homófobo, Nino y su familia se mudan a una casa rural en medio de un bosque encantado por Almamula, un monstruo que se lleva a quienes cometen pecados carnales. En un mundo de susurros, deseos no expresados y plegarias, la curiosidad y los impulsos de Nino salen a la superficie." },
-        { "tipo": "h3", "texto": "Cross Dreamers" },
-        { "tipo": "p", "texto": "Argentina, | 2022  78’" },
-        { "tipo": "p", "texto": "Soledad Velasco" },
-        { "tipo": "p", "texto": "Ornella, Mabel, Paula y Mirna son protagonistas de la noche crossdresser de Buenos Aires y Rosario. Cada una, sin embargo, vive de manera diferente esta identidad desdoblada: mientras algunas querrían no volver nunca a su vida de varón, otras se sienten bien en la dualidad. Pero el deseo se enfrenta a menudo con los límites de una sociedad menos libre de lo que se piensa, y a cada una le espera un recorrido muy personal." },
-         { "tipo": "h3", "texto": "El filo de las tijeras" },
-        { "tipo": "p", "texto": "Argentina | 2023 | 69’" },
-        { "tipo": "p", "texto": "David Marcial Valverdi" },
-        { "tipo": "p", "texto": "Como si estuviera llenando el perfil de una aplicación de citas, el director disecciona su historia y construye un registro de deseo. Mezclando animación y documental hace converger imágenes de su infancia en una peluquería del conurbano bonaerense, los códigos del cruising de finales de los 90 y la cotidianidad de la trieja de la que formó parte durante siete años." },
-        { "tipo": "h3", "texto": "El silencio de los hombres" },
-        { "tipo": "p", "texto": "Argentina | 2023 | 79’" },
-        { "tipo": "p", "texto": "Lucía Lubarsky" },
-        { "tipo": "p", "texto": "Un padre y un hijo atravesados por mandatos familiares deciden finalmente hablar. Bicho, Emma y Andrés ponen en crisis lo que se espera de ellos por ser varones. La directora parte de los hombres de su familia para llegar a desconocidos. Indaga en los miedos, complicidades, contradicciones y violencias que viven como varones. ¿Qué les toca afrontar?" },
-        { "tipo": "h3", "texto": "Transfariana" },
-        { "tipo": "p", "texto": "Colombia, Francia | 2023 | 150’" },
-        { "tipo": "p", "texto": "Joris Lachaise" },
-        { "tipo": "p", "texto": "El documental lleva un título híbrido que mezcla “trans” con “fariana”, el término que designa a las mujeres miembros de las FARC. El relato comienza en La Picota, un penal de alta seguridad, donde Jaison Murillo, comandante y portavoz de las FARC, se casó con Laura Katalina, una mujer transgénero y exprostituta, sentenciada a cadena perpetua. Tras la oposición inicial de los guerrilleros, esta “boda rebelde” propició un diálogo sin precedentes entre guerrilleros y miembros transexuales de las asociaciones de la zona de tolerancia en Bogotá, Santa Fé. Poco a poco, sus historias se entrelazan, y sus luchas convergen y componen un conmovedor fresco histórico en un contexto de transición política." }
-      ],
+        { "tipo": "p", "texto": "Con la convocatoria de la undécima edición del galardón, cuyo ganador se dará a conocer en agosto, GEHITU continúa apoyando al cine latinoamericano LGTBIQA+ en el marco del Festival de San Sebastián. Asimismo, durante la 71ª edición, que se celebrará del 22 al 30 de septiembre, se entregará el Premio Sebastiane y se llevará a cabo el IX Encuentro de Festivales de Cine LGTBIQA+ Iberoamericanos (hipervínculo), que reunirá a más de 20 representantes de festivales de España y Latinoamérica." }
+           ],
       "en": [
         { "tipo": "h3", "texto": "" },
         { "tipo": "p", "texto": "" },
@@ -745,7 +726,8 @@
     ],
     "video_url": "",
     "video_local": "",
-    "fotografo": ""
+    "fotografo": "",
+    "anio_url": "sebastiane_latino.html?anio=2022"
   },
   {
     "id": 17,
@@ -788,7 +770,8 @@
     ],
     "video_url": "",
     "video_local": "",
-    "fotografo": ""
+    "fotografo": "",
+     "anio_url":""
   },
   {
     "id": 18,
@@ -862,7 +845,8 @@
     ],
     "video_url": "https://www.youtube.com/watch?v=TarwarAyasM",
     "video_local": "",
-    "fotografo": ""
+    "fotografo": "",
+     "anio_url":""
   },
   {
     "id": 20,
@@ -898,7 +882,7 @@
         { "tipo": "p", "texto": "" }
       ]
     },
-    "fecha": "2025-05-01",
+    "fecha": "2022",
     "imagenes": [
       "img/sublime-10-remio-ebastiane-latino1.jpg",
       "img/sublime-10-remio-ebastiane-latino2.jpg",
@@ -907,7 +891,7 @@
     "video_url": "",
     "video_local": "",
     "fotografo": "",
-    "anio_url": "noticias.html?anio=2022"
+    "anio_url": "sebastiane_latino.html?anio=2022"
   },
    {
     "id": 21,
@@ -925,10 +909,10 @@
       "es": [
         { "tipo": "h3", "texto": "" },
         { "tipo": "p", "texto": "Un jurado compuesto por integrantes de GEHITU, asociación de gais, lesbianas, transexuales y bisexuales del País Vasco, ha elegido cinco películas latinoamericanas como finalistas del X Premio Sebastiane Latino, que se entregará durante la 70ª edición del Festival de San Sebastián. Los títulos seleccionados son Errante corazón (Ámame), Marte Um (Mars One), Petit mal, Sublime y Un varón." },
-        { "tipo": "p", "texto": "" },
-        { "tipo": "p", "texto": "" },
-        { "tipo": "p", "texto": "" },
-        { "tipo": "p", "texto": "" }
+        { "tipo": "p", "texto": "El galardón se concede al largometraje latinoamericano que mejor represente la defensa de las reivindicaciones y valores de la Comunidad LGTBI a lo largo y ancho del continente." },
+        { "tipo": "p", "texto": "“Esta selección refleja toda la pluralidad, diversidad y contradicciones que se producen entre las personas LGTBI”, señalan desde GEHITU. El colectivo destaca que esta representación posibilita ver que “la LGTBI-fobia que padecen estas personas hay que cruzarla con otros factores a tener en cuenta como, la edad, la clase social, su situación legal y un largo etcétera; factores que pueden empeorar sus proyectos de vida”. Según añaden, con todo ello “se entorpece que las miradas limpias, no binarias y sin prejuicios de la gente más joven se conviertan en las de todas y todos.”" },
+        { "tipo": "p", "texto": "En 2021 el Sebastiane Latino recayó en la producción brasileña Medusa, de Anita Rocha da Silveira, que describe la realidad de la mujer y el colectivo LGTBI a través del cine fantástico. Una de las cinco películas finalistas, Nudo Mixteco, de Ángeles Cruz, será la película que tradicionalmente se proyecta en diversas poblaciones de Gipuzkoa (Deba, Lasarte, y Tolosa) durante el primer fin de semana del Festival de San Sebastián." },
+        { "tipo": "p", "texto": "Con la convocatoria de la décima edición del galardón, cuyo ganador se dará a conocer en agosto, GEHITU continúa apoyando al cine latinoamericano LGTBQ+ en el marco del Festival de San Sebastián. Asimismo, durante la 70ª edición, que se celebrará del 16 al 24 de septiembre, sus responsables también organizarán el VIII Encuentro de Festivales de Cine LGTBI Iberoamericanos, que reunirá a representantes de más de 25 certámenes de España y Latinoamérica." }
       ],
       "en": [
         { "tipo": "h3", "texto": "" },
@@ -941,93 +925,118 @@
         { "tipo": "p", "texto": "" }
       ]
     },
-    "fecha": "2025-05-01",
+    "fecha": "",
     "imagenes": [
-      "",
-      "",
-      ""
-    ],
-    "video_url": "",
-    "video_local": "",
-    "fotografo": ""
-  },
-   {
-    "id": 22,
-    "titulo": {
-      "es": "",
-      "eu": "",
-      "en": ""
-    },
-    "descripcion": {
-      "es": "",
-      "eu": "",
-      "en": ""
-    },
-    "contenido": {
-      "es": [
-        { "tipo": "h3", "texto": "" },
-        { "tipo": "p", "texto": "" },
-        { "tipo": "p", "texto": "" }
-      ],
-      "en": [
-        { "tipo": "h3", "texto": "" },
-        { "tipo": "p", "texto": "" },
-        { "tipo": "p", "texto": "" }
-      ],
-      "eu": [
-        { "tipo": "h3", "texto": "" },
-        { "tipo": "p", "texto": "" },
-        { "tipo": "p", "texto": "" }
-      ]
-    },
-    "fecha": "2025-05-01",
-    "imagenes": [
-      "",
-      "",
-      ""
-    ],
-    "video_url": "",
-    "video_local": "",
-    "fotografo": ""
-  },
-   {
-    "id": 23,
-    "titulo": {
-      "es": "",
-      "eu": "",
-      "en": ""
-    },
-    "descripcion": {
-      "es": "",
-      "eu": "",
-      "en": ""
-    },
-    "contenido": {
-      "es": [
-        { "tipo": "h3", "texto": "" },
-        { "tipo": "p", "texto": "" },
-        { "tipo": "p", "texto": "" }
-      ],
-      "en": [
-        { "tipo": "h3", "texto": "" },
-        { "tipo": "p", "texto": "" },
-        { "tipo": "p", "texto": "" }
-      ],
-      "eu": [
-        { "tipo": "h3", "texto": "" },
-        { "tipo": "p", "texto": "" },
-        { "tipo": "p", "texto": "" }
-      ]
-    },
-    "fecha": "2025-05-01",
-    "imagenes": [
-      "",
-      "",
-      ""
+      "img/candidatas-x-sebastiane-latino1.jpg",
+      "img/candidatas-x-sebastiane-latino2.jpg",
+      "img/candidatas-x-sebastiane-latino3.jpg",
+      "img/candidatas-x-sebastiane-latino4.jpg",
+      "img/candidatas-x-sebastiane-latino5.jpg",
+      "img/candidatas-x-sebastiane-latino6.jpg"
     ],
     "video_url": "",
     "video_local": "",
     "fotografo": "",
-    "anio_url": "noticias.html?anio=2025"
+     "anio_url":"sebastiane_latino.html?anio=2022"
+  },
+   {
+    "id": 22,
+    "titulo": {
+      "es": "Amigos de Dorothy: nosotros y nuestros musicales.",
+      "eu": "",
+      "en": ""
+    },
+    "descripcion": {
+      "es": "",
+      "eu": "",
+      "en": ""
+    },
+    "contenido": {
+      "es": [
+        
+        { "tipo": "p", "texto": "Hay muchas teorías sobre cómo devenimos gay, homosexuales, queer. Teorías biológicas, mitológicas, psicológicas, religiosas. En mi caso, fueron los musicales. Por precisar, estoy casi seguro de que todo fue por culpa de Jane Russell en el número “Ain’t There Anyone Here For Love”, de Los caballeros las prefieren rubias. Jane, “Dorothy”, espectacular en su ajustado vestido negro, se pregunta por qué ninguno de los gimnastas en calzones color carne que la rodean le hace caso. Por toda respuesta, los gimnastas posan, flexionan los músculos y le ofrecen los traseros. Incompatibilidad. Pero a partir de este momento en que reconocí algo en mí que surgía de lo que el número ofrecía vinieron otras muchas revelaciones: Gene Kelly en el ballet de El pirata, Liza en Cabaret, incluso Shirley MacLaine en Sweet Charity, la prostituta de buen corazón que añora, como todos nosotros, una vida mejor. Pensemos en Barbra Streisand bajando la escalera de Hello Dolly, en Julie Andrews cantando en la montaña, en Robert Preston cantando “La oscura dama sevillana” en ¿Victor o Victoria?, o en siempre que salía Judy Garland." },
+        { "tipo": "p", "texto": "Todas estas películas entraron en mi vida en mi temprana adolescencia y no se han ido. En esto no soy muy original. Considero una verdad incontestable que hay algo en la relación entre ciertos homosexuales y ciertos musicales. “Ciertos homosexuales” son sobre todo los que me preceden generacionalmente. Entré en la adolescencia en las postrimerías de la era del armario, cuando no había un discurso público mínimamente equilibrado que me definiera y tenía que encontrarme un espacio entre el prejuicio y la fantasía. Los musicales no me interpelaban directamente pero de alguna manera compartís sus premisas. “Ciertos musicales” son, sobre todo, los clásicos, la Metro en los cuarenta y los cincuenta, o, con matizaciones, las adaptaciones del musical de Broadway que se hicieron cada vez más frecuentes desde mediados de los cincuenta. El musical es uno de los espacios míticos de cierta cultura homosexual. Incluso en la era dorada sería exagerado decir que todos los homosexuales conectasen con el género, pero hubo un momento en que constituían un sector importante de su público, que confesar afición por el mismo te ponía bajo sospecha y, sin duda, contextos centrados en cultura gay tomaban elementos del musical como si se tratase de una lingua franca que a uno podía parecerle mejor o peor, pero que conocía. Tomaba formas muy distintas: las drags se apropiaban de canciones e imitaban estrellas, ciertos espectadores se unían al culto a Carmen Miranda, en los cines nos congregábamos cuando se reponía un musical, los utilizábamos como referentes y por supuesto participábamos en su elaboración. Recuerdo cierto humedal londinense en los años noventa en el que el trasiego de hombres en toalla se detenía cuando ponían en las pantallas una antología de números de la Metro. Además de Jane Russell, hubo otra Dorothy musical: Judy en El mago de Oz. Aunque menos que hace unos años, la frase “amigo de Dorothy” en inglés todavía es una manera de referirse a los homosexuales." },
+        { "tipo": "p", "texto": "La relación entre aquellos homosexuales y los musicales es objetivable, existió y la vivimos, y se daba de manera mucho más consistente que con otros sectores demográficos, pero resulta más escurridizo argumentarla. Puede que no haya una explicación clara y todo sea cuestión de conveniencia: ir a ver musicales, trabajar en musicales o hablar de musicales era un lubricante para la vida social. Algunos autores han estudiado la autoría homosexual de muchos homosexuales de la era dorada. Al parecer, la Unidad Freed de la Metro durante los años cuarenta se conocía como “la unidad mariquita”, y contaba con un alto porcentaje de homosexuales en vestuario, decorados, entre los músicos y algún director (Charles Walters, quizá Vincent Minnelli). Por supuesto no es que tuvieran una agenda de difundir una identidad política. Pero de algún modo sus gustos, sus actitudes, cierta manera de mirar el mundo, acababan encontrando plasmación en los números de El pirata o Ziegfeld Follies." },
+        { "tipo": "p", "texto": "Y esta estética encontraba respuesta en cierto público. Históricamente parece que la relación entre homosexuales y musicales cinematográficos se consolida en los años cuarenta. Antes el concepto de “identidad” no estaba suficientemente asentado. Esta relación dura, al menos, hasta los años setenta. En la primera generación de artistas del musical de Broadway Cole Porter parece ser el único homosexual. La generación que domina los años cincuenta incluye un porcentaje alto de creadores homosexuales o bisexuales: Jerome Robbins, Bernstein, Arthur Laurents, Michael Bennett, Stephen Sondheim, Kander y Ebb, Joel Grey,  o Jerry Herman, por ejemplo. El fin del armario hace que los textos preferidos en la cultura homosexual hagan referencia literalmente a la experiencia de los homosexuales: los subterfugios ya no eran necesarios. Que el musical fuera central a los homosexuales en la era del armario no es casual: el armario siempre implicaba un intento de escapar, creando mundos privados en los que las reglas fueran distintas. Y el musical es un género que hace exactamente esto. La mayor parte de los géneros cinematográficos de la era clásica reproducían las relaciones de las mitologías heterosexuales. Estaban dominados por una mirada masculina tradicional que reforzaba estereotipos dejando apenas rendijas para una subjetividad afirmativa que no fuera masculina. Una alternativa que convirtiese a la mujer en sujeto de trama y representación se encontraba en un número relativamente reducido de películas: melodramas, algunas comedias románticas y, por supuesto, los musicales. El musical proporcionaba múltiples oportunidades para poner a la mujer en el centro de la trama o del número y convertir a los hombres en objeto de la mirada. La diva, y los musicales centrados en la diva, de Ethel Merman a Barbra Streisand, de Ann Miller a Liza Minnelli, figuran entre los más exitosos entre el público homosexual. Es el placer de ver a una mujer fuerte haciendo lo que a ellos no se les permitía hacer en los años oscuros." },
+        { "tipo": "p", "texto": "Pero más allá de la mayor o menor intencionalidad de los creadores, o del hecho de que los musicales fueran socializados como un discurso que se salía de las ortodoxias, hay dos aspectos que los hacen especialmente efectivos. Es verdad que hay que saber verlos, que requieren una mirada oblicua, insumisa a lo que una película ofrece literalmente. Pero una vez se adopta esa mirada, los musicales nos reservan placeres sin límite. Primero, su potencial erótico al poner el foco en los cuerpos. En su desprecio frívolo por la mecánica de la trama, el musical se centra en la voz, el baile, el vestuario, el cuerpo en mayor medida que en otras películas. Sí, el género de aventuras trajo un homoerotismo con torsos sudorosos y exotismo, pero el foco está en otro sitio. El musical es un género que se dirige especialmente al cuerpo. El espectador avezado de musicales siente que esos movimientos, Gene Kelly, con unos mínimos pantalones cortos, la tela justa para ahuyentar al censor, en el palo mayor durante el ballet de El pirata, Los Sharks y los Jets expresando masculinidad en movimientos precisos, pueden ser suyos. El musical invita a la imitación, al movimiento abstracto. No solo los musicales nos invitan a romper con la realidad, sino que lo hacen proponiendo una suerte de utopía erótica en la que nuestros cuerpos son a la vez irreales e ideales y hacen cosas que la vida real nos impide." },
+        { "tipo": "p", "texto": "El segundo aspecto es el que, de manera a veces poco precisa, se ha denominado “camp”. El mundo que retrataban las películas clásicas se parecía literalmente al nuestro. Había, por ejemplo, paredes, las sillas servían para sentarse, las puertas servían para entrar o salir, la ropa era funcional. En un musical llega el momento, en que la versión del mundo es exagerada hasta resultar irreconocible. Nadie podría, o debería, vestirse como Carmen Miranda: los imposibles tocados de frutas, las faldas ajustadas, harían imposible la movilidad. O Lucille Ball en Ziegfeld Follies, inmersa en un mar de plumas color de rosa.  Y Liza se encaramaba en el respaldo de la silla en Cabaret, dándole un uso poco habitual en nuestro mundo. Las paredes o las restricciones de espacio cuentan poco en el musical: en Sonrisas y Lágrimas Julie va del convento a la casa en la que servirá como institutriz en el curso de una canción, en Un americano en París tenemos que aceptar que Gene Kelly va de cuadro en cuadro sin limitaciones de tiempo o espacio. Esta visión de la realidad sugiere un exceso: alguien nos está diciendo que las cosas no tienen por qué ser como son en nuestro mundo. Y para un adolescente queer, incluso para un hombre o una mujer maduros que sientan que no encajan, se trata de una promesa de lo más seductora.  El musical nos promete sacarnos de la sordidez de una realidad que habitamos en silencio, y nos propone una alternativa en la que podemos ser nosotros casi de verdad." },
+        { "tipo": "p", "texto": "¿Y hoy? Sin duda el musical sigue siendo un género “gay”, en cuanto a que la tradición existe. Pero los productores han fijado su atención en otros públicos (sobre todo las adolescentes) y los contenidos se han visto afectados. Sobre todo no existe la necesidad de crear un mundo alternativo. El musical sigue estando ahí si lo necesitamos, y quienes nos sentimos penetrados por sus colores, sus miradas, sus actitudes, seguiremos dependiendo de ellos. Pero se hará cada vez más difícil explicar que, en un tiempo no tan lejano, los musicales no fueron lujo. Fueron, casi, una necesidad." },
+        { "tipo": "h3", "texto": "Alberto Mira Nouselles " },
+        { "tipo": "p", "texto": "es un valenciano estudioso del cine y escritor. Actualmente es profesor en la Oxford Brookes University pero cuando puede comparte su amor por los musicales con charlas y cursos." },
+        { "tipo": "p", "texto": "Mira ha escrito numerosos artículos en revistas y dado innumerables conferencias, sobre todo sobre la homosexualidad y el cine y el teatro. Y su obra literaria de ficción y ensayos son uno de los referentes en español para entendernos como comunidad LGTBI." },
+        { "tipo": "p", "texto": "Acaba de publicar “Crónica de un devenir: tiempo, experiencia, generaciones”  en la editorial  Egales." }
+      ],
+      "en": [
+        { "tipo": "h3", "texto": "" },
+        { "tipo": "p", "texto": "" },
+        { "tipo": "p", "texto": "" }
+      ],
+      "eu": [
+        { "tipo": "h3", "texto": "" },
+        { "tipo": "p", "texto": "" },
+        { "tipo": "p", "texto": "" }
+      ]
+    },
+    "fecha": "2025-05-01",
+    "imagenes": [
+      "img/judy-garland-mejores-peliculas.jpg"
+    ],
+    "video_url": "",
+    "video_local": "",
+    "fotografo": "",
+     "anio_url":""
+  },
+   {
+    "id": 23,
+    "titulo": {
+      "es": "Donde les dejan. El gender en el cine y los géneros del cine.",
+      "eu": "",
+      "en": ""
+    },
+    "descripcion": {
+      "es": "La respuesta a dónde se meten las personas homosexuales y transexuales en el cine, no puede ser más sencilla: donde les dejan.",
+      "eu": "",
+      "en": ""
+    },
+    "contenido": {
+      "es": [
+        { "tipo": "p", "texto": "No ha pasado tanto tiempo desde aquella época (aún vigente en según qué lugares del mundo) en la que el amor entre iguales estaba prohibido incluso en la gran pantalla." },
+        { "tipo": "p", "texto": "Durante siglos la homosexualidad ha permanecido oculta por motivos culturales, sociales, religiosos… lo cual ha provocado que su representación cinematográfica haya sido casi inexistente y basada en estereotipos. La sociedad ha conspirado contra el colectivo LGTBIQ+ únicamente por amar de manera diferente; obligados a no poder expresarse, a aparentar quienes no son, a sobrevivir en un mundo hostil sometidos a la ridiculización, el castigo, la marginalidad, el encierro o el asesinato. La industria cinematográfica, tampoco se lo ha puesto fácil." },
+        { "tipo": "p", "texto": "Resulta que en el cine hay lugar para historias de ardillas parlanchinas con banda de rock; de superhéroes que en un arrebato se tornan verdes y ganan diez tallas en musculatura; de niños a los que la magia les corre por las venas; de jedis, avatares azul púrpura o tiburones que regresan cada verano más cabreados; pero, en cambio, parece no haber sitio para historias tan colmadas  de normalidad como aquellas que acompañan a las personas LGTBIQ+, porque para algunos, estos son los raros." },
+        { "tipo": "p", "texto": "Géneros cinematográficos hay muchos pero solo algunos parecen destinados a dicho colectivo, y eso que homosexuales siempre ha habido en la historia, también en la del cine; únicamente había que saber encontrarlos (eso sí, todos estereotipados). Para hablar con ejemplos recordaremos el mundo vampírico tan habitual del género de terror, el menos observado por los censores y por ello repleto de personajes lésbicos. Vampiras con veladas intenciones sexuales que acosan a jovencitas y con un mordisco se quitan el hambre y el calentón de una sola vez (La hija de Drácula, 1936. Lambert Hillyer). No nos olvidemos de los vaqueros afeminados, con más pluma que un pavo real, (Algie el minero, 1912. Alice Guy, Harry Schenck y Edward Warren) que se las apañan como pueden, pero encantados, en el mundo del lejano Oeste siempre junto a hombres con los que comparar sus revólveres; o lesbianísimas a lo macho alfa compartiendo mismo lugar (Johnny Guitar, 1954. Nicholas Ray). También hay sofisticados anglosajones que se desean en plan psicopatía sexual (La soga, 1948. Alfred Hitchcock); romanos que saben “diviertirse” juntos (Ben-Hur, 1959. William Wyler); bailarines atormentados (Diferente, 1961. Luis María Delgado), mujeres homosexuales imposibles de imaginar más feas y antipáticas. Desagradables por partida doble, que acosan en internados, cárceles (Sin remisión, 1950. John Cromwell) o durante misiones especiales (Desde Rusia con amor, 1963. Terence Young) con más sobeteo de piernas que en una de Paco Martínez Soria. Y otras que se pasean ligeras de ropa para satisfacer el placer de un espectador varón heterosexual a quien lo que menos le importa es el argumento (Las amantes vampiro, 1971. Roy Ward Baker)." },
+        { "tipo": "p", "texto": "La imagen negativa de las personas del colectivo LGTBIQ+ es una constante en el discurso cinematográfico a lo largo del siglo pasado; y sí, es evidente un cambio de perspectiva en la evolución temática de los discursos fílmicos pero no lo suficiente. Falta visibilidad, diversidad, normalidad. Aún son determinados clichés los únicos que ofrecen posibilidad a la presencia de personajes homosexuales o transexuales." },
+        { "tipo": "p", "texto": "Quizás lo más importante no sea las diferencias que pueda haber entre los distintos géneros, sino los estereotipos que asignan a cada uno un lugar en la sociedad; y es que la identidad de género como construcción impone ciertas normas. Todavía uno de los recursos más repetidos es “la pluma”. Tan “locas” ellos, y ellas tan “agresivas”. La pluma que no falte, esa que encorseta y etiqueta por los siglos de los siglos. En la vida como en el cine, el amaneramiento varonil en exceso parece ser casi la única representación homosexual masculina posible. Algo similar a lo que sucede con las camisas de cuadros en las mujeres. El rollo leñador es el fondo de armario imprescindible de toda lesbiana o al menos es lo que aún hace creer el imaginario. Y es que “la pluma” aunque puede usarse como un modelo de autoafirmación, no da voz a la pluralidad del mundo tan diverso en el que vivimos." },
+        { "tipo": "p", "texto": "Pesan los encasillamientos y pesa la represión histórica no solo en cuanto a la temática LGTBIQ+ sino a la orientación sexual de los artistas. A lo largo de los años se han sucedido diferentes intentos de hacerles desaparecer y en cuanto al cine se refiere, la salida del armario de sus estrellas, provoca el encasillamiento en personajes homosexuales, como si todo lo anterior no valiese o como si un heterosexual fuera el único capaz de interpretar a un gai, a una lesbiana e incluso a una persona transexual, mejor que ellos mismos." },
+        { "tipo": "p", "texto": "En una sociedad marcada por las desigualdades del patriarcado, nadie dijo que ser mujer fuera fácil; menos aún para las lesbianas, bisexuales y transexuales. Invisibles es el adjetivo que mejor las define aún en nuestros días, en la vida real y en el cine. La conciencia feminista pide a gritos que se revisen los discursos fílmicos. La mayoría de las historias cinematográficas están escritas y dirigidas por hombres, y se nota; por eso a las mujeres lesbianas les cuesta reconocerse en la mayoría de los personajes. Es difícil encontrar una ficción donde la mujer sea sujeto y no objeto, o que narre con normalidad las relaciones sáficas." },
+        { "tipo": "p", "texto": "Todavía el varón cishetero es el rey del dicurso, quien salva a la damisela en apuros que automáticamente se convierte en su trofeo. Ellos pueden permitirse las canas y las arrugas, los comportamientos agresivos y celosos… Ellas, en cambio, tienen que ser eternamente jóvenes, hermosas y dóciles; como si nunca cumplieran años ni aprendieran de la experiencia. Dominantes y dominadas. Hombres y mujeres; negando toda posibilidad al género fluido y al no binario." },
+        { "tipo": "p", "texto": "Pero esto de la homosexualidad es tan antiguo como la humanidad; por tanto, resulta inevitable que el cine ofrezca tales narrativas. Y aún así, las relaciones homosexuales en la gran pantalla suponen aún un tema tabú. Aunque las sociedad actual está más acostumbrada, la industria cinematográfica demuestra su desprecio y miedo a las diferencias. La falta de interés por los contenidos de temática LGTBIQ+ sigue siendo habitual, especialmente en las sociedades más conservadoras y en el cine comercial y familiar." },
+        { "tipo": "p", "texto": "Y así es como el colectivo LGTBIQ+ se ve obligado a consumir un cine sin referentes, al menos positivos; con mensajes a veces subliminales y otros descarados de que ser homosexual es un chiste; sin historias donde reconocerse, sin personajes con los que identificarse, llorar, reír, soñar e incluso fantasear; aquellos que ayuden a entenderse uno mismo y a los demás. Porque aunque el cine debiera ser un reflejo de nuestra realidad, en la actualidad lo es mayoritariamente en cuanto a ese aspecto LGTBI-fóbico social, el que obliga a esconderse también en la ficción a los que aman de manera no normativa." },
+        { "tipo": "p", "texto": "La mayoría de las veces es tan escasa la presencia de los homosexuales en la gran pantalla, que cualquier hallazgo de contenido queer, por pequeño e insignificante que sea, es motivo de celebración. Espectadores olvidados y ansiosos, a los que les vale cualquier simple gesto para pensar que en esa historia hay algo más. Y esta es la razón por la que son tan importantes los Festivales de cine LGTBIQ+, porque llegará un día en que no importe la sexualidad o género de sus protagonitas, pero ese día aún no es hoy." },
+        { "tipo": "p", "texto": "Las minorías sociales, entre ellas la comunidad LGTBIQ+, reivindican su sitio también en el cine; pero para la construcción de una sociedad justa e inclusiva es necesario que la homosexualidad deje ser pecado también en la taquilla. Que el cine no aborde la cuestión LGTBIQ+ no hará que haya menos homosexuales, sino más reprimidos e ignorantes y, por tanto, más acosados y acosadores." },
+        { "tipo": "p", "texto": "Imposible es de obviar el carácter del cine como generador de ideas, conductas, conciencias o modas a imitar; porque es capaz de educar incluso indirectamente y por eso mismo, los más pequeños necesitan saber de historias con dos madres, con chicos que se enamoran de su mejor amigo, con niñas que siempre lo fueron independientemente de lo que tengan entre las piernas. Es una necesidad que urge más aún en tiempos en que la homofobia y transfobia parecen querer recuperar el auge de siglos pasados. La visibilidad es el mejor arma de empoderamiento. Es respeto propio." },
+        { "tipo": "p", "texto": "Se equivoca quien piense que estas historias interesan únicamente a unos pocos. No dejemos de apostar por una cultura, en cualquiera de sus manifestaciones, diversa, plural e integradora porque el ocio así entendido, tiene el poder de hacer mejores a las personas." },
+        { "tipo": "h3", "texto": "Rosi Legido" },
+        { "tipo": "p", "texto": "Interesada en el arte en general y el cine en particular, se doctoró en Ciencias de la Información con la tesis Homosexualidad latente en el cine. Ha ejercido como guionista, locutora, fotógrafa, periodista de contenidos LGTBI, monologuista, redactora en la Agencia EFE y docente." },
+        { "tipo": "p", "texto": "Sueña mucho y duerme poco; y en ocasiones oye voces, pero son las de sus animales, su gran pasión. Ecofeminista, vegana y activista en ONG, denuncia las injusticias mediante cortometrajes, obras de guiñol e ilustraciones" }
+      ],
+      "en": [
+        { "tipo": "h3", "texto": "" },
+        { "tipo": "p", "texto": "" },
+        { "tipo": "p", "texto": "" }
+      ],
+      "eu": [
+        { "tipo": "h3", "texto": "" },
+        { "tipo": "p", "texto": "" },
+        { "tipo": "p", "texto": "" }
+      ]
+    },
+    "fecha": "2025-05-01",
+    "imagenes": [
+      "img/zinema.jpg"
+    ],
+    "video_url": "",
+    "video_local": "",
+    "fotografo": "",
+    "anio_url": ""
   }
 ]

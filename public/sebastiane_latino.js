@@ -97,6 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
                   <img src="${img}" alt="${titulo}">
                   <div>
                     <h4>${titulo}</h4>
+                    <p><em>${pelicula.año}</em></p>
                     <p><strong>${director}</strong> – ${pais}</p>
                     <p>${descripcion}</p>
                   </div>
@@ -127,6 +128,17 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("scroll-anios").scrollLeft += 200;
   });
 
-  mostrarInfo(2024);
-  anioActivo = 2024;
+ const params = new URLSearchParams(window.location.search);
+const anioURL = parseInt(params.get("anio")) || 2024;
+
+mostrarInfo(anioURL);
+anioActivo = anioURL;
+
+// Activar botón del año correspondiente (opcional, solo para destacar el botón activo)
+const btns = document.querySelectorAll("#scroll-anios button");
+btns.forEach(btn => {
+  if (parseInt(btn.textContent) === anioURL) {
+    btn.classList.add("active");
+  }
+});
 });

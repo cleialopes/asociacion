@@ -98,6 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <div>\n                    
                 <h4>${titulo}</h4>\n                    
                 <p><strong>${director}</strong> – ${pais}</p>\n                    
+                <p><em>${pelicula.año}</em></p>
                 <p>${descripcion}</p>\n                  
                 </div>\n                
                 </div>

@@ -1,12 +1,173 @@
 {
    "2025": {
-    "Ganadora": [],
-    "New Directors": [],
-    "Horizontes Latinos": [],
-    "Zabaltegi": [],
-    "Perlak": [],
-    "Made in Spain": [],
-    "Fuera de concurso": []
+    "Ganadora": [
+      {
+        "titulo": {
+          "es": "",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"",
+          "en":"",
+          "eu":""
+        },
+        "año": "",
+        "director": {
+          "es": ""
+        },
+        "imagen": "",
+        "descripcion": {
+          "es": "",
+          "en": "",
+          "eu": ""
+        }
+      }
+    ],
+    "New Directors": [
+      {
+        "titulo": {
+          "es": "",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"",
+          "en":"",
+          "eu":""
+        },
+        "año": "",
+        "director": {
+          "es": ""
+        },
+        "imagen": "",
+        "descripcion": {
+          "es": "",
+          "en": "",
+          "eu": ""
+        }
+      }
+    ],
+    "Horizontes Latinos": [
+      {
+        "titulo": {
+          "es": "",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"",
+          "en":"",
+          "eu":""
+        },
+        "año": "",
+        "director": {
+          "es": ""
+        },
+        "imagen": "",
+        "descripcion": {
+          "es": "",
+          "en": "",
+          "eu": ""
+        }
+      }
+    ],
+    "Zabaltegi": [
+      {
+        "titulo": {
+          "es": "",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"",
+          "en":"",
+          "eu":""
+        },
+        "año": "",
+        "director": {
+          "es": ""
+        },
+        "imagen": "",
+        "descripcion": {
+          "es": "",
+          "en": "",
+          "eu": ""
+        }
+      }
+    ],
+    "Perlak": [
+      {
+        "titulo": {
+          "es": "",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"",
+          "en":"",
+          "eu":""
+        },
+        "año": "",
+        "director": {
+          "es": ""
+        },
+        "imagen": "",
+        "descripcion": {
+          "es": "",
+          "en": "",
+          "eu": ""
+        }
+      }
+    ],
+    "Made in Spain": [
+      {
+        "titulo": {
+          "es": "",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"",
+          "en":"",
+          "eu":""
+        },
+        "año": "",
+        "director": {
+          "es": ""
+        },
+        "imagen": "",
+        "descripcion": {
+          "es": "",
+          "en": "",
+          "eu": ""
+        }
+      }
+    ],
+    "Fuera de concurso": [
+      {
+        "titulo": {
+          "es": "",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"",
+          "en":"",
+          "eu":""
+        },
+        "año": "",
+        "director": {
+          "es": ""
+        },
+        "imagen": "",
+        "descripcion": {
+          "es": "",
+          "en": "",
+          "eu": ""
+        }
+      }
+    ]
   },
   "2024": {
     "Ganadora": [
@@ -21,6 +182,7 @@
           "en":"Argentina-Germany-Switzerland",
           "eu":"Argentina-Alemania-Suitza"
         },
+         "año": "2024 | 82’",
         "director": {
           "es": "Mariano Cattaneo"
         },
@@ -169,7 +331,7 @@
     "Ganadora": [
       {
         "titulo": {
-          "es": "",
+          "es": "20000 especies de abejas",
           "en": "",
           "eu": ""
         },       
@@ -178,8 +340,9 @@
           "en":"",
           "eu":""
         },
+        "año": "",
         "director": {
-          "es": ""
+          "es": "Estibaliz Urresola"
         },
         "imagen": "",
         "descripcion": {
@@ -189,393 +352,198 @@
         }
       }
     ],
-    "New Directors": [
-      {
-        "titulo": "",
-        "director": "",
-        "pais": "",
-        "año": "",
-        "imagen": "",
-        "descripcion": ""
-      }
-    ],
-    "Horizontes Latinos": [
-      {
-        "titulo": "",
-        "director": "",
-        "pais": "",
-        "año": "",
-        "imagen": "",
-        "descripcion": ""
-      }
-    ],
-    "Zabaltegi": [
-      {
-        "titulo": "",
-        "director": "",
-        "pais": "",
-        "año": "",
-        "imagen": "",
-        "descripcion": ""
-      }
-    ],
-    "Perlak": [
-      {
-        "titulo": "",
-        "director": "",
-        "pais": "",
-        "año": "",
-        "imagen": "",
-        "descripcion": ""
-      }
-    ],
-    "Made in Spain": [
-      {
-        "titulo": "",
-        "director": "",
-        "pais": "",
-        "año": "",
-        "imagen": "",
-        "descripcion": ""
-      }
-    ],
-    "Fuera de concurso": [
-      {
-        "titulo": "",
-        "director": "",
-        "pais": "",
-        "año": "",
-        "imagen": "",
-        "descripcion": ""
-      }
-    ]
+    "New Directors": [],
+    "Horizontes Latinos": [],
+    "Zabaltegi": [],
+    "Perlak": [],
+    "Made in Spain": [],
+    "Fuera de concurso": []
   },
   "2022": {
     "Ganadora": [
       {
-        "titulo": "",
-        "director": "",
-        "pais": "",
+        "titulo": {
+          "es": "Something you said last night",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"",
+          "en":"",
+          "eu":""
+        },
         "año": "",
+        "director": {
+          "es": "Luis de Filippis"
+        },
         "imagen": "",
-        "descripcion": ""
+        "descripcion": {
+          "es": "",
+          "en": "",
+          "eu": ""
+        }
       }
     ],
-    "New Directors": [
-      {
-        "titulo": "",
-        "director": "",
-        "pais": "",
-        "año": "",
-        "imagen": "",
-        "descripcion": ""
-      }
-    ],
-    "Horizontes Latinos": [
-      {
-        "titulo": "",
-        "director": "",
-        "pais": "",
-        "año": "",
-        "imagen": "",
-        "descripcion": ""
-      }
-    ],
-    "Zabaltegi": [
-      {
-        "titulo": "",
-        "director": "",
-        "pais": "",
-        "año": "",
-        "imagen": "",
-        "descripcion": ""
-      }
-    ],
-    "Perlak": [
-      {
-        "titulo": "",
-        "director": "",
-        "pais": "",
-        "año": "",
-        "imagen": "",
-        "descripcion": ""
-      }
-    ],
-    "Made in Spain": [
-      {
-        "titulo": "",
-        "director": "",
-        "pais": "",
-        "año": "",
-        "imagen": "",
-        "descripcion": ""
-      }
-    ],
-    "Fuera de concurso": [
-      {
-        "titulo": "",
-        "director": "",
-        "pais": "",
-        "año": "",
-        "imagen": "",
-        "descripcion": ""
-      }
-    ]
+    "New Directors": [],
+    "Horizontes Latinos": [],
+    "Zabaltegi": [],
+    "Perlak": [],
+    "Made in Spain": [],
+    "Fuera de concurso": []
   },
   "2021": {
     "Ganadora": [
       {
-        "titulo": "",
-        "director": "",
-        "pais": "",
+        "titulo": {
+          "es": "The Power of the Dog",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"",
+          "en":"",
+          "eu":""
+        },
         "año": "",
+        "director": {
+          "es": "Jane Campion"
+        },
         "imagen": "",
-        "descripcion": ""
+        "descripcion": {
+          "es": "",
+          "en": "",
+          "eu": ""
+        }
       }
     ],
-    "New Directors": [
-      {
-        "titulo": "",
-        "director": "",
-        "pais": "",
-        "año": "",
-        "imagen": "",
-        "descripcion": ""
-      }
-    ],
-    "Horizontes Latinos": [
-      {
-        "titulo": "",
-        "director": "",
-        "pais": "",
-        "año": "",
-        "imagen": "",
-        "descripcion": ""
-      }
-    ],
-    "Zabaltegi": [
-      {
-        "titulo": "",
-        "director": "",
-        "pais": "",
-        "año": "",
-        "imagen": "",
-        "descripcion": ""
-      }
-    ],
-    "Perlak": [
-      {
-        "titulo": "",
-        "director": "",
-        "pais": "",
-        "año": "",
-        "imagen": "",
-        "descripcion": ""
-      }
-    ],
-    "Made in Spain": [
-      {
-        "titulo": "",
-        "director": "",
-        "pais": "",
-        "año": "",
-        "imagen": "",
-        "descripcion": ""
-      }
-    ],
-    "Fuera de concurso": [
-      {
-        "titulo": "",
-        "director": "",
-        "pais": "",
-        "año": "",
-        "imagen": "",
-        "descripcion": ""
-      }
-    ]
+    "New Directors": [],
+    "Horizontes Latinos": [],
+    "Zabaltegi": [],
+    "Perlak": [],
+    "Made in Spain": [],
+    "Fuera de concurso": []
   },
   "2020": {
     "Ganadora": [
       {
-        "titulo": "",
-        "director": "",
-        "pais": "",
+        "titulo": {
+          "es": "Falling",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"",
+          "en":"",
+          "eu":""
+        },
         "año": "",
+        "director": {
+          "es": "Viggo Mortensen"
+        },
         "imagen": "",
-        "descripcion": ""
+        "descripcion": {
+          "es": "",
+          "en": "",
+          "eu": ""
+        }
       }
     ],
-    "New Directors": [
-      {
-        "titulo": "",
-        "director": "",
-        "pais": "",
-        "año": "",
-        "imagen": "",
-        "descripcion": ""
-      }
-    ],
-    "Horizontes Latinos": [
-      {
-        "titulo": "",
-        "director": "",
-        "pais": "",
-        "año": "",
-        "imagen": "",
-        "descripcion": ""
-      }
-    ],
-    "Zabaltegi": [
-      {
-        "titulo": "",
-        "director": "",
-        "pais": "",
-        "año": "",
-        "imagen": "",
-        "descripcion": ""
-      }
-    ],
-    "Perlak": [
-      {
-        "titulo": "",
-        "director": "",
-        "pais": "",
-        "año": "",
-        "imagen": "",
-        "descripcion": ""
-      }
-    ],
-    "Made in Spain": [
-      {
-        "titulo": "",
-        "director": "",
-        "pais": "",
-        "año": "",
-        "imagen": "",
-        "descripcion": ""
-      }
-    ],
-    "Fuera de concurso": [
-      {
-        "titulo": "",
-        "director": "",
-        "pais": "",
-        "año": "",
-        "imagen": "",
-        "descripcion": ""
-      }
-    ]
+    "New Directors": [],
+    "Horizontes Latinos": [],
+    "Zabaltegi": [],
+    "Perlak": [],
+    "Made in Spain": [],
+    "Fuera de concurso": []
   },
   "2019": {
     "Ganadora": [
       {
-        "titulo": "",
-        "director": "",
-        "pais": "",
+        "titulo": {
+          "es": "Monos",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"",
+          "en":"",
+          "eu":""
+        },
         "año": "",
+        "director": {
+          "es": "Alejandro Landes"
+        },
         "imagen": "",
-        "descripcion": ""
+        "descripcion": {
+          "es": "",
+          "en": "",
+          "eu": ""
+        }
       }
     ],
-    "New Directors": [
-      {
-        "titulo": "",
-        "director": "",
-        "pais": "",
-        "año": "",
-        "imagen": "",
-        "descripcion": ""
-      }
-    ],
-    "Horizontes Latinos": [
-      {
-        "titulo": "",
-        "director": "",
-        "pais": "",
-        "año": "",
-        "imagen": "",
-        "descripcion": ""
-      }
-    ],
-    "Zabaltegi": [
-      {
-        "titulo": "",
-        "director": "",
-        "pais": "",
-        "año": "",
-        "imagen": "",
-        "descripcion": ""
-      }
-    ],
-    "Perlak": [
-      {
-        "titulo": "",
-        "director": "",
-        "pais": "",
-        "año": "",
-        "imagen": "",
-        "descripcion": ""
-      }
-    ],
-    "Made in Spain": [
-      {
-        "titulo": "",
-        "director": "",
-        "pais": "",
-        "año": "",
-        "imagen": "",
-        "descripcion": ""
-      }
-    ],
-    "Fuera de concurso": [
-      {
-        "titulo": "",
-        "director": "",
-        "pais": "",
-        "año": "",
-        "imagen": "",
-        "descripcion": ""
-      }
-    ]
+    "New Directors": [],
+    "Horizontes Latinos": [],
+    "Zabaltegi": [],
+    "Perlak": [],
+    "Made in Spain": [],
+    "Fuera de concurso": []
   },
   "2018": {
     "Ganadora": [
       {
-        "titulo": "",
-        "director": "",
-        "pais": "",
+        "titulo": {
+          "es": "Girl",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"",
+          "en":"",
+          "eu":""
+        },
         "año": "",
+        "director": {
+          "es": "Lukas Dhontna Mladenovic"
+        },
         "imagen": "",
-        "descripcion": ""
+        "descripcion": {
+          "es": "",
+          "en": "",
+          "eu": ""
+        }
       }
     ],
-    "New Directors": [
-      {
-        "titulo": "",
-        "director": "",
-        "pais": "",
-        "año": "",
-        "imagen": "",
-        "descripcion": ""
-      }
-    ],
-    "Horizontes Latinos": [
-      {
-        "titulo": "",
-        "director": "",
-        "pais": "",
-        "año": "",
-        "imagen": "",
-        "descripcion": ""
-      }
-    ],
+    "New Directors": [],
+    "Horizontes Latinos": [],
     "Zabaltegi": [],
     "Perlak": [],
     "Made in Spain": [],
     "Fuera de concurso": []
   },
   "2017": {
-    "Ganadora": [],
+    "Ganadora": [
+      {
+        "titulo": {
+          "es": "120 battements par minute",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"",
+          "en":"",
+          "eu":""
+        },
+        "año": "",
+        "director": {
+          "es": "Robin Campillo Mención especial del jurado: Soldatii Poveste din Ferentari | Ivana Mladenovic "
+        },
+        "imagen": "",
+        "descripcion": {
+          "es": "",
+          "en": "",
+          "eu": ""
+        }
+      }
+    ],
     "New Directors": [],
     "Horizontes Latinos": [],
     "Zabaltegi": [],
@@ -584,7 +552,30 @@
     "Fuera de concurso": []
   },
   "2016": {
-    "Ganadora": [],
+    "Ganadora": [
+      {
+        "titulo": {
+          "es": "Bar Bahar",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"",
+          "en":"",
+          "eu":""
+        },
+        "año": "",
+        "director": {
+          "es": "Maysaloun Hamoud"
+        },
+        "imagen": "",
+        "descripcion": {
+          "es": "",
+          "en": "",
+          "eu": ""
+        }
+      }
+    ],
     "New Directors": [],
     "Horizontes Latinos": [],
     "Zabaltegi": [],
@@ -593,7 +584,30 @@
     "Fuera de concurso": []
   },
   "2015": {
-    "Ganadora": [],
+    "Ganadora": [
+      {
+        "titulo": {
+          "es": "Freeheld",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"",
+          "en":"",
+          "eu":""
+        },
+        "año": "",
+        "director": {
+          "es": "Peter Sollet"
+        },
+        "imagen": "",
+        "descripcion": {
+          "es": "",
+          "en": "",
+          "eu": ""
+        }
+      }
+    ],
     "New Directors": [],
     "Horizontes Latinos": [],
     "Zabaltegi": [],
@@ -602,7 +616,30 @@
     "Fuera de concurso": []
   },
   "2014": {
-    "Ganadora": [],
+    "Ganadora": [
+      {
+        "titulo": {
+          "es": "Une nouvelle amie",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"",
+          "en":"",
+          "eu":""
+        },
+        "año": "",
+        "director": {
+          "es": "François Ozon"
+        },
+        "imagen": "",
+        "descripcion": {
+          "es": "",
+          "en": "",
+          "eu": ""
+        }
+      }
+    ],
     "New Directors": [],
     "Horizontes Latinos": [],
     "Zabaltegi": [],
@@ -611,7 +648,30 @@
     "Fuera de concurso": []
   },
   "2013": {
-    "Ganadora": [],
+    "Ganadora": [
+      {
+        "titulo": {
+          "es": "Dallas Buyers Club",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"",
+          "en":"",
+          "eu":""
+        },
+        "año": "",
+        "director": {
+          "es": "Jean Marc Vallée Mención especial del jurado: Pelo Malo | Mariana Rondón"
+        },
+        "imagen": "",
+        "descripcion": {
+          "es": "",
+          "en": "",
+          "eu": ""
+        }
+      }
+    ],
     "New Directors": [],
     "Horizontes Latinos": [],
     "Zabaltegi": [],
@@ -620,7 +680,30 @@
     "Fuera de concurso": []
   },
     "2012": {
-        "Ganadora": [],
+        "Ganadora": [
+          {
+        "titulo": {
+          "es": "Joven y alocada",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"",
+          "en":"",
+          "eu":""
+        },
+        "año": "",
+        "director": {
+          "es": "Marialy Rivas"
+        },
+        "imagen": "",
+        "descripcion": {
+          "es": "",
+          "en": "",
+          "eu": ""
+        }
+      }
+        ],
         "New Directors": [],
         "Horizontes Latinos": [],
         "Zabaltegi": [],
@@ -629,7 +712,30 @@
         "Fuera de concurso": []
     },
     "2011": {
-        "Ganadora": [],
+        "Ganadora": [
+          {
+        "titulo": {
+          "es": "Albert Nobbs",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"",
+          "en":"",
+          "eu":""
+        },
+        "año": "",
+        "director": {
+          "es": "Rodrigo García"
+        },
+        "imagen": "",
+        "descripcion": {
+          "es": "",
+          "en": "",
+          "eu": ""
+        }
+      }
+        ],
         "New Directors": [],
         "Horizontes Latinos": [],
         "Zabaltegi": [],
@@ -638,7 +744,30 @@
         "Fuera de concurso": []
     },
     "2010": {
-        "Ganadora": [],
+        "Ganadora": [
+          {
+        "titulo": {
+          "es": "80 egunean",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"",
+          "en":"",
+          "eu":""
+        },
+        "año": "",
+        "director": {
+          "es": "José Marí Goenaga – Jon Garaño"
+        },
+        "imagen": "",
+        "descripcion": {
+          "es": "",
+          "en": "",
+          "eu": ""
+        }
+      }
+        ],
         "New Directors": [],
         "Horizontes Latinos": [],
         "Zabaltegi": [],
@@ -647,7 +776,30 @@
         "Fuera de concurso": []
     },
     "2009": {
-        "Ganadora": [],
+        "Ganadora": [
+          {
+        "titulo": {
+          "es": "Contracorriente",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"",
+          "en":"",
+          "eu":""
+        },
+        "año": "",
+        "director": {
+          "es": "Javier Fuentes-León"
+        },
+        "imagen": "",
+        "descripcion": {
+          "es": "",
+          "en": "",
+          "eu": ""
+        }
+      }
+        ],
         "New Directors": [],
         "Horizontes Latinos": [],
         "Zabaltegi": [],
@@ -656,7 +808,30 @@
         "Fuera de concurso": []
     },
     "2008": {
-        "Ganadora": [],
+        "Ganadora": [
+          {
+        "titulo": {
+          "es": "Vicky Cristina Barcelona",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"",
+          "en":"",
+          "eu":""
+        },
+        "año": "",
+        "director": {
+          "es": "Woody Allen"
+        },
+        "imagen": "",
+        "descripcion": {
+          "es": "",
+          "en": "",
+          "eu": ""
+        }
+      }
+        ],
         "New Directors": [],
         "Horizontes Latinos": [],
         "Zabaltegi": [],
@@ -665,7 +840,30 @@
         "Fuera de concurso": []
     },
     "2007": {
-        "Ganadora": [],
+        "Ganadora": [
+          {
+        "titulo": {
+          "es": "Caramel",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"",
+          "en":"",
+          "eu":""
+        },
+        "año": "",
+        "director": {
+          "es": "Nadine Labaki"
+        },
+        "imagen": "",
+        "descripcion": {
+          "es": "",
+          "en": "",
+          "eu": ""
+        }
+      }
+        ],
         "New Directors": [],
         "Horizontes Latinos": [],
         "Zabaltegi": [],
@@ -674,7 +872,30 @@
         "Fuera de concurso": []
     },
     "2006": {
-        "Ganadora": [],
+        "Ganadora": [
+          {
+        "titulo": {
+          "es": "Estrellas de las Línea",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"",
+          "en":"",
+          "eu":""
+        },
+        "año": "",
+        "director": {
+          "es": "Chema Rodríguez"
+        },
+        "imagen": "",
+        "descripcion": {
+          "es": "",
+          "en": "",
+          "eu": ""
+        }
+      }
+        ],
         "New Directors": [],
         "Horizontes Latinos": [],
         "Zabaltegi": [],
@@ -683,7 +904,30 @@
         "Fuera de concurso": []
     },
     "2005": {
-        "Ganadora": [],
+        "Ganadora": [
+          {
+        "titulo": {
+          "es": "Malas temporadas",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"",
+          "en":"",
+          "eu":""
+        },
+        "año": "",
+        "director": {
+          "es": "Manúel Martín Cuenca"
+        },
+        "imagen": "",
+        "descripcion": {
+          "es": "",
+          "en": "",
+          "eu": ""
+        }
+      }
+        ],
         "New Directors": [],
         "Horizontes Latinos": [],
         "Zabaltegi": [],
@@ -692,7 +936,30 @@
         "Fuera de concurso": []
     },
     "2004": {
-        "Ganadora": [],
+        "Ganadora": [
+          {
+        "titulo": {
+          "es": "Beautiful boxer",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"",
+          "en":"",
+          "eu":""
+        },
+        "año": "",
+        "director": {
+          "es": "Ekachai Uekrongtham"
+        },
+        "imagen": "",
+        "descripcion": {
+          "es": "",
+          "en": "",
+          "eu": ""
+        }
+      }
+        ],
         "New Directors": [],
         "Horizontes Latinos": [],
         "Zabaltegi": [],
@@ -701,7 +968,30 @@
         "Fuera de concurso": []
     },
     "2003": {
-        "Ganadora": [],
+        "Ganadora": [
+          {
+        "titulo": {
+          "es": "Le soleil assassiné",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"",
+          "en":"",
+          "eu":""
+        },
+        "año": "",
+        "director": {
+          "es": " Abdelkrim Bahloul"
+        },
+        "imagen": "",
+        "descripcion": {
+          "es": "",
+          "en": "",
+          "eu": ""
+        }
+      }
+        ],
         "New Directors": [],
         "Horizontes Latinos": [],
         "Zabaltegi": [],
@@ -710,7 +1000,30 @@
         "Fuera de concurso": []
     },
     "2002": {
-        "Ganadora": [],
+        "Ganadora": [
+          {
+        "titulo": {
+          "es": "Tani tatuwen pyabanna",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"",
+          "en":"",
+          "eu":""
+        },
+        "año": "",
+        "director": {
+          "es": "Asoka Handagama"
+        },
+        "imagen": "",
+        "descripcion": {
+          "es": "",
+          "en": "",
+          "eu": ""
+        }
+      }
+        ],
         "New Directors": [],
         "Horizontes Latinos": [],
         "Zabaltegi": [],
@@ -719,7 +1032,30 @@
         "Fuera de concurso": []
     },
     "2001": {
-        "Ganadora": [],
+        "Ganadora": [
+          {
+        "titulo": {
+          "es": "Le fate ignoranti ",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"",
+          "en":"",
+          "eu":""
+        },
+        "año": "",
+        "director": {
+          "es": "Ferzan Ozpetek"
+        },
+        "imagen": "",
+        "descripcion": {
+          "es": "",
+          "en": "",
+          "eu": ""
+        }
+      }
+        ],
         "New Directors": [],
         "Horizontes Latinos": [],
         "Zabaltegi": [],
@@ -728,7 +1064,30 @@
         "Fuera de concurso": []
     }, 
     "2000": {
-        "Ganadora": [],
+        "Ganadora": [
+          {
+        "titulo": {
+          "es": "Krámpack",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"",
+          "en":"",
+          "eu":""
+        },
+        "año": "",
+        "director": {
+          "es": "Cesc Gay"
+        },
+        "imagen": "",
+        "descripcion": {
+          "es": "",
+          "en": "",
+          "eu": ""
+        }
+      }
+        ],
         "New Directors": [],
         "Horizontes Latinos": [],
         "Zabaltegi": [],

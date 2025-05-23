@@ -31,8 +31,12 @@ fetch("noticias.json")
       }
 
       const anioLink = noticia.anio_url
-  ? `<a href="${noticia.anio_url}" class="enlace-anio">Ver noticias de ${new Date(noticia.fecha).getFullYear()}</a>`
-  : "";
+      ? (() => {
+          const match = noticia.anio_url.match(/anio=(\d{4})/);
+          const anio = match ? match[1] : "";
+          return `<a href="${noticia.anio_url}" class="enlace-anio">Ver candidatas de ${anio}</a>`;
+        })()
+      : "";
 
       const galeriaHTML =
         noticia.video_local
@@ -58,12 +62,11 @@ fetch("noticias.json")
 
       contenedor.innerHTML = `
         <h1>${titulo}</h1>
-        ${anioLink}
         <p class="descripcion">${descripcion}</p>
         <div class="galeria-imagenes">${galeriaHTML}</div>
         ${fotografo ? `<p class="fotografo">Foto: ${fotografo}</p>` : ""}
         <p class="fecha">${noticia.fecha}</p>
-        <div class="contenido-noticia">${contenidoHTML}</div>
+        <div class="contenido-noticia">${contenidoHTML} ${anioLink}</div>
         <a href="noticias.html" class="btn-leer">← ${traducir("volver")}</a>
       `;
 

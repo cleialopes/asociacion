@@ -34,9 +34,6 @@ function mostrarNoticias() {
     if (videoURL?.includes("youtube.com/embed/") && !videoURL.includes("modestbranding")) {
       videoURL += "?modestbranding=1&rel=0";
     }
-const anioLink = noticia.anio_url
-  ? `<a href="${noticia.anio_url}" class="enlace-anio">Ver noticias de ${new Date(noticia.fecha).getFullYear()}</a>`
-  : "";
     const card = document.createElement("div");
     card.className = "noticia modo-claro-oscuro";
     card.innerHTML = `
@@ -54,7 +51,6 @@ const anioLink = noticia.anio_url
       : ""
   }
   <h3><a href="ver-noticia.html?id=${noticia.id}">${titulo}</a></h3>
-  ${anioLink}
 `;
     contenedor.appendChild(card);
   });
