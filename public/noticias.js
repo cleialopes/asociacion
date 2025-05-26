@@ -50,7 +50,7 @@ function mostrarNoticias() {
       ? `<iframe class="noticia-video" src="${videoURL}" frameborder="0" allowfullscreen></iframe>`
       : ""
   }
-  <h3><a href="ver-noticia.html?id=${noticia.id}">${titulo}</a></h3>
+  <h3><a href="ver-noticia.html?id=${noticia.id}">${titulo}</a></h3> 
 `;
     contenedor.appendChild(card);
   });

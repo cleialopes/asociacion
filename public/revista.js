@@ -30,11 +30,12 @@ fetch("revista.json")
     visor.classList.remove("oculto");
 
     contenedorFlip.innerHTML = `
-      <iframe 
-        src="FlowPaper/index.html?PDF=/${archivo}"
-        style="width:100%; height:100%; border:none;">
-      </iframe>
-    `;
+  <iframe 
+    src="FlowPaper/index.html?PDF=/${archivo}"
+    style="width:100%; height:100%; border:none; overflow:hidden;" 
+    scrolling="no">
+  </iframe>
+`;
   });
 });
   })

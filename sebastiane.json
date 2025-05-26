@@ -196,134 +196,345 @@
     ],
     "New Directors": [
       {
-        "titulo": "Bagger Drama",
-        "director": "Piet Baumgartner",
-        "pais": "Suiza",
+        "titulo": {
+          "es": "Bagger Drama",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"Suiza",
+          "en":"",
+          "eu":""
+        },
         "año": "2024 | 94’",
+        "director": {
+          "es": "Piet Baumgartner"
+        },
         "imagen": "img/sebastiane2024_bagger_drama.jpg",
-        "descripcion": "Una familia tiene dificultades para hablar de sentimientos, amor o intimidad. El negocio familiar —alquilar, vender y reparar excavadoras— exige toda su atención. Todos tienen que arrimar el hombro. Cuando la hija muere en un accidente, la familia se colapsa. El hijo prefiere irse a Estados Unidos antes que hacerse cargo de la empresa. El padre se enamora de la nueva directora del coro y la madre se encuentra de repente sola."
+        "descripcion": {
+          "es": "Una familia tiene dificultades para hablar de sentimientos, amor o intimidad. El negocio familiar —alquilar, vender y reparar excavadoras— exige toda su atención. Todos tienen que arrimar el hombro. Cuando la hija muere en un accidente, la familia se colapsa. El hijo prefiere irse a Estados Unidos antes que hacerse cargo de la empresa. El padre se enamora de la nueva directora del coro y la madre se encuentra de repente sola.",
+          "en": "",
+          "eu": ""
+        }
       },
-       {
-        "titulo": "Por donde pasa el silencio / As silence pass by",
-        "director": "Sandra Romero",
-        "pais": "España",
+      {
+        "titulo": {
+          "es": "Por donde pasa el silencio / As silence pass by",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"España",
+          "en":"",
+          "eu":""
+        },
         "año": "2024 | 98’",
+        "director": {
+          "es": "Sandra Romero"
+        },
         "imagen": "img/sebastiane2024_por_donde_pasa_el_silencio.jpg",
-        "descripcion": "Antonio tiene que volver a Écija, una ciudad en el interior de Andalucía, después de mucho tiempo. Es Semana Santa. Allí se reencuentra con su familia y con su hermano mellizo Javier que tiene una discapacidad física y necesita su ayuda. Antonio tendrá que manejar esta situación y enfrentase a una difícil decisión: quedarse y ayudar a los suyos o volver a la vida que ha construido fuera."
+        "descripcion": {
+          "es": "Antonio tiene que volver a Écija, una ciudad en el interior de Andalucía, después de mucho tiempo. Es Semana Santa. Allí se reencuentra con su familia y con su hermano mellizo Javier que tiene una discapacidad física y necesita su ayuda. Antonio tendrá que manejar esta situación y enfrentase a una difícil decisión: quedarse y ayudar a los suyos o volver a la vida que ha construido fuera.",
+          "en": "",
+          "eu": ""
+        }
       }
     ],
     "Horizontes Latinos": [
       {
-        "titulo": "Cidade; Campo",
-        "director": "Juliana Rojas",
-        "pais": "Brasil-Alemania-Francia",
+        "titulo": {
+          "es": "Cidade; Campo",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"Brasil-Alemania-Francia",
+          "en":"",
+          "eu":""
+        },
         "año": "2024 | 119’",
+        "director": {
+          "es": "Juliana Rojas"
+        },
         "imagen": "img/sebastiane2024_cidade_campo.jpg",
-        "descripcion": "Dos historias de migración entre la ciudad y el campo. En la primera parte, después de que la rotura de una presa de residuos inunde su pueblo natal, Joana, una trabajadora rural, se traslada a São Paulo para buscar a su hermana Tania, que vive con su nieto Jaime. Joana lucha por prosperar en la ciudad obrera. En la segunda parte, tras la muerte de su padre, del que estaba distanciada, Flavia se traslada a su granja con su esposa Mara. La naturaleza obliga a las dos mujeres a enfrentarse a frustraciones y a lidiar con viejos recuerdos y fantasmas."
+        "descripcion": {
+          "es": "Dos historias de migración entre la ciudad y el campo. En la primera parte, después de que la rotura de una presa de residuos inunde su pueblo natal, Joana, una trabajadora rural, se traslada a São Paulo para buscar a su hermana Tania, que vive con su nieto Jaime. Joana lucha por prosperar en la ciudad obrera. En la segunda parte, tras la muerte de su padre, del que estaba distanciada, Flavia se traslada a su granja con su esposa Mara. La naturaleza obliga a las dos mujeres a enfrentarse a frustraciones y a lidiar con viejos recuerdos y fantasmas.",
+          "en": "",
+          "eu": ""
+        }
       },
       {
-        "titulo": "Los domingos mueren más personas / Most people die on Sundays",
-        "director": "Iair Said",
-        "pais": "Argentina-Italia-España",
+        "titulo": {
+          "es": "Los domingos mueren más personas / Most people die on Sundays",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"Argentina-Italia-España",
+          "en":"",
+          "eu":""
+        },
         "año": "2024 | 75’",
+        "director": {
+          "es": "Iair Said"
+        },
         "imagen": "img/sebastiane2024_Los_domingos_mueren_maas_personas.jpg",
-        "descripcion": "Cuando David regresa a su casa de Buenos Aires se entera de que su madre ha decidido desconectar a Bernardo, su padre, que yace en coma. David se debate entre la estrecha convivencia con su madre, perturbada por el dolor de la inminente pérdida de su marido, y un feroz deseo de mitigar su angustia existencial. Pasa los días aprendiendo a conducir, oscilando entre el pasado y el presente e intentando mantener relaciones sexuales con cualquiera que le preste un mínimo de atención."
+        "descripcion": {
+          "es": "Cuando David regresa a su casa de Buenos Aires se entera de que su madre ha decidido desconectar a Bernardo, su padre, que yace en coma. David se debate entre la estrecha convivencia con su madre, perturbada por el dolor de la inminente pérdida de su marido, y un feroz deseo de mitigar su angustia existencial. Pasa los días aprendiendo a conducir, oscilando entre el pasado y el presente e intentando mantener relaciones sexuales con cualquiera que le preste un mínimo de atención.",
+          "en": "",
+          "eu": ""
+        }
       },
       {
-        "titulo": "El jockey / Kill the Jockey",
-        "director": "Luis Ortega",
-        "pais": "Argentina-México-España-Dinamarca-EEUU",
+        "titulo": {
+          "es": "El jockey / Kill the Jockey",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"Argentina-México-España-Dinamarca-EEUU",
+          "en":"",
+          "eu":""
+        },
         "año": "2024 | 96’",
+        "director": {
+          "es": "Luis Ortega"
+        },
         "imagen": "img/sebastiane2024_el_jockey.jpg",
-        "descripcion": "Remo Manfredini es un jockey legendario, pero su comportamiento autodestructivo empieza a eclipsar su talento y a amenazar su relación con Abril, su novia. El día de la carrera más importante de su vida, que saldará las deudas con su jefe mafioso Sirena, sufre un grave accidente, desaparece del hospital y vaga por las calles de Buenos Aires. Liberado de su identidad, empieza a descubrir quién es realmente. Pero Sirena quiere encontrarlo, vivo o muerto."
+        "descripcion": {
+          "es": "Remo Manfredini es un jockey legendario, pero su comportamiento autodestructivo empieza a eclipsar su talento y a amenazar su relación con Abril, su novia. El día de la carrera más importante de su vida, que saldará las deudas con su jefe mafioso Sirena, sufre un grave accidente, desaparece del hospital y vaga por las calles de Buenos Aires. Liberado de su identidad, empieza a descubrir quién es realmente. Pero Sirena quiere encontrarlo, vivo o muerto.",
+          "en": "",
+          "eu": ""
+        }
       },
       {
-        "titulo": "Ramón y Ramón",
-        "director": "Salvador del Solar",
-        "pais": "Perú-España-Uruguay",
+        "titulo": {
+          "es": "Ramón y Ramón",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"Perú-España-Uruguay",
+          "en":"",
+          "eu":""
+        },
         "año": "2024 | 100’",
+        "director": {
+          "es": "Salvador del Solar"
+        },
         "imagen": "img/sebastiane2024_ramon_y_ramon.webp",
-        "descripcion": "Tras recibir las cenizas de su padre, con quien mantenía una relación distante, Ramón conoce a Mateo durante el confinamiento. A pesar de sus diferencias, surge una profunda conexión que los lleva a cuestionarse. Mateo decide acompañar a Ramón en un viaje para esparcir las cenizas en Huancayo. En esa travesía, Ramón descubre que buscaba respuestas a las preguntas equivocadas y que debe sanarse para seguir adelante."
+        "descripcion": {
+          "es": "Tras recibir las cenizas de su padre, con quien mantenía una relación distante, Ramón conoce a Mateo durante el confinamiento. A pesar de sus diferencias, surge una profunda conexión que los lleva a cuestionarse. Mateo decide acompañar a Ramón en un viaje para esparcir las cenizas en Huancayo. En esa travesía, Ramón descubre que buscaba respuestas a las preguntas equivocadas y que debe sanarse para seguir adelante.",
+          "en": "",
+          "eu": ""
+        }
       }
     ],
     "Zabaltegi": [
       {
-        "titulo": "I saw the TV glow",
-        "director": "Jane Schoenbrun",
-        "pais": "EEUU",
+        "titulo": {
+          "es": "I saw the TV glow",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"EEUU",
+          "en":"",
+          "eu":""
+        },
         "año": "2024 | 100’",
+        "director": {
+          "es": "Jane Schoenbrun"
+        },
         "imagen": "img/sebastiane2024_i_saw_the_tv_glow.jpeg",
-        "descripcion": "Owen es un adolescente que trata de afrontar la vida en un barrio residencial de las afueras cuando su compañera de clase le habla de un misterioso programa de televisión nocturno: una visión de un mundo sobrenatural por debajo del suyo. En el pálido resplandor de la televisión, la idea que Owen tiene de la realidad comienza a quebrarse"
+        "descripcion": {
+          "es": "Owen es un adolescente que trata de afrontar la vida en un barrio residencial de las afueras cuando su compañera de clase le habla de un misterioso programa de televisión nocturno: una visión de un mundo sobrenatural por debajo del suyo. En el pálido resplandor de la televisión, la idea que Owen tiene de la realidad comienza a quebrarse.",
+          "en": "",
+          "eu": ""
+        }
       },
       {
-        "titulo": "My Boku no Ohisama / My sunshine",
-        "director": "Hiroshi Okuyama",
-        "pais": "Japón-Francia",
+        "titulo": {
+          "es": "My Boku no Ohisama / My sunshine",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"Japón-Francia",
+          "en":"",
+          "eu":""
+        },
         "año": "2024 | 100’",
+        "director": {
+          "es": "Hiroshi Okuyama"
+        },
         "imagen": "img/sebastiane2024_my_boku_no_ohisama.jpg",
-        "descripcion": "En una pequeña isla japonesa, la vida gira en torno al cambio de las estaciones. El invierno es la época del hockey sobre hielo en la escuela, pero a Takuya no le entusiasma demasiado. Su verdadero interés radica en Sakura, una estrella emergente del patinaje artístico de Tokio, por la que empieza a sentir auténtica fascinación. Arakawa, entrenador y antiguo campeón, ve potencial en Takuya y decide orientarle para que forme dúo con Sakura en una próxima competición."
+        "descripcion": {
+          "es": "En una pequeña isla japonesa, la vida gira en torno al cambio de las estaciones. El invierno es la época del hockey sobre hielo en la escuela, pero a Takuya no le entusiasma demasiado. Su verdadero interés radica en Sakura, una estrella emergente del patinaje artístico de Tokio, por la que empieza a sentir auténtica fascinación. Arakawa, entrenador y antiguo campeón, ve potencial en Takuya y decide orientarle para que forme dúo con Sakura en una próxima competición.",
+          "en": "",
+          "eu": ""
+        }
       },
       {
-        "titulo": "Sombra grande / Big shadow",
-        "director": "Maximiliano Schonfeld",
-        "pais": "Argentina",
+        "titulo": {
+          "es": "Sombra grande / Big shadow",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"Argentina",
+          "en":"",
+          "eu":""
+        },
         "año": "2024 | 83’",
+        "director": {
+          "es": "Maximiliano Schonfeld"
+        },
         "imagen": "img/sebastiane2024_sombra_grande.jpg",
-        "descripcion": "Hace unos años apareció un hombre que decía hablar una lengua aparentemente perdida: el Chaná. Al poco tiempo se editaron diccionarios y la lengua se pudo recuperar completamente. Este hombre también ubicó a los Chaná en el mismo lugar donde hoy los descendientes de alemanes del Volga, en la provincia de Entre Ríos, van perdiendo inexorablemente su dialecto."
+        "descripcion": {
+          "es": "Hace unos años apareció un hombre que decía hablar una lengua aparentemente perdida: el Chaná. Al poco tiempo se editaron diccionarios y la lengua se pudo recuperar completamente. Este hombre también ubicó a los Chaná en el mismo lugar donde hoy los descendientes de alemanes del Volga, en la provincia de Entre Ríos, van perdiendo inexorablemente su dialecto.",
+          "en": "",
+          "eu": ""
+        }
       }
     ],
     "Perlak": [
       {
-        "titulo": "Emilia Pérez",
-        "director": "Jacques Audiard",
-        "pais": "Francia",
+        "titulo": {
+          "es": "Emilia Pérez",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"Francia",
+          "en":"",
+          "eu":""
+        },
         "año": "2024 | 130’",
+        "director": {
+          "es": "Jacques Audiard"
+        },
         "imagen": "img/sebastiane2024_emilia_paerez.jpg",
-        "descripcion": "Sobrecualificada e infravalorada, Rita es abogada de un gran bufete que está más interesado en sacar a los criminales del atolladero que en llevarlos ante la justicia. Un día, se le presenta una salida inesperada cuando Manitas, el líder de un cártel, la contrata para que le ayude a retirarse de sus negocios y hacer realidad un plan que lleva años preparando en secreto: convertirse en la mujer que siempre ha soñado ser."
+        "descripcion": {
+          "es": "Sobrecualificada e infravalorada, Rita es abogada de un gran bufete que está más interesado en sacar a los criminales del atolladero que en llevarlos ante la justicia. Un día, se le presenta una salida inesperada cuando Manitas, el líder de un cártel, la contrata para que le ayude a retirarse de sus negocios y hacer realidad un plan que lleva años preparando en secreto: convertirse en la mujer que siempre ha soñado ser.",
+          "en": "",
+          "eu": ""
+        }
       }
     ],
     "Made in Spain": [
       {
-        "titulo": "Norberta",
-        "director": "Sonia Escolano, Belén López Albert",
-        "pais": "España",
+        "titulo": {
+          "es": "Norberta",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"España",
+          "en":"",
+          "eu":""
+        },
         "año": "2024 | 89’",
+        "director": {
+          "es": "Sonia Escolano, Belén López Albert"
+        },
         "imagen": "img/sebastiane2024_norberta.jpg",
-        "descripcion": "Norberto lleva toda una vida con María. Viven en un barrio humilde y conocen a sus vecinos desde hace décadas, pero ambos tienen un secreto que pocos saben: de vez en cuando, atracan. Con ello cumplimentan su pensión y ayudan a algún que otro amigo. Pero Norberto necesita dar un giro para sentirse vivo, libre, para sentirse ELLA misma. Una confesión inesperada que pondrá en jaque toda su vida y la de su entorno."
+        "descripcion": {
+          "es": "Norberto lleva toda una vida con María. Viven en un barrio humilde y conocen a sus vecinos desde hace décadas, pero ambos tienen un secreto que pocos saben: de vez en cuando, atracan. Con ello cumplimentan su pensión y ayudan a algún que otro amigo. Pero Norberto necesita dar un giro para sentirse vivo, libre, para sentirse ELLA misma. Una confesión inesperada que pondrá en jaque toda su vida y la de su entorno.",
+          "en": "",
+          "eu": ""
+        }
       },
       {
-        "titulo": "Orgullo vieja",
-        "director": "Chema Rodríguez",
-        "pais": "España",
+        "titulo": {
+          "es": "Orgullo vieja",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"España",
+          "en":"",
+          "eu":""
+        },
         "año": "2024 | 104’",
+        "director": {
+          "es": "Chema Rodríguez"
+        },
         "imagen": "img/sebastiane2024_orgullo_vieja.jpg",
-        "descripcion": "Pepa, Antoñita, Pepi, Esperanza, Remedios, Kiska, Catalina y Rafaela son mujeres del barrio de Triana, Sevilla, de entre 68 y 97 años de edad. Todas comparten un sueño: quieren ser monologuistas, triunfar en el mundo del espectáculo y reivindicar que las mujeres mayores merecen respeto y visibilidad. Para ello, han creado un espectáculo titulado Orgullo vieja. La película muestra el proceso de creación de la compañía, los ensayos, el estreno en Sevilla y sus viajes por el resto de Andalucía."
+        "descripcion": {
+          "es": "Pepa, Antoñita, Pepi, Esperanza, Remedios, Kiska, Catalina y Rafaela son mujeres del barrio de Triana, Sevilla, de entre 68 y 97 años de edad. Todas comparten un sueño: quieren ser monologuistas, triunfar en el mundo del espectáculo y reivindicar que las mujeres mayores merecen respeto y visibilidad. Para ello, han creado un espectáculo titulado Orgullo vieja. La película muestra el proceso de creación de la compañía, los ensayos, el estreno en Sevilla y sus viajes por el resto de Andalucía.",
+          "en": "",
+          "eu": ""
+        }
       },
+      
       {
-        "titulo": "Reir, cantar, tal vez llorar / To laugh, to sing, perhaps to cry",
-        "director": "Marc Ferrer",
-        "pais": "España",
+        "titulo": {
+          "es": "Reir, cantar, tal vez llorar / To laugh, to sing, perhaps to cry",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"España",
+          "en":"",
+          "eu":""
+        },
         "año": "2024 | 75'",
+        "director": {
+          "es": "Marc Ferrer"
+        },
         "imagen": "img/sebastiane2024_reircantar_tal_vez_llorar.jpg",
-        "descripcion": "Toñi, una mujer trans de mediana edad, pide en una iglesia a un santo milagroso tener un novio, y así es como aparece en su vida Lahcen, un joven y guapo marroquí inmigrante que acaba de llegar a Barcelona, del que se enamorará. Esta relación provocará un gran escándalo en su comunidad de vecinos, movidos por la envidia y la desconfianza."
+        "descripcion": {
+          "es": "Toñi, una mujer trans de mediana edad, pide en una iglesia a un santo milagroso tener un novio, y así es como aparece en su vida Lahcen, un joven y guapo marroquí inmigrante que acaba de llegar a Barcelona, del que se enamorará. Esta relación provocará un gran escándalo en su comunidad de vecinos, movidos por la envidia y la desconfianza.",
+          "en": "",
+          "eu": ""
+        }
       }
     ],
     "Fuera de concurso": [
       {
-        "titulo": "Querer",
-        "director": "Alauda Ruiz de Azúa",
-        "pais": "España",
+        "titulo": {
+          "es": "Querer",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"España",
+          "en":"",
+          "eu":""
+        },
         "año": "2024 | 212′",
+        "director": {
+          "es": "Alauda Ruiz de Azúa"
+        },
         "imagen": "img/sebastiane2024_querer.jpg",
-        "descripcion": "Tras 30 años de matrimonio y dos hijos en común, Miren abandona el domicilio conyugal y denuncia a su marido por violación continuada. Esta grave acusación obliga a los hijos a elegir entre creer a su madre o apoyar a un padre que defiende su inocencia. Un viaje familiar que avanza en paralelo al judicial con un mismo objetivo: conocer la verdad. Miniserie de 4 capítulos."
+        "descripcion": {
+          "es": "Tras 30 años de matrimonio y dos hijos en común, Miren abandona el domicilio conyugal y denuncia a su marido por violación continuada. Esta grave acusación obliga a los hijos a elegir entre creer a su madre o apoyar a un padre que defiende su inocencia. Un viaje familiar que avanza en paralelo al judicial con un mismo objetivo: conocer la verdad. Miniserie de 4 capítulos.",
+          "en": "",
+          "eu": ""
+        }
       },
       {
-        "titulo": "Yo, adicto",
-        "director": "Javier Giner, Elena Trapé",
-        "pais": "España",
+        "titulo": {
+          "es": "Yo, adicto",
+          "en": "",
+          "eu": ""
+        },       
+        "pais": {
+          "es":"España",
+          "en":"",
+          "eu":""
+        },
         "año": "2024 | 240′",
+        "director": {
+          "es": "Javier Giner, Elena Trapé"
+        },
         "imagen": "img/sebastiane2024_yo_adicto.jpg",
-        "descripcion": "Yo, adicto cuenta cómo Javier Giner, profesional del audiovisual, decide a los 30 años ingresar voluntariamente en un centro de desintoxicación. En el momento de máxima oscuridad, tomará la decisión de pedir ayuda profesional movido por un instinto de supervivencia desesperada. Sin saberlo, ese gesto le cambiará la vida convirtiéndole en una nueva persona. Miniserie de seis episodios."
+        "descripcion": {
+          "es": "Yo, adicto cuenta cómo Javier Giner, profesional del audiovisual, decide a los 30 años ingresar voluntariamente en un centro de desintoxicación. En el momento de máxima oscuridad, tomará la decisión de pedir ayuda profesional movido por un instinto de supervivencia desesperada. Sin saberlo, ese gesto le cambiará la vida convirtiéndole en una nueva persona. Miniserie de seis episodios.",
+          "en": "",
+          "eu": ""
+        }
       }
     ]
   },
@@ -331,22 +542,22 @@
     "Ganadora": [
       {
         "titulo": {
-          "es": "20000 especies de abejas",
+          "es": "20.000 especies de abejas",
           "en": "",
           "eu": ""
         },       
         "pais": {
-          "es":"",
+          "es":"España",
           "en":"",
           "eu":""
         },
-        "año": "",
+        "año": "2023 | 129’",
         "director": {
           "es": "Estibaliz Urresola"
         },
-        "imagen": "",
+        "imagen": "img/20_000_especies_de_abejas.jpg",
         "descripcion": {
-          "es": "",
+          "es": "Cocó, de ocho años, no encaja en las expectativas del resto y no entiende por qué. Todos a su alrededor insisten en llamarle Aitor pero no se reconoce en ese nombre ni en la mirada de los demás. Su madre Ane, (Patricia López Arnaiz), sumida en una crisis profesional y sentimental, aprovechará las vacaciones para viajar con sus tres hijos a la casa materna, donde reside su madre Lita (Itziar Lazkano) y su tía Lourdes (Ane Gabarain), estrechamente ligada a la cría de abejas y la producción de miel. Este verano que cambiará sus vidas obligará a estas mujeres de tres generaciones muy distintas a enfrentarse a sus dudas y temores.",
           "en": "",
           "eu": ""
         }
@@ -368,17 +579,17 @@
           "eu": ""
         },       
         "pais": {
-          "es":"",
+          "es":"Canada, Suiza",
           "en":"",
           "eu":""
         },
-        "año": "",
+        "año": "2022 | 96’",
         "director": {
           "es": "Luis de Filippis"
         },
-        "imagen": "",
+        "imagen": "img/something-you-said-last-night2.jpg",
         "descripcion": {
-          "es": "",
+          "es": "Something You Said Last Night es una película dirigida por Luis De Filippis que explora la vida de una familia durante sus vacaciones, centrándose en la experiencia de una joven transgénero que lucha por encontrar su lugar en el mundo y en su propia familia. La narrativa íntima y las actuaciones auténticas hacen de esta película un retrato conmovedor de la identidad y la aceptación.",
           "en": "",
           "eu": ""
         }
@@ -400,17 +611,17 @@
           "eu": ""
         },       
         "pais": {
-          "es":"",
+          "es":"Australia",
           "en":"",
           "eu":""
         },
-        "año": "",
+        "año": "2021 | 128’",
         "director": {
           "es": "Jane Campion"
         },
-        "imagen": "",
+        "imagen": "img/el_poder_del_perro.jpg",
         "descripcion": {
-          "es": "",
+          "es": "Montana, 1925. Los acaudalados hermanos Phil (Cumberbatch) y George Burbank (Plemons) son las dos caras de la misma moneda. Phil es impetuoso y cruel, mientras George es impasible y amable. Juntos son copropietarios de un enorme rancho donde tienen ganado. Cuando George se casa con una viuda del pueblo, Rose (Dunst), Phil comienza a despreciar a su nueva cuñada, que se instala en el rancho junto a su hijo, el sensible Peter (Smit-McPhee).",
           "en": "",
           "eu": ""
         }
@@ -432,17 +643,17 @@
           "eu": ""
         },       
         "pais": {
-          "es":"",
+          "es":"Canadá",
           "en":"",
           "eu":""
         },
-        "año": "",
+        "año": "2020 | 113’",
         "director": {
           "es": "Viggo Mortensen"
         },
-        "imagen": "",
+        "imagen": "img/falling.jpg",
         "descripcion": {
-          "es": "",
+          "es": "John Petersen (Viggo Mortensen) vive con su novio Eric (Terry Chen) y la hija adoptiva de ambos en el sur de California. Su padre Willis (Lance Henriksen) un granjero tradicional y conservador de 80 años, decide viajar a Los Ángeles y quedarse en casa de John mientras busca el lugar idóneo para jubilarse. Una vez todo juntos, dos mundos muy diferentes colisionan. Willis muestra señas de estar perdiendo la cordura, y su peculiar forma de ser, dañina para algunos miembros de la familia, saca a relucir heridas del pasado y de años de desconfianza entre sus allegados. ",
           "en": "",
           "eu": ""
         }
@@ -464,17 +675,17 @@
           "eu": ""
         },       
         "pais": {
-          "es":"",
+          "es":"Colombia",
           "en":"",
           "eu":""
         },
-        "año": "",
+        "año": "2019 | 102’",
         "director": {
           "es": "Alejandro Landes"
         },
-        "imagen": "",
+        "imagen": "img/monos.jpg",
         "descripcion": {
-          "es": "",
+          "es": "En la cima de una imponente montaña, donde lo que a primera vista parece un campamento de verano, ocho muchachos guerrilleros apodados “Los Monos» conviven bajo la estricta instrucción de un sargento paramilitar. Su única misión es la de cuidar a 'la doctora' (Julianne Nicholson), una mujer norteamericana a la que han tomado como rehén. Cuando esta misión empieza a peligrar, la confianza entre ellos empezará a ser cuestionada.",
           "en": "",
           "eu": ""
         }
@@ -496,17 +707,17 @@
           "eu": ""
         },       
         "pais": {
-          "es":"",
+          "es":"Bélgica",
           "en":"",
           "eu":""
         },
-        "año": "",
+        "año": "2018 | 100’",
         "director": {
-          "es": "Lukas Dhontna Mladenovic"
+          "es": "Lukas Dhont"
         },
-        "imagen": "",
+        "imagen": "img/girl.jpg",
         "descripcion": {
-          "es": "",
+          "es": "Lara es una joven de 15 años que quiere convertirse en bailarina. Desde los 5 años ha estado entrenando para ello, pero su cuerpo no le permite cumplir su sueño.",
           "en": "",
           "eu": ""
         }
@@ -528,17 +739,17 @@
           "eu": ""
         },       
         "pais": {
-          "es":"",
+          "es":"Francia",
           "en":"",
           "eu":""
         },
-        "año": "",
+        "año": "2017 | 143’",
         "director": {
-          "es": "Robin Campillo Mención especial del jurado: Soldatii Poveste din Ferentari | Ivana Mladenovic "
+          "es": "Robin Campillo"
         },
-        "imagen": "",
+        "imagen": "img/120_battements_par_minute.jpg",
         "descripcion": {
-          "es": "",
+          "es": "París, principios de los años 90. Un grupo de jóvenes activistas intenta generar conciencia sobre el SIDA. Un nuevo miembro del grupo, Nathan, se quedará sorprendido ante la radicalidad y energía de Sean, que gasta su último aliento en la lucha.",
           "en": "",
           "eu": ""
         }
@@ -560,17 +771,17 @@
           "eu": ""
         },       
         "pais": {
-          "es":"",
+          "es":"Francia, Israel",
           "en":"",
           "eu":""
         },
-        "año": "",
+        "año": "2016 | 96’",
         "director": {
           "es": "Maysaloun Hamoud"
         },
-        "imagen": "",
+        "imagen": "img/bar-bahar.avif",
         "descripcion": {
-          "es": "",
+          "es": "Salma, Laila y Nur no encajarán nunca. Palestinas con pasaporte israelí, optan por vivir una vida de libertad en Tel Aviv, lejos de sus lugares de origen. Las tres buscan el amor, pero como jóvenes palestinas pronto se darán cuenta de que una relación escogida por ellas no es algo fácilmente alcanzable. Tendrán que elegir su lugar en el mundo, sea en la ciudad o en sus pueblos.",
           "en": "",
           "eu": ""
         }
@@ -592,17 +803,17 @@
           "eu": ""
         },       
         "pais": {
-          "es":"",
+          "es":"Estados Unidos",
           "en":"",
           "eu":""
         },
-        "año": "",
+        "año": "2015 | 103’",
         "director": {
           "es": "Peter Sollet"
         },
-        "imagen": "",
+        "imagen": "img/freeheld.jpg",
         "descripcion": {
-          "es": "",
+          "es": "Basada en la historia real de Laurel Hester y Stacie Andrée y su lucha por la justicia. A Laurel, una condecorada policía de Nueva Jersey, le diagnostican un cáncer terminal y quiere dejar su pensión ganada durante años a su pareja de hecho, Stacie. Sin embargo, los funcionarios del condado, que no ven con buenos ojos la pareja homosexual, conspiran para evitarlo.",
           "en": "",
           "eu": ""
         }
@@ -624,17 +835,17 @@
           "eu": ""
         },       
         "pais": {
-          "es":"",
+          "es":"Francia",
           "en":"",
           "eu":""
         },
-        "año": "",
+        "año": "2014 | 105’",
         "director": {
           "es": "François Ozon"
         },
-        "imagen": "",
+        "imagen": "img/Una_nueva_amiga.jpg",
         "descripcion": {
-          "es": "",
+          "es": "Es la historia de dos mujeres, amigas de la infancia. Las dos se casan y una tiene un bebé. Al poco tiempo, la madre enferma gravemente, le hace prometer a su amiga que cuidará del bebé y a su marido. Después de su muerte, la amiga decide ir a visitar al padre y al bebé, pero le espera una tremenda sorpresa.",
           "en": "",
           "eu": ""
         }
@@ -656,17 +867,17 @@
           "eu": ""
         },       
         "pais": {
-          "es":"",
+          "es":"Estados Unidos",
           "en":"",
           "eu":""
         },
-        "año": "",
+        "año": "2013 | 117’",
         "director": {
-          "es": "Jean Marc Vallée Mención especial del jurado: Pelo Malo | Mariana Rondón"
+          "es": "Jean Marc Vallée"
         },
-        "imagen": "",
+        "imagen": "img/dallas_buyers_club.jpg",
         "descripcion": {
-          "es": "",
+          "es": "Basada en la vida real de Ron Woodroof, un cowboy de rodeo texano, drogadicto y mujeriego, al que en 1986 le diagnosticaron SIDA y le pronosticaron un mes de vida. Empezó entonces a tomar AZT, el único medicamento disponible en aquella época para luchar contra tan terrible enfermedad.",
           "en": "",
           "eu": ""
         }
@@ -688,17 +899,17 @@
           "eu": ""
         },       
         "pais": {
-          "es":"",
+          "es":"Chile",
           "en":"",
           "eu":""
         },
-        "año": "",
+        "año": "2012 | 92’",
         "director": {
           "es": "Marialy Rivas"
         },
-        "imagen": "",
+        "imagen": "img/joven_y_alocada.jpg",
         "descripcion": {
-          "es": "",
+          "es": "La protagonista de este drama es Daniela, una joven de 18 años que ha crecido en el seno de una familia conervadora y evangélica. Dividida entre su rebeldía y la culpa cristiana, vive una noche de excesos que dejará una imborrable marca en ella: es castigada por sus padres y llegará a plantearse un dilema existencial. En la transición a su vida adulta tratará de redimirse de su pasado adolescente pero encontrará un obstáculo más: su primer amor homosexual.",
           "en": "",
           "eu": ""
         }
@@ -720,17 +931,17 @@
           "eu": ""
         },       
         "pais": {
-          "es":"",
+          "es":"Reino Unido",
           "en":"",
           "eu":""
         },
-        "año": "",
+        "año": "2011 | 108’",
         "director": {
           "es": "Rodrigo García"
         },
-        "imagen": "",
+        "imagen": "img/albert_nobbs.jpg",
         "descripcion": {
-          "es": "",
+          "es": "Irlanda, siglo XIX. Una mujer (Glenn Close) se ve atrapada en un triángulo amoroso inusual. Se disfraza de hombre para poder trabajar y sobrevivir, pero 30 años después se encuentra perdida en su propia prisión...",
           "en": "",
           "eu": ""
         }
@@ -752,17 +963,17 @@
           "eu": ""
         },       
         "pais": {
-          "es":"",
+          "es":"España",
           "en":"",
           "eu":""
         },
-        "año": "",
+        "año": "2010 | 105’",
         "director": {
           "es": "José Marí Goenaga – Jon Garaño"
         },
-        "imagen": "",
+        "imagen": "img/80_egunean.jpg",
         "descripcion": {
-          "es": "",
+          "es": "Axun (Itziar Aizpuru) es una mujer de 70 años que acude al hospital para cuidar al exmarido de su hija. Su sorpresa será mayúscula al darse cuenta de que la mujer que cuida al enfermo de al lado es Maite (Mariasun Pagoaga) una gran amiga de la adolescencia con quien hace años que no tiene relación. Pronto ambas mujeres serán conscientes de que la química entre ellas sigue intacta al igual que 50 años atrás. Las dos se divierten y disfrutan del reencuentro hasta que Axun descubre que Maite es lesbiana. En ese momento Axun tendrá que lidiar con sentimientos enfrentados y decidir si prefiere escuchar a su corazón o a la razón.",
           "en": "",
           "eu": ""
         }
@@ -784,17 +995,17 @@
           "eu": ""
         },       
         "pais": {
-          "es":"",
+          "es":"Perú",
           "en":"",
           "eu":""
         },
-        "año": "",
+        "año": "2009 | 100’",
         "director": {
           "es": "Javier Fuentes-León"
         },
-        "imagen": "",
+        "imagen": "img/contracorriente.jpg",
         "descripcion": {
-          "es": "",
+          "es": "Una historia de fantasmas inusual en la costa peruana, donde Miguel (Cristian Mercado), un pescador casado y a punto de ser padre lucha por reconciliar su devoción a su amante masculino dentro de las rígidas tradiciones de su pueblo.",
           "en": "",
           "eu": ""
         }
@@ -816,17 +1027,17 @@
           "eu": ""
         },       
         "pais": {
-          "es":"",
+          "es":"Estados Unidos",
           "en":"",
           "eu":""
         },
-        "año": "",
+        "año": "2008 | 96’",
         "director": {
           "es": "Woody Allen"
         },
-        "imagen": "",
+        "imagen": "img/vicky-cristina-barcelona.jpg",
         "descripcion": {
-          "es": "",
+          "es": "Vicky (Rebecca Hall) y Cristina (Scarlett Johansson) son dos jóvenes norteamericanas que van a Barcelona a pasar unas vacaciones de verano. Vicky es sensible, racional y tiene intención de casarse; Cristina es apasionada y busca aventuras emocionantes; en realidad, no sabe muy bien lo que quiere, pero sabe perfectamente lo que no quiere. En Barcelona, ambas se ven envueltas en una relación poco convencional con Juan Antonio (Javier Bardem), un conocido pintor vinculado sentimentalmente a su tempestuosa exmujer María Elena (Penélope Cruz).",
           "en": "",
           "eu": ""
         }
@@ -848,17 +1059,17 @@
           "eu": ""
         },       
         "pais": {
-          "es":"",
+          "es":"Líbano",
           "en":"",
           "eu":""
         },
-        "año": "",
+        "año": "2007 | 96’",
         "director": {
           "es": "Nadine Labaki"
         },
-        "imagen": "",
+        "imagen": "img/caramel.jpg",
         "descripcion": {
-          "es": "",
+          "es": "En Beirut, varias mujeres se reúnen en un salón de belleza, un microcosmos colorista y sensual. Layale ama a un hombre casado. Nisrine, que es musulmana y está a punto de casarse, tiene un serio problema: ya no es virgen. Rima se siente atraída por las mujeres. El problema de Jamel es que se resiste a envejecer. Rose ha sacrificado su vida para cuidar de su hermana que padece demencia senil.",
           "en": "",
           "eu": ""
         }
@@ -880,17 +1091,17 @@
           "eu": ""
         },       
         "pais": {
-          "es":"",
+          "es":"España",
           "en":"",
           "eu":""
         },
-        "año": "",
+        "año": "2006 | 90’",
         "director": {
           "es": "Chema Rodríguez"
         },
-        "imagen": "",
+        "imagen": "img/estrellas_de_la_Lainea.jpg",
         "descripcion": {
-          "es": "",
+          "es": "Valeria, Vilma, Mercy y el resto de sus compañeras sueñan con ser tratadas dignamente y que cese la violencia que sufren a diario. Son prostitutas guatemaltecas, de a dos dólares por servicio. Trabajan en la Línea, junto a la vía del tren que atraviesa la capital camino al Océano Pacífico. Para llamar la atención sobre sus problemas, sobre el acoso de la policía y los asesinatos impunes forman un equipo de fútbol y se inscriben en un torneo local del que son expulsadas por su condición de prostitutas. Esta expulsión generó en el país una encendida polémica, rechazos y apoyos que transformaron sus vidas de la noche a la mañana. Esta es su historia.",
           "en": "",
           "eu": ""
         }
@@ -912,17 +1123,17 @@
           "eu": ""
         },       
         "pais": {
-          "es":"",
+          "es":"España",
           "en":"",
           "eu":""
         },
-        "año": "",
+        "año": "2005 | 125’",
         "director": {
           "es": "Manúel Martín Cuenca"
         },
-        "imagen": "",
+        "imagen": "img/malas-temporadas.jpg",
         "descripcion": {
-          "es": "",
+          "es": "Malas temporadas es la historia de Mikel, Ana y Carlos, que se relacionan en el corazón de Madrid mientras buscan su lugar en el mundo, un lugar que cada vez se aleja más del idealizado, del que no existe, y la única solución es partir de lo real, para empezar a construirlo. Gente a la que el destino ha terminado llevando por caminos inesperados, y ahora comparten la necesidad de replantearse sus opciones.",
           "en": "",
           "eu": ""
         }
@@ -944,17 +1155,17 @@
           "eu": ""
         },       
         "pais": {
-          "es":"",
+          "es":"Tailandia",
           "en":"",
           "eu":""
         },
-        "año": "",
+        "año": "2004 | 118’",
         "director": {
           "es": "Ekachai Uekrongtham"
         },
-        "imagen": "",
+        "imagen": "img/beautiful-boxer.jpg",
         "descripcion": {
-          "es": "",
+          "es": "Creyendo que es una chica atrapada en un cuerpo de chico desde niño, Parinya Charoenphol (familiarmente conocido como Nong Toom en Tailandia) se propone dominar el deporte más masculino y letal: Muay Thai (kickboxing tailandés) para ganarse la vida y para conseguir su objetivo final de feminidad total. Conmovedora, divertida, con impactantes escenas de kickboxing tailandés, Beautiful Boxer describe la infancia de Nong Toom, su vida adolescente como monje viajero, sus penosos días en los campamentos de boxeo y explosivos combates donde él vence a la mayoría de sus oponentes en toda Tailandia y Japón. ",
           "en": "",
           "eu": ""
         }
@@ -976,17 +1187,17 @@
           "eu": ""
         },       
         "pais": {
-          "es":"",
+          "es":"Argelia",
           "en":"",
           "eu":""
         },
-        "año": "",
+        "año": "2003 | 85’",
         "director": {
           "es": " Abdelkrim Bahloul"
         },
-        "imagen": "",
+        "imagen": "img/le_soleil_assassinae_el_sol_asesinado.jpg",
         "descripcion": {
-          "es": "",
+          "es": "El poeta Jean Sénac es un 'Pied-Noir' que decidió quedarse en Argelia tras la independencia de ese país en 1962. Diez años después, la policía del régimen le vigila estrechamente. Sus recitales de poesía por todo el país atraen a un público amplio y su programa radiofónico 'Poésie sur tous les fronts' tiene una gran acogida entre la juventud. Dos estudiantes, Hamid y Belkacem, presentan una obra en el Festival Nacional de Teatro Argelino, pero no consiguen su objetivo. Sin embargo, Jean Sénac les felicita, lo cual mitiga un poco su desilusión, y a partir de entonces se hacen amigos del poeta y contemplan de cerca su combate por la libertad cultural en Argelia, que desemboca en su asesinato, una noche de agosto de 1973.",
           "en": "",
           "eu": ""
         }
@@ -1008,17 +1219,17 @@
           "eu": ""
         },       
         "pais": {
-          "es":"",
+          "es":"Sri Lanka",
           "en":"",
           "eu":""
         },
-        "año": "",
+        "año": "2002 | 81’",
         "director": {
           "es": "Asoka Handagama"
         },
-        "imagen": "",
+        "imagen": "img/tani-tatuwen-pyabanna.jpg",
         "descripcion": {
-          "es": "",
+          "es": "Para evitar la discriminación de género prevaleciente en Sri Lanka, una mujer decide hacerse pasar por hombre y consigue un trabajo como mecánica e incluso toma una esposa.",
           "en": "",
           "eu": ""
         }
@@ -1040,17 +1251,17 @@
           "eu": ""
         },       
         "pais": {
-          "es":"",
+          "es":"Italia",
           "en":"",
           "eu":""
         },
-        "año": "",
+        "año": "2001 | 110’",
         "director": {
           "es": "Ferzan Ozpetek"
         },
-        "imagen": "",
+        "imagen": "img/le_fate_ignoranti_the_ignorant_fairies.jpg",
         "descripcion": {
-          "es": "",
+          "es": "Un matrimonio felizmente casado se ve truncado por la trágica muerte del marido. La desconsolada viuda acaba averiguando que él le ocultaba algo inimaginable.",
           "en": "",
           "eu": ""
         }
@@ -1072,17 +1283,17 @@
           "eu": ""
         },       
         "pais": {
-          "es":"",
+          "es":"España",
           "en":"",
           "eu":""
         },
-        "año": "",
+        "año": "2000 | 92’",
         "director": {
           "es": "Cesc Gay"
         },
-        "imagen": "",
+        "imagen": "img/Kraampack.jpg",
         "descripcion": {
-          "es": "",
+          "es": "Verano de 1999. Dani pasa las vacaciones de verano en una casa de la costa. Cuando sus padres se van de viaje, se queda en compañía de su amigo Nico. Pese a la vigilancia de la asistenta y de su profesora de inglés, los amigos aprovechan la situación para meterse de lleno en la vida del pueblo. Así conocen a dos chicas con las que dan los primeros pasos hacia la vida adulta.",
           "en": "",
           "eu": ""
         }

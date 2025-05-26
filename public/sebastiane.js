@@ -130,22 +130,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
   mostrarInfo(2024);
   anioActivo = 2024;
-
-  fetch("/api/banner")
-    .then(res => res.json())
-    .then(data => {
-      if (data.mostrar && data.url) {
-        const banner = document.getElementById("banner-sebastiane");
-        banner.classList.remove("oculto");
-
-        if (data.tipo === "imagen") {
-          banner.innerHTML = `<img src=\"${data.url}\" alt=\"Banner\" />`;
-        } else if (data.tipo === "video") {
-          banner.innerHTML = `
-            <video controls autoplay muted loop>
-              <source src=\"${data.url}\" type=\"video/mp4\">\n              Tu navegador no admite el video.
-            </video>`;
-        }
-      }
-    });
 });
