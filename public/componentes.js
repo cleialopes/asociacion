@@ -19,6 +19,7 @@ document.getElementById('header').innerHTML = `
       <!-- Enlace a Premio Sebastiane -->
       <div class="header-center">
         <a href="index.html" class="titulo-principal">Premio Sebastiane</a>
+        <a href="" class="titulo-principal">19-27/09/2025</a>
       </div>
     </div>
 
