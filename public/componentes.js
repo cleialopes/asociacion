@@ -15,17 +15,24 @@ document.getElementById('header').innerHTML = `
           <i class="fa-solid fa-moon"></i>
         </button>
       </div>
-
-      <!-- Enlace a Premio Sebastiane -->
-      <div class="header-center">
+      <div class="header-right">
         <a href="index.html" class="titulo-principal">Premio Sebastiane</a>
-        <a href="" class="titulo-principal">19-27/09/2025</a>
+        <a href="#" class="titulo-principal fecha-evento">19-27/09/2025</a>
       </div>
     </div>
 
     <div id="menu-desplegable" class="menu-desplegable oculto">
       <nav class="menu-column">
-        <a href="info.html" data-i18n="menu.info">Info</a>
+        <div class="menu-info">
+          <a class="enlace-info">
+            <span data-i18n="menu.info">Info</span>
+            <span class="flecha-info">▼</span>
+          </a>
+          <div class="submenu">
+            <a href="nosotros.html">Nosotros</a>
+            <a href="voluntaries.html">Voluntaries</a>
+          </div>
+        </div>
         <a href="sebastiane.html" data-i18n="menu.sebastiane">Sebastiane</a>
         <a href="sebastiane_latino.html" data-i18n="menu.latino">Sebastiane Latino</a>
         <a href="encuentros.html" data-i18n="menu.encuentros">Encuentros</a>
@@ -36,8 +43,7 @@ document.getElementById('header').innerHTML = `
   </header>
 `;
 
-
-
+// Footer
 document.getElementById('footer').innerHTML = `
   <footer class="footer">
     <div class="footer-contenedor">
@@ -89,6 +95,26 @@ document.getElementById('footer').innerHTML = `
 
 function crearGrupoPatrocinadores(titulo, lista) {
   let clase = titulo.toLowerCase();
+  const esCarrusel = clase === "patrocinios" || clase === "colaboradores";
+
+  if (esCarrusel) {
+    let html = `<h2>${titulo}</h2>
+      <div class="swiper ${clase}-swiper">
+        <div class="swiper-wrapper">`;
+    lista.forEach(p => {
+      html += `
+        <div class="swiper-slide">
+          <a href="${p.href}" target="_blank">
+            <img src="${p.img}" alt="${p.alt}">
+          </a>
+        </div>`;
+    });
+    html += `</div>
+        <div class="swiper-pagination"></div>
+      </div>`;
+    return html;
+  }
+
   let html = `<h2>${titulo}</h2><div class="grupo-patrocinadores ${clase}">`;
   lista.forEach(p => {
     html += `
@@ -106,28 +132,61 @@ fetch('patrocinadores.json')
     const contenedor = document.getElementById('patrocinadores');
     if (contenedor) {
       contenedor.classList.add('patrocinadores');
-      contenedor.innerHTML = 
+      contenedor.innerHTML =
         crearGrupoPatrocinadores("Organizadores", data.organizadores) +
-        crearGrupoPatrocinadores("Patrocinios", data.patrocinios) +
-        crearGrupoPatrocinadores("Colaboradores", data.colaboradores);
+        crearCarruselUnificado([...data.patrocinios, ...data.colaboradores]);
+
+        function crearCarruselUnificado(lista) {
+        let html = `<h2>Patrocinios y Colaboradores</h2>
+          <div class="swiper unificado-swiper">
+            <div class="swiper-wrapper">`;
+        lista.forEach(p => {
+          html += `
+            <div class="swiper-slide">
+              <a href="${p.href}" target="_blank">
+                <img src="${p.img}" alt="${p.alt}">
+              </a>
+            </div>`;
+        });
+        html += `</div>
+            <div class="swiper-pagination"></div>
+          </div>`;
+        return html;
+      }
+    new Swiper('.unificado-swiper', {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false
+      },
+      pagination: {
+        el: '.unificado-swiper .swiper-pagination',
+        clickable: true
+      },
+      breakpoints: {
+        0: { slidesPerView: 1 },
+        480: { slidesPerView: 2 },
+        768: { slidesPerView: 4 }
+      }
+    });
     }
   })
   .catch(error => {
     console.error("Error cargando patrocinadores:", error);
   });
 
-  document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.getElementById("menu-toggle");
   const menu = document.getElementById("menu-desplegable");
   const modoToggle = document.getElementById("modo-toggle");
 
-  // Mostrar/ocultar menú al hacer clic en el botón
   if (toggle && menu) {
     toggle.addEventListener("click", () => {
       menu.classList.toggle("oculto");
     });
 
-    // Cerrar el menú si se hace clic fuera
     document.addEventListener("click", function(event) {
       if (!menu.classList.contains("oculto") &&
           !menu.contains(event.target) &&
@@ -137,7 +196,6 @@ fetch('patrocinadores.json')
     });
   }
 
-  // Cargar modo desde localStorage
   if (localStorage.getItem('modo') === 'oscuro') {
     document.body.classList.add('dark-mode');
     if (modoToggle) {
@@ -145,7 +203,6 @@ fetch('patrocinadores.json')
     }
   }
 
-  // Cambiar modo claro/oscuro
   if (modoToggle) {
     modoToggle.addEventListener("click", () => {
       document.body.classList.toggle("dark-mode");
@@ -156,7 +213,7 @@ fetch('patrocinadores.json')
       localStorage.setItem('modo', oscuro ? 'oscuro' : 'claro');
     });
   }
-  // Mostrar banner global
+
   fetch("/api/banner")
     .then(res => res.json())
     .then(data => {
@@ -176,4 +233,14 @@ fetch('patrocinadores.json')
         }
       }
     });
+
+    const infoEnlace = document.querySelector('.menu-info > a');
+const infoBloque = document.querySelector('.menu-info');
+
+if (infoEnlace && infoBloque) {
+  infoEnlace.addEventListener('click', (e) => {
+    e.preventDefault(); // evita comportamiento por defecto
+    infoBloque.classList.toggle('mostrar-submenu');
+  });
+}
 });

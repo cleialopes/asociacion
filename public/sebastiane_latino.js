@@ -93,14 +93,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 : pelicula.pais;
 
               html += `
-                <div class="pelicula modo-claro-oscuro">
-                  <img src="${img}" alt="${titulo}">
-                  <div>
-                    <h4>${titulo}</h4>
-                    <p><em>${pelicula.año}</em></p>
-                    <p><strong>${director}</strong> – ${pais}</p>
-                    <p>${descripcion}</p>
-                  </div>
+                <div class="pelicula">
+                  <a href="detalle.html?titulo=${encodeURIComponent(titulo)}&fuente=latino">
+                    <img src="${img}" alt="${titulo}">
+                  </a>
+                  <h4>${titulo}</h4>
                 </div>
               `;
             });

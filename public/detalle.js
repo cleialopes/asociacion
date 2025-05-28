@@ -1,9 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
   const params = new URLSearchParams(window.location.search);
   const tituloBuscado = params.get("titulo");
+  const fuente = params.get("fuente") === "latino" ? "sebastiane_latino" : "sebastiane";
   const idioma = document.getElementById("lang-selector")?.value || "es";
 
-  fetch("/api/sebastiane")
+  fetch(`/api/${fuente}`)
     .then(res => res.json())
     .then(data => {
       let pelicula = null;
@@ -34,33 +35,34 @@ document.addEventListener("DOMContentLoaded", () => {
       const director = pelicula.director[idioma] || pelicula.director.es;
       const pais = pelicula.pais[idioma] || pelicula.pais.es;
       const descripcion = pelicula.descripcion[idioma] || pelicula.descripcion.es;
+
       function convertirAEmbed(url) {
         if (!url) return "";
         if (url.includes("youtube.com/watch?v=")) {
-            return url.replace("watch?v=", "embed/");
+          return url.replace("watch?v=", "embed/");
         }
         if (url.includes("youtu.be/")) {
-            return url.replace("youtu.be/", "www.youtube.com/embed/");
+          return url.replace("youtu.be/", "www.youtube.com/embed/");
         }
-        return url; // retorna tal cual si ya es embed u otro tipo
-        }
+        return url;
+      }
 
-        const video = convertirAEmbed(pelicula.video);
+      const video = convertirAEmbed(pelicula.video);
 
       contenedor.innerHTML = `
-  <img src="${img}" alt="${titulo}" />
-  <ul class="ficha-pelicula">
-    <li><strong>Título:</strong> ${titulo}</li>
-    <li><strong>Director:</strong> ${director}</li>
-    <li><strong>País:</strong> ${pais}</li>
-    <li><strong>Año:</strong> ${pelicula.año}</li>
-    <li><strong>Sinopsis:</strong> ${descripcion}</li>
-  </ul>
-  ${video ? `
-    <h2>Trailer</h2>
-    <div class="video-contenedor">
-      <iframe src="${video}" frameborder="0" allowfullscreen></iframe>
-    </div>` : ""}
-`;
+        <img src="${img}" alt="${titulo}" />
+        <ul class="ficha-pelicula">
+          <li><strong>Título:</strong> ${titulo}</li>
+          <li><strong>Director:</strong> ${director}</li>
+          <li><strong>País:</strong> ${pais}</li>
+          <li><strong>Año:</strong> ${pelicula.año}</li>
+          <li><strong>Sinopsis:</strong> ${descripcion}</li>
+        </ul>
+        ${video ? `
+          <h2>Trailer</h2>
+          <div class="video-contenedor">
+            <iframe src="${video}" frameborder="0" allowfullscreen></iframe>
+          </div>` : ""}
+      `;
     });
 });

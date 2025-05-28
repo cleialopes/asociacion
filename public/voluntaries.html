@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sebastiane</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://kit.fontawesome.com/43d19060f3.js" crossorigin="anonymous"></script> <!--para que se vea la i-->
+  <link rel="icon" type="image/x-icon" href="img/cropped-icono_favicon.png" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+<body>
+  <div id="header"></div>
+
+  <main>
+    <h2>Voluntaries</h2>
+    <section class="voluntaries-section">
+      <p>
+        La comisión del Sebastiane se sustenta en el voluntariado de activistas de todos los ámbitos que hacen realidad las 
+        actividades que giran alrededor del Premio cada año. La colaboración activa de todos los voluntarios es la piedra angular 
+        del Sebastiane y, como tal, las puertas del premio se mantienen abiertas los 365 días del año.
+      </p>
+      <p>
+        Si te gustaría formar parte de uno de los premios LGTBIAQ+ pioneros en el mundo, te gusta el cine o simplemente deseas 
+        ayudar a visibilizar las diferentes realidades del colectivo, ¡no dudes en ponerte en contacto con nosotres!
+      </p>
+      <img src="img/banderaglbt+.webp" alt="bandera" />
+    </section>
+
+    <form action="https://formsubmit.co/contacto@asociacionxyz.org" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <section id="patrocinadores"></section>
+  </main>
+    <div id="footer"></div>
+
+    <script src="componentes.js"></script>
+    <script src="i18n.js"></script>
+</body>
+</html>
