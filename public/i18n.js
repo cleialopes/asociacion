@@ -266,12 +266,19 @@ function cambiarIdioma(lang) {
     const clave = el.getAttribute('data-i18n');
     if (t[clave]) el.innerHTML = t[clave];
   });
+
+    document.querySelectorAll('[data-i18n-html]').forEach(el => {
+    const clave = el.getAttribute('data-i18n-html');
+    if (t[clave]) el.innerHTML = t[clave];
+  });
+  
   if (document.getElementById("contenedor-noticias") && typeof mostrarNoticias === "function") {
-  noticiasCargadas = 0;
-  document.getElementById("contenedor-noticias").innerHTML = "";
-  mostrarNoticias(lang);
+    noticiasCargadas = 0;
+    document.getElementById("contenedor-noticias").innerHTML = "";
+    mostrarNoticias(lang);
+  }
 }
-}
+
 
 document.addEventListener('DOMContentLoaded', () => {
   const selector = document.getElementById('lang-selector');
@@ -297,6 +304,14 @@ document.addEventListener('DOMContentLoaded', () => {
     if (pathname.includes('ver-noticia.html') && typeof renderizarNoticia === "function") {
       renderizarNoticia(idioma);
     }
+    if (pathname.includes('encuentros.html')) {
+      $("#contenedor-encuentros").empty();
+      $.getScript('encuentros.js'); // recarga dinámicamente los encuentros
+    }
+    if (pathname.includes('ver-encuentro.html')) {
+    $("#contenido-encuentro").empty();
+    $.getScript('ver-encuentro.js');
+  }
   });
   }
 });

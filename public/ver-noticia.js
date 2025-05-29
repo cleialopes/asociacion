@@ -94,9 +94,9 @@ function renderizarNoticia(idioma) {
     ${fotografo ? `<p class="fotografo">Foto: ${fotografo}</p>` : ""}
     <p class="fecha">${noticiaGlobal.fecha}</p>
     <div class="contenido-noticia">${contenidoHTML} ${anioLink}</div>
-    <a href="noticias.html" class="btn-leer">← ${traducir("volver")}</a>
+    <a href="noticias.html" class="btn-leer" data-i18n-html="volver">← Volver</a>
   `;
-
+cambiarIdioma(idioma);
   // Carrusel funcional
   const imagenesCarrusel = document.querySelectorAll(".carrusel-imagen");
   const flechaIzquierda = document.querySelector(".carrusel-flecha.izquierda");
@@ -131,3 +131,4 @@ if (selector) {
     renderizarNoticia(nuevoIdioma);
   });
 }
+

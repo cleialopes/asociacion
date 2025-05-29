@@ -1,15 +1,30 @@
-const params = new URLSearchParams(window.location.search);
-const id = parseInt(params.get("id"));
-const idioma = localStorage.getItem("idioma") || "es";
+function traducir(clave) {
+  const traducciones = {
+    volver: {
+      es: "Volver a encuentros",
+      eu: "Topaketetara itzuli",
+      en: "Back to gatherings"
+    }
+  };
+  const idioma = localStorage.getItem("idioma") || "es";
+  return traducciones[clave]?.[idioma] || clave;
+}
 
-fetch("encuentros.json")
-  .then(res => res.json())
-  .then(encuentros => {
-    const encuentro = encuentros.find(e => e.id === id);
-    const contenedor = document.getElementById("contenido-encuentro");
+function mostrarEncuentro(lang) {
+  const idioma = lang || localStorage.getItem("idioma") || "es";
+  const params = new URLSearchParams(window.location.search);
+  const id = parseInt(params.get("id"));
 
-    if (encuentro) {
-      const titulo = encuentro.titulo?.[idioma] || encuentro.titulo?.es || "";
+  fetch("encuentros.json")
+    .then(res => res.json())
+    .then(encuentros => {
+      const encuentro = encuentros.find(e => e.id === id);
+      if (!encuentro) {
+        document.getElementById("contenido-encuentro").innerHTML = "<p>Encuentro no encontrado.</p>";
+        return;
+      }
+
+      const titulo = encuentro.titulo?.[idioma] || encuentro.titulo?.es || "Sin título";
       const descripcion = encuentro.descripcion?.[idioma] || encuentro.descripcion?.es || "";
       const imagenes = encuentro.imagenes || [];
       const fotografo = encuentro.fotografo || "";
@@ -27,6 +42,7 @@ fetch("encuentros.json")
           </div>`
         : "";
 
+      const contenedor = document.getElementById("contenido-encuentro");
       contenedor.innerHTML = `
         <h1>${titulo}</h1>
         <p class="descripcion">${descripcion}</p>
@@ -36,70 +52,51 @@ fetch("encuentros.json")
         <a href="encuentros.html" class="btn-leer">← ${traducir("volver")}</a>
       `;
 
-      // Carrusel funcional
       const imagenesCarrusel = document.querySelectorAll(".carrusel-imagen");
       const flechaIzquierda = document.querySelector(".carrusel-flecha.izquierda");
       const flechaDerecha = document.querySelector(".carrusel-flecha.derecha");
 
       if (imagenesCarrusel.length > 0 && flechaIzquierda && flechaDerecha) {
-  let indice = 0;
-  let intervalo;
+        let indice = 0;
+        let intervalo;
 
-  const mostrarImagen = (i) => {
-    imagenesCarrusel.forEach((img, index) =>
-      img.classList.toggle("activa", index === i)
-    );
-  };
+        const mostrarImagen = (i) => {
+          imagenesCarrusel.forEach((img, index) =>
+            img.classList.toggle("activa", index === i)
+          );
+        };
 
-  const avanzar = () => {
-    indice = (indice + 1) % imagenesCarrusel.length;
-    mostrarImagen(indice);
-  };
+        const avanzar = () => {
+          indice = (indice + 1) % imagenesCarrusel.length;
+          mostrarImagen(indice);
+        };
 
-  const retroceder = () => {
-    indice = (indice - 1 + imagenesCarrusel.length) % imagenesCarrusel.length;
-    mostrarImagen(indice);
-  };
+        const retroceder = () => {
+          indice = (indice - 1 + imagenesCarrusel.length) % imagenesCarrusel.length;
+          mostrarImagen(indice);
+        };
 
-  const iniciarCarrusel = () => {
-  if (intervalo) clearInterval(intervalo);
-  intervalo = setInterval(avanzar, 4000);
-};
+        const iniciarCarrusel = () => {
+          if (intervalo) clearInterval(intervalo);
+          intervalo = setInterval(avanzar, 4000);
+        };
 
-  const detenerCarrusel = () => {
-    if (intervalo) clearInterval(intervalo);
-  };
+        flechaIzquierda.addEventListener("click", () => {
+          retroceder();
+          iniciarCarrusel();
+        });
 
-  flechaIzquierda.addEventListener("click", () => {
-    retroceder();
-    iniciarCarrusel(); // Reinicia intervalo después del clic
-  });
+        flechaDerecha.addEventListener("click", () => {
+          avanzar();
+          iniciarCarrusel();
+        });
 
-  flechaDerecha.addEventListener("click", () => {
-    avanzar();
-    iniciarCarrusel();
-  });
-
-  // Iniciar automáticamente al cargar
-  iniciarCarrusel();
+        iniciarCarrusel();
+      }
+    })
+    .catch(err => {
+      document.getElementById("contenido-encuentro").innerHTML = "<p>Error cargando el encuentro.</p>";
+      console.error(err);
+    });
 }
-
-    } else {
-      contenedor.innerHTML = "<p>Encuentro no encontrado.</p>";
-    }
-  })
-  .catch(err => {
-    document.getElementById("contenido-encuentro").innerHTML = "<p>Error cargando el encuentro.</p>";
-    console.error(err);
-  });
-
-function traducir(clave) {
-  const traducciones = {
-    volver: {
-      es: "Volver a encuentros",
-      eu: "Topaketetara itzuli",
-      en: "Back to gatherings"
-    }
-  };
-  return traducciones[clave]?.[idioma] || clave;
-}
+mostrarEncuentro();
