@@ -1,3 +1,8 @@
+function traducir(clave) {
+  const idioma = localStorage.getItem("idioma") || "es";
+  if (!window.traducciones || !window.traducciones[idioma]) return clave;
+  return window.traducciones[idioma][clave] || clave;
+}
 function mostrarDetalle(tituloBuscado, idioma, fuente) {
   fetch(`/api/${fuente}`)
     .then(res => res.json())
@@ -45,20 +50,18 @@ function mostrarDetalle(tituloBuscado, idioma, fuente) {
       contenedor.innerHTML = `
         <img src="${img}" alt="${titulo}" />
         <ul class="ficha-pelicula">
-          <li><strong>Título:</strong> ${titulo}</li>
-          <li><strong>Director:</strong> ${director}</li>
-          <li><strong>País:</strong> ${pais}</li>
-          <li><strong>Año:</strong> ${pelicula.año}</li>
-          <li><strong>Sinopsis:</strong> ${descripcion}</li>
+          <li><strong>${traducir("titulo")}</strong> ${titulo}</li>
+          <li><strong>${traducir("director")}</strong> ${director}</li>
+          <li><strong>${traducir("pais")}</strong> ${pais}</li>
+          <li><strong>${traducir("anio")}</strong> ${pelicula.año}</li>
+          <li><strong>${traducir("sinopsis")}</strong> ${descripcion}</li>
         </ul>
         ${video ? `
-          <h2>Trailer</h2>
+          <h2>${traducir("trailer")}</h2>
           <div class="video-contenedor">
             <iframe src="${video}" frameborder="0" allowfullscreen></iframe>
           </div>` : ""}
       `;
-
-      cambiarIdioma(idioma);
     });
 }
 
@@ -67,7 +70,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const id = params.get("id");
   const fuente = params.get("fuente") === "latino" ? "sebastiane_latino" : "sebastiane";
   const idioma = localStorage.getItem("idioma") || "es";
+
+  // Ejecutar de inmediato
   mostrarDetalle(id, idioma, fuente);
+
+  // Si el usuario cambia el idioma manualmente después, volver a mostrar traducido
+  const selector = document.getElementById("selector-idioma");
+  if (selector) {
+    selector.addEventListener("change", () => {
+      const nuevoIdioma = selector.value;
+      localStorage.setItem("idioma", nuevoIdioma);
+      mostrarDetalle(id, nuevoIdioma, fuente);
+    });
+  }
 });
 
 document.getElementById("lang-selector")?.addEventListener("change", () => {

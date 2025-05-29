@@ -1,5 +1,12 @@
 const traducciones = {
   es: {
+    "titulo": "Título:",
+    "director": "Director:",
+    "pais": "País:",
+    "anio": "Año:",
+    "sinopsis": "Sinopsis:",
+    "trailer": "Tráiler",
+
     "menu.info": "Info",
     "menu.sebastiane": "Sebastiane",
     "menu.latino": "Sebastiane Latino",
@@ -79,6 +86,13 @@ const traducciones = {
     "voluntaries.form.enviar": "Enviar"
   },
   eu: {
+    "titulo": "Izenburua:",
+    "director": "Zuzendaria:",
+    "pais": "Herrialdea:",
+    "anio": "Urtea:",
+    "sinopsis": "Sinopsia:",
+    "trailer": "Aurrerapena",
+
     "menu.info": "Info",
     "menu.sebastiane": "Sebastiane",
     "menu.latino": "Sebastiane Latino",
@@ -158,6 +172,13 @@ const traducciones = {
     "voluntaries.form.enviar": "Bidali"
   },
   en: {
+    "titulo": "Title:",
+    "director": "Director:",
+    "pais": "Country:",
+    "anio": "Year:",
+    "sinopsis": "Synopsis:",
+    "trailer": "Trailer",
+
     "menu.info": "Info",
     "menu.sebastiane": "Sebastiane",
     "menu.latino": "Sebastiane Latino",
@@ -279,4 +300,5 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   }
 });
+window.traducciones = traducciones;
 
