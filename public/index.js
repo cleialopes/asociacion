@@ -1,11 +1,11 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const idioma = localStorage.getItem("idioma") || "es";
-
+function mostrarNoticias(idioma) {
   fetch("noticias.json")
     .then(res => res.json())
     .then(noticias => {
       const contenedor = document.getElementById("contenedor-noticias");
       if (!contenedor) return;
+
+      contenedor.innerHTML = ""; // Limpiar antes de volver a añadir
 
       const ultimas = noticias
         .filter(n => n.titulo?.[idioma] || n.titulo?.es)
@@ -35,4 +35,13 @@ document.addEventListener("DOMContentLoaded", () => {
     .catch(error => {
       console.error("Error cargando noticias:", error);
     });
+}
+
+// Hacer la función accesible globalmente
+window.mostrarNoticias = mostrarNoticias;
+
+document.addEventListener("DOMContentLoaded", () => {
+  const idioma = localStorage.getItem("idioma") || "es";
+  mostrarNoticias(idioma);
 });
+

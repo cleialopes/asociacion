@@ -9,6 +9,11 @@ fetch('noticias.json')
   .then(noticias => {
     todasLasNoticias = noticias;
     mostrarNoticias();
+    
+    const btn = document.getElementById("btn-cargar-mas");
+    if (btn) {
+      btn.style.display = "block"; // Asegurar que se muestre al cargar
+    }
   })
   .catch(error => console.error("Error al cargar las noticias:", error));
 
@@ -18,7 +23,7 @@ function mostrarNoticias(idioma = localStorage.getItem("idioma") || "es")  {
 
   siguienteLote.forEach(noticia => {
     const titulo = noticia.titulo[idioma] || noticia.titulo["es"];
-const descripcion = noticia.descripcion[idioma] || noticia.descripcion["es"];
+    const descripcion = noticia.descripcion[idioma] || noticia.descripcion["es"];
     const imagen = noticia.imagenes?.[0] || "img/Una-proyección-1.webp";
     const fotografo = noticia.fotografo || "";
     const videoLocal = noticia.video_local;
@@ -37,31 +42,35 @@ const descripcion = noticia.descripcion[idioma] || noticia.descripcion["es"];
     const card = document.createElement("div");
     card.className = "noticia modo-claro-oscuro";
     card.innerHTML = `
-  ${
-    imagen && imagen.trim() !== ""
-      ? `<img src="${imagen}" alt="${titulo}" class="noticia-imagen">`
-      : videoLocal
-      
-      ? `<video class="noticia-video" controls>
-           <source src="${videoLocal}" type="video/mp4">
-           Tu navegador no soporta el video.
-         </video>`
-      : videoURL
-      ? `<iframe class="noticia-video" src="${videoURL}" frameborder="0" allowfullscreen></iframe>`
-      : ""
-  }
-  <h3><a href="ver-noticia.html?id=${noticia.id}">${titulo}</a></h3> 
-`;
+      ${
+        imagen && imagen.trim() !== ""
+          ? `<img src="${imagen}" alt="${titulo}" class="noticia-imagen">`
+          : videoLocal
+          ? `<video class="noticia-video" controls>
+               <source src="${videoLocal}" type="video/mp4">
+               Tu navegador no soporta el video.
+             </video>`
+          : videoURL
+          ? `<iframe class="noticia-video" src="${videoURL}" frameborder="0" allowfullscreen></iframe>`
+          : ""
+      }
+      <h3><a href="ver-noticia.html?id=${noticia.id}">${titulo}</a></h3> 
+    `;
     contenedor.appendChild(card);
   });
 
   noticiasCargadas += noticiasPorLote;
 
-  if (noticiasCargadas >= todasLasNoticias.length) {
-    document.getElementById("btn-cargar-mas").style.display = "none";
+  const btn = document.getElementById("btn-cargar-mas");
+  if (btn && noticiasCargadas >= todasLasNoticias.length) {
+    btn.style.display = "none";
   }
 }
 
+// ✅ Exponer globalmente para i18n.js
+window.mostrarNoticias = mostrarNoticias;
+
+// Evento del botón
 document.getElementById("btn-cargar-mas").addEventListener("click", mostrarNoticias);
 
 function traducir(clave) {
@@ -74,3 +83,4 @@ function traducir(clave) {
   };
   return traducciones[clave]?.[idioma] || clave;
 }
+

@@ -5,6 +5,7 @@ const traducciones = {
     "menu.latino": "Sebastiane Latino",
     "menu.revista": "Revista",
     "menu.encuentros": "Encuentros",
+    "menu.noticias":"Noticias",
     "noticias.titulo": "Noticias",
     "noticias.mas": "Más Noticias",
     "volver": "Volver",
@@ -83,6 +84,7 @@ const traducciones = {
     "menu.latino": "Sebastiane Latino",
     "menu.revista": "Aldizkaria",
     "menu.encuentros": "Topaketak",
+    "menu.noticias":"Berriak",
     "noticias.titulo": "Albisteak",
     "noticias.mas": "Albiste gehiago",
     "volver": "Itzuli",
@@ -161,6 +163,7 @@ const traducciones = {
     "menu.latino": "Sebastiane Latino",
     "menu.revista": "Magazine",
     "menu.encuentros": "Gatherings",
+    "menu.noticias":"News",
     "noticias.titulo": "News",
     "noticias.mas": "More News",
     "volver": "Back",
@@ -238,17 +241,15 @@ const traducciones = {
 function cambiarIdioma(lang) {
   const t = traducciones[lang];
   if (!t) return;
-  document.querySelectorAll('[data-i18n]').forEach(el => {
+    document.querySelectorAll('[data-i18n]').forEach(el => {
     const clave = el.getAttribute('data-i18n');
     if (t[clave]) el.innerHTML = t[clave];
   });
   if (document.getElementById("contenedor-noticias") && typeof mostrarNoticias === "function") {
   noticiasCargadas = 0;
   document.getElementById("contenedor-noticias").innerHTML = "";
-  document.getElementById("btn-cargar-mas").style.display = "block";
   mostrarNoticias(lang);
 }
-  localStorage.setItem('idioma', lang);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -259,8 +260,9 @@ document.addEventListener('DOMContentLoaded', () => {
   if (selector) {
     selector.value = idiomaGuardado; 
     selector.addEventListener('change', function () {
-  const idioma = this.value;
-  cambiarIdioma(idioma);
+    const idioma = this.value;
+    cambiarIdioma(idioma);
+    localStorage.setItem('idioma', idioma);
 
   const pathname = window.location.pathname;
   if (pathname.includes('detalle.html')) {
@@ -272,8 +274,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
     if (pathname.includes('ver-noticia.html') && typeof renderizarNoticia === "function") {
-  renderizarNoticia(idioma);
-}
+      renderizarNoticia(idioma);
+    }
   });
   }
 });

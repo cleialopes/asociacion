@@ -51,13 +51,13 @@
     "id": 2,
     "titulo": {
       "es": "25º aniversario del Premio Sebastiane en el Festival de San Sebastián",
-      "eu": "",
-      "en": ""
+      "eu": "Donostiako Zinemaldian Sebastiane Sariaren 25. urteurrena",
+      "en": "25th anniversary of the Sebastiane Award at the San Sebastian Film Festival"
     },
     "descripcion": {
-      "es": "<p><strong>Eneko Sagardoy y Anna Castillo formarán parte del jurado de este reconocimiento que se entregará el próximo 27 de septiembre.</strong></p><p><strong> El cartel de esta edición especial es un homenaje al público diverso que ha acompañado los 25 años del galardón LGBTIQA+ de GEHITU en el Festival, realizado por el diseñador local Rubén G. Caballero</strong></p>",
-      "eu": "",
-      "en": ""
+      "es": "Eneko Sagardoy y Anna Castillo formarán parte del jurado de este reconocimiento que se entregará el próximo 27 de septiembre. El cartel de esta edición especial es un homenaje al público diverso que ha acompañado los 25 años del galardón LGBTIQA+ de GEHITU en el Festival, realizado por el diseñador local Rubén G. Caballero",
+      "eu": "Eneko Sagardoy eta Anna Castillo izango dira irailaren 27an aurkeztuko den aitorpen honen epaimahaian.Edizio berezi honen kartela, Rubén G. Caballero bertako diseinatzaileak sortutako GEHITU LGBTIQA+ sariaren 25 urteak Zinemaldian lagundu dituen publiko anitzari omenaldia da.",
+      "en": "Eneko Sagardoy and Anna Castillo will be part of the jury for this recognition, which will be presented on September 27. The poster for this special edition is a tribute to the diverse public that has accompanied the 25 years of the GEHITU LGBTIQA+ award at the Festival, created by local designer Rubén G. Caballero"
     },
     "contenido": {
       "es": [
@@ -75,14 +75,32 @@
         { "tipo": "p", "texto": "En esta edición, el Festival cuenta con el apoyo de Basquetour, la Agencia Vasca de Turismo." }
       ],
       "en": [
-        { "tipo": "h3", "texto": "" },
-        { "tipo": "p", "texto": "" },
-        { "tipo": "p", "texto": "" }
+        { "tipo": "p", "texto": "On Saturday, September 30, 2000, Gehitu (the association of gay, lesbian, bisexual, trans, and intersex people of the Basque Country) awarded the first Sebastiane Prize at the San Sebastian Film Festival to the film that best reflected “the social reality of homosexuality”. From Krámpack (Cesc Gay, 2000) to 20,000 Species of Bees (Estibaliz Urresola, 2023), from the first to the last winner, the award, in line with the association itself, has broadened the scope of recognition, taking into account the realities, freedoms, and progress of trans, bisexual, and intersex people, all those included in the LGBTIQA+ community." },
+        { "tipo": "p", "texto": "The 25th anniversary of this pioneering award in Spain will be celebrated with a special screening of the film 120 battements par minute (120 Beats Per Minute), winner of the Sebastiane Prize in 2017, on Sunday 22nd at the Cines Príncipe (6:15 pm), which will be attended by its director, Robin Campillo, and its star, Nahuel Pérez Biscayart." },
+        { "tipo": "p", "texto": "Throughout its history, the award has recognized portraits of the situation of sexual freedoms in countries such as Sri Lanka, Venezuela, Algeria or Belgium and debuting filmmakers such as Nadine Labaki (Caramel, 2007), the second films of Manuel Martín Cuenca (Malas temporadas, 2005), Jon Garaño and Jose Mari Goenaga (80 egunean, 2010), or established directors such as Jane Campion (The Power of the Dog, 2021)." },
+        { "tipo": "p", "texto": "In 2024, fourteen films are nominated for the Sebastiane Award 2024: two in the New Directors category: Bagger Drama and Por donde pasa el silencio (Where Silence Passes); four in the Horizontes Latinos category (Cidade; Campo; El Jockey; Los domingos mueren más personas (Sundays More People Die); Ramón y Ramón y Reas); three in the Zabaltegi-Tabakalera category (I Saw the TV Glow; Sombra grande (Big Shadow); and Boku No Ohisama); one in the Perlak category (Emilia Pérez); and three in the Made in Spain category (Norberta; Orgullo Vieja (Old Pride); Reír, Cantar, Tal Vez Llorar (Laugh, Sing, Maybe Cry). The jury will be composed of members of Gehitu and actors Eneko Sagardoy and Anna Castillo. The award ceremony will be announced at Bidasoa Taproom on Friday the 27th at 7:00 p.m." },
+        { "tipo": "p", "texto": "For this special edition, local designer Rubén G. Caballero created a poster that pays tribute to the diverse audiences who have participated in the award's 25th anniversary at the Festival." },
+        { "tipo": "h3", "texto": "Focus on Latin America" },
+        { "tipo": "p", "texto": "In its evolution, in 2013 Gehitu decided to dedicate a specific award to Latin American films, the Sebastiane Latino. In its first eleven editions, this award has recognized the work of filmmakers such as Sebastián Lelio (A Fantastic Woman, Chile, 2017), Jayro Bustamante (Temblores, Guatemala, 2019), and Clarisa Navas (Las mil y una, Argentina, 2020). This year, the winning film of the Sebastiane Latino Award is Baby, a Brazilian production directed by Marcelo Caetano for 'bringing necessary nuances to a story of underworld and empathy to characters who live their queer love or create diverse families'. In addition, last year's winner, Transfariana, by Joris Lachaise, will be screened during the Festival's first weekend in Irún, Urnieta, and Deba." },
+        { "tipo": "h3", "texto": "Tenth Meeting of LGBTIQA+ Festivals, with support from the Ministry of Equality" },
+        { "tipo": "p", "texto": "Another fruit of the collaboration between the San Sebastian Film Festival and Gehitu is the LGBTIQA+ Festival Meeting, which celebrates its tenth edition in 2024. Among the regular program organized by Gehitu and the San Sebastian Film Festival around the meeting is a conversation on the inclusion of transmasculine realities in Ibero-American cinema." },
+        { "tipo": "p", "texto": "In addition, the 24 festivals from nine countries (Argentina, Brazil, Colombia, Cuba, Guatemala, Spain, Mexico, Peru, and Uruguay) will reflect on 'Building Diverse Festivals: From Programming to Prejudice'. They will also answer the question 'Diverse Culture? 25 Years of LGBTIQA+ Audiovisual Festivals' in a meeting attended by representatives from the event's collaborating entities: the Ministry of Equality, Spanish Cultural Action (AC/E), and the Basque Agency for Cooperation and Solidarity with the development NGO Mugen Gainetik." },
+        { "tipo": "p", "texto": "Industry professionals, the LGBTIQA+ community present at the Festival, and the general public will be able to participate in other activities organized within this framework. These include an analysis of LGBTIQA+ diversity in Spanish production, supported by ODA (Observatory of Diversity in Audiovisual Media); the presentation of short films from the project Memorias sinvergüenzas: Re-appropriating our queer memory, in collaboration with the Tabakalera audiovisual laboratory, Elías Querejeta Zine Eskola, and the Basque Film Library; and the opportunity to meet three production professionals selected by the LGBTIAQ+ laboratory network, made up of Mostra FIRE!! in Barcelona, ​​the Zinegoak Festival in Bilbao, and the Queercinelab of the Triángulo Foundation." },
+        { "tipo": "p", "texto": "This year, the Festival is supported by Basquetour, the Basque Tourism Agency." }
       ],
       "eu": [
-        { "tipo": "h3", "texto": "" },
-        { "tipo": "p", "texto": "" },
-        { "tipo": "p", "texto": "" }
+        { "tipo": "p", "texto": "Larunbatean, 2000ko irailaren 30ean, Gehituk (Euskal Herriko gay, lesbian, bisexual, trans eta intersexualen elkarteak) Donostiako Zinemaldiko lehen Sebastiane Saria eman zion “homosexualitatearen errealitate soziala” hobekien islatzen duen filmari. Krámpack-etik (Cesc Gay, 2000) 20.000 erle-espeziera (Estibaliz Urresola, 2023), lehen irabazletik azkenera, sariak, elkartearen beraren ildotik, aitorpen-esparrua zabaldu du, trans, bisexual, bisexual eta intersexualen komunitatean dauden trans, bisexual eta intersexualen errealitateak, askatasunak eta aurrerapena aintzat hartuta." },
+        { "tipo": "p", "texto": "Espainian aitzindari den sari honen 25. urteurrena ospatuko da 2017an Sebastiane Saria irabazi zuen 120 battements par minute (120 Beats Per Minute) filmaren emanaldi berezi batekin, hilaren 22an, igandean, Cines Príncipe aretoan (18:15), eta bertan izango dira bere zuzendaria, Robin Camphuel Bisca, Robin Camphuel Pérez izarra." },
+        { "tipo": "p", "texto": "Sariak bere historian zehar, Sri Lanka, Venezuela, Aljeria edo Belgika bezalako herrialdeetako sexu-askatasunen egoeraren erretratuak eta Nadine Labaki (Caramel, 2007), Manuel Martín Cuencaren bigarren filmak (Malas temporadas, 2005), Jon Garaño eta Jose Mari Goenagaren zuzendariak (The Power of egunean 80), edo The Campion Day 80 zuzendari finkatuak (80 egunean, 2005). Txakurra, 2021)." },
+        { "tipo": "p", "texto": "2024an hamalau dira 2024ko Sebastiane sarietarako izendatutako filmak: bi Zuzendari Berrietan: Bagger Drama eta Por donde pasa el silencio; lau Horizontes Latinosen (Cidade; Campo; El Jockey; Igandeetan jende gehiago hiltzen da; Ramón eta Ramón eta Reas); hiru Zabaltegi-Tabakaleran (I Saw The Tv Glow, Sombra grande eta Boku No Ohisama); bat Perlak (Emilia Pérez); eta hiru Made in Spain-en (Norberta; Old Pride; Laugh, Sing, Maybe Cry). Gehituko kideek eta Eneko Sagardoy eta Anna Castillo aktoreek osatuko dute epaimahaia, eta sari banaketa Bidasoako Taproom-en jakinaraziko da, ostiralean, hilak 27, 19:00etan." },
+        { "tipo": "p", "texto": "Edizio berezi honetarako Rubén G. Caballero bertako diseinatzaileak Zinemaldian sariaren 25. urteurrenean parte hartu duten publiko anitzak omentzen dituen kartela egin du." },
+        { "tipo": "h3", "texto": "Latinoamerikan zentratu" },
+        { "tipo": "p", "texto": "Bere bilakaeran, 2013an Gehituk sari zehatz bat eskaintzea erabaki zuen Latinoamerikako zinemari, Sebastiane Latino, zeinak bere lehen hamaika edizioetan Sebastián Lelio (A Fantastic Woman, Txile, 2017), Jayro Bustamante (Temblores, Guatemala, 2019) edo La 0 mil 20 una Navas, Argentina (La 0 mil 20 y una Navas), Jayro Bustamante (La 0 mil 20 y Navas, Argentina) bezalako zinemagileen lana aintzatetsi duena. Aurten, Sebastiane Latino sariaren film irabazlea Baby izan da, Marcelo Caetanok zuzendutako Brasilgo ekoizpena, 'mapa munduari eta enpatiari buruzko istorio bati beharrezko ñabardurak emateagatik queer maitasuna jasaten ari diren edo askotariko familiak sortzen ari diren pertsonaiei'. Horrez gain, iazko irabazlea, Joris Lachaisen Transfariana, Zinemaldiaren lehen asteburuan Irunen, Urnietan eta Deban emango dute." },
+        { "tipo": "h3", "texto": "LGBTIQA+ Jaien Hamargarren Topaketa, Berdintasun Ministerioaren laguntzarekin" },
+        { "tipo": "p", "texto": "Donostia Zinemaldiaren eta Gehituren arteko lankidetzaren beste fruitu bat LGBTIQA+ Festival Meeting da, 2024an bere hamargarren edizioa ospatuko duena. Gehituk eta Donostiako Zinemaldiak ekitaldiaren inguruan antolatzen duten ohiko programaren artean, errealitate transmaskulinoak zinema iberoamerikarrean sartzeari buruzko eztabaida dago." },
+        { "tipo": "p", "texto": "Horrez gain, 9 herrialdetako 24 jaialditan (Argentina, Brasil, Kolonbia, Kuba, Guatemala, Espainia, Mexiko, Peru eta Uruguai) hainbat jaialdiren eraikuntza: programaziotik aurreiritzietara gogoeta egingo dute. Edo galderari erantzungo diote: Kultura anitza? LGBTIQA+ ikus-entzunezkoen 25 urteak ospatuko dira ekitaldiko entitate laguntzaileetako ordezkariak: Berdintasun Ministerioa, Espainiako Kultura Ekintza (AC/E), eta Lankidetza eta Elkartasunerako Euskal Agentzia, Mugen Gainetik garapenerako GKEarekin batera." },
+        { "tipo": "p", "texto": "Industriako profesionalek, Zinemaldian dagoen LGBTIQA+ komunitateak eta publiko orokorrak esparru horretan antolatutako beste jardueretan parte hartu ahal izango dute. Besteak beste, LGBTIQA+ aniztasunaren analisia Espainiako ekoizpenean, ODAk (Ikus-entzunezko Hedabideetako Aniztasunaren Behatokia); Shameless Memories: Re-appropriating our Queer Memory proiektuko film laburren aurkezpena, Tabakalerako ikus-entzunezko laborategiaren, Elías Querejeta Zine Eskolaren eta Euskadiko Filmotekaren lankidetzarekin edo Mostra FIRE-k osatutako LGBTIAQ+ laborategi sareak aukeratutako hiru produkzio-profesionalekin elkartuz. Bartzelonatik, ​​Bilboko Zinegoak Jaialdia eta Triángulo Fundazioko Queercinelab." },
+        { "tipo": "p", "texto": "Aurten, Basquetour Turismoaren Euskal Agentziaren laguntza du Jaialdiak." }
       ]
     },
     "fecha": "2025-05-01",
@@ -97,8 +115,8 @@
     "id": 3,
     "titulo": {
       "es": "Entrevista a Karla Sofía Gascón",
-      "eu": "",
-      "en": ""
+      "eu": "Karla Sofía Gascóni elkarrizketa",
+      "en": "Interview with Karla Sofía Gascón"
     },
     "descripcion": {
       "es": "",
