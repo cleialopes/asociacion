@@ -12,13 +12,13 @@ fetch('noticias.json')
   })
   .catch(error => console.error("Error al cargar las noticias:", error));
 
-function mostrarNoticias() {
+function mostrarNoticias(idioma = localStorage.getItem("idioma") || "es")  {
   const contenedor = document.getElementById("contenedor-noticias");
   const siguienteLote = todasLasNoticias.slice(noticiasCargadas, noticiasCargadas + noticiasPorLote);
 
   siguienteLote.forEach(noticia => {
     const titulo = noticia.titulo[idioma] || noticia.titulo["es"];
-    const descripcion = noticia.descripcion[idioma] || noticia.descripcion["es"];
+const descripcion = noticia.descripcion[idioma] || noticia.descripcion["es"];
     const imagen = noticia.imagenes?.[0] || "img/Una-proyección-1.webp";
     const fotografo = noticia.fotografo || "";
     const videoLocal = noticia.video_local;

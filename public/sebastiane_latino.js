@@ -68,49 +68,48 @@ document.addEventListener("DOMContentLoaded", () => {
         let html = `<h2>${anio}</h2>`;
 
         for (const seccion in info) {
-          if (info[seccion].length > 0) {
+          if (Array.isArray(info[seccion]) && info[seccion].length > 0) {
             const tituloTraducido = traduccion[seccion] || seccion;
             html += `<h2>${tituloTraducido}</h2>`;
             html += `<div class="peliculas-seccion">`;
 
-            info[seccion].forEach(pelicula => {
-              const img = pelicula.imagen;
+           info[seccion]
+          .filter(pelicula => pelicula.titulo?.es?.trim()) // filtra películas con título en español no vacío
+          .forEach(pelicula => {
+            const img = pelicula.imagen;
 
-              const titulo = typeof pelicula.titulo === "object"
-                ? pelicula.titulo[idioma] || pelicula.titulo["es"]
-                : pelicula.titulo;
+            const titulo = typeof pelicula.titulo === "object"
+              ? pelicula.titulo[idioma] || pelicula.titulo["es"]
+              : pelicula.titulo;
 
-              const descripcion = typeof pelicula.descripcion === "object"
-                ? pelicula.descripcion[idioma] || pelicula.descripcion["es"]
-                : pelicula.descripcion;
+            const descripcion = typeof pelicula.descripcion === "object"
+              ? pelicula.descripcion[idioma] || pelicula.descripcion["es"]
+              : pelicula.descripcion;
 
-              const director = typeof pelicula.director === "object"
-                ? pelicula.director[idioma] || pelicula.director["es"]
-                : pelicula.director;
+            const director = typeof pelicula.director === "object"
+              ? pelicula.director[idioma] || pelicula.director["es"]
+              : pelicula.director;
 
-              const pais = typeof pelicula.pais === "object"
-                ? pelicula.pais[idioma] || pelicula.pais["es"]
-                : pelicula.pais;
+            const pais = typeof pelicula.pais === "object"
+              ? pelicula.pais[idioma] || pelicula.pais["es"]
+              : pelicula.pais;
 
-              html += `
-                <div class="pelicula">
-                  <a href="detalle.html?titulo=${encodeURIComponent(titulo)}&fuente=latino">
-                    <img src="${img}" alt="${titulo}">
-                  </a>
-                  <h4>${titulo}</h4>
-                </div>
-              `;
-            });
-
+            html += `
+              <div class="pelicula">
+                <a href="detalle.html?id=${encodeURIComponent(pelicula.id)}&fuente=latino">
+                  <img src="${img}" alt="${titulo}">
+                </a>
+                <h4>${titulo}</h4>
+              </div>
+            `;
+          });
             html += `</div>`;
           }
         }
-
         contenedor.innerHTML = html;
         contenedor.scrollIntoView({ behavior: "smooth" });
       });
-  }
-
+    }
   document.getElementById("lang-selector")?.addEventListener("change", () => {
     if (anioActivo) {
       mostrarInfo(anioActivo);

@@ -40,7 +40,6 @@ fetch("revista.json")
   })
   .catch(error => console.error("Error cargando revistas:", error));
 
-  // Botón cerrar visor
   document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("cerrar-flowpaper").addEventListener("click", () => {
       document.getElementById("visor-flowpaper").classList.add("oculto");

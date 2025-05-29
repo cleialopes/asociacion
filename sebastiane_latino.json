@@ -2,6 +2,7 @@
   "2025": {
     "Ganadora": [
       {
+        "id":"",
         "titulo": {
           "es": "",
           "en": "",
@@ -27,6 +28,7 @@
     ],
     "Candidatas": [
       {
+        "id":"",
        "titulo": {
           "es": "",
           "en": "",
@@ -54,15 +56,16 @@
   "2024": {
      "Ganadora": [
       {
+        "id":"Baby-2024",
         "titulo": {
           "es": "Baby",
-          "en": "",
-          "eu": ""
+          "en": "Baby",
+          "eu": "Haurra"
         },       
         "pais": {
           "es":"Brasil",
-          "en":"",
-          "eu":""
+          "en":"Brazil",
+          "eu":"Brasil"
         },
         "año": "2024 | 107’",
         "director": {
@@ -71,14 +74,15 @@
         "imagen": "img/baby-12-sebastiane-latino.png",
         "descripcion": {
           "es": "Tras ser liberado de un centro de detención de menores, Wellington se encuentra solo y a la deriva en las calles de São Paulo, sin contacto con sus padres y sin recursos para rehacer su vida. Durante una visita a un cine porno, conoce a Ronaldo, un hombre maduro que le enseña nuevas formas de sobrevivir. Poco a poco, su relación se convierte en una pasión conflictiva, que oscila entre la explotación y la protección, los celos y la complicidad.",
-          "en": "",
-          "eu": ""
+          "en": "After being released from a juvenile detention center, Wellington finds himself alone and adrift on the streets of São Paulo, without contact with his parents and with no resources to rebuild his life. During a visit to a porn theater, he meets Ronaldo, an older man who teaches him new ways to survive. Little by little, their relationship develops into a conflicted passion, oscillating between exploitation and protection, jealousy and complicity.",
+          "eu": "Adingabeen atxiloketa zentro batetik atera ostean, Wellington bakarrik eta noraezean aurkitzen da São Pauloko kaleetan, gurasoekin harremanik gabe eta bere bizitza berreraikitzeko baliabiderik gabe. Zinema porno batera egindako bisitan, Ronaldo ezagutuko du, bizirauteko modu berriak irakasten dizkion gizon heldu bat. Apurka-apurka, haien arteko harremana pasio gatazkatsu bilakatzen da, esplotazio eta babesaren, jeloskortasunaren eta konplizitatearen artean dabil."
         },
         "video": ""
       }
     ],
     "Candidatas": [
       {
+        "id":"Reaslatino-2024",
         "titulo": {
           "es": "Reas",
           "en": "Reas",
@@ -89,7 +93,7 @@
           "en":"Argentina-Germany-Switzerland",
           "eu":"Argentina-Alemania-Suitza"
         },
-         "año": "2024 | 82’",
+        "año": "2024 | 82’",
         "director": {
           "es": "Mariano Cattaneo"
         },
@@ -102,15 +106,16 @@
         "video": ""
       },
       {
+      "id":"Vera y El Placer de Los Otros-2024",
        "titulo": {
           "es": "Vera y El Placer de Los Otros",
-          "en": "",
-          "eu": ""
+          "en": "Vera and the Pleasure of Others",
+          "eu": "Vera eta besteen plazerra"
         },       
         "pais": {
           "es":"Argentina",
-          "en":"",
-          "eu":""
+          "en":"Argentina",
+          "eu":"Argentina"
         },
         "año": "2023 | 103’",
         "director": {
@@ -119,21 +124,22 @@
         "imagen": "img/vera.jpg",
         "descripcion": {
           "es": "Aprovechando que su madre trabaja en el negocio inmobiliario, una adolescente alquila por horas, de forma clandestina, un piso a otros jóvenes para que puedan tener un espacio donde practicar sexo. Lo que parece una manera fácil de ganar dinero se convierte en realidad en la vía a través de la cual la chica empieza a explorar su sexualidad.",
-          "en": "",
-          "eu": ""
+          "en": "Taking advantage of her mother's real estate business, a teenager secretly rents an apartment by the hour to other young people so they can have a place to have sex. What seems like an easy way to make money actually becomes the way the girl begins to explore her sexuality.",
+          "eu": "Amaren higiezinen negozioa aprobetxatuz, nerabe batek ezkutuan etxebizitza bat alokatzen dio orduka beste gazte batzuei, sexu harremanak izateko tokia izan dezaten. Dirua irabazteko modu erraza dirudiena neska bere sexualitatea aztertzen hasteko modua bihurtzen da."
         },
         "video": ""
       },
       {
+        "id":"Los Amantes Astronautas-2024",
        "titulo": {
           "es": "Los Amantes Astronautas",
-          "en": "",
-          "eu": ""
+          "en": "The Astronaut Lovers",
+          "eu": "The Astronaut Lovers"
         },       
         "pais": {
           "es":"Argentina, España",
-          "en":"",
-          "eu":""
+          "en":"Argentina, Spain",
+          "eu":"Argentina, Espainia"
         },
         "año": "2024 | 116’",
         "director": {
@@ -142,25 +148,26 @@
         "imagen": "img/los-amantes-astronautas.jpg",
         "descripcion": {
           "es": "Pedro llega a la costa y se reencuentra con Maxi, a quien no ve desde que era niño. Con la intención de darle celos a su exnovia, Maxi pide a Pedro que simule ser su novio. Pedro acepta divertido, pero no advierte que este juego puede volverse real.",
-          "en": "",
-          "eu": ""
+          "en": "Pedro arrives at the coast and reunites with Maxi, whom he hasn't seen since he was a child. In an attempt to make his ex-girlfriend jealous, Maxi asks Pedro to pretend to be her boyfriend. Pedro agrees, amused, but he doesn't realize that this game could turn real.",
+          "eu": "Pedro kostaldera heldu eta Maxirekin elkartuko da, txikitatik ikusi ez zuena. Bere neska-lagun ohia jeloskor jarri nahian, Maxik Pedrori bere mutil-laguna dela itxurak egiteko eskatuko dio. Pedrok dibertituta onartzen du, baina ez da konturatzen joko hau benetako bihur daitekeela."
         },
         "video": ""
       }
     ]
   },
   "2023": {
-    "Ganadora": [
+      "Ganadora": [
       {
+        "id":"Transfariana-2023",
         "titulo": {
           "es": "Transfariana",
-          "en": "",
-          "eu": ""
+          "en": "Transfariana",
+          "eu": "Transfariana"
         },       
         "pais": {
           "es":"Colombia, Francia",
-          "en":"",
-          "eu":""
+          "en":"Colombia, France",
+          "eu":"Kolonbia, Frantzia"
         },
         "año": " 2023 | 150’",
         "director": {
@@ -169,23 +176,24 @@
         "imagen": "img/transfariana.jpg",
         "descripcion": {
           "es": "El documental lleva un título híbrido que mezcla “trans” con “fariana”, el término que designa a las mujeres miembros de las FARC. El relato comienza en La Picota, un penal de alta seguridad, donde Jaison Murillo, comandante y portavoz de las FARC, se casó con Laura Katalina, una mujer transgénero y exprostituta, sentenciada a cadena perpetua. Tras la oposición inicial de los guerrilleros, esta “boda rebelde” propició un diálogo sin precedentes entre guerrilleros y miembros transexuales de las asociaciones de la zona de tolerancia en Bogotá, Santa Fé. Poco a poco, sus historias se entrelazan, y sus luchas convergen y componen un conmovedor fresco histórico en un contexto de transición política.",
-          "en": "",
-          "eu": ""
+          "en": "The documentary has a hybrid title that combines 'trans' with 'fariana', the term used to describe female members of the FARC. The story begins at La Picota, a high-security prison, where Jaison Murillo, a FARC commander and spokesperson, married Laura Katalina, a transgender woman and former prostitute sentenced to life in prison. After initial opposition from the guerrillas, this 'rebel wedding' fostered an unprecedented dialogue between guerrillas and transgender members of the tolerance zone associations in Bogotá, Santa Fé. Little by little, their stories intertwine, and their struggles converge, creating a moving historical fresco in the context of political transition.",
+          "eu": "Dokumentalak izenburu hibrido bat du, 'trans' eta 'fariana' uztartzen dituena, FARCeko emakume kideak izendatzen dituen terminoa. Istorioa La Picotan hasten da, segurtasun handiko espetxe batean, non Jaison Murillo, FARCeko komandante eta bozeramailea, Laura Katalinarekin ezkondu zen, emakume transgenero eta bizi osorako espetxe zigorra ezarri zioten emagaldu ohi batekin. Gerrillaren hasierako oposizioaren ostean, 'ezkontza errebelde' honek aurrekaririk gabeko elkarrizketa piztu zuen Bogotako eta Santa Feko tolerantzia guneko elkarteetako gerrillarien eta transgeneroen artean. Apurka-apurka, haien istorioak nahasten dira, eta beren borrokak bat egiten dute trantsizio politikoaren testuinguruan fresko historiko zorrotz bat sortzeko."
         },
         "video": ""
       }
     ],
     "Candidatas": [
       {
+        "id":"Almamula-2023",
        "titulo": {
           "es": "Almamula",
-          "en": "",
-          "eu": ""
+          "en": "Almamula",
+          "eu": "Almamula"
         },       
         "pais": {
           "es":"Argentina, Francia, Italia",
-          "en":"",
-          "eu":""
+          "en":"Argentina, France, Italy",
+          "eu":"Argentina, Frantzia, Italia"
         },
         "año": "2023 | 95’",
         "director": {
@@ -194,21 +202,22 @@
         "imagen": "img/almamula.jpg",
         "descripcion": {
           "es": "Tras un ataque homófobo, Nino y su familia se mudan a una casa rural en medio de un bosque encantado por Almamula, un monstruo que se lleva a quienes cometen pecados carnales. En un mundo de susurros, deseos no expresados y plegarias, la curiosidad y los impulsos de Nino salen a la superficie.",
-          "en": "",
-          "eu": ""
+          "en": "After a homophobic attack, Nino and his family move to a rural house in the middle of a forest haunted by Almamula, a monster who takes away those who commit carnal sins. In a world of whispers, unspoken desires, and prayers, Nino's curiosity and impulses surface.",
+          "eu": "Eraso homofobiko baten ondoren, Nino eta bere familia Almamulak haragizko bekatuak egiten dituztenak kentzen dituen baso baten erdian dagoen landa-etxe batera joango dira bizitzera. Xuxurla, esan gabeko desio eta otoitz mundu batean, Ninoren jakin-mina eta bulkadak azaleratzen dira."
         },
         "video": ""
       },
       {
+        "id":"Cross Dreamers-2022",
        "titulo": {
-          "es": "Cross Dreamers",
-          "en": "",
-          "eu": ""
+          "es": "Cross Dreamers/Soñadores cruzados",
+          "en": "Cross Dreamers",
+          "eu": "Gurutze ameslariak"
         },       
         "pais": {
           "es":"Argentina",
-          "en":"",
-          "eu":""
+          "en":"Argentina",
+          "eu":"Argentina"
         },
         "año": "2022 | 78’",
         "director": {
@@ -217,21 +226,22 @@
         "imagen": "img/cross-dreamers.webp",
         "descripcion": {
           "es": "Ornella, Mabel, Paula y Mirna son protagonistas de la noche crossdresser de Buenos Aires y Rosario. Cada una, sin embargo, vive de manera diferente esta identidad desdoblada: mientras algunas querrían no volver nunca a su vida de varón, otras se sienten bien en la dualidad. Pero el deseo se enfrenta a menudo con los límites de una sociedad menos libre de lo que se piensa, y a cada una le espera un recorrido muy personal.",
-          "en": "",
-          "eu": ""
+          "en": "Ornella, Mabel, Paula, and Mirna are the stars of the crossdressing scene in Buenos Aires and Rosario. Each, however, experiences this split identity differently: while some would never want to return to their male lives, others thrive on duality. But desire often comes up against the limits of a society that's less free than it seems, and each one faces a very personal journey.",
+          "eu": "Ornella, Mabel, Paula eta Mirna dira Buenos Aires eta Rosarioko crossdresser gaueko protagonistak. Bakoitzak, ordea, ezberdin bizi du zatitutako identitate hori: batzuek ez lukete inoiz gizonezkoen bizitzara itzuli nahi, beste batzuk eroso sentitzen dira dualtasunean. Baina nahiak uste baino aske ez den gizarte baten mugekin topo egiten du sarri, eta pertsona bakoitzak bidaia oso pertsonal bati aurre egiten dio."
         },
         "video": ""
       },
       {
+        "id":"El filo de las tijeras-2023",
        "titulo": {
           "es": "El filo de las tijeras",
-          "en": "",
-          "eu": ""
+          "en": "The edge of the scissors",
+          "eu": "Guraizeen ertza"
         },       
         "pais": {
-          "es":"Argentina ",
-          "en":"",
-          "eu":""
+          "es":"Argentina",
+          "en":"Argentina",
+          "eu":"Argentina"
         },
         "año": "2023 | 69’",
         "director": {
@@ -240,21 +250,22 @@
         "imagen": "img/el_filo_de_las_tijeras.jpg",
         "descripcion": {
           "es": "Como si estuviera llenando el perfil de una aplicación de citas, el director disecciona su historia y construye un registro de deseo. Mezclando animación y documental hace converger imágenes de su infancia en una peluquería del conurbano bonaerense, los códigos del cruising de finales de los 90 y la cotidianidad de la trieja de la que formó parte durante siete años.",
-          "en": "",
-          "eu": ""
+          "en": "As if filling out a dating app profile, the director dissects her story and constructs a record of desire. Blending animation and documentary, he brings together images of his childhood in a hair salon in the Buenos Aires suburbs, the codes of late-90s cruising, and the everyday life of the threesome he was part of for seven years.",
+          "eu": "Dating aplikazioaren profila beteko balu bezala, zuzendariak bere istorioa disekzionatzen du eta desioaren erregistroa eraikitzen du. Animazioa eta dokumentala uztartuz, Buenos Airesko auzoko ile-apaindegi batean igarotako haurtzaroko irudiak, 90eko hamarkadaren amaierako gurutzaldi-kodeak eta zazpi urtez parte izan zuen hirukotearen egunerokotasuna biltzen ditu."
         },
         "video": ""
       },
       {
+        "id":"El silencio de los hombres-2023",
         "titulo": {
           "es": "El silencio de los hombres",
-          "en": "",
-          "eu": ""
+          "en": "The silence of men",
+          "eu": "Gizonen isiltasuna"
         },       
         "pais": {
           "es":"Argentina",
-          "en":"",
-          "eu":""
+          "en":"Argentina",
+          "eu":"Argentina"
         },
         "año": "2023 | 79’",
         "director": {
@@ -263,8 +274,8 @@
         "imagen": "img/el_silencio_de_los_hombres.jpg",
         "descripcion": {
           "es": "Un padre y un hijo atravesados por mandatos familiares deciden finalmente hablar. Bicho, Emma y Andrés ponen en crisis lo que se espera de ellos por ser varones. La directora parte de los hombres de su familia para llegar a desconocidos. Indaga en los miedos, complicidades, contradicciones y violencias que viven como varones. ¿Qué les toca afrontar?",
-          "en": "",
-          "eu": ""
+          "en": "A father and son, burdened by family mandates, finally decide to speak out. Bicho, Emma, ​​and Andrés challenge what is expected of them as men. The director begins with the men in their families and reaches out to strangers. She delves into the fears, complicities, contradictions, and violence they experience as men. What must they face?",
+          "eu": "Aita-seme batek, familia-aginduek zamatuta, azkenean hitz egitea erabakitzen dute. Bichok, Emmak eta Andrések gizon gisa espero dena desafiatzen dute. Zuzendaria bere familiako gizonekin hasten da ezezagunengana heltzeko. Gizonek bizi dituzten beldurrak, konplizitateak, kontraesanak eta indarkeria aztertzen ditu. Zeri aurre egin behar diote?"
         },
         "video": ""
       }
@@ -273,14 +284,15 @@
   "2022": {
     "Ganadora": [
       {
+        "id":"Sublime-2022",
        "titulo": {
           "es": "Sublime",
-          "en": "",
-          "eu": ""
+          "en": "Sublime",
+          "eu": "Sublimea"
         },       
         "pais": {
           "es":"Argentina",
-          "en":"",
+          "en":"Argentina",
           "eu":""
         },
         "año": "2022 | 100’",
@@ -290,46 +302,48 @@
         "imagen": "img/sublime.webp",
         "descripcion": {
           "es": "Manuel (16) vive en un pueblo de la costa. Tiene una banda de rock con sus mejores amigos. Uno de ellos es Felipe, que es como un hermano desde pequeñitos. Manuel está de novio con Azul, relación que están explorando con intensidad. Cuando llega el momento de tener su primera vez juntos, Manuel siente algo nuevo que le hace ver a Felipe con otros ojos.",
-          "en": "",
-          "eu": ""
+          "en": "Manuel (16) lives in a coastal town. He has a rock band with his best friends. One of them is Felipe, who has been like a brother to him since they were little. Manuel is dating Azul, a relationship they are intensely exploring. When the time comes for their first time together, Manuel feels something new that makes him see Felipe in a different light.",
+          "eu": "Manuel (16) kostaldeko herri batean bizi da. Rock talde bat dauka bere lagun onenekin. Horietako bat Felipe da, txikitatik guretzat anaia bezala izan dena. Manuel Azulrekin dabil, biziki aztertzen ari diren harremanarekin. Elkarren lehen aldia iristen denean, Manuelek zerbait berria sentitzen du, Felipe beste argi batean ikusten duena."
         },
         "video": ""
       }
     ],
     "Candidatas": [
       {
+        "id":"Errante corazón-2021",
         "titulo": {
-          "es": "Errante corazón (Ámame)",
-          "en": "",
-          "eu": ""
+          "es": "Errante corazón",
+          "en": "Wandering heart",
+          "eu": "Bihotz noraezean"
         },       
         "pais": {
           "es":"Argentina, Brasil, Paises Bajos, Chile",
-          "en":"",
-          "eu":""
+          "en":"Argentina, Brazil, Netherlands, Chile",
+          "eu":"Argentina, Brasil, Herbehereak, Txile"
         },
-        "año": "2021 | 112’",
+        "año": "2022 | 112’",
         "director": {
           "es": " Leonardo Brzezicki"
         },
         "imagen": "img/amame.jpg",
         "descripcion": {
-          "es": "ÁMAME cuenta la historia de Santiago, un hombre quebrado emocionalmente, que parece no tener ningún tipo de eje y está totalmente a la deriva en su vida personal. Junto a Laila, su hija adolescente, vivirá lo que parece ser un verano caótico en Argentina y en Brasil, pero termina siendo un punto de inflexión en la relación y vidas de ambos. Es la historia de la emancipación de una hija de su padre, y al mismo tiempo la de un hombre que, desesperadamente, solo busca amar y ser amado.",
-          "en": "",
-          "eu": ""
+          "es": "Errante corazón cuenta la historia de Santiago, un hombre quebrado emocionalmente, que parece no tener ningún tipo de eje y está totalmente a la deriva en su vida personal. Junto a Laila, su hija adolescente, vivirá lo que parece ser un verano caótico en Argentina y en Brasil, pero termina siendo un punto de inflexión en la relación y vidas de ambos. Es la historia de la emancipación de una hija de su padre, y al mismo tiempo la de un hombre que, desesperadamente, solo busca amar y ser amado.",
+          "en": "Wandering heart tells the story of Santiago, an emotionally broken man who seems to have no bearing and is completely adrift in his personal life. Together with Laila, his teenage daughter, he experiences what appears to be a chaotic summer in Argentina and Brazil, but turns out to be a turning point in their relationship and lives. It is the story of a daughter's emancipation from her father, and at the same time, the story of a man who desperately seeks only to love and be loved.",
+          "eu": "Wandering Heart Santiagoren istorioa kontatzen du, emozionalki hautsitako gizon bat, itxurarik ez duela eta bere bizitza pertsonalean erabat noraezean dagoena. Lailarekin, bere alaba nerabearekin batera, uda kaotikoa dirudiena biziko du Argentinan eta Brasilen, baina inflexio puntu bat izango da haien harreman eta bizitzetan. Alaba baten aitarengandik askatzearen istorioa da, eta, aldi berean, maitatzea eta maitatzea soilik bilatzen duen gizon baten istorioa da."
         },
         "video": ""
       },
       {
+        "id":"Marte Um-2022",
        "titulo": {
-          "es": "Marte Um (Mars One)",
-          "en": "",
-          "eu": ""
+          "es": "Marte Um",
+          "en": "Mars One",
+          "eu": "Marte Um"
         },       
         "pais": {
           "es":"Brasil",
-          "en":"",
-          "eu":""
+          "en":"Brazil",
+          "eu":"Brasil"
         },
         "año": "2022 | 115’",
         "director": {
@@ -338,21 +352,22 @@
         "imagen": "img/marte-uno.jpg",
         "descripcion": {
           "es": "Los miembros de la familia Martins, unos soñadores optimistas, viven tranquilamente en las afueras de una gran ciudad brasileña. Tras la decepcionante toma de posesión de un presidente de extrema derecha, y como familia negra de clase media baja, sienten la tensión de la nueva realidad a medida que se asienta el poder político Tercia, la madre, reinterpreta su mundo después de un acontecimiento fortuito que le hace pensar que está maldita. Wellington, su marido, pone todas sus esperanzas en la carrera futbolística de su hijo, Deivinho, que sigue a regañadientes las ambiciones de su padre a pesar de que en secreto aspira a estudiar astrofísica y colonizar a Marte. Mientras, su hija mayor, Eunice, se enamora de una joven de espíritu libre y se pregunta si ya es hora de irse de casa.",
-          "en": "",
-          "eu": ""
+          "en": "The members of the Martins family, optimistic dreamers, live quietly on the outskirts of a large Brazilian city. After the disappointing inauguration of a far-right president, and as a lower-middle-class Black family, they feel the strain of the new reality as political power takes hold. Tercia, the mother, reinterprets her world after a fortuitous event makes her believe she is cursed. Wellington, her husband, places all his hopes on the football career of their son, Deivinho, who reluctantly follows his father's ambitions despite secretly aspiring to study astrophysics and colonize Mars. Meanwhile, their eldest daughter, Eunice, falls in love with a free-spirited young woman and wonders if it's time to leave home.",
+          "eu": "Martins familiako kideak, ameslari baikorrak, lasai bizi dira Brasilgo hiri handi baten kanpoaldean. Eskuin muturreko presidente baten kargu etsigarriaren ostean, eta klase ertain-beheko Beltz familia gisa, errealitate berriaren tentsioa sentitzen dute botere politikoak bereganatzen duen heinean. Terciak, amak, bere mundua berrinterpretatzen du zorizko gertakari batek madarikatua dela sinetsi ostean. Wellingtonek, bere senarrak, bere seme Deivinhoren futbol-ibilbidean jartzen ditu itxaropen guztiak, aitaren asmoei gogoz kontra jarraitzen die, ezkutuan astrofisika ikasi eta Marte kolonizatzeko asmoa izan arren. Bitartean, bere alaba zaharrena, Eunice, emakume gazte aske batez maitemintzen da eta etxetik irteteko ordua ote den galdetzen dio."
         },
         "video": ""
       },
       {
+        "id":"Petit mal-2022",
        "titulo": {
-          "es": "Petit mal",
-          "en": "",
-          "eu": ""
+          "es": "Petit mal/Poco daño",
+          "en": "Little harm",
+          "eu": "Kalte txikia"
         },       
         "pais": {
           "es":"Colombia",
-          "en":"",
-          "eu":""
+          "en":"Colombia",
+          "eu":"Kolonbia"
         },
         "año": "2022 | 89’",
         "director": {
@@ -361,21 +376,22 @@
         "imagen": "img/petit_mal.jpg",
         "descripcion": {
           "es": "¿Alguna vez has conocido a una “trieja”? Abrimos las puertas de nuestra casa para mostrarles cómo es nuestra vida, cómo nosotras, como trío de mujeres, vivimos la ausencia de una de nosotras. Esta ficción real nos muestra cómo lidiamos con la soledad, los celos y cómo tenemos que adaptarnos cuando tres se convierten en dos.",
-          "en": "",
-          "eu": ""
+          "en": "Have you ever met a “threesome”? We open the doors of our home to show you what our life is like, how we, as a trio of women, experience the absence of one of us. This fictionalized version shows us how we deal with loneliness, jealousy, and how we have to adapt when three become two.",
+          "eu": "Ezagutu al duzu inoiz “hiruko” bat? Gure etxeko ateak zabaltzen ditugu gure bizitza nolakoa den erakusteko, nola bizi dugun emakume hirukoteok gutariko baten eza. Benetako istorio honek erakusten digu nola aurre egiten diogun bakardadeari, jeloskortasunari eta nola moldatu behar garen hirurak bi bihurtzen direnean."
         },
         "video": ""
       },
       {
+        "id":"Un varón-2022",
        "titulo": {
-          "es": "Un varón",
-          "en": "",
-          "eu": ""
+          "es": "Un Varón",
+          "en": "A Man",
+          "eu": "Gizon Bat"
         },       
         "pais": {
           "es":"Colombia, Francia, Paises Bajos, Alemania",
-          "en":"",
-          "eu":""
+          "en":"Colombia, France, Netherlands, Germany",
+          "eu":"Kolonbia, Frantzia, Herbehereak, Alemania"
         },
         "año": "2022 | 81’",
         "director": {
@@ -384,8 +400,8 @@
         "imagen": "img/un-varon.jpg",
         "descripcion": {
           "es": "Carlos vive en un albergue juvenil en el centro de Bogotá, una especie de refugio que trata de mitigar la dureza de la vida. Es Navidad y Carlos anhela pasar el día con su madre presa y su hermana, que se perdieron en la espiral de la violencia urbana. Al salir del albergue, Carlos se enfrenta al rigor de las calles de su barrio, donde rige la ley del más fuerte, el alfa ‘macho’. Mientras busca una reunión familiar, Carlos debe demostrar que puede ser uno de ellos. Mientras que en el fondo de él, debe enfrentar decisiones, contradiciendo estas expresiones de masculinidad.",
-          "en": "",
-          "eu": ""
+          "en": "Carlos lives in a youth shelter in downtown Bogotá, a kind of refuge that seeks to mitigate the harshness of life. It's Christmas, and Carlos longs to spend the day with his imprisoned mother and sister, who have been lost in the spiral of urban violence. Upon leaving the shelter, Carlos faces the harshness of his neighborhood's streets, where the law of the strongest, the alpha male, rules. While seeking a family reunion, Carlos must prove he can be one of them. Deep down, he must face decisions that contradict these expressions of masculinity.",
+          "eu": "Carlos Bogotá erdiguneko gazte aterpetxe batean bizi da, bizitzaren gogortasuna arintzen saiatzen den aterpe moduko batean. Gabonak dira, eta Carlosek desiratzen du eguna pasatzea preso dauden amarekin eta ahizparekin, hiri-indarkeriaren espiralean galduta. Aterpetik irtetean, Carlosek bere auzoko kaleen gogortasunari aurre egiten dio, non indartsuenaren legea, alfa arrak, agintzen duena. Familia biltzeko bila dabilela, Carlosek horietako bat izan daitekeela frogatu beharko du. Sakonean erabakiei aurre egin behar die, maskulinitate adierazpen horiek kontraesanean."
         },
         "video": ""
       }
@@ -394,15 +410,16 @@
   "2021": {
     "Ganadora": [
       {
+        "id":"Medusa-2021",
        "titulo": {
           "es": "Medusa",
-          "en": "",
-          "eu": ""
+          "en": "Medusa",
+          "eu": "Medusa"
         },       
         "pais": {
           "es":"Brasil",
-          "en":"",
-          "eu":""
+          "en":"Brazil",
+          "eu":"Brasil"
         },
         "año": "2021 | 127’",
         "director": {
@@ -411,8 +428,8 @@
         "imagen": "img/Medusa.jpg",
         "descripcion": {
           "es": "Mariana pertenece a un mundo en el que debe hacer todo lo posible para mantener la apariencia de una mujer perfecta. Para no caer en la tentación, se esfuerza por controlarlo todo.",
-          "en": "",
-          "eu": ""
+          "en": "Mariana belongs to a world where she must do everything possible to maintain the appearance of a perfect woman. To avoid falling into temptation, she strives to control everything.",
+          "eu": "Mariana emakume perfektu baten itxura mantentzeko ahal den guztia egin behar duen mundu batekoa da. Tentazioan ez erortzeko, dena kontrolatzen ahalegintzen da."
         },
         "video": ""
       }
@@ -422,15 +439,16 @@
   "2020": {
     "Ganadora": [
       {
+        "id":"Las mil y una-2020",
        "titulo": {
           "es": "Las mil y una",
-          "en": "",
-          "eu": ""
+          "en": "The thousand and one",
+          "eu": "Mila eta bat"
         },       
         "pais": {
           "es":"Argentina",
-          "en":"",
-          "eu":""
+          "en":"Argentina",
+          "eu":"Argentina"
         },
         "año": "2020 | 120’",
         "director": {
@@ -439,8 +457,8 @@
         "imagen": "img/Las_mil_y_una.jpg",
         "descripcion": {
           "es": "Iris, de 17 años, ha sido expulsada de la escuela y pasa los cálidos días y noches con sus dos mejores amigas, sus primas, en habitaciones estrechas, jugando con su teléfono móvil o en las calles vacías de la ciudad.",
-          "en": "",
-          "eu": ""
+          "en": "Iris, 17, has been expelled from school and spends the warm days and nights with her two best friends, her cousins, in cramped rooms, playing on her cell phone, or on the empty city streets.",
+          "eu": "Iris, 17 urtekoa, eskolatik kanporatua izan da eta egun eta gau beroak bere bi lagun onenekin, bere lehengusuekin, pasatzen ditu gela estuetan, sakelako telefonoarekin jolasten edo hiriko kale hutsetan."
         },
         "video": ""
       }
@@ -450,15 +468,16 @@
   "2019": {
     "Ganadora": [
       {
+        "id":"Temblores-2019",
        "titulo": {
           "es": "Temblores",
-          "en": "",
-          "eu": ""
+          "en": "Tremors",
+          "eu": "Dardarak"
         },       
         "pais": {
           "es":"Guatemala",
-          "en":"",
-          "eu":""
+          "en":"Guatemala",
+          "eu":"Guatemala"
         },
         "año": "2019 | 106'",
         "director": {
@@ -467,8 +486,8 @@
         "imagen": "img/temblores.jpg",
         "descripcion": {
           "es": "Guatemala, en la actualidad. Pablo es un “buen hombre”: un cristiano evangélico practicante, de 40 años y casado y con dos hijos. Pero un día Pablo se enamora de Francisco y decide abandonar a su devota familia evangélica. Sus familiares, sin embargo, ponen su fe y la familia por encima de todo y se aferran aun a la idea de poder curar a Pablo.",
-          "en": "",
-          "eu": ""
+          "en": "Guatemala, present day. Pablo is a “good man”: a practicing evangelical Christian, 40 years old, married with two children. But one day Pablo falls in love with Francisco and decides to leave his devout evangelical family. His relatives, however, put their faith and family above all else and cling to the idea of ​​being able to cure Pablo.",
+          "eu": "Guatemala, gaur. Pablo “gizon ona” da: kristau ebanjelista praktikantea, 40 urtekoa, ezkondua, bi seme-alaba dituena. Baina egun batean Pablo Franciscoz maitemintzen da eta bere familia ebanjeliko jatorra uztea erabakitzen du. Haren senideek, ordea, fedea eta familia guztiaren gainetik jartzen dituzte eta oraindik Pablo sendatu ahal izateko ideiari eusten diote."
         },
         "video": ""
       }
@@ -478,15 +497,16 @@
   "2018": {
     "Ganadora": [
       {
+        "id":"Las Herederas-2018",
        "titulo": {
           "es": "Las Herederas",
-          "en": "",
-          "eu": ""
+          "en": "The Heirs",
+          "eu": "Oinordekoak"
         },       
         "pais": {
-          "es":"Paragüay",
-          "en":"",
-          "eu":""
+          "es":"Paraguay",
+          "en":"Paraguay",
+          "eu":"Paraguai"
         },
         "año": "2018 | 97’",
         "director": {
@@ -495,8 +515,8 @@
         "imagen": "img/las-herederas.jpg",
         "descripcion": {
           "es": "Narra la historia de dos mujeres de alta alcurnia de la sociedad paraguaya que heredaron suficiente patrimonio para vivir cómodamente. Pero a sus 60 años, el dinero ya no alcanza y la situación de ambas cambia.",
-          "en": "",
-          "eu": ""
+          "en": "It tells the story of two high-ranking women in Paraguayan society who inherited enough wealth to live comfortably. But at age 60, their money is no longer enough, and their circumstances change.",
+          "eu": "Eroso bizitzeko aberastasun nahikoa oinordetzan jaso zuten Paraguaiko gizarteko goi mailako bi emakumeren istorioa kontatzen du. Baina 60 urterekin, dirua ez da nahikoa eta haien egoera aldatzen da."
         },
         "video": ""
       }
@@ -506,15 +526,16 @@
   "2017": {
     "Ganadora": [
       {
+        "id":"Una mujer fantástica-2017",
        "titulo": {
           "es": "Una mujer fantástica",
-          "en": "",
-          "eu": ""
+          "en": "A fantastic woman",
+          "eu": "Emakume fantastikoa"
         },       
         "pais": {
           "es":"Chile",
-          "en":"",
-          "eu":""
+          "en":"Chili",
+          "eu":"Txilia"
         },
         "año": "2017 | 104'",
         "director": {
@@ -523,8 +544,8 @@
         "imagen": "img/una-mujer-fantastica.jpg",
         "descripcion": {
           "es": "Marina (Daniela Vega) una joven camarera aspirante a cantante y Orlando (Francisco Reyes), veinte años mayor, planean un futuro juntos. Tras una noche de fiesta, Marina lo lleva a urgencias, pero él muere al llegar al hospital. Ella debe entonces enfrentar las sospechas por su muerte. Su condición de mujer transexual supone para la familia de Orlando una completa aberración. Ella tendrá que luchar para convertirse en lo que es: una mujer fuerte, pasional... fantástica.",
-          "en": "",
-          "eu": ""
+          "en": "Marina (Daniela Vega), a young waitress aspiring to become a singer, and Orlando (Francisco Reyes), twenty years her senior, plan a future together. After a night of partying, Marina takes him to the emergency room, but he dies upon arrival. She must then face suspicions surrounding his death. Her transgender status is a complete aberration for Orlando's family. She will have to fight to become what she is: a strong, passionate... fantastic woman.",
+          "eu": "Marina (Daniela Vega), abeslari izateko asmoa duen zerbitzari gazteak eta Orlandok (Francisco Reyes), hogei urte zaharragoa, elkarrekin etorkizuna planifikatzen dute. Parrandan gau baten ostean, Marinak larrialdietara eramango du, baina ospitalera iristean hil egiten da. Orduan, haren heriotzari buruzko susmoei aurre egin beharko die. Emakume transgenero gisa duen egoera guztiz aberrazio bat da Orlandoren familiarentzat. Borrokatu beharko du dena izateko: emakume indartsua, sutsua... fantastikoa."
         },
         "video": ""
       }
@@ -534,15 +555,16 @@
   "2016": {
     "Ganadora": [
       {
+        "id":"Rara-2016",
        "titulo": {
           "es": "Rara",
-          "en": "",
-          "eu": ""
+          "en": "Strange",
+          "eu": "Arraroa"
         },       
         "pais": {
           "es":"Chile",
-          "en":"",
-          "eu":""
+          "en":"Chili",
+          "eu":"Txilia"
         },
         "año": "2016 | 93’",
         "director": {
@@ -552,8 +574,8 @@
       
         "descripcion": {
           "es": "La historia de una madre y sus dos hijas adolescentes que viven en un ambiente hostil. La madre es lesbiana y su pareja es una mujer. La historia se centra en la relación entre las tres mujeres y cómo enfrentan los prejuicios de la sociedad.",
-          "en": "",
-          "eu": ""
+          "en": "The story of a mother and her two teenage daughters living in a hostile environment. The mother is lesbian and her partner is a woman. The story focuses on the relationship between the three women and how they confront society's prejudices.",
+          "eu": "Giro etsai batean bizi diren ama baten eta bere bi alaba nerabeen istorioa. Ama lesbiana da eta bere bikotea emakumea. Istorioak hiru emakumeen arteko harremana eta gizartearen aurreiritziei nola aurre egiten dieten aztertzen du."
         },
         "video": ""
       }
@@ -563,15 +585,16 @@
   "2015": {
     "Ganadora": [
       {
+        "id":"Mariposa-2015",
        "titulo": {
           "es": "Mariposa",
-          "en": "",
-          "eu": ""
+          "en": "Butterfly",
+          "eu": "Tximeleta"
         },       
         "pais": {
           "es":"Argentina",
-          "en":"",
-          "eu":""
+          "en":"Argentina",
+          "eu":"Argentina"
         },
         "año": "2015 | 103’",
         "director": {
@@ -580,8 +603,8 @@
         "imagen": "img/mariposa.jpg",
         "descripcion": {
           "es": "Fantasía de ciencia ficción sobre dos mundos paralelos (uno cómico y el otro dramático) en los que el denominado Efecto Mariposa les dará a dos personas una nueva posibilidad de amar. ",
-          "en": "",
-          "eu": ""
+          "en": "Science fiction fantasy about two parallel worlds (one comical, the other dramatic) in which the so-called Butterfly Effect gives two people a new chance at love.",
+          "eu": "Bi mundu paralelo (bat komiko, bestea dramatikoa) zientzia-fikziozko fantasia, non Butterfly Effect delakoak bi pertsonei maitatzeko aukera berri bat ematen dien."
         },
         "video": ""
       }
@@ -591,15 +614,16 @@
   "2014": {
     "Ganadora": [
       {
+        "id":"Praia do Futuro-2014",
        "titulo": {
           "es": "Praia do Futuro",
-          "en": "",
-          "eu": ""
+          "en": "Future Beach",
+          "eu": "Etorkizuneko Hondartza"
         },       
         "pais": {
           "es":"Brasil",
-          "en":"",
-          "eu":""
+          "en":"Brazil",
+          "eu":"Brasil"
         },
         "año": "2014 | 106'",
         "director": {
@@ -608,8 +632,8 @@
         "imagen": "img/futuro_beach.jpg",
         "descripcion": {
           "es": "Donato (Wagner Moura) trabaja como salvavidas patrullando la espectacular y peligrosa playa 'Praia do Futuro'. Cuando se lanza al mar para rescatar a dos hombres atrapados por la corriente, consigue salvar a Konrad, un alemán de vacaciones en Brasil, pero su acompañante se hunde en el mar. Mientras esperan a que su cuerpo salga a la superficie, un fuerte lazo crece entre Donato y Konrad, y los primeros escarceos sexuales dan pie a una conexión más profunda y emocional.",
-          "en": "",
-          "eu": ""
+          "en": "Donato (Wagner Moura) works as a lifeguard patrolling the spectacular and dangerous beach 'Praia do Futuro'. When he dives into the sea to rescue two men trapped by the current, he manages to save Konrad, a German man on vacation in Brazil, but his companion sinks into the sea. While they wait for his body to surface, a strong bond grows between Donato and Konrad, and their initial sexual encounters lead to a deeper, more emotional connection.",
+          "eu": "Donato (Wagner Moura) sorosle gisa lan egiten du 'Praia do Futuro' hondartza ikusgarri eta arriskutsuan zaintzen. Korronteak harrapatutako bi gizon erreskatatzeko itsasora jauzi egiten duenean, Brasilen oporretan dagoen Konrad alemaniarra salbatzea lortuko du, baina bere laguna itsasoan hondoratu da. Haren gorputza azaleratu arte itxaroten duten bitartean, Donato eta Konraden arteko lotura sendoa hazten da, eta haien hasierako sexu-enkontruek lotura sakonago eta emozionalago bati bide ematen diote."
         },
         "video": ""
       }
@@ -619,15 +643,16 @@
   "2013": {
     "Ganadora": [
       {
+        "id":"Quebranto-2013",
        "titulo": {
           "es": "Quebranto",
-          "en": "",
-          "eu": ""
+          "en": "Brokenness",
+          "eu": "Haustura"
         },       
         "pais": {
           "es":"México",
-          "en":"",
-          "eu":""
+          "en":"Mexico",
+          "eu":"Mexiko"
         },
         "año": "2013 | 95'",
         "director": {
@@ -636,8 +661,8 @@
         "imagen": "img/quebranto.webp",
         "descripcion": {
           "es": "Este documental evoca la memoria y el testimonio de dos personajes: Fernando García, conocido como Pinolito, durante su desempeño como actor infantil en la década de los 70, y doña Lilia Ortega, su madre, también actriz. Fernando se asumió como travesti hace algunos años y ahora se hace llamar Coral Bonelli, ambas viven en la colonia Garibaldi añorando su pasado fílmico mientras Coral asume con valor su identidad genérica. Ambas continúan actuando.",
-          "en": "",
-          "eu": ""
+          "en": "This documentary evokes the memories and testimony of two people: Fernando García, known as Pinolito, during his career as a child actor in the 1970s, and Lilia Ortega, his mother, also an actress. Fernando came out as a transvestite a few years ago and now goes by the name Coral Bonelli. Both live in the Garibaldi neighborhood, yearning for their filmmaking past, while Coral bravely embraces her gender identity. Both continue to act.",
+          "eu": "Dokumental honek bi pertsonaren oroimena eta testigantza gogora ekartzen ditu: Fernando García, Pinolito izenez ezaguna, 1970eko hamarkadan haur aktore gisa egin zuen ibilbidean, eta Lilia Ortega, bere ama, aktorea ere. Fernando duela urte batzuk travesti gisa atera zen eta orain Coral Bonelli deitzen du bere buruari. Biak Garibaldi auzoan bizi dira, beren zinema-iraganaren irrika, Coralek bere genero identitatea ausart hartzen duen bitartean. Biek jarraitzen dute jarduten."
         },
         "video": ""
       }

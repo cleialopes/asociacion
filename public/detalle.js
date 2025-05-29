@@ -1,9 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const params = new URLSearchParams(window.location.search);
-  const tituloBuscado = params.get("titulo");
-  const fuente = params.get("fuente") === "latino" ? "sebastiane_latino" : "sebastiane";
-  const idioma = document.getElementById("lang-selector")?.value || "es";
-
+function mostrarDetalle(tituloBuscado, idioma, fuente) {
   fetch(`/api/${fuente}`)
     .then(res => res.json())
     .then(data => {
@@ -12,10 +7,8 @@ document.addEventListener("DOMContentLoaded", () => {
       for (const anio in data) {
         for (const seccion in data[anio]) {
           for (const item of data[anio][seccion]) {
-            const titulo = typeof item.titulo === "object" ? item.titulo[idioma] || item.titulo.es : item.titulo;
-            if (titulo === tituloBuscado) {
+            if (item.id === tituloBuscado) {
               pelicula = item;
-              break;
             }
           }
           if (pelicula) break;
@@ -64,5 +57,24 @@ document.addEventListener("DOMContentLoaded", () => {
             <iframe src="${video}" frameborder="0" allowfullscreen></iframe>
           </div>` : ""}
       `;
+
+      cambiarIdioma(idioma);
     });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get("id");
+  const fuente = params.get("fuente") === "latino" ? "sebastiane_latino" : "sebastiane";
+  const idioma = localStorage.getItem("idioma") || "es";
+  mostrarDetalle(id, idioma, fuente);
 });
+
+document.getElementById("lang-selector")?.addEventListener("change", () => {
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get("id");
+  const fuente = params.get("fuente") === "latino" ? "sebastiane_latino" : "sebastiane";
+  const nuevoIdioma = document.getElementById("lang-selector").value;
+  mostrarDetalle(id, nuevoIdioma, fuente);
+});
+window.mostrarDetalle = mostrarDetalle;

@@ -6,7 +6,6 @@
   "patrocinios": [
     { "href": "https://www.igualdad.gob.es/", "img": "img/patrocinador-ministerio-igualdad.jpg", "alt": "Patrocinador 1" },
     { "href": "https://www.accioncultural.es/es/", "img": "img/patrocinador-ace_vtrans.png", "alt": "Patrocinador 2" },
-    { "href": "https://www.sansebastianturismoa.eus/es/", "img": "img/patrocinador-marca_sst_color_azul.png", "alt": "Patrocinador 3" },
     { "href": "https://mugengainetik.org/", "img": "img/patrocinador-mugenelan.png", "alt": "Patrocinador 4" }
   ],
   "colaboradores": [

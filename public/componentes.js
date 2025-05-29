@@ -43,7 +43,7 @@ document.getElementById('header').innerHTML = `
   </header>
 `;
 
-// Footer
+// Footer 
 document.getElementById('footer').innerHTML = `
   <footer class="footer">
     <div class="footer-contenedor">
@@ -92,13 +92,12 @@ document.getElementById('footer').innerHTML = `
   </footer>
 `;
 
-
 function crearGrupoPatrocinadores(titulo, lista) {
   let clase = titulo.toLowerCase();
   const esCarrusel = clase === "patrocinios" || clase === "colaboradores";
 
   if (esCarrusel) {
-    let html = `<h2>${titulo}</h2>
+    let html = `<h2 data-i18n="${titulo.toLowerCase()}">${titulo}</h2>
       <div class="swiper ${clase}-swiper">
         <div class="swiper-wrapper">`;
     lista.forEach(p => {
@@ -115,7 +114,7 @@ function crearGrupoPatrocinadores(titulo, lista) {
     return html;
   }
 
-  let html = `<h2>${titulo}</h2><div class="grupo-patrocinadores ${clase}">`;
+  let html = `<h2 data-i18n="${titulo.toLowerCase()}">${titulo}</h2><div class="grupo-patrocinadores ${clase}">`;
   lista.forEach(p => {
     html += `
       <a href="${p.href}" target="_blank">
@@ -133,11 +132,11 @@ fetch('patrocinadores.json')
     if (contenedor) {
       contenedor.classList.add('patrocinadores');
       contenedor.innerHTML =
-        crearGrupoPatrocinadores("Organizadores", data.organizadores) +
+        crearGrupoPatrocinadores("organizadores", data.organizadores) +
         crearCarruselUnificado([...data.patrocinios, ...data.colaboradores]);
 
-        function crearCarruselUnificado(lista) {
-        let html = `<h2>Patrocinios y Colaboradores</h2>
+      function crearCarruselUnificado(lista) {
+        let html = `<h2 data-i18n="patrocinios_colaboradores">Patrocinios y Colaboradores</h2>
           <div class="swiper unificado-swiper">
             <div class="swiper-wrapper">`;
         lista.forEach(p => {
@@ -153,24 +152,27 @@ fetch('patrocinadores.json')
           </div>`;
         return html;
       }
-    new Swiper('.unificado-swiper', {
-      slidesPerView: 4,
-      spaceBetween: 30,
-      loop: true,
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false
-      },
-      pagination: {
-        el: '.unificado-swiper .swiper-pagination',
-        clickable: true
-      },
-      breakpoints: {
-        0: { slidesPerView: 1 },
-        480: { slidesPerView: 2 },
-        768: { slidesPerView: 4 }
-      }
-    });
+
+      cambiarIdioma(localStorage.getItem("idioma") || "es");
+
+      new Swiper('.unificado-swiper', {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false
+        },
+        pagination: {
+          el: '.unificado-swiper .swiper-pagination',
+          clickable: true
+        },
+        breakpoints: {
+          0: { slidesPerView: 1 },
+          480: { slidesPerView: 2 },
+          768: { slidesPerView: 4 }
+        }
+      });
     }
   })
   .catch(error => {
@@ -226,21 +228,24 @@ document.addEventListener('DOMContentLoaded', () => {
           banner.innerHTML = `<img src="${data.url}" alt="Banner" />`;
         } else if (data.tipo === "video") {
           banner.innerHTML = `
-            <video controls autoplay muted loop>
+            <video autoplay muted loop playsinline>
               <source src="${data.url}" type="video/mp4">
               Tu navegador no admite el video.
             </video>`;
+
+          const video = banner.querySelector("video");
+          video.addEventListener("pause", () => video.play());
         }
       }
     });
 
     const infoEnlace = document.querySelector('.menu-info > a');
-const infoBloque = document.querySelector('.menu-info');
+    const infoBloque = document.querySelector('.menu-info');
 
-if (infoEnlace && infoBloque) {
-  infoEnlace.addEventListener('click', (e) => {
-    e.preventDefault(); // evita comportamiento por defecto
-    infoBloque.classList.toggle('mostrar-submenu');
-  });
-}
+    if (infoEnlace && infoBloque) {
+      infoEnlace.addEventListener('click', (e) => {
+        e.preventDefault(); 
+        infoBloque.classList.toggle('mostrar-submenu');
+      });
+    }
 });

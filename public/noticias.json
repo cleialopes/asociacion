@@ -4,12 +4,12 @@
     "titulo": {
       "es": "Entrega del 25 Sebastiane a Reas de Lola Arias",
       "eu": "25. Sebastiane, sari-banaketa: Lola Ariasek zuzendatutako Reas filmari",
-      "en": ""
+      "en": "Delivery of the 25th Sebastiane to Reas de Lola Arias"
     },
     "descripcion": {
       "es": "El viernes 27 de septiembre en el Bidassoa Taproom, y con la presencia del alcalde de la ciudad Eneko Goia, la diputada de Cultura de Gipuzkoa Goizane Álvarez y los equipos de las películas candidatas de la 25 edición y antiguos ganadores del premio, se entregó el Premio Sebastiane a la película que mejor representa los valores LGBTIQA+ en la 72 edición del Festival Internacional de San Sebastián.",
       "eu": "Irailaren 27an, Bidassoa Taproom-en, hiriko alkate Eneko Goia, Gipuzkoako Kultura diputatu Goizane Álvarez eta 25. edizioko film hautagaietako eta sariaren antzinako irabazleen taldeak bertan zirela, LGBTIQA+ baloreak hobekien ordezkatzen dituen filmari Sebastiane Saria eman zitzaion Donostiako Nazioarteko Zinemaldiaren 72. edizioan.",
-      "en": ""
+      "en": "On Friday, September 27th, at the Bidassoa Taproom, in the presence of the mayor of the city, Eneko Goia, the Gipuzkoa Deputy for Culture, Goizane Álvarez, and the teams of the nominated films from the 25th edition and previous winners of the award, the Sebastiane Award was presented to the film that best represents LGBTIQA+ values ​​at the 72nd edition of the San Sebastian International Film Festival."
     },
     "contenido": {
       "es": [
@@ -20,13 +20,15 @@
       ],
       "en": [
         { "tipo": "h3", "texto": "" },
-        { "tipo": "p", "texto": "" },
-        { "tipo": "p", "texto": "" }
+        { "tipo": "p", "texto": "Present at the 25th Sebastián jury, with its presidents Ana Castillo and Eneko Sagardoy, the award was presented to Reas by Lola Arias, who received the prize alongside the film's main cast. It was, in the words of the jury, “for her representation through music of the reality of trans women and men in Argentine prisons who struggle to live full and happy lives in a punitive society”. Reas's team, including its director, collected the award." },
+        { "tipo": "p", "texto": "On its 25th anniversary, the Bidassoa Taproom was filled with GEHITU members, film industry professionals, and San Sebastian residents to celebrate 25 years of cinema queues, protest, and freedom." },
+        { "tipo": "p", "texto": "Congratulations to the Reas team!" }
       ],
       "eu": [
         { "tipo": "h3", "texto": "" },
-        { "tipo": "p", "texto": "" },
-        { "tipo": "p", "texto": "" }
+        { "tipo": "p", "texto": "Donostiako 25. epaimahaian, bere presidente Ana Castillo eta Eneko Sagardoyrekin batera, Reas de Lola Arias-i eman zioten saria, filmaren aktore nagusiarekin batera jaso zuen saria. Epaimahaiaren hitzetan, «gizarte zigortzaile batean bizitza bete eta zoriontsu bizitzeko borrokan dabiltzan Argentinako espetxeetako emakume eta gizon transen errealitatea musikaren bidez irudikatzeagatik izan zen». Reasen taldeak, zuzendariak barne, jaso zuen saria." },
+        { "tipo": "p", "texto": "25. urteurrenean, Bidassoa Taproom GEHITUko kideez, zinemagintzako profesionalez eta donostiarrez bete zen 25 urte zinema-ilar, protesta eta askatasuna ospatzeko." },
+        { "tipo": "p", "texto": "Zorionak Reas taldeari!" }
       ]
     },
     "fecha": "2024-09-27",

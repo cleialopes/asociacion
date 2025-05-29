@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
               html += `
                 <div class="pelicula">
-                  <a href="detalle.html?titulo=${encodeURIComponent(titulo)}">
+                  <a href="detalle.html?id=${pelicula.id}&fuente=sebastiane">
                     <img src="${img}" alt="${titulo}">
                   </a>
                   <h4>${titulo}</h4>
@@ -108,6 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         contenedor.innerHTML = html;
         contenedor.scrollIntoView({ behavior: "smooth" });
+        cambiarIdioma(getIdiomaActual());
       });
   }
 
