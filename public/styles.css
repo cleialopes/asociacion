@@ -991,12 +991,6 @@ form button:hover {
 }
  
 /*===== revista =====*/
-.contenedor-revistas {
-  padding: 40px 20px;
-  margin: auto;
-  text-align: center;
-}
-
 .lista-revistas {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -1088,7 +1082,7 @@ form button:hover {
 
 .carteles-publicaciones {
   padding: 2rem;
-  background-color: --color-fondo-claro;
+  background-color: var(--color-fondo-claro);
 }
 
 .carteles-publicaciones h2 {
@@ -1099,13 +1093,15 @@ form button:hover {
 
 .contenedor-carteles-publicaciones {
   display: flex;
-  gap: 2rem;
+  gap: 10rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .columna {
-  flex: 1;
-  min-width: 200px;
+  flex: 0 1 250px; 
+  max-width: 300px;
+  text-align: left;
 }
 
 .columna h3 {

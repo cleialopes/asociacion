@@ -335,7 +335,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (pathname.includes('revistas.html')) {
       const contenedor = document.getElementById("lista-revistas");
       if (contenedor) contenedor.innerHTML = "";
-      $.getScript('revista.js'); 
+
+      $.getScript('revista.js').done(() => {
+        if (typeof cargarRevistas === "function") cargarRevistas();
+        if (typeof cargarDocumentos === "function") cargarDocumentos();
+      });
     }
   });
   }
