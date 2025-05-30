@@ -1066,26 +1066,22 @@ form button:hover {
 }
 
  .btn-cerrar {
- background-color: var(--color-principal);
+  position: absolute;
+  background: #363636;
   color: var(--color-fondo-claro);
-  padding: 8px;
+  padding: 8px 12px;
   border: none;
-  border-radius: 50%;
+  border-radius: 4px;
   font-size: 20px;
   cursor: pointer;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  z-index: 10000;
+  top: 64px;
+  left: 60%;
+  z-index: 9999;;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.3s ease;
 } 
 
-.btn-cerrar:hover {
-  background-color: var(--color-principal-hover);
-} 
 .oculto {
   display: none;
 }

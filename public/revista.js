@@ -1,18 +1,19 @@
 fetch("revista.json")
   .then(res => res.json())
   .then(data => {
-    const contenedor = document.getElementById("lista-revistas");
-    data.forEach(revista => {
-      const div = document.createElement("div");
-      div.className = "revista modo-claro-oscuro";
-      div.innerHTML = `
-        <img src="${revista.portada}" alt="${revista.titulo}" class="portada-revista" data-pdf="${revista.archivo}">
-        <h2>${revista.titulo}</h2>
-      `;
-      contenedor.appendChild(div);
-    });
+  const idioma = localStorage.getItem("idioma") || "es";
+  const contenedor = document.getElementById("lista-revistas"); // ✅ Aquí estaba el error
 
-    // Abrir visor FlowPaper (con iframe)
+  data.forEach(revista => {
+    const div = document.createElement("div");
+    div.className = "revista modo-claro-oscuro";
+    div.innerHTML = `
+      <img src="${revista.portada}" alt="${revista.titulo[idioma]}" class="portada-revista" data-pdf="${revista.archivo}">
+      <h2>${revista.titulo[idioma] || revista.titulo["es"]}</h2>
+    `;
+    contenedor.appendChild(div);
+  });
+
     document.querySelectorAll(".portada-revista").forEach(img => {
       img.addEventListener("click", () => {
         const archivo = img.getAttribute("data-pdf");
@@ -39,10 +40,3 @@ fetch("revista.json")
     });
   })
   .catch(error => console.error("Error cargando revistas:", error));
-
-  document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("cerrar-flowpaper").addEventListener("click", () => {
-      document.getElementById("visor-flowpaper").classList.add("oculto");
-      document.getElementById("flipbook-container").innerHTML = "";
-    });
-});

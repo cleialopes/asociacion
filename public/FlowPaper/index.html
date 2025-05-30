@@ -22,18 +22,42 @@
     <!--<![endif]-->
     <script type="text/javascript" src="js/flowpaper.js"></script>
     <script type="text/javascript" src="js/flowpaper_handlers.js"></script>
+    <script src="https://kit.fontawesome.com/43d19060f3.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <div id="documentViewer" class="flowpaper_viewer" style="position:absolute;left:10px;top:10px;width:900px;height:620px"></div>
-
+<a id="descargar-pdf" href="#" target="_blank" download
+   style="position:absolute; left: 675px; top:25px; background-color: rgb(146, 109, 109); color:white; padding:10px 12px; border-radius:6px; text-decoration:none; font-family: sans-serif; z-index:9999; font-size: 18px;">
+  <i class="fa-solid fa-download"></i>
+</a>
+<button id="cerrar-flowpaper" title="Cerrar visor"
+  style="position:absolute; left: 730px; top:25px; background-color: rgb(146, 109, 109); color:white; border:none; padding:10px 14px; border-radius:6px; font-size:16px; cursor:pointer; z-index:9999;">
+  <i class="fa-solid fa-xmark"></i>
+</button>
 <script type="text/javascript">
-   $('#documentViewer').FlowPaperViewer({
+  const pdfFile = decodeURIComponent(window.location.search.replace("?PDF=", ""));
+
+  $('#documentViewer').FlowPaperViewer({
     config : {
-       PDFFile: decodeURIComponent(window.location.search.replace("?PDF=", "")), // 👈 Tu archivo real de PDF
-        EnableWebGL : true,
-        UIConfig    : 'UI_Zine.xml' // Si no tienes este archivo, remueve esta línea
+      PDFFile: pdfFile,
+      EnableWebGL : true,
+      UIConfig    : 'UI_Zine.xml'
     }
-});
+  });
+
+  // Asignar al botón de descarga
+  document.getElementById("descargar-pdf").href = pdfFile;
+
+  document.getElementById("cerrar-flowpaper").addEventListener("click", () => {
+    if (window.parent) {
+      const visor = window.parent.document.getElementById("visor-flowpaper");
+      const contenedor = window.parent.document.getElementById("flipbook-container");
+      if (visor && contenedor) {
+        visor.classList.add("oculto");
+        contenedor.innerHTML = "";
+      }
+    }
+    });
 </script>
 
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>

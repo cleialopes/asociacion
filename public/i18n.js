@@ -17,6 +17,12 @@ const traducciones = {
     "noticias.mas": "Más Noticias",
     "volver": "Volver",
     "eventos": "Últimas Noticias",
+    "revista.titulo": "Revista Sebastiane",
+    "revista.carteles": "Carteles y publicaciones",
+    "revista.programas": "Programas",
+    "revista.carteles.titulo": "Carteles",
+    "revista.memorias": "Memorias",
+
     "organizadores": "Organizadores",
     "patrocinios_colaboradores": "Patrocinios y Colaboradores",
     "contacto": "Contacto",
@@ -103,6 +109,12 @@ const traducciones = {
     "noticias.mas": "Albiste gehiago",
     "volver": "Itzuli",
     "eventos": "Azken Berriak",
+    "revista.titulo": "Sebastiane Aldizkaria",
+    "revista.carteles": "Kartelak eta argitalpenak",
+     "revista.programas": "Programak",
+    "revista.carteles.titulo": "Kartelak",
+    "revista.memorias": "Txostenak",
+
     "organizadores": "Antolatzaileak",
     "patrocinios_colaboradores": "Babesleak eta Laguntzaileak",
     "contacto": "Harremana",
@@ -189,6 +201,12 @@ const traducciones = {
     "noticias.mas": "More News",
     "volver": "Back",
     "eventos": "Latest News",
+    "revista.titulo": "Sebastiane Magazine",
+    "revista.carteles": "Posters and Publications",
+    "revista.programas": "Programs",
+    "revista.carteles.titulo": "Posters",
+    "revista.memorias": "Reports",
+
     "organizadores": "Organizers",
     "patrocinios_colaboradores": "Sponsors and Partners",
     "contacto": "Contact",
@@ -279,7 +297,6 @@ function cambiarIdioma(lang) {
   }
 }
 
-
 document.addEventListener('DOMContentLoaded', () => {
   const selector = document.getElementById('lang-selector');
   const idiomaGuardado = localStorage.getItem('idioma') || 'es'; 
@@ -297,21 +314,29 @@ document.addEventListener('DOMContentLoaded', () => {
     const params = new URLSearchParams(window.location.search);
     const id = params.get('id');
     const fuente = params.get('fuente') || 'sebastiane';
-      if (id && window.mostrarDetalle) {
-        window.mostrarDetalle(id, idioma, fuente);
-      }
+    if (id && window.mostrarDetalle) {
+      window.mostrarDetalle(id, idioma, fuente);
     }
+  }
+
     if (pathname.includes('ver-noticia.html') && typeof renderizarNoticia === "function") {
       renderizarNoticia(idioma);
     }
+
     if (pathname.includes('encuentros.html')) {
       $("#contenedor-encuentros").empty();
-      $.getScript('encuentros.js'); // recarga dinámicamente los encuentros
+      $.getScript('encuentros.js'); 
     }
+
     if (pathname.includes('ver-encuentro.html')) {
-    $("#contenido-encuentro").empty();
-    $.getScript('ver-encuentro.js');
-  }
+      $("#contenido-encuentro").empty();
+      $.getScript('ver-encuentro.js');
+    }
+    if (pathname.includes('revistas.html')) {
+      const contenedor = document.getElementById("lista-revistas");
+      if (contenedor) contenedor.innerHTML = "";
+      $.getScript('revista.js'); 
+    }
   });
   }
 });
