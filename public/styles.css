@@ -62,152 +62,96 @@ h2 {
   opacity: 0.8;
 }
 
+/* Estilo base del modo oscuro */
 body.dark-mode {
   background-color: #1c1c1c;
   color: var(--color-fondo-claro);
 }
 
-body.dark-mode a {
+/* Textos generales */
+
+body.dark-mode form label,
+body.dark-mode,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6,
+body.dark-mode p,
+body.dark-mode li,
+body.dark-mode a,
+body.dark-mode span,
+body.dark-mode label {
   color: var(--color-fondo-claro);
 }
 
+/* Elementos reutilizables en secciones */
+body.dark-mode .modo-claro-oscuro,
+body.dark-mode .revista,
+body.dark-mode .noticia,
+body.dark-mode .detalle-container,
+body.dark-mode .ficha-pelicula,
+body.dark-mode .encuentros_texto,
+body.dark-mode .voluntaries-section,
+
+body.dark-mode .descripcion-premio,
+body.dark-mode .texto-info,
+body.dark-mode .lista-info {
+  /* background-color: var(--color-principal-dark); */
+  color: var(--color-fondo-claro);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+/* Encabezados específicos */
+body.dark-mode .descripcion-premio h3,
+body.dark-mode .peliculas-seccion .pelicula h4,
+body.dark-mode .encuentros-card h3 {
+  color: var(--color-fondo-claro);
+}
+
+/* Formulario */
+body.dark-mode input,
+body.dark-mode textarea {
+  background-color: #1c1c1c;;
+  color: var(--color-fondo-claro);
+  border: 1px solid var(--color-principal-dark);
+}
+
+/* Header, Footer, Menú */
+body.dark-mode form,
+body.dark-mode .carteles-publicaciones,
 body.dark-mode .header,
 body.dark-mode .footer {
-  background-color: #333;
+  background-color: var(--color-principal-dark);
 }
 
 body.dark-mode .menu-desplegable {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-body.dark-mode .menu-desplegable a {
-  color: var(--color-fondo-claro);
-}
-
-body.dark-mode .modo-claro-oscuro {
-  color: var(--color-fondo-claro);
-}
-
-body.dark-mode .modo-claro-oscuro a {
-  color: var(--color-fondo-claro);
-}
-
-body.dark-mode main h1,
-body.dark-mode h2 {
-  color: var(--color-fondo-claro);
-}
-
-body.dark-mode .encuentros_texto,
-body.dark-mode .encuentros_texto p,
-body.dark-mode .encuentros_texto li {
-  color: var(--color-fondo-claro);
-  border-radius: 10px;
-  padding: 1rem;
-}
-
-body.dark-mode .texto-info,
-body.dark-mode .lista-info,
-body.dark-mode .lista-info p,
-body.dark-mode .lista-info li,
-body.dark-mode .lista-info ul li,
-body.dark-mode .voluntaries-section {
-  color: var(--color-fondo-claro);
-  border-radius: 10px;
-  padding: 1rem;
-}
-
-body.dark-mode .carteles-publicaciones {
-  background-color: #2a2a2a;
-  color: var(--color-fondo-claro);
-}
-
-body.dark-mode .revista,
-body.dark-mode .revista h2 {
-  color: var(--color-fondo-claro);
-}
-
-body.dark-mode .btn-revista {
-  background-color: #444;
-  color: var(--color-fondo-claro);
-}
-
-body.dark-mode .btn-revista:hover {
-  background-color: #666;
-}
-
-body.dark-mode form {
-  background-color: #2a2a2a;
-  color: var(--color-fondo-claro);
-}
-
-body.dark-mode form label {
-  color: var(--color-fondo-claro);
-}
-
-body.dark-mode form input,
-body.dark-mode form textarea {
-  background-color: #1c1c1c;
-  color: var(--color-fondo-claro);
-  border: 1px solid #555;
-}
-
-body.dark-mode .noticia h3,
-body.dark-mode .noticia h3 a,
-body.dark-mode .noticia a h3 {
-  color: var(--color-fondo-claro);
-}
-
-body.dark-mode #visor-flowpaper {
-  background: rgba(0, 0, 0, 0.95);
-}
-
-body.dark-mode .footer-col ul li a {
-  color: var(--color-fondo-claro);
-}
-
+body.dark-mode .footer-col ul li a,
 body.dark-mode .social-icons i {
   color: var(--color-fondo-claro);
 }
 
+/* Flipbook (visor revistas) */
+body.dark-mode #visor-flowpaper {
+  background: rgba(0, 0, 0, 0.95);
+}
+
+/* Patrocinadores */
 body.dark-mode .patrocinadores {
-  background-color: #5f5d5d; 
+  background-color: #5f5d5d;
   padding: 2rem 0;
 }
-body.dark-mode .descripcion-premio {
-  background-color: #2a2a2a;
-  color: var(--color-fondo-claro);
+
+/* Hover efectos */
+.modo-toggle:hover {
+  opacity: 0.8;
 }
 
-body.dark-mode .descripcion-premio h3 {
-  color: var(--color-principal);
-}
-
-body.dark-mode .descripcion-premio p {
-  color: var(--color-fondo-claro);
-}
-ody.dark-mode .detalle-container {
-  color: var(--color-fondo-claro);
-}
-
-body.dark-mode .detalle-container p {
-  color: var(--color-fondo-claro);
-}
-
-body.dark-mode .ficha-pelicula {
-  color: var(--color-fondo-claro);
-}
-
-body.dark-mode .ficha-pelicula li {
-  color: var(--color-fondo-claro);
-}
-
-body.dark-mode .peliculas-seccion .pelicula h4 {
-  color: var(--color-fondo-claro);
-}
-
-body.dark-mode .encuentros-card h3 {
-  color: var(--color-fondo-claro);
-}
 
 /*==== Header ====*/
 .header {
@@ -1028,7 +972,7 @@ form button:hover {
 /*===== revista =====*/
 .lista-revistas {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(5, 1fr);
   gap: 30px;
   margin-top: 30px;
 }

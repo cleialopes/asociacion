@@ -84,6 +84,9 @@ function cargarDocumentos() {
     });
 }
 document.addEventListener('DOMContentLoaded', () => {
+  if (typeof cargarRevistas === 'function') {
+    cargarRevistas();
+  }
   if (typeof cargarDocumentos === 'function') {
     cargarDocumentos();
   }
