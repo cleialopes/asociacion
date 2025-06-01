@@ -173,6 +173,41 @@ body.dark-mode .patrocinadores {
   background-color: #5f5d5d; 
   padding: 2rem 0;
 }
+body.dark-mode .descripcion-premio {
+  background-color: #2a2a2a;
+  color: var(--color-fondo-claro);
+}
+
+body.dark-mode .descripcion-premio h3 {
+  color: var(--color-principal);
+}
+
+body.dark-mode .descripcion-premio p {
+  color: var(--color-fondo-claro);
+}
+ody.dark-mode .detalle-container {
+  color: var(--color-fondo-claro);
+}
+
+body.dark-mode .detalle-container p {
+  color: var(--color-fondo-claro);
+}
+
+body.dark-mode .ficha-pelicula {
+  color: var(--color-fondo-claro);
+}
+
+body.dark-mode .ficha-pelicula li {
+  color: var(--color-fondo-claro);
+}
+
+body.dark-mode .peliculas-seccion .pelicula h4 {
+  color: var(--color-fondo-claro);
+}
+
+body.dark-mode .encuentros-card h3 {
+  color: var(--color-fondo-claro);
+}
 
 /*==== Header ====*/
 .header {
