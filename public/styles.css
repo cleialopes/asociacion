@@ -62,31 +62,27 @@ h2 {
   opacity: 0.8;
 }
 
-/* Estilo base del modo oscuro */
 body.dark-mode {
   background-color: #1c1c1c;
   color: var(--color-fondo-claro);
 }
-
-/* Textos generales */
 
 body.dark-mode form label,
 body.dark-mode,
 body.dark-mode h1,
 body.dark-mode h2,
 body.dark-mode h3,
+body.dark-mode .noticia h3,
 body.dark-mode h4,
 body.dark-mode h5,
 body.dark-mode h6,
 body.dark-mode p,
 body.dark-mode li,
-body.dark-mode a,
 body.dark-mode span,
 body.dark-mode label {
   color: var(--color-fondo-claro);
 }
 
-/* Elementos reutilizables en secciones */
 body.dark-mode .modo-claro-oscuro,
 body.dark-mode .revista,
 body.dark-mode .noticia,
@@ -94,24 +90,19 @@ body.dark-mode .detalle-container,
 body.dark-mode .ficha-pelicula,
 body.dark-mode .encuentros_texto,
 body.dark-mode .voluntaries-section,
-
-body.dark-mode .descripcion-premio,
 body.dark-mode .texto-info,
 body.dark-mode .lista-info {
-  /* background-color: var(--color-principal-dark); */
   color: var(--color-fondo-claro);
   border-radius: 10px;
   padding: 1rem;
 }
 
-/* Encabezados específicos */
 body.dark-mode .descripcion-premio h3,
 body.dark-mode .peliculas-seccion .pelicula h4,
 body.dark-mode .encuentros-card h3 {
   color: var(--color-fondo-claro);
 }
 
-/* Formulario */
 body.dark-mode input,
 body.dark-mode textarea {
   background-color: #1c1c1c;;
@@ -119,8 +110,8 @@ body.dark-mode textarea {
   border: 1px solid var(--color-principal-dark);
 }
 
-/* Header, Footer, Menú */
 body.dark-mode form,
+body.dark-mode .descripcion-premio,
 body.dark-mode .carteles-publicaciones,
 body.dark-mode .header,
 body.dark-mode .footer {
@@ -136,22 +127,36 @@ body.dark-mode .social-icons i {
   color: var(--color-fondo-claro);
 }
 
-/* Flipbook (visor revistas) */
 body.dark-mode #visor-flowpaper {
   background: rgba(0, 0, 0, 0.95);
 }
 
-/* Patrocinadores */
 body.dark-mode .patrocinadores {
   background-color: #5f5d5d;
   padding: 2rem 0;
 }
 
-/* Hover efectos */
 .modo-toggle:hover {
   opacity: 0.8;
 }
 
+body.dark-mode form button,
+body.dark-mode .enlace-anio,
+body.dark-mode .btn-leer,
+body.dark-mode #btn-cargar-mas {
+  background-color: transparent;
+  color: var(--color-fondo-claro);
+  border: 2px solid var(--color-fondo-claro);
+}
+
+body.dark-mode form button:hover,
+body.dark-mode .enlace-anio:hover,
+body.dark-mode .btn-leer:hover,
+body.dark-mode #btn-cargar-mas:hover {
+  border-color: var(--color-principal);
+  color: var(--color-fondo-claro);
+  background-color: transparent;  
+}
 
 /*==== Header ====*/
 .header {
@@ -1146,12 +1151,6 @@ form button:hover {
   text-decoration: none;
   display: inline-block;
   transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.noticia h3 a:hover,
-.noticia a:hover h3 {
-  color: var(--color-principal);
-  transform: translateY(-4px);
 }
   
 .noticia .fecha {

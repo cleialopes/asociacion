@@ -21,7 +21,7 @@ function cargarRevistas() {
     .then(res => res.json())
     .then(data => {
       const contenedor = document.getElementById("lista-revistas");
-      contenedor.innerHTML = ""; // Limpiar antes de volver a cargar
+      contenedor.innerHTML = ""; 
 
       data.forEach(revista => {
         const div = document.createElement("div");

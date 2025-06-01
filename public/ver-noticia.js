@@ -107,7 +107,7 @@ function renderizarNoticia(idioma) {
     <a href="noticias.html" class="btn-leer" data-i18n-html="volver">← Volver</a>
   `;
 cambiarIdioma(idioma);
-  // Carrusel funcional
+  
   const imagenesCarrusel = document.querySelectorAll(".carrusel-imagen");
   const flechaIzquierda = document.querySelector(".carrusel-flecha.izquierda");
   const flechaDerecha = document.querySelector(".carrusel-flecha.derecha");

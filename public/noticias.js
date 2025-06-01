@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   window.idiomaActual = localStorage.getItem("idioma") || "es";
 
   function mostrarNoticias(idioma = idiomaActual) {
-    idiomaActual = idioma; // Actualizamos la variable global
+    idiomaActual = idioma; 
     const contenedor = document.getElementById("contenedor-noticias");
     const siguienteLote = todasLasNoticias.slice(noticiasCargadas, noticiasCargadas + noticiasPorLote);
 
@@ -30,16 +30,20 @@ document.addEventListener("DOMContentLoaded", () => {
       const card = document.createElement("div");
       card.className = "noticia modo-claro-oscuro";
       card.innerHTML = `
-        ${imagen && imagen.trim() !== "" ? `<img src="${imagen}" alt="${titulo}" class="noticia-imagen">` : videoLocal
-          ? `<video class="noticia-video" controls>
-               <source src="${videoLocal}" type="video/mp4">
-               Tu navegador no soporta el video.
-             </video>`
-          : videoURL
-          ? `<iframe class="noticia-video" src="${videoURL}" frameborder="0" allowfullscreen></iframe>`
-          : ""}
-        <h3><a href="ver-noticia.html?id=${noticia.id}">${titulo}</a></h3>
-      `;
+      ${imagen && imagen.trim() !== "" ? `
+        <a href="ver-noticia.html?id=${noticia.id}">
+          <img src="${imagen}" alt="${titulo}" class="noticia-imagen">
+        </a>` 
+      : videoLocal
+        ? `<video class="noticia-video" controls>
+            <source src="${videoLocal}" type="video/mp4">
+            Tu navegador no soporta el video.
+          </video>`
+        : videoURL
+        ? `<iframe class="noticia-video" src="${videoURL}" frameborder="0" allowfullscreen></iframe>`
+        : ""}
+      <h3>${titulo}</h3>
+    `;
       contenedor.appendChild(card);
     });
 
@@ -52,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function reiniciarNoticias(nuevoIdioma) {
-    idiomaActual = nuevoIdioma; // ACTUALIZACIÓN
+    idiomaActual = nuevoIdioma;
     const contenedor = document.getElementById("contenedor-noticias");
     contenedor.innerHTML = "";
     noticiasCargadas = 0;
@@ -70,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .then(noticias => {
   todasLasNoticias = noticias;
   const idioma = localStorage.getItem("idioma") || "es";
-  mostrarNoticias(idioma); // ✅ usamos el idioma guardado
+  mostrarNoticias(idioma); 
 
   const btn = document.getElementById("btn-cargar-mas");
   if (btn) {
