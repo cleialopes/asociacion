@@ -21,14 +21,24 @@ fetch("noticias.json")
   });
   
   function renderizarContenido(bloques) {
+  if (!Array.isArray(bloques)) {
+    console.warn("Bloques de contenido no válidos:", bloques);
+    return "<p>(Contenido no disponible)</p>";
+  }
+
   return bloques
     .map(bloque => {
-      if (bloque.tipo === "parrafo") {
-        return `<p>${bloque.texto}</p>`;
-      } else if (bloque.tipo === "lista") {
-        return `<ul>${bloque.elementos.map(item => `<li>${item}</li>`).join("")}</ul>`;
+      switch (bloque.tipo) {
+        case "parrafo":
+        case "p":
+          return `<p>${bloque.texto}</p>`;
+        case "lista":
+          return `<ul>${bloque.elementos.map(item => `<li>${item}</li>`).join("")}</ul>`;
+        case "h3":
+          return `<h3>${bloque.texto}</h3>`;
+        default:
+          return `<p>(Tipo desconocido: ${bloque.tipo})</p>`;
       }
-      return "";
     })
     .join("");
 }
