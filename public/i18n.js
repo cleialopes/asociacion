@@ -290,11 +290,9 @@ function cambiarIdioma(lang) {
     if (t[clave]) el.innerHTML = t[clave];
   });
   
-  if (document.getElementById("contenedor-noticias") && typeof mostrarNoticias === "function") {
-    noticiasCargadas = 0;
-    document.getElementById("contenedor-noticias").innerHTML = "";
-    mostrarNoticias(lang);
-  }
+  if (document.getElementById("contenedor-noticias") && typeof window.reiniciarNoticiasDesdeI18n === "function") {
+  window.reiniciarNoticiasDesdeI18n(lang);
+}
 }
 
 document.addEventListener('DOMContentLoaded', () => {

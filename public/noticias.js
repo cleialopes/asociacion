@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let noticiasCargadas = 0;
   const noticiasPorLote = 8;
   let todasLasNoticias = [];
-  let idiomaActual = localStorage.getItem("idioma") || "es"; // NUEVO
+  window.idiomaActual = localStorage.getItem("idioma") || "es";
 
   function mostrarNoticias(idioma = idiomaActual) {
     idiomaActual = idioma; // Actualizamos la variable global
@@ -68,15 +68,27 @@ document.addEventListener("DOMContentLoaded", () => {
   fetch('noticias.json')
     .then(res => res.json())
     .then(noticias => {
-      todasLasNoticias = noticias;
-      mostrarNoticias();
+  todasLasNoticias = noticias;
+  const idioma = localStorage.getItem("idioma") || "es";
+  mostrarNoticias(idioma); // ✅ usamos el idioma guardado
 
-      const btn = document.getElementById("btn-cargar-mas");
-      if (btn) {
-        btn.style.display = "block";
-        btn.addEventListener("click", () => mostrarNoticias()); // usa idiomaActual correctamente
-      }
-    });
+  const btn = document.getElementById("btn-cargar-mas");
+  if (btn) {
+    btn.style.display = "block";
+    btn.addEventListener("click", () => mostrarNoticias(idiomaActual));
+  }
+  window.reiniciarNoticiasDesdeI18n = function (lang) {
+  window.idiomaActual = lang;
+  noticiasCargadas = 0;
+  const contenedor = document.getElementById("contenedor-noticias");
+  contenedor.innerHTML = "";
+
+  const btn = document.getElementById("btn-cargar-mas");
+  if (btn) btn.style.display = "block";
+
+  mostrarNoticias(lang);
+};
+});
 
   document.querySelectorAll("[data-set-lang]").forEach(btn => {
     btn.addEventListener("click", e => {
