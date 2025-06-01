@@ -59,7 +59,7 @@ document.getElementById('footer').innerHTML = `
       <div class="footer-columnas">
         <div class="footer-col">
           <h2 class="footer-titulo" data-i18n="footer.contacto">Contacto</h2>
-          <p data-i18n="email">Email: info@premiosebastiane.com</p>
+          <p><a href="mailto:info@premiosebastiane.com" data-i18n="email">Email: info@premiosebastiane.com</a></p>
           <p>Tel: Prensa +34 606 270 229</p>
           <p>Dirección: Premio Sebastiane – GEHITU<br>Kolon 50, 20002 Donostia / San Sebastián</p>
         </div>

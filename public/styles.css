@@ -79,7 +79,8 @@ body.dark-mode h6,
 body.dark-mode p,
 body.dark-mode li,
 body.dark-mode span,
-body.dark-mode label {
+body.dark-mode label,
+body.dark-mode a[data-i18n="email"] {
   color: var(--color-fondo-claro);
 }
 
@@ -113,6 +114,7 @@ body.dark-mode textarea {
 body.dark-mode form,
 body.dark-mode .descripcion-premio,
 body.dark-mode .carteles-publicaciones,
+body.dark-mode #lang-selector option,
 body.dark-mode .header,
 body.dark-mode .footer {
   background-color: var(--color-principal-dark);
@@ -253,7 +255,6 @@ body.dark-mode #btn-cargar-mas:hover {
 }
 
 #lang-selector option {
-  color: var(--color-negro);
   background-color: rgba(var(--color-principal-rgb), 0.8);
   border: none;
 }
@@ -271,7 +272,7 @@ body.dark-mode #btn-cargar-mas:hover {
 }
 
 .menu-info .submenu a {
-  margin-left: 2.5rem; /* o prueba con 1.5rem para mayor separación */
+  margin-left: 2.5rem;
 }
 
 .menu-info.mostrar-submenu .submenu {
@@ -363,11 +364,13 @@ body.dark-mode #btn-cargar-mas:hover {
   margin: 5px 0;
 }
 
+a[data-i18n="email"],
 .footer-col ul li a {
   color: var(--color-negro);
   text-decoration: none;
 }
 
+a[data-i18n="email"]:hover,
 .footer-col ul li a:hover {
   text-decoration: underline;
 }
@@ -438,7 +441,7 @@ body.dark-mode #btn-cargar-mas:hover {
   transform: scale(1.05);
 } 
 .unificado-swiper {
-  padding-bottom: 60px; /* o más si lo quieres más bajo */
+  padding-bottom: 60px; 
 }
 
 .unificado-swiper .swiper-pagination {
@@ -1308,4 +1311,103 @@ form button:hover {
 
 .contenido-noticia {
   margin-bottom: 30px;
+}
+
+/* === Tablets (hasta 1024px) === */
+@media (max-width: 1024px) {
+  .footer-contenedor {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .footer-logo {
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .footer-columnas {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header-right {
+    gap: 10px;
+    padding: 0 10px;
+  }
+
+  #contenedor-noticias,
+  #contenedor-encuentros,
+  .peliculas-seccion,
+  .lista-revistas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #enlaces-imagenes img.clickeable {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .detalle-container img {
+    max-width: 100%;
+  }
+}
+
+/* === Móviles (hasta 768px) === */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contenedor-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-desplegable a {
+    font-size: 20px;
+  }
+
+  .footer-col {
+    max-width: 100%;
+    align-items: center;
+  }
+
+  #contenedor-noticias,
+  #contenedor-encuentros,
+  .peliculas-seccion,
+  .lista-revistas {
+    grid-template-columns: 1fr;
+  }
+
+  .encuentros-card img,
+  .revista img,
+  .pelicula img {
+    max-width: 100%;
+  }
+
+  .columna-imagen img {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .voluntaries-section img {
+    max-width: 60%;
+  }
+
+  .titulo-principal {
+    font-size: 1.2rem;
+  }
+
+  form {
+    padding: 1rem;
+  }
+
+  .btn-leer,
+  form button {
+    width: 20%;
+    text-align: center;
+  }
 }
