@@ -68,12 +68,13 @@ function renderizarNoticia(idioma) {
   }
 
   const anioLink = noticiaGlobal.anio_url
-    ? (() => {
-        const match = noticiaGlobal.anio_url.match(/anio=(\d{4})/);
-        const anio = match ? match[1] : "";
-        return `<a href="${noticiaGlobal.anio_url}" class="enlace-anio">Ver candidatas de ${anio}</a>`;
-      })()
-    : "";
+  ? (() => {
+      const match = noticiaGlobal.anio_url.match(/anio=(\d{4})/);
+      const anio = match ? match[1] : "";
+      const textoTraducido = traducir("ver_candidatas_de");
+      return `<a href="${noticiaGlobal.anio_url}" class="enlace-anio">${textoTraducido} ${anio}</a>`;
+    })()
+  : "";
 
   const galeriaHTML =
     noticiaGlobal.video_local
