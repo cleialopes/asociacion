@@ -1358,13 +1358,41 @@ form button:hover {
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
   }
 
-  .contenedor-header {
+ .contenedor-header {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    gap: 10px;
   }
+
+  .header-right {
+    order: -1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0 !important;
+    padding: 0;
+  }
+  .titulo-principal,
+  .fecha-evento {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  .header-left {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+   .menu-desplegable {
+    top: 100px;
+  }
+  #banner-sebastiane video {
+  margin-top: 5px;
+}
 
   .menu-desplegable a {
     font-size: 20px;
