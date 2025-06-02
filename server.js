@@ -93,27 +93,26 @@ app.delete('/api/banner', (req, res) => {
 // API Sebastiane
 const SEBASTIANE_JSON = 'sebastiane.json';
 
-app.get('/api/sebastiane/:anio/:seccion', (req, res) => {
+app.post('/api/sebastiane/:anio/:seccion', (req, res) => {
   const { anio, seccion } = req.params;
-  try {
-    const data = JSON.parse(fs.readFileSync(SEBASTIANE_JSON, 'utf-8'));
-    const lista = data[anio]?.[seccion] || [];
-    res.json(lista);
-  } catch (e) {
-    res.status(500).json([]);
-  }
-});
+  const { titulo, director, pais, descripcion, video, año, imagen } = req.body;
 
-app.post('/api/sebastiane/:anio/:seccion', upload.single('imagen'), (req, res) => {
-  const { anio, seccion } = req.params;
-  const { titulo, director, pais, descripcion } = req.body;
-  const imagen = req.file ? `/uploads/${req.file.filename}` : "";
+  const id = `pelicula-${Date.now()}`;
 
-  const pelicula = { titulo, director, pais, descripcion, imagen };
+  const pelicula = {
+    id,
+    titulo,
+    director,
+    pais,
+    descripcion,
+    año: año || `${anio} | ?`,
+    imagen: imagen || "",
+    video: video || ""
+  };
 
   let data = {};
   try {
-    data = JSON.parse(fs.readFileSync(SEBASTIANE_JSON, 'utf-8'));
+    data = JSON.parse(fs.readFileSync(SEBASTIANE_JSON, "utf-8"));
   } catch (e) {}
 
   if (!data[anio]) data[anio] = {};
@@ -123,6 +122,17 @@ app.post('/api/sebastiane/:anio/:seccion', upload.single('imagen'), (req, res) =
 
   fs.writeFileSync(SEBASTIANE_JSON, JSON.stringify(data, null, 2));
   res.json({ ok: true });
+});
+
+app.get('/api/sebastiane/:anio/:seccion', (req, res) => {
+  const { anio, seccion } = req.params;
+  try {
+    const data = JSON.parse(fs.readFileSync(SEBASTIANE_JSON, 'utf-8'));
+    const lista = data[anio]?.[seccion] || [];
+    res.json(lista);
+  } catch (e) {
+    res.status(500).json([]);
+  }
 });
 
 app.delete('/api/sebastiane/:anio/:seccion/:index', (req, res) => {
@@ -157,6 +167,21 @@ app.get('/api/sebastiane_latino', (req, res) => {
   } catch (e) {
     res.status(500).json({});
   }
+});
+
+app.post('/api/upload', upload.single('imagen'), (req, res) => {
+  if (!req.file) {
+    return res.status(400).json({ error: 'No se recibió archivo' });
+  }
+
+  const extension = path.extname(req.file.originalname);
+  const nombreArchivo = `${Date.now()}${extension}`;
+  const destino = path.join(__dirname, 'public', 'img', nombreArchivo);
+
+  fs.renameSync(req.file.path, destino);
+
+  const url = `/img/${nombreArchivo}`;
+  res.json({ url });
 });
 
 app.listen(3000, () => console.log('Servidor en http://localhost:3000'));

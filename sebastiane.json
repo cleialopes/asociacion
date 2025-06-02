@@ -1,745 +1,229 @@
 {
-   "2025": {
+  "2000": {
     "Ganadora": [
       {
-        "id":"",
+        "id": "Krámpack-2000",
         "titulo": {
-          "es": "",
+          "es": "Krámpack",
           "en": "",
           "eu": ""
-        },       
+        },
         "pais": {
-          "es":"",
-          "en":"",
-          "eu":""
+          "es": "España",
+          "en": "",
+          "eu": ""
         },
-        "año": "",
+        "año": "2000 | 92’",
         "director": {
-          "es": ""
+          "es": "Cesc Gay"
         },
-        "imagen": "",
+        "imagen": "img/Kraampack.jpg",
         "descripcion": {
-          "es": "",
+          "es": "Verano de 1999. Dani pasa las vacaciones de verano en una casa de la costa. Cuando sus padres se van de viaje, se queda en compañía de su amigo Nico. Pese a la vigilancia de la asistenta y de su profesora de inglés, los amigos aprovechan la situación para meterse de lleno en la vida del pueblo. Así conocen a dos chicas con las que dan los primeros pasos hacia la vida adulta.",
           "en": "",
           "eu": ""
         },
         "video": ""
       }
     ],
-    "New Directors": [
-      {
-        "id":"",
-        "titulo": {
-          "es": "",
-          "en": "",
-          "eu": ""
-        },       
-        "pais": {
-          "es":"",
-          "en":"",
-          "eu":""
-        },
-        "año": "",
-        "director": {
-          "es": ""
-        },
-        "imagen": "",
-        "descripcion": {
-          "es": "",
-          "en": "",
-          "eu": ""
-        },
-        "video": ""
-      }
-    ],
-    "Horizontes Latinos": [
-      {
-        "id":"",
-        "titulo": {
-          "es": "",
-          "en": "",
-          "eu": ""
-        },       
-        "pais": {
-          "es":"",
-          "en":"",
-          "eu":""
-        },
-        "año": "",
-        "director": {
-          "es": ""
-        },
-        "imagen": "",
-        "descripcion": {
-          "es": "",
-          "en": "",
-          "eu": ""
-        },
-        "video": ""
-      }
-    ],
-    "Zabaltegi": [
-      {
-        "id":"",
-        "titulo": {
-          "es": "",
-          "en": "",
-          "eu": ""
-        },       
-        "pais": {
-          "es":"",
-          "en":"",
-          "eu":""
-        },
-        "año": "",
-        "director": {
-          "es": ""
-        },
-        "imagen": "",
-        "descripcion": {
-          "es": "",
-          "en": "",
-          "eu": ""
-        },
-        "video": ""
-      }
-    ],
-    "Perlak": [
-      {
-        "id":"",
-        "titulo": {
-          "es": "",
-          "en": "",
-          "eu": ""
-        },       
-        "pais": {
-          "es":"",
-          "en":"",
-          "eu":""
-        },
-        "año": "",
-        "director": {
-          "es": ""
-        },
-        "imagen": "",
-        "descripcion": {
-          "es": "",
-          "en": "",
-          "eu": ""
-        },
-        "video": ""
-      }
-    ],
-    "Made in Spain": [
-      {
-        "id":"",
-        "titulo": {
-          "es": "",
-          "en": "",
-          "eu": ""
-        },       
-        "pais": {
-          "es":"",
-          "en":"",
-          "eu":""
-        },
-        "año": "",
-        "director": {
-          "es": ""
-        },
-        "imagen": "",
-        "descripcion": {
-          "es": "",
-          "en": "",
-          "eu": ""
-        },
-        "video": ""
-      }
-    ],
-    "Fuera de concurso": [
-      {
-        "id":"",
-        "titulo": {
-          "es": "",
-          "en": "",
-          "eu": ""
-        },       
-        "pais": {
-          "es":"",
-          "en":"",
-          "eu":""
-        },
-        "año": "",
-        "director": {
-          "es": ""
-        },
-        "imagen": "",
-        "descripcion": {
-          "es": "",
-          "en": "",
-          "eu": ""
-        },
-        "video": ""
-      }
-    ]
+    "New Directors": [],
+    "Horizontes Latinos": [],
+    "Zabaltegi": [],
+    "Perlak": [],
+    "Made in Spain": [],
+    "Fuera de concurso": []
   },
-  "2024": {
+  "2001": {
     "Ganadora": [
       {
-        "id": "reas-2024",
+        "id": "Le fate ignoranti-2001",
         "titulo": {
-          "es": "Reas",
-          "en": "Reas",
-          "eu": "Reas"
-        },       
+          "es": "Le fate ignoranti ",
+          "en": "",
+          "eu": ""
+        },
         "pais": {
-          "es":"Argentina-Alemania-Suiza",
-          "en":"Argentina-Germany-Switzerland",
-          "eu":"Argentina-Alemania-Suitza"
+          "es": "Italia",
+          "en": "",
+          "eu": ""
         },
-         "año": "2024 | 82’",
+        "año": "2001 | 110’",
         "director": {
-          "es": "Mariano Cattaneo"
+          "es": "Ferzan Ozpetek"
         },
-        "imagen": "img/sebastiane2024_reas.jpg",
+        "imagen": "img/le_fate_ignoranti_the_ignorant_fairies.jpg",
         "descripcion": {
-          "es": "Yoseli tiene un tatuaje de la Torre Eiffel en la espalda y siempre quiso viajar, pero fue detenida en el aeropuerto por tráfico de drogas. Nacho es un hombre trans que fue detenido por estafa y armó una banda de rock en la cárcel. Dulces o rudxs, rubixs o rapados, cis o trans, detenidxs hace tiempo o recién ingresadxs: en este musical híbrido, todxs recrean sus vidas en una prisión de Buenos Aires.",
-          "en": "Yoseli has a tattoo of the Eiffel Tower on her back and always wanted to travel, but was arrested at the airport for drug trafficking. Nacho is a trans man who was arrested for fraud and started a rock band in prison. Sweet or ruddy, blond or shaved, cis or trans, long-detained or newly arrested: in this hybrid musical, everyone recreates their lives in a Buenos Aires prison.",
-          "eu": "Yoselik Eiffel Dorrearen tatuajea du bizkarrean eta beti bidaiatu nahi izan zuen, baina aireportuan atxilotu zuten droga trafikoagatik. Nacho iruzurgatik atxilotu eta kartzelan rock talde bat sortu zuen trans gizon bat da. Gozoa ala gogorra, ilehoria edo bizarra, cis ala trans, aspaldian atxilotua edo onartu berria: musikal hibrido honetan bakoitzak bere bizitza birsortzen du Buenos Airesko espetxe batean."
-        },
-        "video": "https://www.youtube.com/watch?v=j6XADs_VSGE"
-      }
-    ],
-    "New Directors": [
-      {
-        "id": "Drama de ensacador-2024",
-        "titulo": {
-          "es": "Drama de ensacador",
-          "en": "Bagger Drama",
-          "eu": "Ensacador drama"
-        },       
-        "pais": {
-          "es":"Suiza",
-          "en":"Swiss",
-          "eu":"Suitzarrak"
-        },
-        "año": "2024 | 94’",
-        "director": {
-          "es": "Piet Baumgartner"
-        },
-        "imagen": "img/sebastiane2024_bagger_drama.jpg",
-        "descripcion": {
-          "es": "Una familia tiene dificultades para hablar de sentimientos, amor o intimidad. El negocio familiar —alquilar, vender y reparar excavadoras— exige toda su atención. Todos tienen que arrimar el hombro. Cuando la hija muere en un accidente, la familia se colapsa. El hijo prefiere irse a Estados Unidos antes que hacerse cargo de la empresa. El padre se enamora de la nueva directora del coro y la madre se encuentra de repente sola.",
-          "en": "A family struggles to talk about feelings, love, or intimacy. The family business—renting, selling, and repairing excavators—demands their full attention. Everyone has to pitch in. When the daughter dies in an accident, the family collapses. The son chooses to go to the United States rather than take over the business. The father falls in love with the new choir director, and the mother suddenly finds herself alone.",
-          "eu": "Familia batek zailtasunak ditu sentimenduez, maitasunaz edo intimitateaz hitz egiteko. Familiako negozioak —hondeamakinak alokatu, saldu eta konpontzea— bere arreta osoa eskatzen du. Denek sartu behar dute. Alaba istripu batean hiltzen denean, familia erori egiten da. Semeak nahiago du Estatu Batuetara joan enpresa hartu baino. Aita abesbatzako zuzendari berriarekin maitemintzen da eta ama bat-batean bakarrik aurkitzen da."
-        },
-        "video": ""
-      },
-      {
-        "id":"Por donde pasa el silencio-2024",
-        "titulo": {
-          "es": "Por donde pasa el silencio",
-          "en": "Where the silence passes",
-          "eu": "Isiltasuna pasatzen den lekuan"
-        },       
-        "pais": {
-          "es":"España",
-          "en":"Spain",
-          "eu":"Espainia"
-        },
-        "año": "2024 | 98’",
-        "director": {
-          "es": "Sandra Romero"
-        },
-        "imagen": "img/sebastiane2024_por_donde_pasa_el_silencio.jpg",
-        "descripcion": {
-          "es": "Antonio tiene que volver a Écija, una ciudad en el interior de Andalucía, después de mucho tiempo. Es Semana Santa. Allí se reencuentra con su familia y con su hermano mellizo Javier que tiene una discapacidad física y necesita su ayuda. Antonio tendrá que manejar esta situación y enfrentase a una difícil decisión: quedarse y ayudar a los suyos o volver a la vida que ha construido fuera.",
-          "en": "Antonio has to return to Écija, a city in inland Andalusia, after a long time away. It's Holy Week. There he reunites with his family and his twin brother Javier, who has a physical disability and needs his help. Antonio will have to deal with this situation and face a difficult decision: stay and help his family or return to the life he has built abroad.",
-          "eu": "Antoniok Écijara, Andaluzia barneko hirira, itzuli behar du denbora luze baten ondoren. Aste Santua da. Bertan bere familiarekin eta bere anaia biki Javierrekin elkartuko da, ezintasun fisikoa duen eta bere laguntza behar duena. Antoniok egoera horri aurre egin beharko dio eta erabaki zail bati aurre egin beharko dio: bere familiari lagundu edo kanpoan eraikitako bizitzara itzuli."
+          "es": "Un matrimonio felizmente casado se ve truncado por la trágica muerte del marido. La desconsolada viuda acaba averiguando que él le ocultaba algo inimaginable.",
+          "en": "",
+          "eu": ""
         },
         "video": ""
       }
     ],
-    "Horizontes Latinos": [
+    "New Directors": [],
+    "Horizontes Latinos": [],
+    "Zabaltegi": [],
+    "Perlak": [],
+    "Made in Spain": [],
+    "Fuera de concurso": []
+  },
+  "2002": {
+    "Ganadora": [
       {
-        "id":"Cidade/Campo-2024",
+        "id": "Tani tatuwen pyabanna-2002",
         "titulo": {
-          "es": "Cidade/Campo ",
-          "en": "city",
-          "eu": "hiria"
-        },       
+          "es": "Tani tatuwen pyabanna",
+          "en": "",
+          "eu": ""
+        },
         "pais": {
-          "es":"Brasil-Alemania-Francia",
-          "en":"Brazil-Germany-France",
-          "eu":"Brasil-Alemania-Frantzia"
+          "es": "Sri Lanka",
+          "en": "",
+          "eu": ""
         },
-        "año": "2024 | 119’",
+        "año": "2002 | 81’",
         "director": {
-          "es": "Juliana Rojas"
+          "es": "Asoka Handagama"
         },
-        "imagen": "img/sebastiane2024_cidade_campo.jpg",
+        "imagen": "img/tani-tatuwen-pyabanna.jpg",
         "descripcion": {
-          "es": "Dos historias de migración entre la ciudad y el campo. En la primera parte, después de que la rotura de una presa de residuos inunde su pueblo natal, Joana, una trabajadora rural, se traslada a São Paulo para buscar a su hermana Tania, que vive con su nieto Jaime. Joana lucha por prosperar en la ciudad obrera. En la segunda parte, tras la muerte de su padre, del que estaba distanciada, Flavia se traslada a su granja con su esposa Mara. La naturaleza obliga a las dos mujeres a enfrentarse a frustraciones y a lidiar con viejos recuerdos y fantasmas.",
-          "en": "Two stories of migration between city and countryside. In the first part, after a tailings dam burst floods her hometown, Joana, a rural worker, moves to São Paulo to find her sister Tania, who lives with her grandson Jaime. Joana struggles to thrive in the working-class city. In the second part, after the death of her estranged father, Flavia moves to his farm with his wife Mara. Nature forces the two women to confront frustrations and deal with old memories and ghosts.",
-          "eu": "Hiriaren eta landa eremuaren arteko migrazioaren bi istorio. Lehenengo zatian, bere jaioterria lehertu eta uholde baten ondoren, Joana, landa-langilea, São Paulora joango da bere ahizpa Tania, bere bilobarekin bizi dena, bilatzera. Joana langile-hirian aurrera egiteko borrokan ari da. Bigarren zatian, bere aita hil ondoren, beragandik urrundu zen, Flavia bere baserrira joango da bere emazte Mararekin. Naturak bi emakumeak frustrazioei aurre egitera eta oroitzapen eta mamu zaharrei aurre egitera behartzen ditu."
-        },
-        "video": ""
-      },
-      {
-        "id":"Los domingos mueren más personas-2024",
-        "titulo": {
-          "es": "Los domingos mueren más personas",
-          "en": "More people die on Sundays",
-          "eu": "Igandeetan jende gehiago hiltzen da"
-        },       
-        "pais": {
-          "es":"Argentina-Italia-España",
-          "en":"Argentina-Italy-Spain",
-          "eu":"Argentina-Italia-Espainia"
-        },
-        "año": "2024 | 75’",
-        "director": {
-          "es": "Iair Said"
-        },
-        "imagen": "img/sebastiane2024_Los_domingos_mueren_maas_personas.jpg",
-        "descripcion": {
-          "es": "Cuando David regresa a su casa de Buenos Aires se entera de que su madre ha decidido desconectar a Bernardo, su padre, que yace en coma. David se debate entre la estrecha convivencia con su madre, perturbada por el dolor de la inminente pérdida de su marido, y un feroz deseo de mitigar su angustia existencial. Pasa los días aprendiendo a conducir, oscilando entre el pasado y el presente e intentando mantener relaciones sexuales con cualquiera que le preste un mínimo de atención.",
-          "en": "When David returns home to Buenos Aires, he learns that his mother has decided to disconnect Bernardo, his father, who is in a coma. David is torn between living closely with his mother, troubled by the grief of the imminent loss of her husband, and a fierce desire to alleviate her existential anguish. He spends his days learning to drive, oscillating between the past and the present, and trying to have sex with anyone who pays even the slightest attention.",
-          "eu": "David Buenos Airesera etxera itzultzean, bere amak Bernardo, bere aita, koman dagoena, deskonektatzea erabaki duela jakingo du. David bere amarekin estu-estu bizitzearen artean, zeina bere senarraren galeraren berehalako minak kezkatuta, eta bere larritasun existentziala arintzeko gogo biziaren artean. Egunak ematen ditu gidatzen ikasten, iraganaren eta orainaren artean noraezean eta arreta txikiena eskaintzen duen edonorekin sexu harremanak izaten saiatzen."
-        },
-        "video": ""
-      },
-      {
-        "id":"El jockey-2024",
-        "titulo": {
-          "es": "El jockey",
-          "en": "The jockey",
-          "eu": "Jockeya"
-        },       
-        "pais": {
-          "es":"Argentina-México-España-Dinamarca-Estados Unidos",
-          "en":"Argentina-Mexico-Spain-Denmark-USA",
-          "eu":"Argentina-Mexiko-Espainia-Danimarka-AEB"
-        },
-        "año": "2024 | 96’",
-        "director": {
-          "es": "Luis Ortega"
-        },
-        "imagen": "img/sebastiane2024_el_jockey.jpg",
-        "descripcion": {
-          "es": "Remo Manfredini es un jockey legendario, pero su comportamiento autodestructivo empieza a eclipsar su talento y a amenazar su relación con Abril, su novia. El día de la carrera más importante de su vida, que saldará las deudas con su jefe mafioso Sirena, sufre un grave accidente, desaparece del hospital y vaga por las calles de Buenos Aires. Liberado de su identidad, empieza a descubrir quién es realmente. Pero Sirena quiere encontrarlo, vivo o muerto.",
-          "en": "Remo Manfredini is a legendary jockey, but his self-destructive behavior begins to overshadow his talent and threaten his relationship with his girlfriend, Abril. On the day of the most important race of his life, which will settle his debts to his mob boss, Sirena, he suffers a serious accident, disappears from the hospital, and wanders the streets of Buenos Aires. Freed from his identity, he begins to discover who he really is. But Sirena wants to find him, dead or alive.",
-          "eu": "Remo Manfredini jockey mitikoa da, baina bere jokaera autosuntsitzailea bere talentua itzaltzen hasten da eta bere neska-lagunarekin, Abril, harremana mehatxatzen hasten da. Bere bizitzako lasterketarik garrantzitsuenaren egunean, Sirena bere buruzagi mafiosoarekin dituen zorrak kitatuko dituen egunean, istripu larria izango du, ospitaletik desagertu eta Buenos Airesko kaleetan barrena ibiliko da. Bere nortasunetik askatuta, benetan nor den deskubritzen hasiko da. Baina Sirenak aurkitu nahi du, hil ala bizi."
-        },
-        "video": ""
-      },
-      {
-        "id":"Ramón y Ramón-2024",
-        "titulo": {
-          "es": "Ramón y Ramón",
-          "en": "Ramón and Ramón",
-          "eu": "Ramón eta Ramón"
-        },       
-        "pais": {
-          "es":"Perú-España-Uruguay",
-          "en":"Peru-Spain-Uruguay",
-          "eu":"Peru-Espainia-Uruguai"
-        },
-        "año": "2024 | 100’",
-        "director": {
-          "es": "Salvador del Solar"
-        },
-        "imagen": "img/sebastiane2024_ramon_y_ramon.webp",
-        "descripcion": {
-          "es": "Tras recibir las cenizas de su padre, con quien mantenía una relación distante, Ramón conoce a Mateo durante el confinamiento. A pesar de sus diferencias, surge una profunda conexión que los lleva a cuestionarse. Mateo decide acompañar a Ramón en un viaje para esparcir las cenizas en Huancayo. En esa travesía, Ramón descubre que buscaba respuestas a las preguntas equivocadas y que debe sanarse para seguir adelante.",
-          "en": "After receiving the ashes of his father, with whom he had a distant relationship, Ramón meets Mateo during confinement. Despite their differences, a deep connection emerges that leads them to question each other. Mateo decides to accompany Ramón on a trip to scatter the ashes in Huancayo. On this journey, Ramón discovers that he was searching for answers to the wrong questions and that he must heal to move forward.",
-          "eu": "Bere aitaren errautsak jaso ondoren, harekin harreman urruna zuen, Ramónek Mateo ezagutuko du konfinamenduan. Desberdintasunak izan arren, elkarri zalantzan jartzera eramaten dituen lotura sakona sortzen da. Mateok Ramónekin laguntzea erabakiko du Huancayoko errautsak sakabanatzeko bidaia batean. Bidaia honetan, Ramónek galdera okerretan erantzunen bila zebilela eta aurrera egiteko bere burua sendatu behar duela deskubrituko du."
+          "es": "Para evitar la discriminación de género prevaleciente en Sri Lanka, una mujer decide hacerse pasar por hombre y consigue un trabajo como mecánica e incluso toma una esposa.",
+          "en": "",
+          "eu": ""
         },
         "video": ""
       }
     ],
-    "Zabaltegi": [
+    "New Directors": [],
+    "Horizontes Latinos": [],
+    "Zabaltegi": [],
+    "Perlak": [],
+    "Made in Spain": [],
+    "Fuera de concurso": []
+  },
+  "2003": {
+    "Ganadora": [
       {
-        "id":"I saw the TV glow-2024",
+        "id": "Le soleil assassiné-2003",
         "titulo": {
-          "es": "I saw the TV glow/Vi el televisor brillar",
-          "en": "I saw the TV glow",
-          "eu": "Telebista dirdira ikusi nuen"
-        },       
+          "es": "Le soleil assassiné",
+          "en": "",
+          "eu": ""
+        },
         "pais": {
-          "es":"Estados Unidos",
-          "en":"USA",
-          "eu":"AEB"
+          "es": "Argelia",
+          "en": "",
+          "eu": ""
         },
-        "año": "2024 | 100’",
+        "año": "2003 | 85’",
         "director": {
-          "es": "Jane Schoenbrun"
+          "es": " Abdelkrim Bahloul"
         },
-        "imagen": "img/sebastiane2024_i_saw_the_tv_glow.jpg",
+        "imagen": "img/le_soleil_assassinae_el_sol_asesinado.jpg",
         "descripcion": {
-          "es": "Owen es un adolescente que trata de afrontar la vida en un barrio residencial de las afueras cuando su compañera de clase le habla de un misterioso programa de televisión nocturno: una visión de un mundo sobrenatural por debajo del suyo. En el pálido resplandor de la televisión, la idea que Owen tiene de la realidad comienza a quebrarse.",
-          "en": "Owen is a teenager trying to cope with life in a suburban neighborhood when his classmate tells him about a mysterious late-night TV show: a glimpse into a supernatural world beneath his own. In the pale glow of the television, Owen's understanding of reality begins to unravel.",
-          "eu": "Owen aldirietako auzo bateko bizitzari aurre egiten saiatzen ari den nerabe bat da, bere ikaskideak gaueko telebista-saio misteriotsu bati buruz hitz egiten dionean: bere azpian dagoen naturaz gaindiko mundu bati begirada bat. Telebistaren dirdira zurbilean, Owenek errealitatearen ulermena apurtzen hasten da."
-        },
-        "video": ""
-      },
-      {
-        "id":"My sunshine-2024",
-        "titulo": {
-          "es": "My sunshine/Mi Sol",
-          "en": "My sunshine",
-          "eu": "nire eguzkia"
-        },       
-        "pais": {
-          "es":"Japón-Francia",
-          "en":"Japan-France",
-          "eu":"Japonia-Frantzia"
-        },
-        "año": "2024 | 100’",
-        "director": {
-          "es": "Hiroshi Okuyama"
-        },
-        "imagen": "img/sebastiane2024_my_boku_no_ohisama.jpg",
-        "descripcion": {
-          "es": "En una pequeña isla japonesa, la vida gira en torno al cambio de las estaciones. El invierno es la época del hockey sobre hielo en la escuela, pero a Takuya no le entusiasma demasiado. Su verdadero interés radica en Sakura, una estrella emergente del patinaje artístico de Tokio, por la que empieza a sentir auténtica fascinación. Arakawa, entrenador y antiguo campeón, ve potencial en Takuya y decide orientarle para que forme dúo con Sakura en una próxima competición.",
-          "en": "On a small Japanese island, life revolves around the changing of the seasons. Winter is the season for ice hockey at school, but Takuya isn't too keen on it. His real interest lies in Sakura, a rising figure skating star from Tokyo, for whom he begins to develop a genuine fascination. Arakawa, a coach and former champion, sees potential in Takuya and decides to mentor him to form a duo with Sakura in an upcoming competition.",
-          "eu": "Japoniako uharte txiki batean, bizitza urtaroen aldaketaren inguruan dabil. Negua da eskolan izotz hockeyrako garaia, baina Takuyari ez zaio oso gogotsu. Bere benetako interesa Sakuran datza, Tokioko patinaje artistikoaren goranzko izar bat, eta harentzat benetako lilura sentitzen hasten da. Arakawa, entrenatzailea eta txapeldun ohia, Takuyaren potentziala ikusten du eta hurrengo lehiaketa batean Sakurarekin bikote bat osatzeko tutorea izatea erabakitzen du."
-        },
-        "video": ""
-      },
-      {
-        "id":"Sombra grande-2024",
-        "titulo": {
-          "es": "Sombra grande",
-          "en": "Big shadow",
-          "eu": "itzal handia"
-        },       
-        "pais": {
-          "es":"Argentina",
-          "en":"Argentina",
-          "eu":"Argentina"
-        },
-        "año": "2024 | 83’",
-        "director": {
-          "es": "Maximiliano Schonfeld"
-        },
-        "imagen": "img/sebastiane2024_sombra_grande.jpg",
-        "descripcion": {
-          "es": "Hace unos años apareció un hombre que decía hablar una lengua aparentemente perdida: el Chaná. Al poco tiempo se editaron diccionarios y la lengua se pudo recuperar completamente. Este hombre también ubicó a los Chaná en el mismo lugar donde hoy los descendientes de alemanes del Volga, en la provincia de Entre Ríos, van perdiendo inexorablemente su dialecto.",
-          "en": "A few years ago, a man appeared who claimed to speak a seemingly lost language: Chaná. Dictionaries were soon published, and the language was fully recovered. This man also located the Chaná in the same place where today the descendants of Volga Germans, in the province of Entre Ríos, are inexorably losing their dialect.",
-          "eu": "Duela urte batzuk, itxuraz galdutako hizkuntza bat hitz egiten zuela esaten zuen gizon bat agertu zen: Chaná. Laster hiztegiak argitaratu ziren eta hizkuntza guztiz berreskuratu zen. Gizon honek Chaná ere kokatu zuen gaur egun Volgako alemanen ondorengoak, Entre Ríos probintzian, euskalkia ezinbestean galtzen ari diren toki berean."
+          "es": "El poeta Jean Sénac es un 'Pied-Noir' que decidió quedarse en Argelia tras la independencia de ese país en 1962. Diez años después, la policía del régimen le vigila estrechamente. Sus recitales de poesía por todo el país atraen a un público amplio y su programa radiofónico 'Poésie sur tous les fronts' tiene una gran acogida entre la juventud. Dos estudiantes, Hamid y Belkacem, presentan una obra en el Festival Nacional de Teatro Argelino, pero no consiguen su objetivo. Sin embargo, Jean Sénac les felicita, lo cual mitiga un poco su desilusión, y a partir de entonces se hacen amigos del poeta y contemplan de cerca su combate por la libertad cultural en Argelia, que desemboca en su asesinato, una noche de agosto de 1973.",
+          "en": "",
+          "eu": ""
         },
         "video": ""
       }
     ],
-    "Perlak": [
+    "New Directors": [],
+    "Horizontes Latinos": [],
+    "Zabaltegi": [],
+    "Perlak": [],
+    "Made in Spain": [],
+    "Fuera de concurso": []
+  },
+  "2004": {
+    "Ganadora": [
       {
-        "id":"Emilia Pérez-2024",
+        "id": "Beautiful boxer-2004",
         "titulo": {
-          "es": "Emilia Pérez",
-          "en": "Emilia Pérez",
-          "eu": "Emilia Pérez"
-        },       
+          "es": "Beautiful boxer",
+          "en": "",
+          "eu": ""
+        },
         "pais": {
-          "es":"Francia",
-          "en":"France",
-          "eu":"Frantzia"
+          "es": "Tailandia",
+          "en": "",
+          "eu": ""
         },
-        "año": "2024 | 130’",
+        "año": "2004 | 118’",
         "director": {
-          "es": "Jacques Audiard"
+          "es": "Ekachai Uekrongtham"
         },
-        "imagen": "img/sebastiane2024_emilia_paerez.jpg",
+        "imagen": "img/beautiful-boxer.jpg",
         "descripcion": {
-          "es": "Sobrecualificada e infravalorada, Rita es abogada de un gran bufete que está más interesado en sacar a los criminales del atolladero que en llevarlos ante la justicia. Un día, se le presenta una salida inesperada cuando Manitas, el líder de un cártel, la contrata para que le ayude a retirarse de sus negocios y hacer realidad un plan que lleva años preparando en secreto: convertirse en la mujer que siempre ha soñado ser.",
-          "en": "Overqualified and undervalued, Rita is a lawyer at a large law firm more interested in getting criminals off the hook than bringing them to justice. One day, she finds herself in a lull when Handy, the leader of a cartel, hires her to help him retire from his business and realize a plan he's been secretly planning for years: to become the woman he's always dreamed of being.",
-          "eu": "Gehiegizko kualifikazioa eta gutxietsia, Rita abokatua da abokatu bulego handi bateko abokatua, eta gaizkileak auzitara eramatea baino gehiago interesatzen zaio. Egun batean, ustekabeko posizioan aurkitzen da Manitas, kartel bateko buruzagiak, bere negoziotik erretiratzen laguntzeko eta urtetan ezkutuan prestatzen ari den plan bat gauzatzeko: beti amestu izan duen emakumea bihurtzeko."
+          "es": "Creyendo que es una chica atrapada en un cuerpo de chico desde niño, Parinya Charoenphol (familiarmente conocido como Nong Toom en Tailandia) se propone dominar el deporte más masculino y letal: Muay Thai (kickboxing tailandés) para ganarse la vida y para conseguir su objetivo final de feminidad total. Conmovedora, divertida, con impactantes escenas de kickboxing tailandés, Beautiful Boxer describe la infancia de Nong Toom, su vida adolescente como monje viajero, sus penosos días en los campamentos de boxeo y explosivos combates donde él vence a la mayoría de sus oponentes en toda Tailandia y Japón. ",
+          "en": "",
+          "eu": ""
         },
         "video": ""
       }
     ],
-    "Made in Spain": [
+    "New Directors": [],
+    "Horizontes Latinos": [],
+    "Zabaltegi": [],
+    "Perlak": [],
+    "Made in Spain": [],
+    "Fuera de concurso": []
+  },
+  "2005": {
+    "Ganadora": [
       {
-        "id":"Norberta-2024",
+        "id": "Malas temporadas-2005",
         "titulo": {
-          "es": "Norberta",
-          "en": "Norberta",
-          "eu": "Norberta"
-        },       
+          "es": "Malas temporadas",
+          "en": "",
+          "eu": ""
+        },
         "pais": {
-          "es":"España",
-          "en":"pain",
-          "eu":"Espainia"
+          "es": "España",
+          "en": "",
+          "eu": ""
         },
-        "año": "2024 | 89’",
+        "año": "2005 | 125’",
         "director": {
-          "es": "Sonia Escolano, Belén López Albert"
+          "es": "Manúel Martín Cuenca"
         },
-        "imagen": "img/sebastiane2024_norberta.jpg",
+        "imagen": "img/malas-temporadas.jpg",
         "descripcion": {
-          "es": "Norberto lleva toda una vida con María. Viven en un barrio humilde y conocen a sus vecinos desde hace décadas, pero ambos tienen un secreto que pocos saben: de vez en cuando, atracan. Con ello cumplimentan su pensión y ayudan a algún que otro amigo. Pero Norberto necesita dar un giro para sentirse vivo, libre, para sentirse ELLA misma. Una confesión inesperada que pondrá en jaque toda su vida y la de su entorno.",
-          "en": "Norberto has been with María his entire life. They live in a poor neighborhood and have known their neighbors for decades, but they both have a secret that few know: from time to time, they rob. This way, they supplement their pension and help out a few friends. But Norberto needs to take a turn to feel alive, free, to feel like himself. An unexpected confession that will put his entire life and that of those around him in jeopardy.",
-          "eu": "Norberto bizitza osoa egon da Mariarekin. Auzo txiro batean bizi dira eta hamarkadetan bizilagunak ezagutzen dituzte, baina biek dute gutxik ezagutzen duten sekretu bat: noizean behin, lapurreta egiten dute. Honekin pentsioa osatzen dute eta lagun batzuei laguntzen diete. Baina Norbertok buelta bat eman behar du bizirik, aske sentitzeko, BEREA sentitzeko. Bere bizitza osoa eta ingurukoena kolokan jarriko duen ustekabeko aitorpena."
+          "es": "Malas temporadas es la historia de Mikel, Ana y Carlos, que se relacionan en el corazón de Madrid mientras buscan su lugar en el mundo, un lugar que cada vez se aleja más del idealizado, del que no existe, y la única solución es partir de lo real, para empezar a construirlo. Gente a la que el destino ha terminado llevando por caminos inesperados, y ahora comparten la necesidad de replantearse sus opciones.",
+          "en": "",
+          "eu": ""
         },
         "video": ""
-      },
+      }
+    ],
+    "New Directors": [],
+    "Horizontes Latinos": [],
+    "Zabaltegi": [],
+    "Perlak": [],
+    "Made in Spain": [],
+    "Fuera de concurso": []
+  },
+  "2006": {
+    "Ganadora": [
       {
-        "id":"Orgullo vieja-2024",
+        "id": "Estrellas de las Línea-2006",
         "titulo": {
-          "es": "Orgullo vieja",
-          "en": "Old pride",
-          "eu": "Harrotasun zaharra"
-        },       
-        "pais": {
-          "es":"España",
-          "en":"Spain",
-          "eu":"Espainia"
+          "es": "Estrellas de las Línea",
+          "en": "",
+          "eu": ""
         },
-        "año": "2024 | 104’",
+        "pais": {
+          "es": "España",
+          "en": "",
+          "eu": ""
+        },
+        "año": "2006 | 90’",
         "director": {
           "es": "Chema Rodríguez"
         },
-        "imagen": "img/sebastiane2024_orgullo_vieja.jpg",
+        "imagen": "img/estrellas_de_la_Lainea.jpg",
         "descripcion": {
-          "es": "Pepa, Antoñita, Pepi, Esperanza, Remedios, Kiska, Catalina y Rafaela son mujeres del barrio de Triana, Sevilla, de entre 68 y 97 años de edad. Todas comparten un sueño: quieren ser monologuistas, triunfar en el mundo del espectáculo y reivindicar que las mujeres mayores merecen respeto y visibilidad. Para ello, han creado un espectáculo titulado Orgullo vieja. La película muestra el proceso de creación de la compañía, los ensayos, el estreno en Sevilla y sus viajes por el resto de Andalucía.",
-          "en": "Pepa, Antoñita, Pepi, Esperanza, Remedios, Kiska, Catalina, and Rafaela are women from the Triana neighborhood of Seville, between the ages of 68 and 97. They all share a dream: to be stand-up comedians, to succeed in the entertainment world, and to assert that older women deserve respect and visibility. To this end, they created a show titled Orgullo vieja (Old Pride). The film depicts the process of creating the company, the rehearsals, the premiere in Seville, and their travels throughout Andalusia.",
-          "eu": "Pepa, Antoñita, Pepi, Esperanza, Remedios, Kiska, Catalina eta Rafaela Sevillako Triana auzoko emakumeak dira, 68 eta 97 urte bitartekoak. Guztiek amets bat partekatzen dute: stand-up umoregileak izan nahi dute, entretenimendu munduan arrakasta lortu eta adineko emakumeek errespetua eta ikusgarritasuna merezi dutela eskatzen dute. Horretarako, Harrotasun Zaharra izeneko ikuskizuna sortu dute. Pelikulak konpainiaren sortze prozesua, entseguak, Sevillan estreinatu eta Andaluzian zehar egindako bidaiak erakusten ditu."
-        },
-        "video": ""
-      },
-      {
-        "id":"Reir, cantar, tal vez llorar-2024",
-        "titulo": {
-          "es": "Reir, cantar, tal vez llorar",
-          "en": "To laugh, to sing, perhaps to cry",
-          "eu": "Barre egin, abestu, agian negar egin"
-        },       
-        "pais": {
-          "es":"España",
-          "en":"spain",
-          "eu":"Espainia"
-        },
-        "año": "2024 | 75'",
-        "director": {
-          "es": "Marc Ferrer"
-        },
-        "imagen": "img/sebastiane2024_reircantar_tal_vez_llorar.jpg",
-        "descripcion": {
-          "es": "Toñi, una mujer trans de mediana edad, pide en una iglesia a un santo milagroso tener un novio, y así es como aparece en su vida Lahcen, un joven y guapo marroquí inmigrante que acaba de llegar a Barcelona, del que se enamorará. Esta relación provocará un gran escándalo en su comunidad de vecinos, movidos por la envidia y la desconfianza.",
-          "en": "Toñi, a middle-aged trans woman, prays to a miracle-working saint in a church for a boyfriend, and that's how Lahcen, a young and handsome Moroccan immigrant who has just arrived in Barcelona, ​​appears in her life, with whom she falls in love. This relationship causes a huge scandal in her community, driven by envy and distrust.",
-          "eu": "Toñi, adin ertaineko emakume trans bat, mirariak egiten dituen santu bati otoitz egiten dio eliza batean mutil-lagun baten alde, eta horrela agertzen da bere bizitzan Lahcen, Bartzelonara heldu berri den Marokoko etorkin gazte eta eder bat, zeinaz maitemintzen den. Harreman honek iskanbila izugarria eragingo du euren auzokideen komunitatean, inbidiak eta mesfidantza bultzatuta."
-        },
-        "video": ""
-      }
-    ],
-    "Fuera de concurso": [
-      {
-        "id":"Querer-2024",
-        "titulo": {
-          "es": "Querer",
-          "en": "Want",
-          "eu": "Nahi"
-        },       
-        "pais": {
-          "es":"España",
-          "en":"Spain",
-          "eu":"Espainia"
-        },
-        "año": "2024 | 212′",
-        "director": {
-          "es": "Alauda Ruiz de Azúa"
-        },
-        "imagen": "img/sebastiane2024_querer.jpg",
-        "descripcion": {
-          "es": "Tras 30 años de matrimonio y dos hijos en común, Miren abandona el domicilio conyugal y denuncia a su marido por violación continuada. Esta grave acusación obliga a los hijos a elegir entre creer a su madre o apoyar a un padre que defiende su inocencia. Un viaje familiar que avanza en paralelo al judicial con un mismo objetivo: conocer la verdad. Miniserie de 4 capítulos.",
-          "en": "After 30 years of marriage and two children together, Miren leaves the marital home and accuses her husband of repeated rape. This serious accusation forces the children to choose between believing their mother or supporting a father who maintains his innocence. A family journey that unfolds in parallel with the court case, all with the same goal: to discover the truth. A 4-part miniseries.",
-          "eu": "30 urte ezkonduta eta bi seme-alaba elkarrekin egon ostean, Mirenek ezkontza-etxea utzi eta bere senarraren aurkako salaketa jartzen du behin eta berriz bortxaketak egiteagatik. Salaketa larri honek haurrak amari sinestea edo bere errugabetasunari eusten dion aitari laguntzea aukeratzera behartzen ditu. Prozesu judizialarekin paraleloan doan familia-bidaia helburu berarekin: egia aurkitzea. 4 zatiko miniseriea."
-        },
-        "video": ""
-      },
-      {
-        "id":"Yo, adicto-2024",
-        "titulo": {
-          "es": "Yo, adicto",
-          "en": "I, addict",
-          "eu": "Ni, mendekotasuna"
-        },       
-        "pais": {
-          "es":"España",
-          "en":"Spain",
-          "eu":"Espainia"
-        },
-        "año": "2024 | 240′",
-        "director": {
-          "es": "Javier Giner, Elena Trapé"
-        },
-        "imagen": "img/sebastiane2024_yo_adicto.jpg",
-        "descripcion": {
-          "es": "Yo, adicto cuenta cómo Javier Giner, profesional del audiovisual, decide a los 30 años ingresar voluntariamente en un centro de desintoxicación. En el momento de máxima oscuridad, tomará la decisión de pedir ayuda profesional movido por un instinto de supervivencia desesperada. Sin saberlo, ese gesto le cambiará la vida convirtiéndole en una nueva persona. Miniserie de seis episodios.",
-          "en": "I, Addict tells the story of Javier Giner, an audiovisual professional, who voluntarily enters a drug rehabilitation center at the age of 30. At the height of his darkness, he decides to seek professional help, driven by a desperate instinct for survival. Unbeknownst to him, this act will change his life, transforming him into a new person. Six-part miniseries.",
-          "eu": "Nik, adiktuak kontatzen du nola Javier Ginerrek, ikus-entzunezkoen profesionalak, 30 urterekin erabakitzen duen desintoxikazio zentro batean borondatez sartzea. Iluntasun handieneko unean, laguntza profesionala bilatzea erabakiko du, bizirauteko sen etsi batek bultzatuta. Jakin gabe, keinu horrek bere bizitza aldatuko du, pertsona berri bat bihurtuz. Sei ataletako miniseriea."
-        },
-        "video": ""
-      }
-    ]
-  },
-  "2023": {
-    "Ganadora": [
-      {
-        "id":"20.000 especies de abejas-2023",
-        "titulo": {
-          "es": "20.000 especies de abejas",
-          "en": "20,000 species of bees",
-          "eu": "20.000 erle espezie"
-        },       
-        "pais": {
-          "es":"España",
-          "en":"Spain",
-          "eu":"Espainia"
-        },
-        "año": "2023 | 129’",
-        "director": {
-          "es": "Estibaliz Urresola"
-        },
-        "imagen": "img/20_000_especies_de_abejas.jpg",
-        "descripcion": {
-          "es": "Cocó, de ocho años, no encaja en las expectativas del resto y no entiende por qué. Todos a su alrededor insisten en llamarle Aitor pero no se reconoce en ese nombre ni en la mirada de los demás. Su madre Ane, (Patricia López Arnaiz), sumida en una crisis profesional y sentimental, aprovechará las vacaciones para viajar con sus tres hijos a la casa materna, donde reside su madre Lita (Itziar Lazkano) y su tía Lourdes (Ane Gabarain), estrechamente ligada a la cría de abejas y la producción de miel. Este verano que cambiará sus vidas obligará a estas mujeres de tres generaciones muy distintas a enfrentarse a sus dudas y temores.",
-          "en": "Eight-year-old Cocó doesn't fit in with everyone else's expectations and doesn't understand why. Everyone around him insists on calling him Aitor, but he doesn't recognize himself in that name or in the eyes of others. His mother, Ane (Patricia López Arnaiz), mired in a professional and emotional crisis, takes advantage of the vacation to travel with her three children to her mother's house, where her mother, Lita (Itziar Lazkano), and her aunt, Lourdes (Ane Gabarain), closely involved in beekeeping and honey production, live. This life-changing summer will force these women from three very different generations to confront their doubts and fears.",
-          "eu": "Zortzi urteko Coco ez da beste guztien itxaropenekin bat egiten eta ez du ulertzen zergatik. Inguruko guztiak Aitor deitzen tematzen dira, baina ez du ezagutzen izen hori edo besteek begiratzen dioten modua. Bere ama Ane, (Patricia López Arnaiz), krisi profesional eta sentimental batean murgilduta, oporrak aprobetxatuko ditu bere hiru seme-alabekin amaren etxera bidaiatzeko, bertan bizi diren ama Lita (Itziar Lazkano) eta izeko Lourdes (Ane Gabarain), erlezaintzari eta ezti ekoizpenari oso lotuta. Bizitza aldatzen ari den uda honek hiru belaunaldi oso desberdinetako emakume hauek euren zalantza eta beldurrei aurre egitera behartuko ditu."
-        },
-        "video": ""
-      }
-    ],
-    "New Directors": [],
-    "Horizontes Latinos": [],
-    "Zabaltegi": [],
-    "Perlak": [],
-    "Made in Spain": [],
-    "Fuera de concurso": []
-  },
-  "2022": {
-    "Ganadora": [
-      {
-        "id":"Something you said last night-2022",
-        "titulo": {
-          "es": "Something you said last night",
-          "en": "Something you said last night",
-          "eu": "Bart esan duzun zerbait"
-        },       
-        "pais": {
-          "es":"Canada, Suiza",
-          "en":"Canada, Switzerland",
-          "eu":"Kanada, Suitza"
-        },
-        "año": "2022 | 96’",
-        "director": {
-          "es": "Luis de Filippis"
-        },
-        "imagen": "img/something-you-said-last-night2.jpg",
-        "descripcion": {
-          "es": "Something You Said Last Night es una película dirigida por Luis De Filippis que explora la vida de una familia durante sus vacaciones, centrándose en la experiencia de una joven transgénero que lucha por encontrar su lugar en el mundo y en su propia familia. La narrativa íntima y las actuaciones auténticas hacen de esta película un retrato conmovedor de la identidad y la aceptación.",
-          "en": "Something You Said Last Night is a film directed by Luis De Filippis that explores the life of a family on vacation, focusing on the experience of a young transgender woman struggling to find her place in the world and within her own family. The intimate narrative and authentic performances make this film a poignant portrait of identity and acceptance.",
-          "eu": "Zerbait esan zenuen bart gauean Luis De Filippis-ek zuzendutako filma da, familia baten bizimodua aztertzen duena oporretan, munduan eta bere familian bere lekua aurkitzeko borrokan ari den emakume transgenero gazte baten esperientzian zentratuta. Ipuin kontaketa intimoek eta benetako emanaldiek film hau identitatearen eta onarpenaren erretratu garratza bihurtzen dute."
-        },
-        "video": ""
-      }
-    ],
-    "New Directors": [],
-    "Horizontes Latinos": [],
-    "Zabaltegi": [],
-    "Perlak": [],
-    "Made in Spain": [],
-    "Fuera de concurso": []
-  },
-  "2021": {
-    "Ganadora": [
-      {
-        "id":"The Power of the Dog-2021",
-        "titulo": {
-          "es": "The Power of the Dog",
-          "en": "The Power of the Dog",
-          "eu": "Txakurraren boterea"
-        },       
-        "pais": {
-          "es":"Australia",
-          "en":"Australia",
-          "eu":"Australia"
-        },
-        "año": "2021 | 128’",
-        "director": {
-          "es": "Jane Campion"
-        },
-        "imagen": "img/el_poder_del_perro.jpg",
-        "descripcion": {
-          "es": "Montana, 1925. Los acaudalados hermanos Phil (Cumberbatch) y George Burbank (Plemons) son las dos caras de la misma moneda. Phil es impetuoso y cruel, mientras George es impasible y amable. Juntos son copropietarios de un enorme rancho donde tienen ganado. Cuando George se casa con una viuda del pueblo, Rose (Dunst), Phil comienza a despreciar a su nueva cuñada, que se instala en el rancho junto a su hijo, el sensible Peter (Smit-McPhee).",
-          "en": "Montana, 1925. Wealthy brothers Phil (Cumberbatch) and George Burbank (Plemons) are two sides of the same coin. Phil is brash and cruel, while George is cool and kind. Together they co-own a large ranch where they raise cattle. When George marries a local widow, Rose (Dunst), Phil begins to despise his new sister-in-law, who moves into the ranch with her sensitive son, Peter (Smit-McPhee).",
-          "eu": "Montana, 1925. Phil (Cumberbatch) eta George Burbank (Plemons) anaia aberatsak txanpon beraren bi aldeak dira. Phil sutsu eta krudela da, eta George, berriz, ezegonkorra eta atsegina. Elkarrekin ganadua duten ganadutegi erraldoi baten jabe dira. George bertako alargun batekin, Rose (Dunst) ezkontzen denean, Phil bere koinata berria mespretxatzen hasiko da, zeina bere seme sentikorra den Peterrekin (Smit-McPhee) ganadutegira joango dena."
-        },
-        "video": ""
-      }
-    ],
-    "New Directors": [],
-    "Horizontes Latinos": [],
-    "Zabaltegi": [],
-    "Perlak": [],
-    "Made in Spain": [],
-    "Fuera de concurso": []
-  },
-  "2020": {
-    "Ganadora": [
-      {
-        "id":"Falling-2020",
-        "titulo": {
-          "es": "Falling",
-          "en": "Falling",
-          "eu": "Erortzea"
-        },       
-        "pais": {
-          "es":"Canadá",
-          "en":"Canada",
-          "eu":"Kanada"
-        },
-        "año": "2020 | 113’",
-        "director": {
-          "es": "Viggo Mortensen"
-        },
-        "imagen": "img/falling.jpg",
-        "descripcion": {
-          "es": "John Petersen (Viggo Mortensen) vive con su novio Eric (Terry Chen) y la hija adoptiva de ambos en el sur de California. Su padre Willis (Lance Henriksen) un granjero tradicional y conservador de 80 años, decide viajar a Los Ángeles y quedarse en casa de John mientras busca el lugar idóneo para jubilarse. Una vez todo juntos, dos mundos muy diferentes colisionan. Willis muestra señas de estar perdiendo la cordura, y su peculiar forma de ser, dañina para algunos miembros de la familia, saca a relucir heridas del pasado y de años de desconfianza entre sus allegados. ",
-          "en": "John Petersen (Viggo Mortensen) lives with his boyfriend Eric (Terry Chen) and their adopted daughter in Southern California. His father, Willis (Lance Henriksen), a traditional and conservative 80-year-old farmer, decides to travel to Los Angeles and stay with John while he looks for the perfect place to retire. Once together, two very different worlds collide. Willis shows signs of losing his sanity, and his peculiar way of being, harmful to some family members, brings to light past wounds and years of mistrust among those closest to him.",
-          "eu": "John Petersen (Viggo Mortensen) bere mutil-lagun Eric (Terry Chen) eta haien alab adoptiboarekin bizi da Hego Kalifornian. Bere aita Willisek (Lance Henriksen), 80 urteko nekazari tradizional eta kontserbadorea, Los Angelesera bidaiatzea eta Johnen etxean geratzea erabakiko du, erretiroa hartzeko leku aproposa bilatzen duen bitartean. Behin denak batera, bi mundu oso ezberdin talka egiten dute. Willis-ek bere gogoa galtzearen zantzuak erakusten ditu, eta bere izateko modu bereziak, familiako kide batzuentzat kaltegarria denak, iraganeko zauriak eta urteetako mesfidantza azaleratzen ditu gertukoen artean."
-        },
-        "video": ""
-      }
-    ],
-    "New Directors": [],
-    "Horizontes Latinos": [],
-    "Zabaltegi": [],
-    "Perlak": [],
-    "Made in Spain": [],
-    "Fuera de concurso": []
-  },
-  "2019": {
-    "Ganadora": [
-      {
-        "id":"Monos-2019",
-        "titulo": {
-          "es": "Monos",
-          "en": "",
-          "eu": ""
-        },       
-        "pais": {
-          "es":"Colombia",
-          "en":"",
-          "eu":""
-        },
-        "año": "2019 | 102’",
-        "director": {
-          "es": "Alejandro Landes"
-        },
-        "imagen": "img/monos.jpg",
-        "descripcion": {
-          "es": "En la cima de una imponente montaña, donde lo que a primera vista parece un campamento de verano, ocho muchachos guerrilleros apodados “Los Monos» conviven bajo la estricta instrucción de un sargento paramilitar. Su única misión es la de cuidar a 'la doctora' (Julianne Nicholson), una mujer norteamericana a la que han tomado como rehén. Cuando esta misión empieza a peligrar, la confianza entre ellos empezará a ser cuestionada.",
+          "es": "Valeria, Vilma, Mercy y el resto de sus compañeras sueñan con ser tratadas dignamente y que cese la violencia que sufren a diario. Son prostitutas guatemaltecas, de a dos dólares por servicio. Trabajan en la Línea, junto a la vía del tren que atraviesa la capital camino al Océano Pacífico. Para llamar la atención sobre sus problemas, sobre el acoso de la policía y los asesinatos impunes forman un equipo de fútbol y se inscriben en un torneo local del que son expulsadas por su condición de prostitutas. Esta expulsión generó en el país una encendida polémica, rechazos y apoyos que transformaron sus vidas de la noche a la mañana. Esta es su historia.",
           "en": "",
           "eu": ""
         },
@@ -753,27 +237,27 @@
     "Made in Spain": [],
     "Fuera de concurso": []
   },
-  "2018": {
+  "2007": {
     "Ganadora": [
       {
-        "id":"Girl-2018",
+        "id": "Caramel-2007",
         "titulo": {
-          "es": "Girl",
+          "es": "Caramel",
           "en": "",
           "eu": ""
-        },       
+        },
         "pais": {
-          "es":"Bélgica",
-          "en":"",
-          "eu":""
+          "es": "Líbano",
+          "en": "",
+          "eu": ""
         },
-        "año": "2018 | 100’",
+        "año": "2007 | 96’",
         "director": {
-          "es": "Lukas Dhont"
+          "es": "Nadine Labaki"
         },
-        "imagen": "img/girl.jpg",
+        "imagen": "img/caramel.jpg",
         "descripcion": {
-          "es": "Lara es una joven de 15 años que quiere convertirse en bailarina. Desde los 5 años ha estado entrenando para ello, pero su cuerpo no le permite cumplir su sueño.",
+          "es": "En Beirut, varias mujeres se reúnen en un salón de belleza, un microcosmos colorista y sensual. Layale ama a un hombre casado. Nisrine, que es musulmana y está a punto de casarse, tiene un serio problema: ya no es virgen. Rima se siente atraída por las mujeres. El problema de Jamel es que se resiste a envejecer. Rose ha sacrificado su vida para cuidar de su hermana que padece demencia senil.",
           "en": "",
           "eu": ""
         },
@@ -787,61 +271,27 @@
     "Made in Spain": [],
     "Fuera de concurso": []
   },
-  "2017": {
+  "2008": {
     "Ganadora": [
       {
-        "id":"120 battements par minute-2017",
+        "id": "Vicky Cristina Barcelona-2008",
         "titulo": {
-          "es": "120 battements par minute",
+          "es": "Vicky Cristina Barcelona",
           "en": "",
           "eu": ""
-        },       
+        },
         "pais": {
-          "es":"Francia",
-          "en":"",
-          "eu":""
-        },
-        "año": "2017 | 143’",
-        "director": {
-          "es": "Robin Campillo"
-        },
-        "imagen": "img/120_battements_par_minute.jpg",
-        "descripcion": {
-          "es": "París, principios de los años 90. Un grupo de jóvenes activistas intenta generar conciencia sobre el SIDA. Un nuevo miembro del grupo, Nathan, se quedará sorprendido ante la radicalidad y energía de Sean, que gasta su último aliento en la lucha.",
+          "es": "Estados Unidos",
           "en": "",
           "eu": ""
-      },
-      "video": ""
-      }
-    ],
-    "New Directors": [],
-    "Horizontes Latinos": [],
-    "Zabaltegi": [],
-    "Perlak": [],
-    "Made in Spain": [],
-    "Fuera de concurso": []
-  },
-  "2016": {
-    "Ganadora": [
-      {
-        "id":"Bar Bahar-2016",
-        "titulo": {
-          "es": "Bar Bahar",
-          "en": "",
-          "eu": ""
-        },       
-        "pais": {
-          "es":"Francia, Israel",
-          "en":"",
-          "eu":""
         },
-        "año": "2016 | 96’",
+        "año": "2008 | 96’",
         "director": {
-          "es": "Maysaloun Hamoud"
+          "es": "Woody Allen"
         },
-        "imagen": "img/bar-bahar.avif",
+        "imagen": "img/vicky-cristina-barcelona.jpg",
         "descripcion": {
-          "es": "Salma, Laila y Nur no encajarán nunca. Palestinas con pasaporte israelí, optan por vivir una vida de libertad en Tel Aviv, lejos de sus lugares de origen. Las tres buscan el amor, pero como jóvenes palestinas pronto se darán cuenta de que una relación escogida por ellas no es algo fácilmente alcanzable. Tendrán que elegir su lugar en el mundo, sea en la ciudad o en sus pueblos.",
+          "es": "Vicky (Rebecca Hall) y Cristina (Scarlett Johansson) son dos jóvenes norteamericanas que van a Barcelona a pasar unas vacaciones de verano. Vicky es sensible, racional y tiene intención de casarse; Cristina es apasionada y busca aventuras emocionantes; en realidad, no sabe muy bien lo que quiere, pero sabe perfectamente lo que no quiere. En Barcelona, ambas se ven envueltas en una relación poco convencional con Juan Antonio (Javier Bardem), un conocido pintor vinculado sentimentalmente a su tempestuosa exmujer María Elena (Penélope Cruz).",
           "en": "",
           "eu": ""
         },
@@ -855,27 +305,27 @@
     "Made in Spain": [],
     "Fuera de concurso": []
   },
-  "2015": {
+  "2009": {
     "Ganadora": [
       {
-        "id":"Freeheld-2015",
+        "id": "Contracorriente-2009",
         "titulo": {
-          "es": "Freeheld",
+          "es": "Contracorriente",
           "en": "",
           "eu": ""
-        },       
+        },
         "pais": {
-          "es":"Estados Unidos",
-          "en":"",
-          "eu":""
+          "es": "Perú",
+          "en": "",
+          "eu": ""
         },
-        "año": "2015 | 103’",
+        "año": "2009 | 100’",
         "director": {
-          "es": "Peter Sollet"
+          "es": "Javier Fuentes-León"
         },
-        "imagen": "img/freeheld.jpg",
+        "imagen": "img/contracorriente.jpg",
         "descripcion": {
-          "es": "Basada en la historia real de Laurel Hester y Stacie Andrée y su lucha por la justicia. A Laurel, una condecorada policía de Nueva Jersey, le diagnostican un cáncer terminal y quiere dejar su pensión ganada durante años a su pareja de hecho, Stacie. Sin embargo, los funcionarios del condado, que no ven con buenos ojos la pareja homosexual, conspiran para evitarlo.",
+          "es": "Una historia de fantasmas inusual en la costa peruana, donde Miguel (Cristian Mercado), un pescador casado y a punto de ser padre lucha por reconciliar su devoción a su amante masculino dentro de las rígidas tradiciones de su pueblo.",
           "en": "",
           "eu": ""
         },
@@ -889,27 +339,95 @@
     "Made in Spain": [],
     "Fuera de concurso": []
   },
-  "2014": {
+  "2010": {
     "Ganadora": [
       {
-        "id":"Une nouvelle amie-2014",
+        "id": "80 egunean-2010",
         "titulo": {
-          "es": "Une nouvelle amie",
+          "es": "80 egunean",
           "en": "",
           "eu": ""
-        },       
+        },
         "pais": {
-          "es":"Francia",
-          "en":"",
-          "eu":""
+          "es": "España",
+          "en": "",
+          "eu": ""
         },
-        "año": "2014 | 105’",
+        "año": "2010 | 105’",
         "director": {
-          "es": "François Ozon"
+          "es": "José Marí Goenaga – Jon Garaño"
         },
-        "imagen": "img/Una_nueva_amiga.jpg",
+        "imagen": "img/80_egunean.jpg",
         "descripcion": {
-          "es": "Es la historia de dos mujeres, amigas de la infancia. Las dos se casan y una tiene un bebé. Al poco tiempo, la madre enferma gravemente, le hace prometer a su amiga que cuidará del bebé y a su marido. Después de su muerte, la amiga decide ir a visitar al padre y al bebé, pero le espera una tremenda sorpresa.",
+          "es": "Axun (Itziar Aizpuru) es una mujer de 70 años que acude al hospital para cuidar al exmarido de su hija. Su sorpresa será mayúscula al darse cuenta de que la mujer que cuida al enfermo de al lado es Maite (Mariasun Pagoaga) una gran amiga de la adolescencia con quien hace años que no tiene relación. Pronto ambas mujeres serán conscientes de que la química entre ellas sigue intacta al igual que 50 años atrás. Las dos se divierten y disfrutan del reencuentro hasta que Axun descubre que Maite es lesbiana. En ese momento Axun tendrá que lidiar con sentimientos enfrentados y decidir si prefiere escuchar a su corazón o a la razón.",
+          "en": "",
+          "eu": ""
+        },
+        "video": ""
+      }
+    ],
+    "New Directors": [],
+    "Horizontes Latinos": [],
+    "Zabaltegi": [],
+    "Perlak": [],
+    "Made in Spain": [],
+    "Fuera de concurso": []
+  },
+  "2011": {
+    "Ganadora": [
+      {
+        "id": "Albert Nobbs-2011",
+        "titulo": {
+          "es": "Albert Nobbs",
+          "en": "",
+          "eu": ""
+        },
+        "pais": {
+          "es": "Reino Unido",
+          "en": "",
+          "eu": ""
+        },
+        "año": "2011 | 108’",
+        "director": {
+          "es": "Rodrigo García"
+        },
+        "imagen": "img/albert_nobbs.jpg",
+        "descripcion": {
+          "es": "Irlanda, siglo XIX. Una mujer (Glenn Close) se ve atrapada en un triángulo amoroso inusual. Se disfraza de hombre para poder trabajar y sobrevivir, pero 30 años después se encuentra perdida en su propia prisión...",
+          "en": "",
+          "eu": ""
+        },
+        "video": ""
+      }
+    ],
+    "New Directors": [],
+    "Horizontes Latinos": [],
+    "Zabaltegi": [],
+    "Perlak": [],
+    "Made in Spain": [],
+    "Fuera de concurso": []
+  },
+  "2012": {
+    "Ganadora": [
+      {
+        "id": "Joven y alocada-2012",
+        "titulo": {
+          "es": "Joven y alocada",
+          "en": "",
+          "eu": ""
+        },
+        "pais": {
+          "es": "Chile",
+          "en": "",
+          "eu": ""
+        },
+        "año": "2012 | 92’",
+        "director": {
+          "es": "Marialy Rivas"
+        },
+        "imagen": "img/joven_y_alocada.jpg",
+        "descripcion": {
+          "es": "La protagonista de este drama es Daniela, una joven de 18 años que ha crecido en el seno de una familia conervadora y evangélica. Dividida entre su rebeldía y la culpa cristiana, vive una noche de excesos que dejará una imborrable marca en ella: es castigada por sus padres y llegará a plantearse un dilema existencial. En la transición a su vida adulta tratará de redimirse de su pasado adolescente pero encontrará un obstáculo más: su primer amor homosexual.",
           "en": "",
           "eu": ""
         },
@@ -926,16 +444,16 @@
   "2013": {
     "Ganadora": [
       {
-        "id":"Dallas Buyers Club-2013",
+        "id": "Dallas Buyers Club-2013",
         "titulo": {
           "es": "Dallas Buyers Club",
           "en": "",
           "eu": ""
-        },       
+        },
         "pais": {
-          "es":"Estados Unidos",
-          "en":"",
-          "eu":""
+          "es": "Estados Unidos",
+          "en": "",
+          "eu": ""
         },
         "año": "2013 | 117’",
         "director": {
@@ -957,446 +475,776 @@
     "Made in Spain": [],
     "Fuera de concurso": []
   },
-  "2012": {
+  "2014": {
     "Ganadora": [
       {
-        "id":"Joven y alocada-2012",
+        "id": "Une nouvelle amie-2014",
         "titulo": {
-          "es": "Joven y alocada",
+          "es": "Une nouvelle amie",
           "en": "",
           "eu": ""
-        },       
+        },
         "pais": {
-          "es":"Chile",
-          "en":"",
-          "eu":""
+          "es": "Francia",
+          "en": "",
+          "eu": ""
         },
-        "año": "2012 | 92’",
+        "año": "2014 | 105’",
         "director": {
-          "es": "Marialy Rivas"
+          "es": "François Ozon"
         },
-        "imagen": "img/joven_y_alocada.jpg",
+        "imagen": "img/Una_nueva_amiga.jpg",
         "descripcion": {
-          "es": "La protagonista de este drama es Daniela, una joven de 18 años que ha crecido en el seno de una familia conervadora y evangélica. Dividida entre su rebeldía y la culpa cristiana, vive una noche de excesos que dejará una imborrable marca en ella: es castigada por sus padres y llegará a plantearse un dilema existencial. En la transición a su vida adulta tratará de redimirse de su pasado adolescente pero encontrará un obstáculo más: su primer amor homosexual.",
+          "es": "Es la historia de dos mujeres, amigas de la infancia. Las dos se casan y una tiene un bebé. Al poco tiempo, la madre enferma gravemente, le hace prometer a su amiga que cuidará del bebé y a su marido. Después de su muerte, la amiga decide ir a visitar al padre y al bebé, pero le espera una tremenda sorpresa.",
           "en": "",
           "eu": ""
         },
         "video": ""
       }
-        ],
-        "New Directors": [],
-        "Horizontes Latinos": [],
-        "Zabaltegi": [],
-        "Perlak": [],
-        "Made in Spain": [],
-        "Fuera de concurso": []
+    ],
+    "New Directors": [],
+    "Horizontes Latinos": [],
+    "Zabaltegi": [],
+    "Perlak": [],
+    "Made in Spain": [],
+    "Fuera de concurso": []
   },
-  "2011": {
+  "2015": {
     "Ganadora": [
       {
-        "id":"Albert Nobbs-2011",
+        "id": "Freeheld-2015",
         "titulo": {
-          "es": "Albert Nobbs",
+          "es": "Freeheld",
           "en": "",
           "eu": ""
-        },       
+        },
         "pais": {
-          "es":"Reino Unido",
-          "en":"",
-          "eu":""
+          "es": "Estados Unidos",
+          "en": "",
+          "eu": ""
         },
-        "año": "2011 | 108’",
+        "año": "2015 | 103’",
         "director": {
-          "es": "Rodrigo García"
+          "es": "Peter Sollet"
         },
-        "imagen": "img/albert_nobbs.jpg",
+        "imagen": "img/freeheld.jpg",
         "descripcion": {
-          "es": "Irlanda, siglo XIX. Una mujer (Glenn Close) se ve atrapada en un triángulo amoroso inusual. Se disfraza de hombre para poder trabajar y sobrevivir, pero 30 años después se encuentra perdida en su propia prisión...",
+          "es": "Basada en la historia real de Laurel Hester y Stacie Andrée y su lucha por la justicia. A Laurel, una condecorada policía de Nueva Jersey, le diagnostican un cáncer terminal y quiere dejar su pensión ganada durante años a su pareja de hecho, Stacie. Sin embargo, los funcionarios del condado, que no ven con buenos ojos la pareja homosexual, conspiran para evitarlo.",
           "en": "",
           "eu": ""
         },
         "video": ""
       }
-        ],
-        "New Directors": [],
-        "Horizontes Latinos": [],
-        "Zabaltegi": [],
-        "Perlak": [],
-        "Made in Spain": [],
-        "Fuera de concurso": []
+    ],
+    "New Directors": [],
+    "Horizontes Latinos": [],
+    "Zabaltegi": [],
+    "Perlak": [],
+    "Made in Spain": [],
+    "Fuera de concurso": []
   },
-  "2010": {
+  "2016": {
     "Ganadora": [
       {
-        "id":"80 egunean-2010",
+        "id": "Bar Bahar-2016",
         "titulo": {
-          "es": "80 egunean",
+          "es": "Bar Bahar",
           "en": "",
           "eu": ""
-        },       
+        },
         "pais": {
-          "es":"España",
-          "en":"",
-          "eu":""
+          "es": "Francia, Israel",
+          "en": "",
+          "eu": ""
         },
-        "año": "2010 | 105’",
+        "año": "2016 | 96’",
         "director": {
-          "es": "José Marí Goenaga – Jon Garaño"
+          "es": "Maysaloun Hamoud"
         },
-        "imagen": "img/80_egunean.jpg",
+        "imagen": "img/bar-bahar.avif",
         "descripcion": {
-          "es": "Axun (Itziar Aizpuru) es una mujer de 70 años que acude al hospital para cuidar al exmarido de su hija. Su sorpresa será mayúscula al darse cuenta de que la mujer que cuida al enfermo de al lado es Maite (Mariasun Pagoaga) una gran amiga de la adolescencia con quien hace años que no tiene relación. Pronto ambas mujeres serán conscientes de que la química entre ellas sigue intacta al igual que 50 años atrás. Las dos se divierten y disfrutan del reencuentro hasta que Axun descubre que Maite es lesbiana. En ese momento Axun tendrá que lidiar con sentimientos enfrentados y decidir si prefiere escuchar a su corazón o a la razón.",
+          "es": "Salma, Laila y Nur no encajarán nunca. Palestinas con pasaporte israelí, optan por vivir una vida de libertad en Tel Aviv, lejos de sus lugares de origen. Las tres buscan el amor, pero como jóvenes palestinas pronto se darán cuenta de que una relación escogida por ellas no es algo fácilmente alcanzable. Tendrán que elegir su lugar en el mundo, sea en la ciudad o en sus pueblos.",
           "en": "",
           "eu": ""
         },
         "video": ""
       }
-        ],
-        "New Directors": [],
-        "Horizontes Latinos": [],
-        "Zabaltegi": [],
-        "Perlak": [],
-        "Made in Spain": [],
-        "Fuera de concurso": []
+    ],
+    "New Directors": [],
+    "Horizontes Latinos": [],
+    "Zabaltegi": [],
+    "Perlak": [],
+    "Made in Spain": [],
+    "Fuera de concurso": []
   },
-  "2009": {
+  "2017": {
     "Ganadora": [
       {
-        "id":"Contracorriente-2009",
+        "id": "120 battements par minute-2017",
         "titulo": {
-          "es": "Contracorriente",
+          "es": "120 battements par minute",
           "en": "",
           "eu": ""
-        },       
+        },
         "pais": {
-          "es":"Perú",
-          "en":"",
-          "eu":""
+          "es": "Francia",
+          "en": "",
+          "eu": ""
         },
-        "año": "2009 | 100’",
+        "año": "2017 | 143’",
         "director": {
-          "es": "Javier Fuentes-León"
+          "es": "Robin Campillo"
         },
-        "imagen": "img/contracorriente.jpg",
+        "imagen": "img/120_battements_par_minute.jpg",
         "descripcion": {
-          "es": "Una historia de fantasmas inusual en la costa peruana, donde Miguel (Cristian Mercado), un pescador casado y a punto de ser padre lucha por reconciliar su devoción a su amante masculino dentro de las rígidas tradiciones de su pueblo.",
+          "es": "París, principios de los años 90. Un grupo de jóvenes activistas intenta generar conciencia sobre el SIDA. Un nuevo miembro del grupo, Nathan, se quedará sorprendido ante la radicalidad y energía de Sean, que gasta su último aliento en la lucha.",
           "en": "",
           "eu": ""
         },
         "video": ""
       }
-        ],
-        "New Directors": [],
-        "Horizontes Latinos": [],
-        "Zabaltegi": [],
-        "Perlak": [],
-        "Made in Spain": [],
-        "Fuera de concurso": []
+    ],
+    "New Directors": [],
+    "Horizontes Latinos": [],
+    "Zabaltegi": [],
+    "Perlak": [],
+    "Made in Spain": [],
+    "Fuera de concurso": []
   },
-  "2008": {
+  "2018": {
     "Ganadora": [
       {
-        "id":"Vicky Cristina Barcelona-2008",
+        "id": "Girl-2018",
         "titulo": {
-          "es": "Vicky Cristina Barcelona",
+          "es": "Girl",
           "en": "",
           "eu": ""
-        },       
+        },
         "pais": {
-          "es":"Estados Unidos",
-          "en":"",
-          "eu":""
+          "es": "Bélgica",
+          "en": "",
+          "eu": ""
         },
-        "año": "2008 | 96’",
+        "año": "2018 | 100’",
         "director": {
-          "es": "Woody Allen"
+          "es": "Lukas Dhont"
         },
-        "imagen": "img/vicky-cristina-barcelona.jpg",
+        "imagen": "img/girl.jpg",
         "descripcion": {
-          "es": "Vicky (Rebecca Hall) y Cristina (Scarlett Johansson) son dos jóvenes norteamericanas que van a Barcelona a pasar unas vacaciones de verano. Vicky es sensible, racional y tiene intención de casarse; Cristina es apasionada y busca aventuras emocionantes; en realidad, no sabe muy bien lo que quiere, pero sabe perfectamente lo que no quiere. En Barcelona, ambas se ven envueltas en una relación poco convencional con Juan Antonio (Javier Bardem), un conocido pintor vinculado sentimentalmente a su tempestuosa exmujer María Elena (Penélope Cruz).",
+          "es": "Lara es una joven de 15 años que quiere convertirse en bailarina. Desde los 5 años ha estado entrenando para ello, pero su cuerpo no le permite cumplir su sueño.",
           "en": "",
           "eu": ""
         },
         "video": ""
       }
-        ],
-        "New Directors": [],
-        "Horizontes Latinos": [],
-        "Zabaltegi": [],
-        "Perlak": [],
-        "Made in Spain": [],
-        "Fuera de concurso": []
+    ],
+    "New Directors": [],
+    "Horizontes Latinos": [],
+    "Zabaltegi": [],
+    "Perlak": [],
+    "Made in Spain": [],
+    "Fuera de concurso": []
   },
-  "2007": {
+  "2019": {
     "Ganadora": [
       {
-        "id":"Caramel-2007",
+        "id": "Monos-2019",
         "titulo": {
-          "es": "Caramel",
+          "es": "Monos",
           "en": "",
           "eu": ""
-        },       
+        },
         "pais": {
-          "es":"Líbano",
-          "en":"",
-          "eu":""
+          "es": "Colombia",
+          "en": "",
+          "eu": ""
         },
-        "año": "2007 | 96’",
+        "año": "2019 | 102’",
         "director": {
-          "es": "Nadine Labaki"
+          "es": "Alejandro Landes"
         },
-        "imagen": "img/caramel.jpg",
+        "imagen": "img/monos.jpg",
         "descripcion": {
-          "es": "En Beirut, varias mujeres se reúnen en un salón de belleza, un microcosmos colorista y sensual. Layale ama a un hombre casado. Nisrine, que es musulmana y está a punto de casarse, tiene un serio problema: ya no es virgen. Rima se siente atraída por las mujeres. El problema de Jamel es que se resiste a envejecer. Rose ha sacrificado su vida para cuidar de su hermana que padece demencia senil.",
+          "es": "En la cima de una imponente montaña, donde lo que a primera vista parece un campamento de verano, ocho muchachos guerrilleros apodados “Los Monos» conviven bajo la estricta instrucción de un sargento paramilitar. Su única misión es la de cuidar a 'la doctora' (Julianne Nicholson), una mujer norteamericana a la que han tomado como rehén. Cuando esta misión empieza a peligrar, la confianza entre ellos empezará a ser cuestionada.",
           "en": "",
           "eu": ""
         },
         "video": ""
       }
-        ],
-        "New Directors": [],
-        "Horizontes Latinos": [],
-        "Zabaltegi": [],
-        "Perlak": [],
-        "Made in Spain": [],
-        "Fuera de concurso": []
+    ],
+    "New Directors": [],
+    "Horizontes Latinos": [],
+    "Zabaltegi": [],
+    "Perlak": [],
+    "Made in Spain": [],
+    "Fuera de concurso": []
   },
-  "2006": {
+  "2020": {
     "Ganadora": [
       {
-        "id":"Estrellas de las Línea-2006",
+        "id": "Falling-2020",
         "titulo": {
-          "es": "Estrellas de las Línea",
-          "en": "",
-          "eu": ""
-        },       
-        "pais": {
-          "es":"España",
-          "en":"",
-          "eu":""
+          "es": "Falling",
+          "en": "Falling",
+          "eu": "Erortzea"
         },
-        "año": "2006 | 90’",
+        "pais": {
+          "es": "Canadá",
+          "en": "Canada",
+          "eu": "Kanada"
+        },
+        "año": "2020 | 113’",
+        "director": {
+          "es": "Viggo Mortensen"
+        },
+        "imagen": "img/falling.jpg",
+        "descripcion": {
+          "es": "John Petersen (Viggo Mortensen) vive con su novio Eric (Terry Chen) y la hija adoptiva de ambos en el sur de California. Su padre Willis (Lance Henriksen) un granjero tradicional y conservador de 80 años, decide viajar a Los Ángeles y quedarse en casa de John mientras busca el lugar idóneo para jubilarse. Una vez todo juntos, dos mundos muy diferentes colisionan. Willis muestra señas de estar perdiendo la cordura, y su peculiar forma de ser, dañina para algunos miembros de la familia, saca a relucir heridas del pasado y de años de desconfianza entre sus allegados. ",
+          "en": "John Petersen (Viggo Mortensen) lives with his boyfriend Eric (Terry Chen) and their adopted daughter in Southern California. His father, Willis (Lance Henriksen), a traditional and conservative 80-year-old farmer, decides to travel to Los Angeles and stay with John while he looks for the perfect place to retire. Once together, two very different worlds collide. Willis shows signs of losing his sanity, and his peculiar way of being, harmful to some family members, brings to light past wounds and years of mistrust among those closest to him.",
+          "eu": "John Petersen (Viggo Mortensen) bere mutil-lagun Eric (Terry Chen) eta haien alab adoptiboarekin bizi da Hego Kalifornian. Bere aita Willisek (Lance Henriksen), 80 urteko nekazari tradizional eta kontserbadorea, Los Angelesera bidaiatzea eta Johnen etxean geratzea erabakiko du, erretiroa hartzeko leku aproposa bilatzen duen bitartean. Behin denak batera, bi mundu oso ezberdin talka egiten dute. Willis-ek bere gogoa galtzearen zantzuak erakusten ditu, eta bere izateko modu bereziak, familiako kide batzuentzat kaltegarria denak, iraganeko zauriak eta urteetako mesfidantza azaleratzen ditu gertukoen artean."
+        },
+        "video": ""
+      }
+    ],
+    "New Directors": [],
+    "Horizontes Latinos": [],
+    "Zabaltegi": [],
+    "Perlak": [],
+    "Made in Spain": [],
+    "Fuera de concurso": []
+  },
+  "2021": {
+    "Ganadora": [
+      {
+        "id": "The Power of the Dog-2021",
+        "titulo": {
+          "es": "The Power of the Dog",
+          "en": "The Power of the Dog",
+          "eu": "Txakurraren boterea"
+        },
+        "pais": {
+          "es": "Australia",
+          "en": "Australia",
+          "eu": "Australia"
+        },
+        "año": "2021 | 128’",
+        "director": {
+          "es": "Jane Campion"
+        },
+        "imagen": "img/el_poder_del_perro.jpg",
+        "descripcion": {
+          "es": "Montana, 1925. Los acaudalados hermanos Phil (Cumberbatch) y George Burbank (Plemons) son las dos caras de la misma moneda. Phil es impetuoso y cruel, mientras George es impasible y amable. Juntos son copropietarios de un enorme rancho donde tienen ganado. Cuando George se casa con una viuda del pueblo, Rose (Dunst), Phil comienza a despreciar a su nueva cuñada, que se instala en el rancho junto a su hijo, el sensible Peter (Smit-McPhee).",
+          "en": "Montana, 1925. Wealthy brothers Phil (Cumberbatch) and George Burbank (Plemons) are two sides of the same coin. Phil is brash and cruel, while George is cool and kind. Together they co-own a large ranch where they raise cattle. When George marries a local widow, Rose (Dunst), Phil begins to despise his new sister-in-law, who moves into the ranch with her sensitive son, Peter (Smit-McPhee).",
+          "eu": "Montana, 1925. Phil (Cumberbatch) eta George Burbank (Plemons) anaia aberatsak txanpon beraren bi aldeak dira. Phil sutsu eta krudela da, eta George, berriz, ezegonkorra eta atsegina. Elkarrekin ganadua duten ganadutegi erraldoi baten jabe dira. George bertako alargun batekin, Rose (Dunst) ezkontzen denean, Phil bere koinata berria mespretxatzen hasiko da, zeina bere seme sentikorra den Peterrekin (Smit-McPhee) ganadutegira joango dena."
+        },
+        "video": ""
+      }
+    ],
+    "New Directors": [],
+    "Horizontes Latinos": [],
+    "Zabaltegi": [],
+    "Perlak": [],
+    "Made in Spain": [],
+    "Fuera de concurso": []
+  },
+  "2022": {
+    "Ganadora": [
+      {
+        "id": "Something you said last night-2022",
+        "titulo": {
+          "es": "Something you said last night",
+          "en": "Something you said last night",
+          "eu": "Bart esan duzun zerbait"
+        },
+        "pais": {
+          "es": "Canada, Suiza",
+          "en": "Canada, Switzerland",
+          "eu": "Kanada, Suitza"
+        },
+        "año": "2022 | 96’",
+        "director": {
+          "es": "Luis de Filippis"
+        },
+        "imagen": "img/something-you-said-last-night2.jpg",
+        "descripcion": {
+          "es": "Something You Said Last Night es una película dirigida por Luis De Filippis que explora la vida de una familia durante sus vacaciones, centrándose en la experiencia de una joven transgénero que lucha por encontrar su lugar en el mundo y en su propia familia. La narrativa íntima y las actuaciones auténticas hacen de esta película un retrato conmovedor de la identidad y la aceptación.",
+          "en": "Something You Said Last Night is a film directed by Luis De Filippis that explores the life of a family on vacation, focusing on the experience of a young transgender woman struggling to find her place in the world and within her own family. The intimate narrative and authentic performances make this film a poignant portrait of identity and acceptance.",
+          "eu": "Zerbait esan zenuen bart gauean Luis De Filippis-ek zuzendutako filma da, familia baten bizimodua aztertzen duena oporretan, munduan eta bere familian bere lekua aurkitzeko borrokan ari den emakume transgenero gazte baten esperientzian zentratuta. Ipuin kontaketa intimoek eta benetako emanaldiek film hau identitatearen eta onarpenaren erretratu garratza bihurtzen dute."
+        },
+        "video": ""
+      }
+    ],
+    "New Directors": [],
+    "Horizontes Latinos": [],
+    "Zabaltegi": [],
+    "Perlak": [],
+    "Made in Spain": [],
+    "Fuera de concurso": []
+  },
+  "2023": {
+    "Ganadora": [
+      {
+        "id": "20.000 especies de abejas-2023",
+        "titulo": {
+          "es": "20.000 especies de abejas",
+          "en": "20,000 species of bees",
+          "eu": "20.000 erle espezie"
+        },
+        "pais": {
+          "es": "España",
+          "en": "Spain",
+          "eu": "Espainia"
+        },
+        "año": "2023 | 129’",
+        "director": {
+          "es": "Estibaliz Urresola"
+        },
+        "imagen": "img/20_000_especies_de_abejas.jpg",
+        "descripcion": {
+          "es": "Cocó, de ocho años, no encaja en las expectativas del resto y no entiende por qué. Todos a su alrededor insisten en llamarle Aitor pero no se reconoce en ese nombre ni en la mirada de los demás. Su madre Ane, (Patricia López Arnaiz), sumida en una crisis profesional y sentimental, aprovechará las vacaciones para viajar con sus tres hijos a la casa materna, donde reside su madre Lita (Itziar Lazkano) y su tía Lourdes (Ane Gabarain), estrechamente ligada a la cría de abejas y la producción de miel. Este verano que cambiará sus vidas obligará a estas mujeres de tres generaciones muy distintas a enfrentarse a sus dudas y temores.",
+          "en": "Eight-year-old Cocó doesn't fit in with everyone else's expectations and doesn't understand why. Everyone around him insists on calling him Aitor, but he doesn't recognize himself in that name or in the eyes of others. His mother, Ane (Patricia López Arnaiz), mired in a professional and emotional crisis, takes advantage of the vacation to travel with her three children to her mother's house, where her mother, Lita (Itziar Lazkano), and her aunt, Lourdes (Ane Gabarain), closely involved in beekeeping and honey production, live. This life-changing summer will force these women from three very different generations to confront their doubts and fears.",
+          "eu": "Zortzi urteko Coco ez da beste guztien itxaropenekin bat egiten eta ez du ulertzen zergatik. Inguruko guztiak Aitor deitzen tematzen dira, baina ez du ezagutzen izen hori edo besteek begiratzen dioten modua. Bere ama Ane, (Patricia López Arnaiz), krisi profesional eta sentimental batean murgilduta, oporrak aprobetxatuko ditu bere hiru seme-alabekin amaren etxera bidaiatzeko, bertan bizi diren ama Lita (Itziar Lazkano) eta izeko Lourdes (Ane Gabarain), erlezaintzari eta ezti ekoizpenari oso lotuta. Bizitza aldatzen ari den uda honek hiru belaunaldi oso desberdinetako emakume hauek euren zalantza eta beldurrei aurre egitera behartuko ditu."
+        },
+        "video": ""
+      }
+    ],
+    "New Directors": [],
+    "Horizontes Latinos": [],
+    "Zabaltegi": [],
+    "Perlak": [],
+    "Made in Spain": [],
+    "Fuera de concurso": []
+  },
+  "2024": {
+    "Ganadora": [
+      {
+        "id": "reas-2024",
+        "titulo": {
+          "es": "Reas",
+          "en": "Reas",
+          "eu": "Reas"
+        },
+        "pais": {
+          "es": "Argentina-Alemania-Suiza",
+          "en": "Argentina-Germany-Switzerland",
+          "eu": "Argentina-Alemania-Suitza"
+        },
+        "año": "2024 | 82’",
+        "director": {
+          "es": "Mariano Cattaneo"
+        },
+        "imagen": "img/sebastiane2024_reas.jpg",
+        "descripcion": {
+          "es": "Yoseli tiene un tatuaje de la Torre Eiffel en la espalda y siempre quiso viajar, pero fue detenida en el aeropuerto por tráfico de drogas. Nacho es un hombre trans que fue detenido por estafa y armó una banda de rock en la cárcel. Dulces o rudxs, rubixs o rapados, cis o trans, detenidxs hace tiempo o recién ingresadxs: en este musical híbrido, todxs recrean sus vidas en una prisión de Buenos Aires.",
+          "en": "Yoseli has a tattoo of the Eiffel Tower on her back and always wanted to travel, but was arrested at the airport for drug trafficking. Nacho is a trans man who was arrested for fraud and started a rock band in prison. Sweet or ruddy, blond or shaved, cis or trans, long-detained or newly arrested: in this hybrid musical, everyone recreates their lives in a Buenos Aires prison.",
+          "eu": "Yoselik Eiffel Dorrearen tatuajea du bizkarrean eta beti bidaiatu nahi izan zuen, baina aireportuan atxilotu zuten droga trafikoagatik. Nacho iruzurgatik atxilotu eta kartzelan rock talde bat sortu zuen trans gizon bat da. Gozoa ala gogorra, ilehoria edo bizarra, cis ala trans, aspaldian atxilotua edo onartu berria: musikal hibrido honetan bakoitzak bere bizitza birsortzen du Buenos Airesko espetxe batean."
+        },
+        "video": "https://www.youtube.com/watch?v=j6XADs_VSGE"
+      }
+    ],
+    "New Directors": [
+      {
+        "id": "Drama de ensacador-2024",
+        "titulo": {
+          "es": "Drama de ensacador",
+          "en": "Bagger Drama",
+          "eu": "Ensacador drama"
+        },
+        "pais": {
+          "es": "Suiza",
+          "en": "Swiss",
+          "eu": "Suitzarrak"
+        },
+        "año": "2024 | 94’",
+        "director": {
+          "es": "Piet Baumgartner"
+        },
+        "imagen": "img/sebastiane2024_bagger_drama.jpg",
+        "descripcion": {
+          "es": "Una familia tiene dificultades para hablar de sentimientos, amor o intimidad. El negocio familiar —alquilar, vender y reparar excavadoras— exige toda su atención. Todos tienen que arrimar el hombro. Cuando la hija muere en un accidente, la familia se colapsa. El hijo prefiere irse a Estados Unidos antes que hacerse cargo de la empresa. El padre se enamora de la nueva directora del coro y la madre se encuentra de repente sola.",
+          "en": "A family struggles to talk about feelings, love, or intimacy. The family business—renting, selling, and repairing excavators—demands their full attention. Everyone has to pitch in. When the daughter dies in an accident, the family collapses. The son chooses to go to the United States rather than take over the business. The father falls in love with the new choir director, and the mother suddenly finds herself alone.",
+          "eu": "Familia batek zailtasunak ditu sentimenduez, maitasunaz edo intimitateaz hitz egiteko. Familiako negozioak —hondeamakinak alokatu, saldu eta konpontzea— bere arreta osoa eskatzen du. Denek sartu behar dute. Alaba istripu batean hiltzen denean, familia erori egiten da. Semeak nahiago du Estatu Batuetara joan enpresa hartu baino. Aita abesbatzako zuzendari berriarekin maitemintzen da eta ama bat-batean bakarrik aurkitzen da."
+        },
+        "video": ""
+      },
+      {
+        "id": "Por donde pasa el silencio-2024",
+        "titulo": {
+          "es": "Por donde pasa el silencio",
+          "en": "Where the silence passes",
+          "eu": "Isiltasuna pasatzen den lekuan"
+        },
+        "pais": {
+          "es": "España",
+          "en": "Spain",
+          "eu": "Espainia"
+        },
+        "año": "2024 | 98’",
+        "director": {
+          "es": "Sandra Romero"
+        },
+        "imagen": "img/sebastiane2024_por_donde_pasa_el_silencio.jpg",
+        "descripcion": {
+          "es": "Antonio tiene que volver a Écija, una ciudad en el interior de Andalucía, después de mucho tiempo. Es Semana Santa. Allí se reencuentra con su familia y con su hermano mellizo Javier que tiene una discapacidad física y necesita su ayuda. Antonio tendrá que manejar esta situación y enfrentase a una difícil decisión: quedarse y ayudar a los suyos o volver a la vida que ha construido fuera.",
+          "en": "Antonio has to return to Écija, a city in inland Andalusia, after a long time away. It's Holy Week. There he reunites with his family and his twin brother Javier, who has a physical disability and needs his help. Antonio will have to deal with this situation and face a difficult decision: stay and help his family or return to the life he has built abroad.",
+          "eu": "Antoniok Écijara, Andaluzia barneko hirira, itzuli behar du denbora luze baten ondoren. Aste Santua da. Bertan bere familiarekin eta bere anaia biki Javierrekin elkartuko da, ezintasun fisikoa duen eta bere laguntza behar duena. Antoniok egoera horri aurre egin beharko dio eta erabaki zail bati aurre egin beharko dio: bere familiari lagundu edo kanpoan eraikitako bizitzara itzuli."
+        },
+        "video": ""
+      }
+    ],
+    "Horizontes Latinos": [
+      {
+        "id": "Cidade/Campo-2024",
+        "titulo": {
+          "es": "Cidade/Campo ",
+          "en": "city",
+          "eu": "hiria"
+        },
+        "pais": {
+          "es": "Brasil-Alemania-Francia",
+          "en": "Brazil-Germany-France",
+          "eu": "Brasil-Alemania-Frantzia"
+        },
+        "año": "2024 | 119’",
+        "director": {
+          "es": "Juliana Rojas"
+        },
+        "imagen": "img/sebastiane2024_cidade_campo.jpg",
+        "descripcion": {
+          "es": "Dos historias de migración entre la ciudad y el campo. En la primera parte, después de que la rotura de una presa de residuos inunde su pueblo natal, Joana, una trabajadora rural, se traslada a São Paulo para buscar a su hermana Tania, que vive con su nieto Jaime. Joana lucha por prosperar en la ciudad obrera. En la segunda parte, tras la muerte de su padre, del que estaba distanciada, Flavia se traslada a su granja con su esposa Mara. La naturaleza obliga a las dos mujeres a enfrentarse a frustraciones y a lidiar con viejos recuerdos y fantasmas.",
+          "en": "Two stories of migration between city and countryside. In the first part, after a tailings dam burst floods her hometown, Joana, a rural worker, moves to São Paulo to find her sister Tania, who lives with her grandson Jaime. Joana struggles to thrive in the working-class city. In the second part, after the death of her estranged father, Flavia moves to his farm with his wife Mara. Nature forces the two women to confront frustrations and deal with old memories and ghosts.",
+          "eu": "Hiriaren eta landa eremuaren arteko migrazioaren bi istorio. Lehenengo zatian, bere jaioterria lehertu eta uholde baten ondoren, Joana, landa-langilea, São Paulora joango da bere ahizpa Tania, bere bilobarekin bizi dena, bilatzera. Joana langile-hirian aurrera egiteko borrokan ari da. Bigarren zatian, bere aita hil ondoren, beragandik urrundu zen, Flavia bere baserrira joango da bere emazte Mararekin. Naturak bi emakumeak frustrazioei aurre egitera eta oroitzapen eta mamu zaharrei aurre egitera behartzen ditu."
+        },
+        "video": ""
+      },
+      {
+        "id": "Los domingos mueren más personas-2024",
+        "titulo": {
+          "es": "Los domingos mueren más personas",
+          "en": "More people die on Sundays",
+          "eu": "Igandeetan jende gehiago hiltzen da"
+        },
+        "pais": {
+          "es": "Argentina-Italia-España",
+          "en": "Argentina-Italy-Spain",
+          "eu": "Argentina-Italia-Espainia"
+        },
+        "año": "2024 | 75’",
+        "director": {
+          "es": "Iair Said"
+        },
+        "imagen": "img/sebastiane2024_Los_domingos_mueren_maas_personas.jpg",
+        "descripcion": {
+          "es": "Cuando David regresa a su casa de Buenos Aires se entera de que su madre ha decidido desconectar a Bernardo, su padre, que yace en coma. David se debate entre la estrecha convivencia con su madre, perturbada por el dolor de la inminente pérdida de su marido, y un feroz deseo de mitigar su angustia existencial. Pasa los días aprendiendo a conducir, oscilando entre el pasado y el presente e intentando mantener relaciones sexuales con cualquiera que le preste un mínimo de atención.",
+          "en": "When David returns home to Buenos Aires, he learns that his mother has decided to disconnect Bernardo, his father, who is in a coma. David is torn between living closely with his mother, troubled by the grief of the imminent loss of her husband, and a fierce desire to alleviate her existential anguish. He spends his days learning to drive, oscillating between the past and the present, and trying to have sex with anyone who pays even the slightest attention.",
+          "eu": "David Buenos Airesera etxera itzultzean, bere amak Bernardo, bere aita, koman dagoena, deskonektatzea erabaki duela jakingo du. David bere amarekin estu-estu bizitzearen artean, zeina bere senarraren galeraren berehalako minak kezkatuta, eta bere larritasun existentziala arintzeko gogo biziaren artean. Egunak ematen ditu gidatzen ikasten, iraganaren eta orainaren artean noraezean eta arreta txikiena eskaintzen duen edonorekin sexu harremanak izaten saiatzen."
+        },
+        "video": ""
+      },
+      {
+        "id": "El jockey-2024",
+        "titulo": {
+          "es": "El jockey",
+          "en": "The jockey",
+          "eu": "Jockeya"
+        },
+        "pais": {
+          "es": "Argentina-México-España-Dinamarca-Estados Unidos",
+          "en": "Argentina-Mexico-Spain-Denmark-USA",
+          "eu": "Argentina-Mexiko-Espainia-Danimarka-AEB"
+        },
+        "año": "2024 | 96’",
+        "director": {
+          "es": "Luis Ortega"
+        },
+        "imagen": "img/sebastiane2024_el_jockey.jpg",
+        "descripcion": {
+          "es": "Remo Manfredini es un jockey legendario, pero su comportamiento autodestructivo empieza a eclipsar su talento y a amenazar su relación con Abril, su novia. El día de la carrera más importante de su vida, que saldará las deudas con su jefe mafioso Sirena, sufre un grave accidente, desaparece del hospital y vaga por las calles de Buenos Aires. Liberado de su identidad, empieza a descubrir quién es realmente. Pero Sirena quiere encontrarlo, vivo o muerto.",
+          "en": "Remo Manfredini is a legendary jockey, but his self-destructive behavior begins to overshadow his talent and threaten his relationship with his girlfriend, Abril. On the day of the most important race of his life, which will settle his debts to his mob boss, Sirena, he suffers a serious accident, disappears from the hospital, and wanders the streets of Buenos Aires. Freed from his identity, he begins to discover who he really is. But Sirena wants to find him, dead or alive.",
+          "eu": "Remo Manfredini jockey mitikoa da, baina bere jokaera autosuntsitzailea bere talentua itzaltzen hasten da eta bere neska-lagunarekin, Abril, harremana mehatxatzen hasten da. Bere bizitzako lasterketarik garrantzitsuenaren egunean, Sirena bere buruzagi mafiosoarekin dituen zorrak kitatuko dituen egunean, istripu larria izango du, ospitaletik desagertu eta Buenos Airesko kaleetan barrena ibiliko da. Bere nortasunetik askatuta, benetan nor den deskubritzen hasiko da. Baina Sirenak aurkitu nahi du, hil ala bizi."
+        },
+        "video": ""
+      },
+      {
+        "id": "Ramón y Ramón-2024",
+        "titulo": {
+          "es": "Ramón y Ramón",
+          "en": "Ramón and Ramón",
+          "eu": "Ramón eta Ramón"
+        },
+        "pais": {
+          "es": "Perú-España-Uruguay",
+          "en": "Peru-Spain-Uruguay",
+          "eu": "Peru-Espainia-Uruguai"
+        },
+        "año": "2024 | 100’",
+        "director": {
+          "es": "Salvador del Solar"
+        },
+        "imagen": "img/sebastiane2024_ramon_y_ramon.webp",
+        "descripcion": {
+          "es": "Tras recibir las cenizas de su padre, con quien mantenía una relación distante, Ramón conoce a Mateo durante el confinamiento. A pesar de sus diferencias, surge una profunda conexión que los lleva a cuestionarse. Mateo decide acompañar a Ramón en un viaje para esparcir las cenizas en Huancayo. En esa travesía, Ramón descubre que buscaba respuestas a las preguntas equivocadas y que debe sanarse para seguir adelante.",
+          "en": "After receiving the ashes of his father, with whom he had a distant relationship, Ramón meets Mateo during confinement. Despite their differences, a deep connection emerges that leads them to question each other. Mateo decides to accompany Ramón on a trip to scatter the ashes in Huancayo. On this journey, Ramón discovers that he was searching for answers to the wrong questions and that he must heal to move forward.",
+          "eu": "Bere aitaren errautsak jaso ondoren, harekin harreman urruna zuen, Ramónek Mateo ezagutuko du konfinamenduan. Desberdintasunak izan arren, elkarri zalantzan jartzera eramaten dituen lotura sakona sortzen da. Mateok Ramónekin laguntzea erabakiko du Huancayoko errautsak sakabanatzeko bidaia batean. Bidaia honetan, Ramónek galdera okerretan erantzunen bila zebilela eta aurrera egiteko bere burua sendatu behar duela deskubrituko du."
+        },
+        "video": ""
+      }
+    ],
+    "Zabaltegi": [
+      {
+        "id": "I saw the TV glow-2024",
+        "titulo": {
+          "es": "I saw the TV glow/Vi el televisor brillar",
+          "en": "I saw the TV glow",
+          "eu": "Telebista dirdira ikusi nuen"
+        },
+        "pais": {
+          "es": "Estados Unidos",
+          "en": "USA",
+          "eu": "AEB"
+        },
+        "año": "2024 | 100’",
+        "director": {
+          "es": "Jane Schoenbrun"
+        },
+        "imagen": "img/sebastiane2024_i_saw_the_tv_glow.jpg",
+        "descripcion": {
+          "es": "Owen es un adolescente que trata de afrontar la vida en un barrio residencial de las afueras cuando su compañera de clase le habla de un misterioso programa de televisión nocturno: una visión de un mundo sobrenatural por debajo del suyo. En el pálido resplandor de la televisión, la idea que Owen tiene de la realidad comienza a quebrarse.",
+          "en": "Owen is a teenager trying to cope with life in a suburban neighborhood when his classmate tells him about a mysterious late-night TV show: a glimpse into a supernatural world beneath his own. In the pale glow of the television, Owen's understanding of reality begins to unravel.",
+          "eu": "Owen aldirietako auzo bateko bizitzari aurre egiten saiatzen ari den nerabe bat da, bere ikaskideak gaueko telebista-saio misteriotsu bati buruz hitz egiten dionean: bere azpian dagoen naturaz gaindiko mundu bati begirada bat. Telebistaren dirdira zurbilean, Owenek errealitatearen ulermena apurtzen hasten da."
+        },
+        "video": ""
+      },
+      {
+        "id": "My sunshine-2024",
+        "titulo": {
+          "es": "My sunshine/Mi Sol",
+          "en": "My sunshine",
+          "eu": "nire eguzkia"
+        },
+        "pais": {
+          "es": "Japón-Francia",
+          "en": "Japan-France",
+          "eu": "Japonia-Frantzia"
+        },
+        "año": "2024 | 100’",
+        "director": {
+          "es": "Hiroshi Okuyama"
+        },
+        "imagen": "img/sebastiane2024_my_boku_no_ohisama.jpg",
+        "descripcion": {
+          "es": "En una pequeña isla japonesa, la vida gira en torno al cambio de las estaciones. El invierno es la época del hockey sobre hielo en la escuela, pero a Takuya no le entusiasma demasiado. Su verdadero interés radica en Sakura, una estrella emergente del patinaje artístico de Tokio, por la que empieza a sentir auténtica fascinación. Arakawa, entrenador y antiguo campeón, ve potencial en Takuya y decide orientarle para que forme dúo con Sakura en una próxima competición.",
+          "en": "On a small Japanese island, life revolves around the changing of the seasons. Winter is the season for ice hockey at school, but Takuya isn't too keen on it. His real interest lies in Sakura, a rising figure skating star from Tokyo, for whom he begins to develop a genuine fascination. Arakawa, a coach and former champion, sees potential in Takuya and decides to mentor him to form a duo with Sakura in an upcoming competition.",
+          "eu": "Japoniako uharte txiki batean, bizitza urtaroen aldaketaren inguruan dabil. Negua da eskolan izotz hockeyrako garaia, baina Takuyari ez zaio oso gogotsu. Bere benetako interesa Sakuran datza, Tokioko patinaje artistikoaren goranzko izar bat, eta harentzat benetako lilura sentitzen hasten da. Arakawa, entrenatzailea eta txapeldun ohia, Takuyaren potentziala ikusten du eta hurrengo lehiaketa batean Sakurarekin bikote bat osatzeko tutorea izatea erabakitzen du."
+        },
+        "video": ""
+      },
+      {
+        "id": "Sombra grande-2024",
+        "titulo": {
+          "es": "Sombra grande",
+          "en": "Big shadow",
+          "eu": "itzal handia"
+        },
+        "pais": {
+          "es": "Argentina",
+          "en": "Argentina",
+          "eu": "Argentina"
+        },
+        "año": "2024 | 83’",
+        "director": {
+          "es": "Maximiliano Schonfeld"
+        },
+        "imagen": "img/sebastiane2024_sombra_grande.jpg",
+        "descripcion": {
+          "es": "Hace unos años apareció un hombre que decía hablar una lengua aparentemente perdida: el Chaná. Al poco tiempo se editaron diccionarios y la lengua se pudo recuperar completamente. Este hombre también ubicó a los Chaná en el mismo lugar donde hoy los descendientes de alemanes del Volga, en la provincia de Entre Ríos, van perdiendo inexorablemente su dialecto.",
+          "en": "A few years ago, a man appeared who claimed to speak a seemingly lost language: Chaná. Dictionaries were soon published, and the language was fully recovered. This man also located the Chaná in the same place where today the descendants of Volga Germans, in the province of Entre Ríos, are inexorably losing their dialect.",
+          "eu": "Duela urte batzuk, itxuraz galdutako hizkuntza bat hitz egiten zuela esaten zuen gizon bat agertu zen: Chaná. Laster hiztegiak argitaratu ziren eta hizkuntza guztiz berreskuratu zen. Gizon honek Chaná ere kokatu zuen gaur egun Volgako alemanen ondorengoak, Entre Ríos probintzian, euskalkia ezinbestean galtzen ari diren toki berean."
+        },
+        "video": ""
+      }
+    ],
+    "Perlak": [
+      {
+        "id": "Emilia Pérez-2024",
+        "titulo": {
+          "es": "Emilia Pérez",
+          "en": "Emilia Pérez",
+          "eu": "Emilia Pérez"
+        },
+        "pais": {
+          "es": "Francia",
+          "en": "France",
+          "eu": "Frantzia"
+        },
+        "año": "2024 | 130’",
+        "director": {
+          "es": "Jacques Audiard"
+        },
+        "imagen": "img/sebastiane2024_emilia_paerez.jpg",
+        "descripcion": {
+          "es": "Sobrecualificada e infravalorada, Rita es abogada de un gran bufete que está más interesado en sacar a los criminales del atolladero que en llevarlos ante la justicia. Un día, se le presenta una salida inesperada cuando Manitas, el líder de un cártel, la contrata para que le ayude a retirarse de sus negocios y hacer realidad un plan que lleva años preparando en secreto: convertirse en la mujer que siempre ha soñado ser.",
+          "en": "Overqualified and undervalued, Rita is a lawyer at a large law firm more interested in getting criminals off the hook than bringing them to justice. One day, she finds herself in a lull when Handy, the leader of a cartel, hires her to help him retire from his business and realize a plan he's been secretly planning for years: to become the woman he's always dreamed of being.",
+          "eu": "Gehiegizko kualifikazioa eta gutxietsia, Rita abokatua da abokatu bulego handi bateko abokatua, eta gaizkileak auzitara eramatea baino gehiago interesatzen zaio. Egun batean, ustekabeko posizioan aurkitzen da Manitas, kartel bateko buruzagiak, bere negoziotik erretiratzen laguntzeko eta urtetan ezkutuan prestatzen ari den plan bat gauzatzeko: beti amestu izan duen emakumea bihurtzeko."
+        },
+        "video": ""
+      }
+    ],
+    "Made in Spain": [
+      {
+        "id": "Norberta-2024",
+        "titulo": {
+          "es": "Norberta",
+          "en": "Norberta",
+          "eu": "Norberta"
+        },
+        "pais": {
+          "es": "España",
+          "en": "pain",
+          "eu": "Espainia"
+        },
+        "año": "2024 | 89’",
+        "director": {
+          "es": "Sonia Escolano, Belén López Albert"
+        },
+        "imagen": "img/sebastiane2024_norberta.jpg",
+        "descripcion": {
+          "es": "Norberto lleva toda una vida con María. Viven en un barrio humilde y conocen a sus vecinos desde hace décadas, pero ambos tienen un secreto que pocos saben: de vez en cuando, atracan. Con ello cumplimentan su pensión y ayudan a algún que otro amigo. Pero Norberto necesita dar un giro para sentirse vivo, libre, para sentirse ELLA misma. Una confesión inesperada que pondrá en jaque toda su vida y la de su entorno.",
+          "en": "Norberto has been with María his entire life. They live in a poor neighborhood and have known their neighbors for decades, but they both have a secret that few know: from time to time, they rob. This way, they supplement their pension and help out a few friends. But Norberto needs to take a turn to feel alive, free, to feel like himself. An unexpected confession that will put his entire life and that of those around him in jeopardy.",
+          "eu": "Norberto bizitza osoa egon da Mariarekin. Auzo txiro batean bizi dira eta hamarkadetan bizilagunak ezagutzen dituzte, baina biek dute gutxik ezagutzen duten sekretu bat: noizean behin, lapurreta egiten dute. Honekin pentsioa osatzen dute eta lagun batzuei laguntzen diete. Baina Norbertok buelta bat eman behar du bizirik, aske sentitzeko, BEREA sentitzeko. Bere bizitza osoa eta ingurukoena kolokan jarriko duen ustekabeko aitorpena."
+        },
+        "video": ""
+      },
+      {
+        "id": "Orgullo vieja-2024",
+        "titulo": {
+          "es": "Orgullo vieja",
+          "en": "Old pride",
+          "eu": "Harrotasun zaharra"
+        },
+        "pais": {
+          "es": "España",
+          "en": "Spain",
+          "eu": "Espainia"
+        },
+        "año": "2024 | 104’",
         "director": {
           "es": "Chema Rodríguez"
         },
-        "imagen": "img/estrellas_de_la_Lainea.jpg",
+        "imagen": "img/sebastiane2024_orgullo_vieja.jpg",
         "descripcion": {
-          "es": "Valeria, Vilma, Mercy y el resto de sus compañeras sueñan con ser tratadas dignamente y que cese la violencia que sufren a diario. Son prostitutas guatemaltecas, de a dos dólares por servicio. Trabajan en la Línea, junto a la vía del tren que atraviesa la capital camino al Océano Pacífico. Para llamar la atención sobre sus problemas, sobre el acoso de la policía y los asesinatos impunes forman un equipo de fútbol y se inscriben en un torneo local del que son expulsadas por su condición de prostitutas. Esta expulsión generó en el país una encendida polémica, rechazos y apoyos que transformaron sus vidas de la noche a la mañana. Esta es su historia.",
-          "en": "",
-          "eu": ""
+          "es": "Pepa, Antoñita, Pepi, Esperanza, Remedios, Kiska, Catalina y Rafaela son mujeres del barrio de Triana, Sevilla, de entre 68 y 97 años de edad. Todas comparten un sueño: quieren ser monologuistas, triunfar en el mundo del espectáculo y reivindicar que las mujeres mayores merecen respeto y visibilidad. Para ello, han creado un espectáculo titulado Orgullo vieja. La película muestra el proceso de creación de la compañía, los ensayos, el estreno en Sevilla y sus viajes por el resto de Andalucía.",
+          "en": "Pepa, Antoñita, Pepi, Esperanza, Remedios, Kiska, Catalina, and Rafaela are women from the Triana neighborhood of Seville, between the ages of 68 and 97. They all share a dream: to be stand-up comedians, to succeed in the entertainment world, and to assert that older women deserve respect and visibility. To this end, they created a show titled Orgullo vieja (Old Pride). The film depicts the process of creating the company, the rehearsals, the premiere in Seville, and their travels throughout Andalusia.",
+          "eu": "Pepa, Antoñita, Pepi, Esperanza, Remedios, Kiska, Catalina eta Rafaela Sevillako Triana auzoko emakumeak dira, 68 eta 97 urte bitartekoak. Guztiek amets bat partekatzen dute: stand-up umoregileak izan nahi dute, entretenimendu munduan arrakasta lortu eta adineko emakumeek errespetua eta ikusgarritasuna merezi dutela eskatzen dute. Horretarako, Harrotasun Zaharra izeneko ikuskizuna sortu dute. Pelikulak konpainiaren sortze prozesua, entseguak, Sevillan estreinatu eta Andaluzian zehar egindako bidaiak erakusten ditu."
+        },
+        "video": ""
+      },
+      {
+        "id": "Reir, cantar, tal vez llorar-2024",
+        "titulo": {
+          "es": "Reir, cantar, tal vez llorar",
+          "en": "To laugh, to sing, perhaps to cry",
+          "eu": "Barre egin, abestu, agian negar egin"
+        },
+        "pais": {
+          "es": "España",
+          "en": "spain",
+          "eu": "Espainia"
+        },
+        "año": "2024 | 75'",
+        "director": {
+          "es": "Marc Ferrer"
+        },
+        "imagen": "img/sebastiane2024_reircantar_tal_vez_llorar.jpg",
+        "descripcion": {
+          "es": "Toñi, una mujer trans de mediana edad, pide en una iglesia a un santo milagroso tener un novio, y así es como aparece en su vida Lahcen, un joven y guapo marroquí inmigrante que acaba de llegar a Barcelona, del que se enamorará. Esta relación provocará un gran escándalo en su comunidad de vecinos, movidos por la envidia y la desconfianza.",
+          "en": "Toñi, a middle-aged trans woman, prays to a miracle-working saint in a church for a boyfriend, and that's how Lahcen, a young and handsome Moroccan immigrant who has just arrived in Barcelona, ​​appears in her life, with whom she falls in love. This relationship causes a huge scandal in her community, driven by envy and distrust.",
+          "eu": "Toñi, adin ertaineko emakume trans bat, mirariak egiten dituen santu bati otoitz egiten dio eliza batean mutil-lagun baten alde, eta horrela agertzen da bere bizitzan Lahcen, Bartzelonara heldu berri den Marokoko etorkin gazte eta eder bat, zeinaz maitemintzen den. Harreman honek iskanbila izugarria eragingo du euren auzokideen komunitatean, inbidiak eta mesfidantza bultzatuta."
         },
         "video": ""
       }
-        ],
-        "New Directors": [],
-        "Horizontes Latinos": [],
-        "Zabaltegi": [],
-        "Perlak": [],
-        "Made in Spain": [],
-        "Fuera de concurso": []
+    ],
+    "Fuera de concurso": [
+      {
+        "id": "Querer-2024",
+        "titulo": {
+          "es": "Querer",
+          "en": "Want",
+          "eu": "Nahi"
+        },
+        "pais": {
+          "es": "España",
+          "en": "Spain",
+          "eu": "Espainia"
+        },
+        "año": "2024 | 212′",
+        "director": {
+          "es": "Alauda Ruiz de Azúa"
+        },
+        "imagen": "img/sebastiane2024_querer.jpg",
+        "descripcion": {
+          "es": "Tras 30 años de matrimonio y dos hijos en común, Miren abandona el domicilio conyugal y denuncia a su marido por violación continuada. Esta grave acusación obliga a los hijos a elegir entre creer a su madre o apoyar a un padre que defiende su inocencia. Un viaje familiar que avanza en paralelo al judicial con un mismo objetivo: conocer la verdad. Miniserie de 4 capítulos.",
+          "en": "After 30 years of marriage and two children together, Miren leaves the marital home and accuses her husband of repeated rape. This serious accusation forces the children to choose between believing their mother or supporting a father who maintains his innocence. A family journey that unfolds in parallel with the court case, all with the same goal: to discover the truth. A 4-part miniseries.",
+          "eu": "30 urte ezkonduta eta bi seme-alaba elkarrekin egon ostean, Mirenek ezkontza-etxea utzi eta bere senarraren aurkako salaketa jartzen du behin eta berriz bortxaketak egiteagatik. Salaketa larri honek haurrak amari sinestea edo bere errugabetasunari eusten dion aitari laguntzea aukeratzera behartzen ditu. Prozesu judizialarekin paraleloan doan familia-bidaia helburu berarekin: egia aurkitzea. 4 zatiko miniseriea."
+        },
+        "video": ""
+      },
+      {
+        "id": "Yo, adicto-2024",
+        "titulo": {
+          "es": "Yo, adicto",
+          "en": "I, addict",
+          "eu": "Ni, mendekotasuna"
+        },
+        "pais": {
+          "es": "España",
+          "en": "Spain",
+          "eu": "Espainia"
+        },
+        "año": "2024 | 240′",
+        "director": {
+          "es": "Javier Giner, Elena Trapé"
+        },
+        "imagen": "img/sebastiane2024_yo_adicto.jpg",
+        "descripcion": {
+          "es": "Yo, adicto cuenta cómo Javier Giner, profesional del audiovisual, decide a los 30 años ingresar voluntariamente en un centro de desintoxicación. En el momento de máxima oscuridad, tomará la decisión de pedir ayuda profesional movido por un instinto de supervivencia desesperada. Sin saberlo, ese gesto le cambiará la vida convirtiéndole en una nueva persona. Miniserie de seis episodios.",
+          "en": "I, Addict tells the story of Javier Giner, an audiovisual professional, who voluntarily enters a drug rehabilitation center at the age of 30. At the height of his darkness, he decides to seek professional help, driven by a desperate instinct for survival. Unbeknownst to him, this act will change his life, transforming him into a new person. Six-part miniseries.",
+          "eu": "Nik, adiktuak kontatzen du nola Javier Ginerrek, ikus-entzunezkoen profesionalak, 30 urterekin erabakitzen duen desintoxikazio zentro batean borondatez sartzea. Iluntasun handieneko unean, laguntza profesionala bilatzea erabakiko du, bizirauteko sen etsi batek bultzatuta. Jakin gabe, keinu horrek bere bizitza aldatuko du, pertsona berri bat bihurtuz. Sei ataletako miniseriea."
+        },
+        "video": ""
+      }
+    ]
   },
-  "2005": {
+  "2025": {
     "Ganadora": [
       {
-        "id":"Malas temporadas-2005",
+        "id": "pelicula-1748857511059",
         "titulo": {
-          "es": "Malas temporadas",
-          "en": "",
-          "eu": ""
-        },       
+          "es": "ESPAÑOL",
+          "en": "INGLES",
+          "eu": "EUSKERA"
+        },
+        "director": "cleia",
         "pais": {
-          "es":"España",
-          "en":"",
-          "eu":""
+          "es": "ESPAÑOL",
+          "en": "INGLES",
+          "eu": "EUSKERA"
         },
-        "año": "2005 | 125’",
-        "director": {
-          "es": "Manúel Martín Cuenca"
-        },
-        "imagen": "img/malas-temporadas.jpg",
         "descripcion": {
-          "es": "Malas temporadas es la historia de Mikel, Ana y Carlos, que se relacionan en el corazón de Madrid mientras buscan su lugar en el mundo, un lugar que cada vez se aleja más del idealizado, del que no existe, y la única solución es partir de lo real, para empezar a construirlo. Gente a la que el destino ha terminado llevando por caminos inesperados, y ahora comparten la necesidad de replantearse sus opciones.",
-          "en": "",
-          "eu": ""
+          "es": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+          "en": "iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii",
+          "eu": "uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu"
         },
-        "video": ""
+        "año": "2025 | 98'",
+        "imagen": "/img/1748857511050.JPG",
+        "video": "https://www.youtube.com/watch?v=ko-KaP8d100"
       }
-        ],
-        "New Directors": [],
-        "Horizontes Latinos": [],
-        "Zabaltegi": [],
-        "Perlak": [],
-        "Made in Spain": [],
-        "Fuera de concurso": []
-  },
-  "2004": {
-    "Ganadora": [
-      {
-        "id":"Beautiful boxer-2004",
-        "titulo": {
-          "es": "Beautiful boxer",
-          "en": "",
-          "eu": ""
-        },       
-        "pais": {
-          "es":"Tailandia",
-          "en":"",
-          "eu":""
-        },
-        "año": "2004 | 118’",
-        "director": {
-          "es": "Ekachai Uekrongtham"
-        },
-        "imagen": "img/beautiful-boxer.jpg",
-        "descripcion": {
-          "es": "Creyendo que es una chica atrapada en un cuerpo de chico desde niño, Parinya Charoenphol (familiarmente conocido como Nong Toom en Tailandia) se propone dominar el deporte más masculino y letal: Muay Thai (kickboxing tailandés) para ganarse la vida y para conseguir su objetivo final de feminidad total. Conmovedora, divertida, con impactantes escenas de kickboxing tailandés, Beautiful Boxer describe la infancia de Nong Toom, su vida adolescente como monje viajero, sus penosos días en los campamentos de boxeo y explosivos combates donde él vence a la mayoría de sus oponentes en toda Tailandia y Japón. ",
-          "en": "",
-          "eu": ""
-        },
-        "video": ""
-      }
-        ],
-        "New Directors": [],
-        "Horizontes Latinos": [],
-        "Zabaltegi": [],
-        "Perlak": [],
-        "Made in Spain": [],
-        "Fuera de concurso": []
-  },
-  "2003": {
-    "Ganadora": [
-      {
-        "id":"Le soleil assassiné-2003",
-        "titulo": {
-          "es": "Le soleil assassiné",
-          "en": "",
-          "eu": ""
-        },       
-        "pais": {
-          "es":"Argelia",
-          "en":"",
-          "eu":""
-        },
-        "año": "2003 | 85’",
-        "director": {
-          "es": " Abdelkrim Bahloul"
-        },
-        "imagen": "img/le_soleil_assassinae_el_sol_asesinado.jpg",
-        "descripcion": {
-          "es": "El poeta Jean Sénac es un 'Pied-Noir' que decidió quedarse en Argelia tras la independencia de ese país en 1962. Diez años después, la policía del régimen le vigila estrechamente. Sus recitales de poesía por todo el país atraen a un público amplio y su programa radiofónico 'Poésie sur tous les fronts' tiene una gran acogida entre la juventud. Dos estudiantes, Hamid y Belkacem, presentan una obra en el Festival Nacional de Teatro Argelino, pero no consiguen su objetivo. Sin embargo, Jean Sénac les felicita, lo cual mitiga un poco su desilusión, y a partir de entonces se hacen amigos del poeta y contemplan de cerca su combate por la libertad cultural en Argelia, que desemboca en su asesinato, una noche de agosto de 1973.",
-          "en": "",
-          "eu": ""
-        },
-        "video": ""
-      }
-        ],
-        "New Directors": [],
-        "Horizontes Latinos": [],
-        "Zabaltegi": [],
-        "Perlak": [],
-        "Made in Spain": [],
-        "Fuera de concurso": []
-  },
-  "2002": {
-    "Ganadora": [
-      {
-        "id":"Tani tatuwen pyabanna-2002",
-        "titulo": {
-          "es": "Tani tatuwen pyabanna",
-          "en": "",
-          "eu": ""
-        },       
-        "pais": {
-          "es":"Sri Lanka",
-          "en":"",
-          "eu":""
-        },
-        "año": "2002 | 81’",
-        "director": {
-          "es": "Asoka Handagama"
-        },
-        "imagen": "img/tani-tatuwen-pyabanna.jpg",
-        "descripcion": {
-          "es": "Para evitar la discriminación de género prevaleciente en Sri Lanka, una mujer decide hacerse pasar por hombre y consigue un trabajo como mecánica e incluso toma una esposa.",
-          "en": "",
-          "eu": ""
-        },
-        "video": ""
-      }
-        ],
-        "New Directors": [],
-        "Horizontes Latinos": [],
-        "Zabaltegi": [],
-        "Perlak": [],
-        "Made in Spain": [],
-        "Fuera de concurso": []
-  },
-  "2001": {
-    "Ganadora": [
-      {
-        "id":"Le fate ignoranti-2001",
-        "titulo": {
-          "es": "Le fate ignoranti ",
-          "en": "",
-          "eu": ""
-        },       
-        "pais": {
-          "es":"Italia",
-          "en":"",
-          "eu":""
-        },
-        "año": "2001 | 110’",
-        "director": {
-          "es": "Ferzan Ozpetek"
-        },
-        "imagen": "img/le_fate_ignoranti_the_ignorant_fairies.jpg",
-        "descripcion": {
-          "es": "Un matrimonio felizmente casado se ve truncado por la trágica muerte del marido. La desconsolada viuda acaba averiguando que él le ocultaba algo inimaginable.",
-          "en": "",
-          "eu": ""
-        },
-        "video": ""
-      }
-        ],
-        "New Directors": [],
-        "Horizontes Latinos": [],
-        "Zabaltegi": [],
-        "Perlak": [],
-        "Made in Spain": [],
-        "Fuera de concurso": []
-  }, 
-  "2000": {
-    "Ganadora": [
-      {
-        "id":"Krámpack-2000",
-        "titulo": {
-          "es": "Krámpack",
-          "en": "",
-          "eu": ""
-        },       
-        "pais": {
-          "es":"España",
-          "en":"",
-          "eu":""
-        },
-        "año": "2000 | 92’",
-        "director": {
-          "es": "Cesc Gay"
-        },
-        "imagen": "img/Kraampack.jpg",
-        "descripcion": {
-          "es": "Verano de 1999. Dani pasa las vacaciones de verano en una casa de la costa. Cuando sus padres se van de viaje, se queda en compañía de su amigo Nico. Pese a la vigilancia de la asistenta y de su profesora de inglés, los amigos aprovechan la situación para meterse de lleno en la vida del pueblo. Así conocen a dos chicas con las que dan los primeros pasos hacia la vida adulta.",
-          "en": "",
-          "eu": ""
-        },
-        "video": ""
-      }
-        ],
-        "New Directors": [],
-        "Horizontes Latinos": [],
-        "Zabaltegi": [],
-        "Perlak": [],
-        "Made in Spain": [],
-        "Fuera de concurso": []
-    }
+    ],
+    "New Directors": [],
+    "Horizontes Latinos": [],
+    "Zabaltegi": [],
+    "Perlak": [],
+    "Made in Spain": [],
+    "Fuera de concurso": []
+  }
 }

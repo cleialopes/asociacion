@@ -30,7 +30,9 @@ function mostrarDetalle(tituloBuscado, idioma, fuente) {
 
       const img = pelicula.imagen || "img/default.jpg";
       const titulo = pelicula.titulo[idioma] || pelicula.titulo.es;
-      const director = pelicula.director[idioma] || pelicula.director.es;
+      const director = typeof pelicula.director === "object"
+  ? (pelicula.director[idioma] || pelicula.director.es || "")
+  : pelicula.director;
       const pais = pelicula.pais[idioma] || pelicula.pais.es;
       const descripcion = pelicula.descripcion[idioma] || pelicula.descripcion.es;
 

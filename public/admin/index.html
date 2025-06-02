@@ -5,7 +5,7 @@
   <title>Admin - Asociación XYZ</title>
   <link rel="stylesheet" href="admin.css" />
   <link rel="icon" type="image/x-icon" href="img/cropped-icono_favicon.png" />
-
+  <link rel="icon" type="image/x-icon" href="img/cropped-icono_favicon.png" />
 </head>
 <body>
 
@@ -63,6 +63,10 @@
               <option>Fuera de concurso</option>
             </select>
           </div>
+          <div class="bloque-form">
+            <h4>Año completo (ej: 2025 | 98′)</h4>
+            <input type="text" name="anio_completo" placeholder="2025 | 98′" />
+          </div>
 
           <div class="bloque-form">
             <h4>Título</h4>
@@ -71,9 +75,11 @@
             <input type="text" name="titulo_eu" placeholder="Título (EU)" />
 
             <h4>Director</h4>
-            <input type="text" name="director_es" placeholder="Director (ES)" required />
-            <input type="text" name="director_en" placeholder="Director (EN)" />
-            <input type="text" name="director_eu" placeholder="Director (EU)" />
+            <input type="text" name="director_es" placeholder="Director" required />
+          </div>
+          <div class="bloque-form">
+            <h4>Video (URL)</h4>
+            <input type="text" name="video" placeholder="https://..." />
           </div>
         </div>
 
@@ -94,6 +100,7 @@
             <label>Imagen:</label>
             <input type="file" name="imagen" />
           </div>
+          
         </div>
       </div>
 

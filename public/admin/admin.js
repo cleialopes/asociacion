@@ -56,14 +56,15 @@ cargarBannerActual();
 document.getElementById("form-sebastiane").addEventListener("submit", async (e) => {
   e.preventDefault();
   const form = e.target;
-  const formData = new FormData();
 
   const anio = form.anio.value;
   const seccion = form.seccion.value;
 
   const idiomas = ["es", "en", "eu"];
-  const campos = ["titulo", "director", "pais", "descripcion"];
+  const campos = ["titulo", "pais", "descripcion"];
+  const pelicula = {};
 
+  // Construye los campos multilingües como objetos reales
   campos.forEach((campo) => {
     const obj = {};
     idiomas.forEach((lang) => {
@@ -72,17 +73,37 @@ document.getElementById("form-sebastiane").addEventListener("submit", async (e) 
         obj[lang] = input.value.trim();
       }
     });
-    formData.append(campo, JSON.stringify(obj));
+    pelicula[campo] = obj;
   });
 
+  pelicula.director = form.director_es?.value.trim() || "";
+  
+  // Agrega el campo video
+  pelicula.video = form.video?.value.trim() || "";
+
+  // Subir imagen si se proporciona
   const imagen = form.imagen.files[0];
   if (imagen) {
-    formData.append("imagen", imagen);
+    const imgForm = new FormData();
+    imgForm.append("imagen", imagen);
+    const uploadRes = await fetch("/api/upload", {
+      method: "POST",
+      body: imgForm
+    });
+    const data = await uploadRes.json();
+    pelicula.imagen = data.url || "";
+  } else {
+    pelicula.imagen = "";
   }
 
+  const anioCompleto = form.anio_completo?.value.trim();
+  pelicula.año = anioCompleto || `${anio} | ?`;
+
+  // Enviar JSON estructurado al backend
   const res = await fetch(`/api/sebastiane/${anio}/${seccion}`, {
     method: "POST",
-    body: formData
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(pelicula)
   });
 
   if (res.ok) {
@@ -93,12 +114,11 @@ document.getElementById("form-sebastiane").addEventListener("submit", async (e) 
     alert("Error al guardar la película.");
   }
 });
-
 function obtenerTexto(valor) {
   if (typeof valor === "object") {
     return valor["es"] || Object.values(valor)[0] || "";
   }
-  return valor;
+  return valor || "";
 }
 
 async function cargarPeliculasSebastiane() {
@@ -119,7 +139,7 @@ async function cargarPeliculasSebastiane() {
     const div = document.createElement("div");
     div.className = "pelicula-admin";
     div.innerHTML = `
-      <strong>${obtenerTexto(p.titulo)}</strong> - ${obtenerTexto(p.director)} (${obtenerTexto(p.pais)})<br/>
+      <strong>${obtenerTexto(p.titulo)}</strong> - ${p.director} (${obtenerTexto(p.pais)})<br/>
       <button onclick="eliminarPeliculaSebastiane('${anio}', '${seccion}', ${index})">Eliminar</button>
       <hr/>
     `;
