@@ -17,7 +17,7 @@ document.getElementById('header').innerHTML = `
       </div>
       <div class="header-right">
         <a href="index.html" class="titulo-principal">Premio Sebastiane</a>
-        <a href="#" class="titulo-principal fecha-evento">19-27/09/2025</a>
+        <a href="index.html" class="titulo-principal fecha-evento">19-27/09/2025</a>
       </div>
     </div>
 

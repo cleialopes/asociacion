@@ -1,12 +1,15 @@
 const express = require('express');
+const app = express();
 const multer = require('multer');
+const upload = multer({ dest: 'uploads/' });
 const cors = require('cors');
 const fs = require('fs');
 const session = require('express-session');
 const path = require('path');
 
-const app = express();
-const upload = multer({ dest: 'uploads/' });
+app.use(express.static('public'));
+app.use('/uploads', express.static('uploads'));
+app.use('/noticias.json', express.static(path.join(__dirname, 'noticias.json')));
 
 app.use(cors());
 app.use(express.json());
@@ -160,6 +163,7 @@ app.get('/api/sebastiane', (req, res) => {
   }
 });
 
+// API Sebastiane Latino
 app.get('/api/sebastiane_latino', (req, res) => {
   try {
     const data = fs.readFileSync('sebastiane_latino.json', 'utf-8');
@@ -169,10 +173,115 @@ app.get('/api/sebastiane_latino', (req, res) => {
   }
 });
 
+const SEBASTIANE_LATINO_JSON = 'sebastiane_latino.json';
+
+app.get('/api/sebastiane_latino/:anio/:seccion', (req, res) => {
+  const { anio, seccion } = req.params;
+  try {
+    const data = JSON.parse(fs.readFileSync(SEBASTIANE_LATINO_JSON, 'utf-8'));
+    const lista = data[anio]?.[seccion] || [];
+    res.json(lista);
+  } catch (e) {
+    res.status(500).json([]);
+  }
+});
+
+app.post('/api/sebastiane_latino/:anio/:seccion', (req, res) => {
+  const { anio, seccion } = req.params;
+  const { titulo, director, pais, descripcion, video, año, imagen } = req.body;
+
+  const id = `latino-${Date.now()}`;
+
+  const pelicula = {
+    id,
+    titulo,
+    director,
+    pais,
+    descripcion,
+    año: año || `${anio} | ?`,
+    imagen: imagen || "",
+    video: video || ""
+  };
+
+  let data = {};
+  try {
+    data = JSON.parse(fs.readFileSync(SEBASTIANE_LATINO_JSON, "utf-8"));
+  } catch (e) {}
+
+  if (!data[anio]) data[anio] = {};
+  if (!data[anio][seccion]) data[anio][seccion] = [];
+
+  data[anio][seccion].push(pelicula);
+  fs.writeFileSync(SEBASTIANE_LATINO_JSON, JSON.stringify(data, null, 2));
+  res.json({ ok: true });
+});
+
+app.delete('/api/sebastiane_latino/:anio/:seccion/:index', (req, res) => {
+  const { anio, seccion, index } = req.params;
+  try {
+    const data = JSON.parse(fs.readFileSync(SEBASTIANE_LATINO_JSON, 'utf-8'));
+    if (data[anio] && data[anio][seccion]) {
+      data[anio][seccion].splice(index, 1);
+      fs.writeFileSync(SEBASTIANE_LATINO_JSON, JSON.stringify(data, null, 2));
+      res.json({ ok: true });
+    } else {
+      res.status(404).json({ error: "No encontrado" });
+    }
+  } catch (e) {
+    res.status(500).json({ error: "Error al eliminar" });
+  }
+});
+
+// API Noticias
+const NOTICIAS_JSON = 'noticias.json';
+
+// Obtener todas las noticias
+app.get('/api/noticias', (req, res) => {
+  try {
+    const data = fs.readFileSync(NOTICIAS_JSON, 'utf-8');
+    res.json(JSON.parse(data));
+  } catch (e) {
+    res.status(500).json([]);
+  }
+});
+
+// Añadir una nueva noticia
+app.post('/api/noticias', (req, res) => {
+  const noticia = req.body;
+  let noticias = [];
+
+  try {
+    noticias = JSON.parse(fs.readFileSync(NOTICIAS_JSON, 'utf-8'));
+  } catch (e) {}
+
+  noticias.unshift(noticia); // Añadir al principio
+  fs.writeFileSync(NOTICIAS_JSON, JSON.stringify(noticias, null, 2));
+  res.json({ ok: true });
+});
+
+// Eliminar una noticia por índice
+app.delete('/api/noticias/:index', (req, res) => {
+  const index = parseInt(req.params.index);
+  try {
+    let noticias = JSON.parse(fs.readFileSync(NOTICIAS_JSON, 'utf-8'));
+    if (index >= 0 && index < noticias.length) {
+      noticias.splice(index, 1);
+      fs.writeFileSync(NOTICIAS_JSON, JSON.stringify(noticias, null, 2));
+      res.json({ ok: true });
+    } else {
+      res.status(400).json({ error: 'Índice inválido' });
+    }
+  } catch (e) {
+    res.status(500).json({ error: 'No se pudo eliminar la noticia' });
+  }
+});
+
+
 app.post('/api/upload', upload.single('imagen'), (req, res) => {
   if (!req.file) {
     return res.status(400).json({ error: 'No se recibió archivo' });
   }
+
 
   const extension = path.extname(req.file.originalname);
   const nombreArchivo = `${Date.now()}${extension}`;

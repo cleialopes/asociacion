@@ -2,7 +2,6 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f7f7f7;
   margin: 0;
-  padding: 40px;
   color: #333;
 }
 
@@ -23,11 +22,11 @@ form {
   background: #ffffff;
   border: 1px solid #ddd;
   border-radius: 8px;
-  padding: 20px;
+  padding: 10px;
   margin-bottom: 30px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  max-width: 1000px;  
-  width: 100%;
+  max-width: 800px;  
+  margin: 0 20px;
 }
 
 form input[type="text"],
@@ -57,6 +56,7 @@ form button {
 form button:hover {
   background-color: #c76b2e;
 }
+
 /* Banner */
 .contenedor-banner {
   display: flex;
@@ -71,7 +71,7 @@ form button:hover {
 }
 
 .vista-banner {
-  flex: 1 1 45%;
+  flex: 1 1 10%;
   background: #fff;
   padding: 15px;
   border: 1px solid #ddd;
@@ -136,13 +136,8 @@ hr {
   margin: 25px 0;
 }
 
-.form-grid {
+.gestion-noticias {
   display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-}
-
-.columna-form {
-  flex: 1 1 45%;
-  min-width: 300px;
+  gap: 4px; 
+  align-items: flex-start;
 }

@@ -1,13 +1,13 @@
 const params = new URLSearchParams(window.location.search);
-const id = parseInt(params.get("id"));
+const id = params.get("id");
 const idioma = localStorage.getItem("idioma") || "es";
 
 let noticiaGlobal = null;
 
-fetch("noticias.json")
+fetch("/noticias.json")
   .then(res => res.json())
   .then(noticias => {
-    const noticia = noticias.find(n => n.id === id);
+    const noticia = noticias.find(n => String(n.id) === id);
     if (noticia) {
       noticiaGlobal = noticia;
       renderizarNoticia(idioma);
@@ -48,7 +48,13 @@ function renderizarNoticia(idioma) {
 
   const titulo = noticiaGlobal.titulo[idioma] || noticiaGlobal.titulo["es"];
   const descripcion = noticiaGlobal.descripcion?.[idioma] || noticiaGlobal.descripcion?.["es"] || "";
-  const contenidoBloques = noticiaGlobal.contenido?.[idioma] || noticiaGlobal.contenido?.["es"] || [];
+  let contenidoBloques = [];
+
+if (Array.isArray(noticiaGlobal.contenido)) {
+  contenidoBloques = noticiaGlobal.contenido;
+} else if (typeof noticiaGlobal.contenido === "object" && noticiaGlobal.contenido !== null) {
+  contenidoBloques = noticiaGlobal.contenido[idioma] || noticiaGlobal.contenido["es"] || [];
+}
   const contenidoHTML = renderizarContenido(contenidoBloques);
 
   const imagenes = noticiaGlobal.imagenes || [];

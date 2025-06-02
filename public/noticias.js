@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
     mostrarNoticias();
   }
 
-  fetch('noticias.json')
+  fetch('/noticias.json')
     .then(res => res.json())
     .then(noticias => {
   todasLasNoticias = noticias;
