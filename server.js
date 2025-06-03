@@ -293,4 +293,7 @@ app.post('/api/upload', upload.single('imagen'), (req, res) => {
   res.json({ url });
 });
 
+app.use('/revista.json', express.static(path.join(__dirname, 'revista.json')));
+app.use('/documentos.json', express.static(path.join(__dirname, 'documentos.json')));
+
 app.listen(3000, () => console.log('Servidor en http://localhost:3000'));
