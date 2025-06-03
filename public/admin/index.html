@@ -241,6 +241,47 @@
   </div>
 </div>
 
+<h2>Gestión de Encuentros</h2>
+<div class="gestion-encuentros">
+  <form id="form-encuentro" enctype="multipart/form-data">
+    <div class="bloque-form">
+      <h4>Título</h4>
+      <input type="text" name="titulo_es" placeholder="Título (ES)" required />
+      <input type="text" name="titulo_en" placeholder="Título (EN)" />
+      <input type="text" name="titulo_eu" placeholder="Título (EU)" />
+    </div>
+    <div class="bloque-form">
+      <h4>Descripción</h4>
+      <textarea name="descripcion_es" placeholder="Descripción (ES)"></textarea>
+      <textarea name="descripcion_en" placeholder="Descripción (EN)"></textarea>
+      <textarea name="descripcion_eu" placeholder="Descripción (EU)"></textarea>
+    </div>
+    <div class="bloque-form">
+      <label>Fecha:</label>
+      <input type="date" name="fecha" />
+    </div>
+    <div class="bloque-form">
+      <label>Fotógrafo:</label>
+      <input type="text" name="fotografo" />
+    </div>
+    <div class="bloque-form">
+      <label>Imágenes:</label>
+      <input type="file" name="imagenes" multiple />
+    </div>
+    <button type="submit">Añadir encuentro</button>
+  </form>
+  <div class="encuentros-listado">
+    <h3>Encuentros añadidos:</h3>
+    <div class="bloque-form">
+      <label>Filtrar por fecha:</label>
+      <input type="date" id="filtro-fecha-encuentro" />
+      <button type="button" onclick="cargarEncuentrosAdmin()">Buscar</button>
+    </div>
+    <div id="lista-encuentros"></div>
+  </div>
+</div>
+
+
   <script src="admin.js"></script>
 
 </body>

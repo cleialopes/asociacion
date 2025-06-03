@@ -160,7 +160,7 @@
       "eu": ""
     },
     "imagenes": [
-       "img/meeting-lgtbiqa-y-su-coctel1.jpg",
+      "img/meeting-lgtbiqa-y-su-coctel1.jpg",
       "img/meeting-lgtbiqa-y-su-coctel2.jpg",
       "img/meeting-lgtbiqa-y-su-coctel3.jpg",
       "img/meeting-lgtbiqa-y-su-coctel4.jpg",
@@ -220,7 +220,7 @@
     "fotografo": "",
     "fecha": ""
   },
-   {
+  {
     "id": 10,
     "titulo": {
       "es": "",

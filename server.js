@@ -10,6 +10,9 @@ const path = require('path');
 app.use(express.static('public'));
 app.use('/uploads', express.static('uploads'));
 app.use('/noticias.json', express.static(path.join(__dirname, 'noticias.json')));
+app.use('/revista.json', express.static(path.join(__dirname, 'revista.json')));
+app.use('/documentos.json', express.static(path.join(__dirname, 'documentos.json')));
+app.use('/encuentros.json', express.static(path.join(__dirname, 'encuentros.json')));
 
 app.use(cors());
 app.use(express.json());
@@ -293,7 +296,46 @@ app.post('/api/upload', upload.single('imagen'), (req, res) => {
   res.json({ url });
 });
 
-app.use('/revista.json', express.static(path.join(__dirname, 'revista.json')));
-app.use('/documentos.json', express.static(path.join(__dirname, 'documentos.json')));
+
+const ENCUENTROS_JSON = 'encuentros.json';
+
+app.get('/api/encuentros', (req, res) => {
+  try {
+    const data = fs.readFileSync(ENCUENTROS_JSON, 'utf-8');
+    res.json(JSON.parse(data));
+  } catch (e) {
+    res.status(500).json([]);
+  }
+});
+
+app.post('/api/encuentros', (req, res) => {
+  const encuentro = req.body;
+  let encuentros = [];
+
+  try {
+    encuentros = JSON.parse(fs.readFileSync(ENCUENTROS_JSON, 'utf-8'));
+  } catch (e) {}
+
+  encuentros.unshift(encuentro);
+  fs.writeFileSync(ENCUENTROS_JSON, JSON.stringify(encuentros, null, 2));
+  res.json({ ok: true });
+});
+
+app.delete('/api/encuentros/:index', (req, res) => {
+  const index = parseInt(req.params.index);
+  try {
+    let encuentros = JSON.parse(fs.readFileSync(ENCUENTROS_JSON, 'utf-8'));
+    if (index >= 0 && index < encuentros.length) {
+      encuentros.splice(index, 1);
+      fs.writeFileSync(ENCUENTROS_JSON, JSON.stringify(encuentros, null, 2));
+      res.json({ ok: true });
+    } else {
+      res.status(400).json({ error: 'Índice inválido' });
+    }
+  } catch (e) {
+    res.status(500).json({ error: 'No se pudo eliminar el encuentro' });
+  }
+});
+
 
 app.listen(3000, () => console.log('Servidor en http://localhost:3000'));

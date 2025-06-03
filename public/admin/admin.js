@@ -336,11 +336,15 @@ async function cargarNoticiasAdmin() {
 
   const filtroFecha = document.getElementById("filtro-fecha-noticia")?.value;
 
-  const noticiasFiltradas = filtroFecha
-    ? noticias.filter(n => n.fecha === filtroFecha)
-    : noticias;
+  // ✅ Mostrar resultados solo si se seleccionó una fecha
+  if (!filtroFecha) {
+    lista.innerHTML = "<p>Selecciona una fecha para ver noticias.</p>";
+    return;
+  }
 
-  if (!noticiasFiltradas || noticiasFiltradas.length === 0) {
+  const noticiasFiltradas = noticias.filter(n => n.fecha === filtroFecha);
+
+  if (noticiasFiltradas.length === 0) {
     lista.innerHTML = "<p>No hay noticias para esta fecha.</p>";
     return;
   }
@@ -358,6 +362,7 @@ async function cargarNoticiasAdmin() {
   });
 }
 cargarNoticiasAdmin();
+
 document.getElementById("filtro-fecha-noticia")?.addEventListener("change", cargarNoticiasAdmin);
 
 async function eliminarNoticia(index) {
@@ -375,5 +380,107 @@ async function eliminarNoticia(index) {
 }
 
 window.eliminarNoticia = eliminarNoticia;
+
+
+document.getElementById("form-encuentro").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const form = e.target;
+
+  const nuevoEncuentro = {
+    id: Date.now(),
+    titulo: {
+      es: form.titulo_es.value.trim(),
+      en: form.titulo_en.value.trim(),
+      eu: form.titulo_eu.value.trim()
+    },
+    descripcion: {
+      es: form.descripcion_es.value.trim(),
+      en: form.descripcion_en.value.trim(),
+      eu: form.descripcion_eu.value.trim()
+    },
+    fecha: form.fecha.value || "",
+    fotografo: form.fotografo.value.trim(),
+    imagenes: []
+  };
+
+  const files = form.imagenes.files;
+  for (let file of files) {
+    const imgForm = new FormData();
+    imgForm.append("imagen", file);
+    const res = await fetch("/api/upload", {
+      method: "POST",
+      body: imgForm
+    });
+    const data = await res.json();
+    if (data?.url) {
+      nuevoEncuentro.imagenes.push(data.url);
+    }
+  }
+
+  const res = await fetch("/api/encuentros", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(nuevoEncuentro)
+  });
+
+  if (res.ok) {
+    alert("Encuentro guardado.");
+    form.reset();
+    cargarEncuentrosAdmin();
+  } else {
+    alert("Error al guardar el encuentro.");
+  }
+});
+
+async function cargarEncuentrosAdmin() {
+  const res = await fetch("/encuentros.json");
+  const encuentros = await res.json();
+  const contenedor = document.getElementById("lista-encuentros");
+  contenedor.innerHTML = "";
+
+  const filtroFecha = document.getElementById("filtro-fecha-encuentro")?.value;
+
+  // ✅ Solo muestra resultados si hay una fecha seleccionada
+  if (!filtroFecha) {
+    contenedor.innerHTML = "<p>Selecciona una fecha para ver encuentros.</p>";
+    return;
+  }
+
+  const filtrados = encuentros.filter(e => e.fecha === filtroFecha);
+
+  if (filtrados.length === 0) {
+    contenedor.innerHTML = "<p>No hay encuentros para esta fecha.</p>";
+    return;
+  }
+
+  filtrados.forEach((e, index) => {
+    const div = document.createElement("div");
+    div.innerHTML = `
+      <strong>${e.titulo?.es || "Sin título"}</strong><br/>
+      <small>${e.fecha || "Sin fecha"}</small><br/>
+      <button onclick="eliminarEncuentro(${index})">Eliminar</button>
+      <hr/>
+    `;
+    contenedor.appendChild(div);
+  });
+}
+
+
+
+async function eliminarEncuentro(index) {
+  if (confirm("¿Eliminar este encuentro?")) {
+    const res = await fetch(`/api/encuentros/${index}`, {
+      method: "DELETE"
+    });
+    if (res.ok) {
+      alert("Encuentro eliminado.");
+      cargarEncuentrosAdmin();
+    } else {
+      alert("Error al eliminar.");
+    }
+  }
+}
+
+cargarEncuentrosAdmin();
 
 
