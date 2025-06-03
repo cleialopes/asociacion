@@ -19,15 +19,15 @@ fetch("/noticias.json")
     document.getElementById("contenido-noticia").innerHTML = "<p>Error cargando noticia.</p>";
     console.error(err);
   });
+
+  function procesarNegrita(texto) {
+    return texto.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+  }
   
   function renderizarContenido(bloques) {
   if (!Array.isArray(bloques)) {
     console.warn("Bloques de contenido no válidos:", bloques);
     return "<p>(Contenido no disponible)</p>";
-  }
-
-  function procesarNegrita(texto) {
-    return texto.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
   }
 
   return bloques
@@ -110,7 +110,7 @@ if (Array.isArray(noticiaGlobal.contenido)) {
 
   contenedor.innerHTML = `
     <h1>${titulo}</h1>
-    <p class="descripcion">${descripcion}</p>
+    <p class="descripcion" style="white-space: pre-line;">${procesarNegrita(descripcion)}</p>
     <div class="galeria-imagenes">${galeriaHTML}</div>
     ${fotografo ? `<p class="fotografo">Foto: ${fotografo}</p>` : ""}
     <p class="fecha">${noticiaGlobal.fecha}</p>
