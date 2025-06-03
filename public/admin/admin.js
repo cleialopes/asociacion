@@ -359,6 +359,21 @@ async function cargarNoticiasAdmin() {
 }
 cargarNoticiasAdmin();
 document.getElementById("filtro-fecha-noticia")?.addEventListener("change", cargarNoticiasAdmin);
+
+async function eliminarNoticia(index) {
+  if (confirm("¿Eliminar esta noticia?")) {
+    const res = await fetch(`/api/noticias/${index}`, {
+      method: "DELETE"
+    });
+    if (res.ok) {
+      alert("Noticia eliminada.");
+      cargarNoticiasAdmin();
+    } else {
+      alert("Error al eliminar.");
+    }
+  }
+}
+
 window.eliminarNoticia = eliminarNoticia;
 
 

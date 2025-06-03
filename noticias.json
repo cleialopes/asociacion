@@ -1,55 +1,74 @@
 [
   {
-    "id": 1748879222013,
+    "id": 1748933614195,
     "titulo": {
       "es": "ESPAÑOL",
       "en": "INGLES",
       "eu": "EUSKERA"
     },
     "descripcion": {
-      "es": "eeeeeeeeeeeeeeeeee eeeeeeeeeeeeeeeee 3eeeeeeeeeeeeeeeeeeeeeeeeee",
-      "en": "iiiiiiiiiiiiiiiiiiiiii iiiiiiiii iiiiiiiiii iiiiii",
-      "eu": "uuuuuuuuuuuuuu uuuuuuuuuuuuu uuuuuuuuuuuu uuuuuuu"
+      "es": "eeeeeeeeeeeeeeeeeeeeeeeeee\n\neeeeeeeeeeeeeeeeeeeeeeeeeeee",
+      "en": "iiiiiiiiiiiiiiiiiiiiiiiiiiii\n\niiiiiiiiiiiiiiiiiiiiiiiiii",
+      "eu": "uuuuuuuuuuuuuuuuuuuuuuuuu\n\nuuuuuuuuuuuuuuuuuuuuuuuuuuuu"
     },
     "contenido": {
       "es": [
         {
-          "tipo": "h3",
-          "texto": "eeeeeeeeee"
-        },
+          "tipo": "p",
+          "texto": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee\n\neeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee\n\neeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+        }
+      ],
+      "en": [
         {
           "tipo": "p",
-          "texto": "eeeeeeeeeeeeeeee    e  eeeeeeeeeeeee e eeeeee eeeeeeeeeeeee eeeeeeeeeee eeeeeeeeeeeeeeeee eeeeee eeeeeeeee eeeeeeeeee eeeeeeeee eeeeee eeeeee eeeeeee"
+          "texto": "iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii\n\niiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii\n\niiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii\n\niiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii"
+        }
+      ],
+      "eu": [
+        {
+          "tipo": "p",
+          "texto": "uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu\n\nuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu\n\nuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu"
+        }
+      ]
+    },
+    "fecha": "2025-06-03",
+    "imagenes": [
+      "/img/1748933614220.png",
+      "/img/1748933614233.JPG",
+      "/img/1748933614247.jpg"
+    ],
+    "fotografo": "bububu",
+    "anio_url": "/sebastiane.html"
+  },
+  {
+    "id": 1748933428156,
+    "titulo": {
+      "es": "ESPAÑOL",
+      "en": "INGLES",
+      "eu": "EUSKERA"
+    },
+    "descripcion": {
+      "es": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+      "en": "iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii\n\niiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii",
+      "eu": "uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu\n\nuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu"
+    },
+    "contenido": {
+      "es": [
+        {
+          "tipo": "p",
+          "texto": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee\n\n\neeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee\n\neeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         }
       ],
       "en": [
         {
           "tipo": "h3",
-          "texto": "iiiiiiiiiiiiiiiiiiiiiiiv iiiiiiiiiiiiiiii"
-        },
-        {
-          "tipo": "p",
-          "texto": "iiiiiiiiiiiiiiiiiiiiii iiiiiiiiiiiiiiiiiiii iiiiiiiiiiiiiiiiiii iiiiiiiiiiiiiiii iiiiiiiiii iiiiiiiiii iiiiiiiiiii iiiiiiiiiii iiiiiiiiiiiiii iiiiiiiiii iiiiiiiiiii iiiiiiiiiiiii iiiii"
-        }
-      ],
-      "eu": [
-        {
-          "tipo": "h3",
-          "texto": "uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu"
-        },
-        {
-          "tipo": "p",
-          "texto": "uuuuuuuuuuu uuuuuuuuuuuuuuuuuuu uuuuuuuuuuuuuuuuuuuu uuuuuuuuuuuuuuuu uuuuuuuuuuuu uuuuuuuuuuuuuu uuuuuuuuuu uuuuuuuuuu uuuuuuuu uuuuuuuuuuuuu uuuuuuuuuuuu \nuuuuuuuuuuuuuuuuuuuuuuuuuuu uuuuuuuuuu uuuuuuuuuuu"
+          "texto": "iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii"
         }
       ]
     },
-    "fecha": "2025-06-02",
-    "imagenes": [
-      "/img/1748879222019.JPG",
-      "/img/1748879222037.jpg",
-      "/img/1748879222043.png"
-    ],
-    "fotografo": "bububu",
+    "fecha": "",
+    "imagenes": [],
+    "fotografo": "",
     "anio_url": ""
   },
   {

@@ -71,9 +71,10 @@ form button:hover {
 }
 
 .vista-banner {
-  flex: 1 1 10%;
+  flex: 0 0 300px; /* ancho fijo */
+  max-width: 300px;
   background: #fff;
-  padding: 15px;
+  padding: 12px;
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
@@ -140,4 +141,13 @@ hr {
   display: flex;
   gap: 4px; 
   align-items: flex-start;
+}
+
+.noticias-listado {
+  flex: 0 1 40%;
+  max-width: 40%;
+  background: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
 }

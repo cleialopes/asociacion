@@ -71,7 +71,7 @@ const traducciones = {
     "encuentros.festival23": '<a href="https://festicinepopayan.com/" target="_blank">Cine Corto de Popayan</a> (Colombia)',
     "encuentros.festival24": '<a href="" target="_blank">Festival Hecho por Mujeres</a> (Perú)',
     
-    "nosotros.titulo": "Quienes somos",
+    "nosotros.titulo": "Quiénes somos",
     "nosotros.parrafo1": "La comisión de cine del Sebastiane es un grupo formado por <b>voluntaries activistas de GEHITU, la asociación de gais, lesbianas, transexuales y bisexuales del País Vasco</b> que vio su nacimiento en las mismas colas del <b>Festival Internacional de Cine de San Sebastián</b> en el año 1999. Ante la necesidad de identificar los largometrajes donde hubiese representación del colectivo, la asociación comenzó a <b>premiar aquellas que se atrevían a representar realidades disidentes dentro del Festival Internacional de Cine de San Sebastián, convirtiéndose en uno de los premios pioneros del mundo.</b>",
     "nosotros.parrafo2": "En la actualidad, <b>la comisión realiza una labor de investigación, organización y coordinación</b> con todas las películas con representación de realidades del colectivo estrenadas en el año. Su actividad se divide en tres eventos anuales: el Premio Sebastiane, el Premio Sebastiane Latino y el Encuentro de Festivales LGTBIQA+ Iberoamericanos. Se ha convertido, así, en interlocutor entre los equipos de las películas, distribuidoras y festivales de todo el mundo.",
     "nosotros.parrafo3": "<b>La comisión ha estado presente</b> en numerosos festivales y mercados de cine, así como formado parte del jurade de los mismos. En el último año destacan:",
