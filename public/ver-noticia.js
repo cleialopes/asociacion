@@ -26,12 +26,16 @@ fetch("/noticias.json")
     return "<p>(Contenido no disponible)</p>";
   }
 
+  function procesarNegrita(texto) {
+    return texto.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+  }
+
   return bloques
     .map(bloque => {
       switch (bloque.tipo) {
         case "parrafo":
         case "p":
-          return `<p>${bloque.texto}</p>`;
+          return `<p style="white-space: pre-line;">${procesarNegrita(bloque.texto)}</p>`;
         case "lista":
           return `<ul>${bloque.elementos.map(item => `<li>${item}</li>`).join("")}</ul>`;
         case "h3":

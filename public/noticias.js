@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     siguienteLote.forEach(noticia => {
       const titulo = (noticia.titulo && (noticia.titulo[idioma] || noticia.titulo["es"])) || "Sin título";
+      const contenidoHTML = renderContenidoNoticia(noticia.contenido?.[idioma] || []);
       const imagen = noticia.imagenes?.[0] || "img/Una-proyección-1.webp";
       const videoLocal = noticia.video_local;
       let videoURL = noticia.video_url;
@@ -93,6 +94,22 @@ document.addEventListener("DOMContentLoaded", () => {
   mostrarNoticias(lang);
 };
 });
+
+  function procesarNegrita(texto) {
+    return texto.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+  }
+
+  function renderContenidoNoticia(bloques = []) {
+  return bloques.map(bloque => {
+    if (bloque.tipo === "h3") {
+      return `<h3>${bloque.texto}</h3>`;
+    }
+    if (bloque.tipo === "p") {
+      return `<p style="white-space: pre-line;">${procesarNegrita(bloque.texto)}</p>`;
+    }
+    return "";
+  }).join("");
+}
 
   document.querySelectorAll("[data-set-lang]").forEach(btn => {
     btn.addEventListener("click", e => {
