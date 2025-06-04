@@ -1,11 +1,25 @@
 const express = require('express');
 const app = express();
 const multer = require('multer');
-const upload = multer({ dest: 'uploads/' });
 const cors = require('cors');
 const fs = require('fs');
 const session = require('express-session');
 const path = require('path');
+const storage = multer.diskStorage({
+  destination: (req, file, cb) => {
+    cb(null, path.join(__dirname, 'uploads'));
+  },
+  filename: (req, file, cb) => {
+    const ext = path.extname(file.originalname); // conserva extensión
+    const filename = Date.now() + ext;
+    cb(null, filename);
+  }
+});
+const uploadDir = path.join(__dirname, 'uploads');
+if (!fs.existsSync(uploadDir)) {
+  fs.mkdirSync(uploadDir, { recursive: true });
+}
+const upload = multer({ storage });
 
 app.use(express.static('public'));
 app.use('/uploads', express.static('uploads'));
