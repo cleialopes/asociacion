@@ -285,8 +285,6 @@ app.post('/api/upload', upload.single('imagen'), (req, res) => {
   if (!req.file) {
     return res.status(400).json({ error: 'No se recibió archivo' });
   }
-
-
   const extension = path.extname(req.file.originalname);
   const nombreArchivo = `${Date.now()}${extension}`;
   const destino = path.join(__dirname, 'public', 'img', nombreArchivo);
@@ -335,6 +333,35 @@ app.delete('/api/encuentros/:index', (req, res) => {
     }
   } catch (e) {
     res.status(500).json({ error: 'No se pudo eliminar el encuentro' });
+  }
+});
+
+const FESTIVALES_JSON = 'festivales.json';
+
+app.post('/api/festivales', (req, res) => {
+  const nuevoFestival = req.body;
+  let festivales = [];
+
+  try {
+    festivales = JSON.parse(fs.readFileSync(FESTIVALES_JSON, 'utf-8'));
+  } catch (e) {}
+
+  festivales.push(nuevoFestival);
+  fs.writeFileSync(FESTIVALES_JSON, JSON.stringify(festivales, null, 2));
+  res.json({ ok: true });
+});
+
+app.delete('/api/festivales/:index', (req, res) => {
+  const fs = require('fs');
+  const festivalesPath = path.join(__dirname, 'festivales.json');
+  const index = parseInt(req.params.index);
+  const festivales = JSON.parse(fs.readFileSync(festivalesPath));
+  if (index >= 0 && index < festivales.length) {
+    festivales.splice(index, 1);
+    fs.writeFileSync(festivalesPath, JSON.stringify(festivales, null, 2));
+    res.json({ ok: true });
+  } else {
+    res.status(400).json({ error: "Índice inválido" });
   }
 });
 

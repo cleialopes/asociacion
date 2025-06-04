@@ -5,7 +5,6 @@
   <title>Admin - Asociación XYZ</title>
   <link rel="stylesheet" href="admin.css" />
   <link rel="icon" type="image/x-icon" href="img/cropped-icono_favicon.png" />
-  <link rel="icon" type="image/x-icon" href="img/cropped-icono_favicon.png" />
 </head>
 <body>
 
@@ -35,251 +34,229 @@
   </div>
 
   <h2>Gestión Sebastiane</h2>
-
-<div class="gestion-sebastiane">
-  <!-- FORMULARIO -->
-  <div class="formulario">
+  <div class="gestion-sebastiane">
     <form id="form-sebastiane" class="form-sebastiane" enctype="multipart/form-data">
-      <div class="form-grid">
-        <div class="columna-form">
-          <div class="bloque-form">
-            <label>Año:</label>
-            <select name="anio" id="anio-sebastiane">
-              <script>
-                for (let a = 2025; a >= 2000; a--) {
-                  document.write(`<option value="${a}">${a}</option>`);
-                }
-              </script>
-            </select>
-
-            <label>Sección:</label>
-            <select name="seccion" id="seccion-sebastiane">
-              <option>Ganadora</option>
-              <option>New Directors</option>
-              <option>Horizontes Latinos</option>
-              <option>Zabaltegi</option>
-              <option>Perlak</option>
-              <option>Made in Spain</option>
-              <option>Fuera de concurso</option>
-            </select>
-          </div>
-          <div class="bloque-form">
-            <h4>Año completo (ej: 2025 | 98′)</h4>
-            <input type="text" name="anio_completo" placeholder="2025 | 98′" />
-          </div>
-
-          <div class="bloque-form">
-            <h4>Título</h4>
-            <input type="text" name="titulo_es" placeholder="Título (ES)" required />
-            <input type="text" name="titulo_en" placeholder="Título (EN)" />
-            <input type="text" name="titulo_eu" placeholder="Título (EU)" />
-
-            <h4>Director</h4>
-            <input type="text" name="director_es" placeholder="Director" required />
-          </div>
-          <div class="bloque-form">
-            <h4>Video (URL)</h4>
-            <input type="text" name="video" placeholder="https://..." />
-          </div>
-        </div>
-
-        <div class="columna-form">
-          <div class="bloque-form">
-            <h4>País</h4>
-            <input type="text" name="pais_es" placeholder="País (ES)" required />
-            <input type="text" name="pais_en" placeholder="País (EN)" />
-            <input type="text" name="pais_eu" placeholder="País (EU)" />
-
-            <h4>Descripción</h4>
-            <textarea name="descripcion_es" placeholder="Descripción (ES)" required></textarea>
-            <textarea name="descripcion_en" placeholder="Descripción (EN)"></textarea>
-            <textarea name="descripcion_eu" placeholder="Descripción (EU)"></textarea>
-          </div>
-
-          <div class="bloque-form">
-            <label>Imagen:</label>
-            <input type="file" name="imagen" />
-          </div>
-          
-        </div>
-      </div>
-
-      <button type="submit">Añadir película</button>
-    </form>
-  </div>
-
-  <!-- LISTADO -->
-  <div class="peliculas-listado">
-    <h3>Películas añadidas:</h3>
-    <div id="lista-sebastiane"></div>
-  </div>
-</div>
-
-<h2>Gestión Sebastiane Latino</h2>
-<div class="gestion-sebastiane">
-  <div class="formulario">
-    <form id="form-sebastiane-latino" class="form-sebastiane-latino" enctype="multipart/form-data">
-      <div class="form-grid">
-        <div class="columna-form">
-          <div class="bloque-form">
-            <label>Año:</label>
-            <select name="anio" id="anio-sebastiane-latino">
-              <script>
-                for (let a = 2025; a >= 2000; a--) {
-                  document.write(`<option value="${a}">${a}</option>`);
-                }
-              </script>
-            </select>
-
-            <label>Sección:</label>
-            <select name="seccion" id="seccion-sebastiane-latino">
-              <option>Ganadora</option>
-              <option>Candidatas</option>
-            </select>
-          </div>
-
-          <div class="bloque-form">
-            <h4>Año completo</h4>
-            <input type="text" name="anio_completo" placeholder="2025 | 100′" />
-            <h4>Título</h4>
-            <input type="text" name="titulo_es" placeholder="Título (ES)" required />
-            <input type="text" name="titulo_en" placeholder="Título (EN)" />
-            <input type="text" name="titulo_eu" placeholder="Título (EU)" />
-            <h4>Director</h4>
-            <input type="text" name="director_es" placeholder="Director" required />
-            <h4>Video (URL)</h4>
-            <input type="text" name="video" />
-          </div>
-        </div>
-        <div class="columna-form">
-          <div class="bloque-form">
-            <h4>País</h4>
-            <input type="text" name="pais_es" placeholder="País (ES)" required />
-            <input type="text" name="pais_en" placeholder="País (EN)" />
-            <input type="text" name="pais_eu" placeholder="País (EU)" />
-            <h4>Descripción</h4>
-            <textarea name="descripcion_es" placeholder="Descripción (ES)" required></textarea>
-            <textarea name="descripcion_en" placeholder="Descripción (EN)"></textarea>
-            <textarea name="descripcion_eu" placeholder="Descripción (EU)"></textarea>
-          </div>
-          <div class="bloque-form">
-            <label>Imagen:</label>
-            <input type="file" name="imagen" />
-          </div>
-        </div>
-      </div>
-      <button type="submit">Añadir película</button>
-    </form>
-  </div>
-
-  <div class="peliculas-listado">
-    <h3>Películas añadidas:</h3>
-    <div id="lista-sebastiane-latino"></div>
-  </div>
-</div>
-
-<h2>Gestión de Noticias</h2>
-<div class="gestion-noticias">
-  <div class="noticias-formulario">
-   <form id="form-noticia" class="form-noticia" enctype="multipart/form-data">
-      <div class="bloque-form">
-        <label>Título:</label>
-        <input type="text" name="titulo_es" placeholder="Título (ES)" required />
-        <input type="text" name="titulo_en" placeholder="Título (EN)" />
-        <input type="text" name="titulo_eu" placeholder="Título (EU)" />
-      </div>
-      <div class="bloque-form">
-        <label>Descripción:</label><br>
-        <small><em>Tip:</em> Escribe <code>**texto**</code> para ponerlo en <strong>negrita</strong>.</small>
-        <textarea name="descripcion_es" placeholder="Descripción (ES) con salto de lineas"></textarea>
-        <small><em>Tip:</em> Escribe <code>**texto**</code> para ponerlo en <strong>negrita</strong>.</small>
-        <textarea name="descripcion_en" placeholder="Descripción (EN) con salto de lineas"></textarea>
-        <small><em>Tip:</em> Escribe <code>**texto**</code> para ponerlo en <strong>negrita</strong>.</small>
-        <textarea name="descripcion_eu" placeholder="Descripción (EU) con salto de lineas"></textarea>
-      </div>
-      <div class="bloque-form">
-        <label>Contenido:</label><br>
-        <small><em>Tip:</em> Escribe <code>**texto**</code> para ponerlo en <strong>negrita</strong>.</small>
-        <textarea name="contenido_p_es" placeholder="Texto en (ES) con salto de lineas"></textarea>
-
-        <small><em>Tip:</em> Escribe <code>**texto**</code> para ponerlo en <strong>negrita</strong>.</small>
-        <textarea name="contenido_p_en" placeholder="Texto en (EN) con salto de lines"></textarea>
+      <label>Año:</label>
+      <select name="anio" id="anio-sebastiane">
+        <script>
+          for (let a = 2025; a >= 2000; a--) {
+            document.write(`<option value="${a}">${a}</option>`);
+          }
+        </script>
+      </select>
         
-        <small><em>Tip:</em> Escribe <code>**texto**</code> para ponerlo en <strong>negrita</strong>.</small>
-        <textarea name="contenido_p_eu" placeholder="Texto (EU) con salto de lineas"></textarea>
-        
-      </div>
-      <div class="bloque-form">
-        <label>Fecha:</label>
-        <input type="date" name="fecha" />
-      </div>
-      <div class="bloque-form">
-        <label>Imágenes:</label>
-        <input type="file" name="imagenes" multiple />
-        <small>Puedes seleccionar una o varias imágenes</small>
-      </div>
-      <div class="bloque-form">
-        <label>Fotógrafo:</label>
-        <input type="text" name="fotografo" />
-      </div>
-      <div class="bloque-form">
-        <label>Año URL:</label>
-        <input type="text" name="anio_url" placeholder="Ej: https://sebastiane.com?anio=2024 o https://sebastiane_latino.com?anio=2024"/>
-      </div>
-      <button type="submit">Añadir noticia</button>
-    </form>
-  </div>
-
-  <div class="noticias-listado">
-    <h3>Noticias añadidas:</h3>
-    <div class="bloque-form">
-      <label>Filtrar por fecha:</label>
-      <input type="date" id="filtro-fecha-noticia" />
-      <button type="button" onclick="cargarNoticiasAdmin()">Buscar</button>
-    </div>
-    <div id="lista-noticias"></div>
-  </div>
-</div>
-
-<h2>Gestión de Encuentros</h2>
-<div class="gestion-encuentros">
-  <form id="form-encuentro" enctype="multipart/form-data">
-    <div class="bloque-form">
-      <h4>Título</h4>
+      <label>Sección:</label>
+      <select name="seccion" id="seccion-sebastiane">
+        <option>Ganadora</option>
+        <option>New Directors</option>
+        <option>Horizontes Latinos</option>
+        <option>Zabaltegi</option>
+        <option>Perlak</option>
+        <option>Made in Spain</option>
+        <option>Fuera de concurso</option>
+      </select>
+      
+      <label>Año completo (ej: 2025 | 98′):</label>
+      <input type="text" name="anio_completo" placeholder="2025 | 98′" />
+      
+      <label>Título:</label>
       <input type="text" name="titulo_es" placeholder="Título (ES)" required />
       <input type="text" name="titulo_en" placeholder="Título (EN)" />
       <input type="text" name="titulo_eu" placeholder="Título (EU)" />
+     
+      <label>Director:</label>
+      <input type="text" name="director_es" placeholder="Director" required />
+
+      <label>País:</label>
+      <input type="text" name="pais_es" placeholder="País (ES)" required />
+      <input type="text" name="pais_en" placeholder="País (EN)" />
+      <input type="text" name="pais_eu" placeholder="País (EU)" />
+      
+      <label>Descripción:</label>
+      <textarea name="descripcion_es" placeholder="Descripción (ES)" required></textarea>
+      <textarea name="descripcion_en" placeholder="Descripción (EN)"></textarea>
+      <textarea name="descripcion_eu" placeholder="Descripción (EU)"></textarea>
+     
+      <label>Video (URL):</label>
+      <input type="text" name="video" placeholder="https://..." />
+
+      <label>Imagen:</label>
+      <input type="file" name="imagen" />
+     
+      <button type="submit">Añadir película</button>
+    </form>
+
+    <div class="peliculas-listado">
+      <h3>Películas añadidas:</h3>
+      <div id="lista-sebastiane"></div>
     </div>
-    <div class="bloque-form">
-      <h4>Descripción</h4>
+  </div>
+
+  <h2>Gestión Sebastiane Latino</h2>
+  <div class="gestion-sebastiane">
+    <form id="form-sebastiane-latino" class="form-sebastiane-latino" enctype="multipart/form-data">
+      <label>Año:</label>
+      <select name="anio" id="anio-sebastiane-latino">
+        <script>
+          for (let a = 2025; a >= 2000; a--) {
+            document.write(`<option value="${a}">${a}</option>`);
+          }
+        </script>
+      </select>
+
+      <label>Sección:</label>
+      <select name="seccion" id="seccion-sebastiane-latino">
+        <option>Ganadora</option>
+        <option>Candidatas</option>
+      </select>
+
+      <label>Año completo:</label>
+      <input type="text" name="anio_completo" placeholder="2025 | 100′" />
+              
+      <label>Título:</label>
+      <input type="text" name="titulo_es" placeholder="Título (ES)" required />
+      <input type="text" name="titulo_en" placeholder="Título (EN)" />
+      <input type="text" name="titulo_eu" placeholder="Título (EU)" />
+              
+      <label>Director:</label>
+      <input type="text" name="director_es" placeholder="Director" required />
+              
+      <label>Video (URL):</label>
+      <input type="text" name="video" />
+
+      <label>País:</label>
+      <input type="text" name="pais_es" placeholder="País (ES)" required />
+      <input type="text" name="pais_en" placeholder="País (EN)" />
+      <input type="text" name="pais_eu" placeholder="País (EU)" />
+              
+      <label>Descripción:</label>
+      <textarea name="descripcion_es" placeholder="Descripción (ES)" required></textarea>
+      <textarea name="descripcion_en" placeholder="Descripción (EN)"></textarea>
+      <textarea name="descripcion_eu" placeholder="Descripción (EU)"></textarea>
+
+      <label>Imagen:</label>
+      <input type="file" name="imagen" />
+
+      <button type="submit">Añadir película</button>
+    </form>
+
+    <div class="peliculas-listado">
+      <h3>Películas añadidas:</h3>
+      <div id="lista-sebastiane-latino"></div>
+    </div>
+  </div>
+
+  <h2>Gestión de Noticias</h2>
+  <div class="gestion-noticias">
+    <form id="form-noticia" class="form-noticia" enctype="multipart/form-data">
+      <label>Título:</label>
+      <input type="text" name="titulo_es" placeholder="Título (ES)" required />
+      <input type="text" name="titulo_en" placeholder="Título (EN)" />
+      <input type="text" name="titulo_eu" placeholder="Título (EU)" />
+
+      <label>Descripción:</label><br>
+      <small><em>Tip:</em> Escribe <code>**texto**</code> para ponerlo en <strong>negrita</strong>.</small>
+      <textarea name="descripcion_es" placeholder="Descripción (ES) con salto de lineas"></textarea>
+      <small><em>Tip:</em> Escribe <code>**texto**</code> para ponerlo en <strong>negrita</strong>.</small>
+      <textarea name="descripcion_en" placeholder="Descripción (EN) con salto de lineas"></textarea>
+      <small><em>Tip:</em> Escribe <code>**texto**</code> para ponerlo en <strong>negrita</strong>.</small>
+      <textarea name="descripcion_eu" placeholder="Descripción (EU) con salto de lineas"></textarea>
+        
+        
+      <label>Contenido:</label><br>
+      <small><em>Tip:</em> Escribe <code>**texto**</code> para ponerlo en <strong>negrita</strong>.</small>
+      <textarea name="contenido_p_es" placeholder="Texto en (ES) con salto de lineas"></textarea>
+
+      <small><em>Tip:</em> Escribe <code>**texto**</code> para ponerlo en <strong>negrita</strong>.</small>
+      <textarea name="contenido_p_en" placeholder="Texto en (EN) con salto de lines"></textarea>
+          
+      <small><em>Tip:</em> Escribe <code>**texto**</code> para ponerlo en <strong>negrita</strong>.</small>
+      <textarea name="contenido_p_eu" placeholder="Texto (EU) con salto de lineas"></textarea>
+
+      <label>Fecha:</label>
+      <input type="date" name="fecha" /><br>
+       
+      <label>Imágenes:</label><br>
+      <small>Puedes seleccionar una o varias imágenes</small>
+      <input type="file" name="imagenes" multiple />
+      
+      <label>Fotógrafo:</label>
+      <input type="text" name="fotografo" />
+  
+      <label>Año URL:</label>
+      <input type="text" name="anio_url" placeholder="Ej: https://sebastiane.com?anio=2024 o https://sebastiane_latino.com?anio=2024"/>
+
+      <button type="submit">Añadir noticia</button>
+    </form>
+
+    <div class="noticias-listado">
+      <h3>Noticias añadidas:</h3>
+      <label>Filtrar por fecha:</label>
+      <input type="date" id="filtro-fecha-noticia" />
+      <button type="button" onclick="cargarNoticiasAdmin()">Buscar</button>
+      <div id="lista-noticias"></div>
+    </div>
+  </div>
+
+  <h2>Gestión de Encuentros</h2>
+  <div class="gestion-encuentros">
+    <form id="form-encuentro" enctype="multipart/form-data">
+      <label>Título:</label>
+      <input type="text" name="titulo_es" placeholder="Título (ES)" required />
+      <input type="text" name="titulo_en" placeholder="Título (EN)" />
+      <input type="text" name="titulo_eu" placeholder="Título (EU)" />
+     
+      <label>Descripción:</label>
       <textarea name="descripcion_es" placeholder="Descripción (ES)"></textarea>
       <textarea name="descripcion_en" placeholder="Descripción (EN)"></textarea>
       <textarea name="descripcion_eu" placeholder="Descripción (EU)"></textarea>
-    </div>
-    <div class="bloque-form">
+      
       <label>Fecha:</label>
-      <input type="date" name="fecha" />
-    </div>
-    <div class="bloque-form">
+      <input type="date" name="fecha" /><br>
+     
       <label>Fotógrafo:</label>
       <input type="text" name="fotografo" />
-    </div>
-    <div class="bloque-form">
-      <label>Imágenes:</label>
+      
+      <label>Imágenes:</label><br>
+      <small>Puedes seleccionar una o varias imágenes</small>
       <input type="file" name="imagenes" multiple />
-    </div>
-    <button type="submit">Añadir encuentro</button>
-  </form>
-  <div class="encuentros-listado">
-    <h3>Encuentros añadidos:</h3>
-    <div class="bloque-form">
+      
+      <button type="submit">Añadir encuentro</button>
+    </form>
+
+    <div class="encuentros-listado">
+      <h3>Encuentros añadidos:</h3>
       <label>Filtrar por fecha:</label>
       <input type="date" id="filtro-fecha-encuentro" />
       <button type="button" onclick="cargarEncuentrosAdmin()">Buscar</button>
+      <div id="lista-encuentros"></div>
     </div>
-    <div id="lista-encuentros"></div>
   </div>
-</div>
+
+  <h2>Gestión de Festivales</h2>
+  <div class="gestion-festivales">
+    <form id="form-festival">
+      <label>Nombre:</label>
+      <input type="text" name="nombre_es" placeholder="Nombre (ES)" required />
+      <input type="text" name="nombre_en" placeholder="Nombre (EN)" />
+      <input type="text" name="nombre_eu" placeholder="Nombre (EU)" />
+      
+      <label>Ubicación:</label>
+      <input type="text" name="ubicacion_es" placeholder="Ubicación (ES)" />
+      <input type="text" name="ubicacion_en" placeholder="Ubicación (EN)" />
+      <input type="text" name="ubicacion_eu" placeholder="Ubicación (EU)" />
+      
+      <label>URL:</label>
+      <input type="text" name="url" placeholder="https://..." />
+     
+      <button type="submit">Añadir festival</button>
+    </form>
+
+    <div class="festivales-listado">
+      <h3>Festivales añadidos:</h3>
+      <div id="lista-festivales"></div>
+    </div>
+  </div>
 
 
   <script src="admin.js"></script>

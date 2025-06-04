@@ -1,4 +1,4 @@
-// Banner: enviar
+// =====Gestion Banner=====
 document.getElementById("form-banner").addEventListener("submit", async (e) => {
   e.preventDefault();
   const formData = new FormData(e.target);
@@ -16,8 +16,6 @@ document.getElementById("form-banner").addEventListener("submit", async (e) => {
     alert("Error al actualizar el banner");
   }
 });
-
-// ✅ Banner: eliminar
 document.getElementById("btn-eliminar-banner").addEventListener("click", async () => {
   if (confirm("¿Seguro que deseas eliminar el banner?")) {
     const res = await fetch("/api/banner", { method: "DELETE" });
@@ -53,6 +51,7 @@ async function cargarBannerActual() {
 }
 cargarBannerActual();
 
+// =====Gestion Sebastiane=====
 document.getElementById("form-sebastiane").addEventListener("submit", async (e) => {
   e.preventDefault();
   const form = e.target;
@@ -64,7 +63,6 @@ document.getElementById("form-sebastiane").addEventListener("submit", async (e) 
   const campos = ["titulo", "pais", "descripcion"];
   const pelicula = {};
 
-  // Construye los campos multilingües como objetos reales
   campos.forEach((campo) => {
     const obj = {};
     idiomas.forEach((lang) => {
@@ -77,11 +75,8 @@ document.getElementById("form-sebastiane").addEventListener("submit", async (e) 
   });
 
   pelicula.director = form.director_es?.value.trim() || "";
-  
-  // Agrega el campo video
   pelicula.video = form.video?.value.trim() || "";
 
-  // Subir imagen si se proporciona
   const imagen = form.imagen.files[0];
   if (imagen) {
     const imgForm = new FormData();
@@ -99,7 +94,6 @@ document.getElementById("form-sebastiane").addEventListener("submit", async (e) 
   const anioCompleto = form.anio_completo?.value.trim();
   pelicula.año = anioCompleto || `${anio} | ?`;
 
-  // Enviar JSON estructurado al backend
   const res = await fetch(`/api/sebastiane/${anio}/${seccion}`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
@@ -120,7 +114,6 @@ function obtenerTexto(valor) {
   }
   return valor || "";
 }
-
 async function cargarPeliculasSebastiane() {
   const anio = document.getElementById("anio-sebastiane").value;
   const seccion = document.getElementById("seccion-sebastiane").value;
@@ -160,12 +153,10 @@ async function eliminarPeliculaSebastiane(anio, seccion, index) {
     }
   }
 }
-
-// Cargar automáticamente cuando se cambia año o sección
 document.getElementById("anio-sebastiane").addEventListener("change", cargarPeliculasSebastiane);
 document.getElementById("seccion-sebastiane").addEventListener("change", cargarPeliculasSebastiane);
 
-// san sebastiane Latino
+// =====Gestion sebastiane Latino====
 document.getElementById("form-sebastiane-latino").addEventListener("submit", async (e) => {
   e.preventDefault();
   const form = e.target;
@@ -218,7 +209,6 @@ document.getElementById("form-sebastiane-latino").addEventListener("submit", asy
     alert("Error al guardar la película.");
   }
 });
-
 async function cargarPeliculasSebastianeLatino() {
   const anio = document.getElementById("anio-sebastiane-latino").value;
   const seccion = document.getElementById("seccion-sebastiane-latino").value;
@@ -258,17 +248,16 @@ async function eliminarPeliculaSebastianeLatino(anio, seccion, index) {
     }
   }
 }
-
 document.getElementById("anio-sebastiane-latino").addEventListener("change", cargarPeliculasSebastianeLatino);
 document.getElementById("seccion-sebastiane-latino").addEventListener("change", cargarPeliculasSebastianeLatino);
 
-// Noticias
+// =====Gestion Noticias=====
 document.getElementById("form-noticia").addEventListener("submit", async (e) => {
   e.preventDefault();
   const form = e.target;
 
   const noticia = {
-    id: Date.now(), // numérico
+    id: Date.now(), 
     titulo: {
       es: form.titulo_es.value.trim(),
       en: form.titulo_en.value.trim(),
@@ -336,7 +325,6 @@ async function cargarNoticiasAdmin() {
 
   const filtroFecha = document.getElementById("filtro-fecha-noticia")?.value;
 
-  // ✅ Mostrar resultados solo si se seleccionó una fecha
   if (!filtroFecha) {
     lista.innerHTML = "<p>Selecciona una fecha para ver noticias.</p>";
     return;
@@ -378,10 +366,9 @@ async function eliminarNoticia(index) {
     }
   }
 }
-
 window.eliminarNoticia = eliminarNoticia;
 
-
+// =====Gestion Encuentros=====
 document.getElementById("form-encuentro").addEventListener("submit", async (e) => {
   e.preventDefault();
   const form = e.target;
@@ -440,7 +427,6 @@ async function cargarEncuentrosAdmin() {
 
   const filtroFecha = document.getElementById("filtro-fecha-encuentro")?.value;
 
-  // ✅ Solo muestra resultados si hay una fecha seleccionada
   if (!filtroFecha) {
     contenedor.innerHTML = "<p>Selecciona una fecha para ver encuentros.</p>";
     return;
@@ -464,9 +450,6 @@ async function cargarEncuentrosAdmin() {
     contenedor.appendChild(div);
   });
 }
-
-
-
 async function eliminarEncuentro(index) {
   if (confirm("¿Eliminar este encuentro?")) {
     const res = await fetch(`/api/encuentros/${index}`, {
@@ -480,7 +463,79 @@ async function eliminarEncuentro(index) {
     }
   }
 }
-
 cargarEncuentrosAdmin();
 
+// =====Gestion Lista encuentros=====
+document.getElementById("form-festival").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const form = e.target;
+
+  const festival = {
+    id: Date.now(),
+    nombre: {
+      es: form.nombre_es.value.trim(),
+      en: form.nombre_en.value.trim(),
+      eu: form.nombre_eu.value.trim()
+    },
+    ubicacion: {
+      es: form.ubicacion_es.value.trim(),
+      en: form.ubicacion_en.value.trim(),
+      eu: form.ubicacion_eu.value.trim()
+    },
+    url: form.url.value.trim()
+  };
+
+  const res = await fetch("/api/festivales", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(festival)
+  });
+
+  if (res.ok) {
+    alert("Festival guardado.");
+    form.reset();
+    cargarFestivalesAdmin();
+  } else {
+    alert("Error al guardar el festival.");
+  }
+});
+
+async function cargarFestivalesAdmin() {
+  const res = await fetch("/festivales.json");
+  const festivales = await res.json();
+  const contenedor = document.getElementById("lista-festivales");
+  contenedor.innerHTML = "";
+
+  if (!festivales || festivales.length === 0) {
+    contenedor.innerHTML = "<p>No hay festivales añadidos.</p>";
+    return;
+  }
+
+  festivales.forEach((f, index) => {
+    const div = document.createElement("div");
+    div.innerHTML = `
+      <strong>${f.nombre?.es || "Sin nombre"}</strong><br/>
+      <small>${f.url || "Sin URL"}</small><br/>
+      <button onclick="eliminarFestival(${index})">Eliminar</button>
+      <hr/>
+    `;
+    contenedor.appendChild(div);
+  });
+}
+
+async function eliminarFestival(index) {
+  if (confirm("¿Eliminar este festival?")) {
+    const res = await fetch(`/api/festivales/${index}`, {
+      method: "DELETE"
+    });
+    if (res.ok) {
+      alert("Festival eliminado.");
+      cargarFestivalesAdmin();
+    } else {
+      alert("Error al eliminar.");
+    }
+  }
+}
+window.eliminarFestival = eliminarFestival;
+cargarFestivalesAdmin();
 
