@@ -46,30 +46,7 @@ const traducciones = {
     "encuentros.parrafo1": "Durante la segunda semana del Festival Internacional de Cine de San Sebastián y aprovechando la cobertura que ofrece la reunión de profesionales de Industria dentro del mismo, se da anualmente el Encuentro de Festivales LGBTIQA+ Iberoamericanos.",
     "encuentros.parrafo2": "Con la intención de hacer de lazo de unión entre festivales del colectivo tanto de Latinoamérica como de la península Ibérica, la comisión ofrece su espacio y contactos para fortalecer las relaciones entre los mismos, generar nuevas sinergias y, a su vez, ser un espacio para compartir. Así, durante dos días, los profesionales se reúnen en diferentes charlas que debaten la actualidad tanto de la comunidad LGBTIQA+ en el cine como su representación.",
     "encuentros.parrafo3": "En su décima edición el Encuentro ha acogido a 24 festivales, 8 países (Argentina, Colombia, Cuba, Guatemala, España, México, Perú y Uruguay) y 10 autonomías:",  
-    "encuentros.festival1": '<a href="https://www.movibeta.com/festivals/1768" target="_blank">Muestra Lésbico de Gijón</a> (Gijón, España)',
-    "encuentros.festival2": '<a href="https://mostraout.es/" target="_blank">Mostra Out, Illes Balears</a> (Islas Baleares, España)',
-    "encuentros.festival3": '<a href="https://www.centroniemeyer.es/" target="_blank">Centro Niemeyer</a> (Avilés, España)',
-    "encuentros.festival4": '<a href="https://cinhomo.org/" target="_blank">Cinhomo</a> (Valladolid, España)',
-    "encuentros.festival5": '<a href="https://cinematecapedrozerolo.com/" target="_blank">Cinemateca Pedro Zerolo</a> (Madrid, España)',
-    "encuentros.festival6": '<a href="https://mostraendimarissitges.com/" target="_blank">Mostra de Cinema LGTBIQ+ Endimaris</a> (Sitges, España)',
-    "encuentros.festival7": '<a href="https://fancinequeer.com/" target="_blank">Fancinegay</a> (Extremadura, España)',
-    "encuentros.festival8": '<a href="https://mostrafire.com/" target="_blank">Mostra Fire!!</a> (Barcelona, España)',
-    "encuentros.festival9": '<a href="https://defrente.org/la-pecca/" target="_blank">La Pecca</a> (Sevilla, España)',
-    "encuentros.festival10": '<a href="https://www.lesgaicinemad.com/" target="_blank">Lesgaicinemad</a> (Madrid, España)',
-    "encuentros.festival11": '<a href="" target="_blank">MOVAlacant</a> (Alicante, España)',
-    "encuentros.festival12": '<a href="https://www.zinegoak.com/" target="_blank">Zinegoak</a> (Bilbao, España)',
-    "encuentros.festival13": '<a href="https://zinentiendo.org/" target="_blank">Zinentiendo</a> (Zaragoza, España)',
-    "encuentros.festival14": '<a href="" target="_blank">Harro Fest, Donosti</a> (Donosti, España)',
-    "encuentros.festival15": '<a href="" target="_blank">Barcelona Film Festival</a> (Barcelona, España)',
-    "encuentros.festival16": '<a href="" target="_blank">Andelesgay</a> (Andalucía, España)',
-    "encuentros.festival17": '<a href="" target="_blank">Premio Maguey</a> - Festival Internacional de Cine de Guadalajara (México)',
-    "encuentros.festival18": '<a href="" target="_blank">Ciclo Rosa</a> - Cineteca Bogotá (Colombia)',
-    "encuentros.festival19": '<a href="" target="_blank">Queer Argentina</a> (Argentina)',
-    "encuentros.festival20": '<a href="https://habanafilmfestival.com/" target="_blank">Premio Arrecife</a> - Festival de Nuevo Cine Latinoamericano de La Habana (Cuba)',
-    "encuentros.festival21": '<a href="https://www.instagram.com/llamaleh_/" target="_blank">Llamaleh</a> (Uruguay)',
-    "encuentros.festival22": '<a href="https://www.instagram.com/laotrabanqueta/" target="_blank">La Otra Banqueta + Cine Diverse</a> (Guatemala)',
-    "encuentros.festival23": '<a href="https://festicinepopayan.com/" target="_blank">Cine Corto de Popayan</a> (Colombia)',
-    "encuentros.festival24": '<a href="" target="_blank">Festival Hecho por Mujeres</a> (Perú)',
+    
     
     "nosotros.titulo": "Quiénes somos",
     "nosotros.parrafo1": "La comisión de cine del Sebastiane es un grupo formado por <b>voluntaries activistas de GEHITU, la asociación de gais, lesbianas, transexuales y bisexuales del País Vasco</b> que vio su nacimiento en las mismas colas del <b>Festival Internacional de Cine de San Sebastián</b> en el año 1999. Ante la necesidad de identificar los largometrajes donde hubiese representación del colectivo, la asociación comenzó a <b>premiar aquellas que se atrevían a representar realidades disidentes dentro del Festival Internacional de Cine de San Sebastián, convirtiéndose en uno de los premios pioneros del mundo.</b>",
@@ -325,8 +302,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if (pathname.includes('encuentros.html')) {
-      $("#contenedor-encuentros").empty();
-      $.getScript('encuentros.js'); 
+      document.dispatchEvent(new CustomEvent("cambioIdioma", { detail: { idioma } }));
     }
 
     if (pathname.includes('ver-encuentro.html')) {

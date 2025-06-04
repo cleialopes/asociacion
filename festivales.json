@@ -1,0 +1,338 @@
+[
+  {
+    "id": 1,
+    "nombre": {
+      "es": "Muestra Lésbico de Gijón",
+      "en": "Muestra Lésbico de Gijón",
+      "eu": "Muestra Lésbico de Gijón"
+    },
+    "url": "https://www.gijon.es/es/eventos/ii-muestra-de-cine-lesbico",
+    "ubicacion": {
+      "es": "Gijón, España",
+      "en": "Gijón, Spain",
+      "eu": "Gijón, Espainiar Estatua"
+    }
+  },
+  {
+    "id": 2,
+    "nombre": {
+      "es": "Mostra Out, Illes Balears",
+      "en": "Mostraout, Illes Balears",
+      "eu": "Mostraout, Illes Balears"
+    },
+    "url": "https://mostraout.es/",
+    "ubicacion": {
+      "es": "Islas Baleares, España",
+      "en": "Balearin Islands, Spain",
+      "eu": "Balear Uharteak, Herrialde Katalanak"
+    }
+  },
+  {
+    "id": 3,
+    "nombre": {
+      "es": "Centro Niemeyer ",
+      "en": "Centro Niemeyer",
+      "eu": "Centro Niemeyer"
+    },
+    "url": "https://www.centroniemeyer.es/",
+    "ubicacion": {
+      "es": "Avilés, España",
+      "en": "Avilés, Spain",
+      "eu": "Avilés, Espainiar Estatua"
+    }
+  },
+  {
+    "id": 4,
+    "nombre": {
+      "es": "Cinhomo",
+      "en": "Cinhomo",
+      "eu": "Cinhomo"
+    },
+    "url": "https://cinhomo.org/",
+    "ubicacion": {
+      "es": "Valladolid, España",
+      "en": "Valladolid, Spain",
+      "eu": "Valladolid, Espainiar Estatua"
+    }
+  },
+  {
+    "id": 5,
+    "nombre": {
+      "es": "Cinemateca Pedro Zerolo ",
+      "en": "Cinemateca Pedro Zerolo ",
+      "eu": "Cinemateca Pedro Zerolo"
+    },
+    "url": "https://cinematecapedrozerolo.com/",
+    "ubicacion": {
+      "es": "Madrid, España",
+      "en": "Madrid, Spain",
+      "eu": "Madril, Espainiar Estatua"
+    }
+  },
+  {
+    "id": 6,
+    "nombre": {
+      "es": "Mostra de Cinema LGTBIQ+ Endimaris",
+      "en": "Mostra de Cinema LGTBIQ+ Endimaris",
+      "eu": "Mostra de Cinema LGTBIQ+ Endimaris"
+    },
+    "url": "https://mostraendimarissitges.com/",
+    "ubicacion": {
+      "es": "Sitges, España",
+      "en": "Sitges, Spain",
+      "eu": "Sitges, Herrialde Katalanak"
+    }
+  },
+  {
+    "id": 7,
+    "nombre": {
+      "es": "Fancinegay",
+      "en": "Fancinegay",
+      "eu": "Fancinegay"
+    },
+    "url": "https://fancinequeer.com/",
+    "ubicacion": {
+      "es": "Extremadura, España",
+      "en": "Extremadura, Spain",
+      "eu": "Extremadura, Espainiar Estatua"
+    }
+  },
+  {
+    "id": 8,
+    "nombre": {
+      "es": "Mostra Fire!!",
+      "en": "Mostra Fire!!",
+      "eu": "Mostra Fire!!"
+    },
+    "url": "https://mostrafire.com/es/",
+    "ubicacion": {
+      "es": "Barcelona, España",
+      "en": "Barcelona, Spain",
+      "eu": "Bartzelona, Herrialde Katalanak"
+    }
+  },
+  {
+    "id": 9,
+    "nombre": {
+      "es": "Pequeño Certamen de Cine de Ambiente La Pecca",
+      "en": "Pequeño Certamen de Cine de Ambiente La Pecca",
+      "eu": "Pequeño Certamen de Cine de Ambiente La Pecca"
+    },
+    "url": "https://defrente.org/la-pecca/",
+    "ubicacion": {
+      "es": "Sevilla, España",
+      "en": "Sevilla, Spain",
+      "eu": "Sevilla, Espainiar Estatua"
+    }
+  },
+  {
+    "id": 10,
+    "nombre": {
+      "es": "Lesgaicinemad ",
+      "en": "Lesgaicinemad",
+      "eu": "Lesgaicinemad"
+    },
+    "url": "https://www.lesgaicinemad.com/",
+    "ubicacion": {
+      "es": "Madrid, España",
+      "en": "Madrid, Spain",
+      "eu": "(Madril, Espainiar Estatua"
+    }
+  },
+{
+    "id": 11,
+    "nombre": {
+      "es": "MOVAlacant",
+      "en": "MOVAlacant",
+      "eu": "MOVAlacant"
+    },
+    "url": "https://www.festivaldealicante.com/",
+    "ubicacion": {
+      "es": "Alicante, España",
+      "en": "Alicante, Spain",
+      "eu": "Alacant, Herrialde Katalanak"
+    }
+  },
+  {
+    "id": 12,
+    "nombre": {
+      "es": "Zinegoak",
+      "en": "Zinegoak",
+      "eu": "Zinegoak"
+    },
+    "url": "https://zinegoak.com/",
+    "ubicacion": {
+      "es": "Bilbao, España",
+      "en": "Bilbao, Spain",
+      "eu": "Bilbo, Euskal Herria"
+    }
+  },
+  {
+    "id": 13,
+    "nombre": {
+      "es": "Zinentiendo",
+      "en": "Zinentiendo",
+      "eu": "Zinentiendo"
+    },
+    "url": "https://zinentiendo.org/",
+    "ubicacion": {
+      "es": "Zaragoza, España",
+      "en": "Zaragoza, Spain",
+      "eu": "Zaragoza, Espainiar Estatua"
+    }
+  },
+  {
+    "id": 14,
+    "nombre": {
+      "es": "Harro Fest, Donosti",
+      "en": "Harro Fest, Donosti",
+      "eu": "Harro Fest, Donosti"
+    },
+    "url": "https://sosracismogipuzkoa.org/se-acerca-harrofest/",
+    "ubicacion": {
+      "es": "Donosti, España",
+      "en": "Donosti, Spain",
+      "eu": "Donostia, Euskal Herria"
+    }
+  },
+  {
+    "id": 15,
+    "nombre": {
+      "es": "Barcelona Film Festival",
+      "en": "Barcelona Film Festival",
+      "eu": "Barcelona Film Festival"
+    },
+    "url": "https://www.bcnfilmfest.com/es",
+    "ubicacion": {
+      "es": "Barcelona, España",
+      "en": "Barcelona, Spain",
+      "eu": "Bartzelona, Herrialde Katalanak"
+    }
+  },
+  {
+    "id": 16,
+    "nombre": {
+      "es": "Andelesgay",
+      "en": "Andelesgay",
+      "eu": "Andelesgay"
+    },
+    "url": "https://andalesgai.com/",
+    "ubicacion": {
+      "es": "Andalucía, España",
+      "en": "Andalucía, Spain",
+      "eu": "Andaluzia, Espainiar Estatua"
+    }
+  },
+  {
+    "id": 17,
+    "nombre": {
+      "es": "Premio Maguey - Festival Internacional de Cine de Guadalajara",
+      "en": "Premio Maguey -Festival Internacional de Cine de Guadalajara",
+      "eu": "Premio Maguey -Festival Internacional de Cine de Guadalajara"
+    },
+    "url": "https://ficg.mx/premio/premio-maguey/",
+    "ubicacion": {
+      "es": "México",
+      "en": "Mexico",
+      "eu": "Mexiko"
+    }
+  },
+  {
+    "id": 18,
+    "nombre": {
+      "es": "Ciclo Rosa - Cineteca Bogotá",
+      "en": "Ciclo Rosa - Cineteca Bogotá",
+      "eu": "Ciclo Rosa - Cineteca Bogotá"
+    },
+    "url": "https://cinematecadebogota.gov.co/noticia/ciclo-rosa-dialogo-diversidad",
+    "ubicacion": {
+      "es": "Colombia",
+      "en": "Colombia",
+      "eu": "Kolonbia"
+    }
+  },
+  {
+    "id": 19,
+    "nombre": {
+      "es": "Queer Argentina",
+      "en": "Queer Argentina",
+      "eu": "Queer Argentina"
+    },
+    "url": "https://espacioqueer.com.ar/",
+    "ubicacion": {
+      "es": "Argentina",
+      "en": "Argentina",
+      "eu": "Argentina"
+    }
+  },
+  {
+    "id": 20,
+    "nombre": {
+      "es": "Premio Arrecife - Festival de Nuevo Cine Latinoamericano de La Habana",
+      "en": "Premio Arrecife - Festival de Nuevo Cine Latinoamericano de La Habana",
+      "eu": "Premio Arrecife - Festival de Nuevo Cine Latinoamericano de La Habana"
+    },
+    "url": "https://habanafilmfestival.com/home",
+    "ubicacion": {
+      "es": "Cuba",
+      "en": "Cuba)",
+      "eu": "Kuba"
+    }
+  },
+  {
+    "id": 21,
+    "nombre": {
+      "es": "Llamaleh",
+      "en": "Llamaleh",
+      "eu": "Llamaleh"
+    },
+    "url": "https://cinemateca.org.uy/ciclos/420?utm_source=openai",
+    "ubicacion": {
+      "es": "Uruguay",
+      "en": "Uruguay",
+      "eu": "Uruguai"
+    }
+  },
+  {
+    "id": 22,
+    "nombre": {
+      "es": "La Otra Banqueta + Cine Diverse",
+      "en": "La Otra Banqueta + Cine Diverse Centro América",
+      "eu": "La Otra Banqueta + Cine Diverse Centro América"
+    },
+    "url": "https://www.instagram.com/laotrabanqueta/",
+    "ubicacion": {
+      "es": "Guatemala",
+      "en": "Guatemala",
+      "eu": "Guatemala"
+    }
+  },
+  {
+    "id": 23,
+    "nombre": {
+      "es": "Cine Corto de Popayan",
+      "en": "Cine Corto de Popayan",
+      "eu": "Cine Corto de Popayan"
+    },
+    "url": "https://festicinepopayan.com/",
+    "ubicacion": {
+      "es": "Colombia",
+      "en": "Colombia",
+      "eu": "Kolonbia"
+    }
+  },
+  {
+    "id": 24,
+    "nombre": {
+      "es": "Festival Hecho por Mujeres",
+      "en": "Festival Hecho por Mujeres",
+      "eu": "Festival Hecho por Mujeres"
+    },
+    "url": "https://www.festivalhechopormujeres.com/",
+    "ubicacion": {
+      "es": "Perú",
+      "en": "Peru",
+      "eu": "Peru"
+    }
+  }
+]

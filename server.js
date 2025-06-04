@@ -13,6 +13,7 @@ app.use('/noticias.json', express.static(path.join(__dirname, 'noticias.json')))
 app.use('/revista.json', express.static(path.join(__dirname, 'revista.json')));
 app.use('/documentos.json', express.static(path.join(__dirname, 'documentos.json')));
 app.use('/encuentros.json', express.static(path.join(__dirname, 'encuentros.json')));
+app.use('/festivales.json', express.static(path.join(__dirname, 'festivales.json')));
 
 app.use(cors());
 app.use(express.json());
