@@ -59,20 +59,20 @@
       <label>Año completo (ej: 2025 | 98′):</label>
       <input type="text" name="anio_completo" placeholder="2025 | 98′" />
       
-      <label>Título:</label>
+      <label>Título:<span style="color: #fc02ca">*</span></label>
       <input type="text" name="titulo_es" placeholder="Título (ES)" required />
       <input type="text" name="titulo_en" placeholder="Título (EN)" />
       <input type="text" name="titulo_eu" placeholder="Título (EU)" />
      
-      <label>Director:</label>
+      <label>Director:<span style="color: #fc02ca">*</span></label>
       <input type="text" name="director_es" placeholder="Director" required />
 
-      <label>País:</label>
+      <label>País:<span style="color: #fc02ca">*</span></label>
       <input type="text" name="pais_es" placeholder="País (ES)" required />
       <input type="text" name="pais_en" placeholder="País (EN)" />
       <input type="text" name="pais_eu" placeholder="País (EU)" />
       
-      <label>Descripción:</label>
+      <label>Descripción:<span style="color: #fc02ca">*</span></label>
       <textarea name="descripcion_es" placeholder="Descripción (ES)" required></textarea>
       <textarea name="descripcion_en" placeholder="Descripción (EN)"></textarea>
       <textarea name="descripcion_eu" placeholder="Descripción (EU)"></textarea>
@@ -113,23 +113,23 @@
       <label>Año completo:</label>
       <input type="text" name="anio_completo" placeholder="2025 | 100′" />
               
-      <label>Título:</label>
+      <label>Título:<span style="color: #fc02ca">*</span></label>
       <input type="text" name="titulo_es" placeholder="Título (ES)" required />
       <input type="text" name="titulo_en" placeholder="Título (EN)" />
       <input type="text" name="titulo_eu" placeholder="Título (EU)" />
               
-      <label>Director:</label>
+      <label>Director:<span style="color: #fc02ca">*</span></label>
       <input type="text" name="director_es" placeholder="Director" required />
               
       <label>Video (URL):</label>
       <input type="text" name="video" />
 
-      <label>País:</label>
+      <label>País:<span style="color: #fc02ca">*</span></label>
       <input type="text" name="pais_es" placeholder="País (ES)" required />
       <input type="text" name="pais_en" placeholder="País (EN)" />
       <input type="text" name="pais_eu" placeholder="País (EU)" />
               
-      <label>Descripción:</label>
+      <label>Descripción:<span style="color: #fc02ca">*</span></label>
       <textarea name="descripcion_es" placeholder="Descripción (ES)" required></textarea>
       <textarea name="descripcion_en" placeholder="Descripción (EN)"></textarea>
       <textarea name="descripcion_eu" placeholder="Descripción (EU)"></textarea>
@@ -149,7 +149,7 @@
   <h2>Gestión de Noticias</h2>
   <div class="gestion-noticias">
     <form id="form-noticia" class="form-noticia" enctype="multipart/form-data">
-      <label>Título:</label>
+      <label>Título:<span style="color: #fc02ca">*</span></label>
       <input type="text" name="titulo_es" placeholder="Título (ES)" required />
       <input type="text" name="titulo_en" placeholder="Título (EN)" />
       <input type="text" name="titulo_eu" placeholder="Título (EU)" />
@@ -172,12 +172,11 @@
           
       <small><em>Tip:</em> Escribe <code>**texto**</code> para ponerlo en <strong>negrita</strong>.</small>
       <textarea name="contenido_p_eu" placeholder="Texto (EU) con salto de lineas"></textarea>
-
-      <label>Fecha:</label>
-      <input type="date" name="fecha" /><br>
-       
-      <label>Imágenes:</label><br>
-      <small>Puedes seleccionar una o varias imágenes</small>
+      <br>
+      <label>Fecha:<span style="color: #fc02ca">*</span></label>
+      <input type="date" name="fecha" required /><br>
+       <br>
+      <label>Imágenes:</label><small><em>Tip: Puedes seleccionar una o varias imágenes</em></small>
       <input type="file" name="imagenes" multiple />
       
       <label>Fotógrafo:</label>
@@ -201,7 +200,7 @@
   <h2>Gestión de Encuentros</h2>
   <div class="gestion-encuentros">
     <form id="form-encuentro" enctype="multipart/form-data">
-      <label>Título:</label>
+      <label>Título:<span style="color: #fc02ca">*</span></label>
       <input type="text" name="titulo_es" placeholder="Título (ES)" required />
       <input type="text" name="titulo_en" placeholder="Título (EN)" />
       <input type="text" name="titulo_eu" placeholder="Título (EU)" />
@@ -210,15 +209,14 @@
       <textarea name="descripcion_es" placeholder="Descripción (ES)"></textarea>
       <textarea name="descripcion_en" placeholder="Descripción (EN)"></textarea>
       <textarea name="descripcion_eu" placeholder="Descripción (EU)"></textarea>
-      
-      <label>Fecha:</label>
-      <input type="date" name="fecha" /><br>
-     
+      <br>
+      <label>Fecha:<span style="color: #fc02ca">*</span></label>
+      <input type="date" name="fecha" required/><br>
+     <br>
       <label>Fotógrafo:</label>
       <input type="text" name="fotografo" />
       
-      <label>Imágenes:</label><br>
-      <small>Puedes seleccionar una o varias imágenes</small>
+      <label>Imágenes:</label><small><em>Tip: Puedes seleccionar una o varias imágenes</em></small>
       <input type="file" name="imagenes" multiple />
       
       <button type="submit">Añadir encuentro</button>
@@ -236,7 +234,7 @@
   <h2>Gestión de Festivales</h2>
   <div class="gestion-festivales">
     <form id="form-festival">
-      <label>Nombre:</label>
+      <label>Nombre:<span style="color: #fc02ca">*</span></label>
       <input type="text" name="nombre_es" placeholder="Nombre (ES)" required />
       <input type="text" name="nombre_en" placeholder="Nombre (EN)" />
       <input type="text" name="nombre_eu" placeholder="Nombre (EU)" />
@@ -254,7 +252,8 @@
 
     <div class="festivales-listado">
       <h3>Festivales añadidos:</h3>
-      <div id="lista-festivales"></div>
+      <button type="button" id="toggle-festivales">Mostrar/Ocultar lista de festivales</button>
+      <div id="lista-festivales" style="display: none;"></div>
     </div>
   </div>
 

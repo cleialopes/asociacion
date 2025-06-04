@@ -24,8 +24,8 @@
       "img/10-Encuentro-de-Festivales-LGTBIAQ-iberoamericanos10.jpeg",
       "img/10-Encuentro-de-Festivales-LGTBIAQ-iberoamericanos11.jpeg"
     ],
-    "fotografo": "",
-    "fecha": ""
+    "fotografo": "@mambru",
+    "fecha": "04/06/2025"
   },
   {
     "id": 2,
@@ -51,7 +51,7 @@
       "img/2ssiff-sebastiane9.jpg"
     ],
     "fotografo": "@mambru",
-    "fecha": ""
+    "fecha": "04/06/2025"
   },
   {
     "id": 3,
@@ -80,7 +80,7 @@
       "img/71ssiff-sebastiane-entrega-premiada12.jpg"
     ],
     "fotografo": "@mambru",
-    "fecha": ""
+    "fecha": "04/06/2025"
   },
   {
     "id": 4,
@@ -102,8 +102,8 @@
       "img/jurados-sebastiane-24-5.jpg",
       "img/jurados-sebastiane-24-6.jpg"
     ],
-    "fotografo": "",
-    "fecha": ""
+    "fotografo": "@mambru",
+    "fecha": "04/06/2025"
   },
   {
     "id": 5,
@@ -125,8 +125,8 @@
       "img/entrega-del-23-sebastiane-a-something5.jpg",
       "img/entrega-del-23-sebastiane-a-something6.jpg"
     ],
-    "fotografo": "",
-    "fecha": ""
+    "fotografo": "@mambru",
+    "fecha": "04/06/2025"
   },
   {
     "id": 6,
@@ -144,8 +144,8 @@
       "img/jurado-sebastiane-23-1.jpg",
       "img/jurado-sebastiane-23-2.jpg"
     ],
-    "fotografo": "",
-    "fecha": ""
+    "fotografo": "@mambru",
+    "fecha": "04/06/2025"
   },
   {
     "id": 7,
@@ -170,8 +170,8 @@
       "img/meeting-lgtbiqa-y-su-coctel8.jpg",
       "img/meeting-lgtbiqa-y-su-coctel9.jpg"
     ],
-    "fotografo": "",
-    "fecha": ""
+    "fotografo": "@mambru",
+    "fecha": "04/06/2025"
   },
   {
     "id": 8,
@@ -198,45 +198,7 @@
       "img/bienvenida-en-gehitu10.jpg",
       "img/bienvenida-en-gehitu11.jpg"
     ],
-    "fotografo": "",
-    "fecha": ""
-  },
-  {
-    "id": 9,
-    "titulo": {
-      "es": "",
-      "en": "",
-      "eu": ""
-    },
-    "descripcion": {
-      "es": "",
-      "en": "",
-      "eu": ""
-    },
-    "imagenes": [
-      "",
-      ""
-    ],
-    "fotografo": "",
-    "fecha": ""
-  },
-  {
-    "id": 10,
-    "titulo": {
-      "es": "",
-      "en": "",
-      "eu": ""
-    },
-    "descripcion": {
-      "es": "",
-      "en": "",
-      "eu": ""
-    },
-    "imagenes": [
-      "",
-      ""
-    ],
-    "fotografo": "",
-    "fecha": ""
+    "fotografo": "@mambru",
+    "fecha": "04/06/2025"
   }
 ]

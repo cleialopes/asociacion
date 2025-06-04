@@ -425,12 +425,16 @@ async function cargarEncuentrosAdmin() {
   const contenedor = document.getElementById("lista-encuentros");
   contenedor.innerHTML = "";
 
-  const filtroFecha = document.getElementById("filtro-fecha-encuentro")?.value;
+  const filtroFechaRaw = document.getElementById("filtro-fecha-encuentro")?.value;
 
-  if (!filtroFecha) {
+  if (!filtroFechaRaw) {
     contenedor.innerHTML = "<p>Selecciona una fecha para ver encuentros.</p>";
     return;
   }
+
+  // Convertimos de "YYYY-MM-DD" a "DD/MM/YYYY"
+  const [anio, mes, dia] = filtroFechaRaw.split("-");
+  const filtroFecha = `${dia}/${mes}/${anio}`;
 
   const filtrados = encuentros.filter(e => e.fecha === filtroFecha);
 
@@ -450,6 +454,7 @@ async function cargarEncuentrosAdmin() {
     contenedor.appendChild(div);
   });
 }
+
 async function eliminarEncuentro(index) {
   if (confirm("¿Eliminar este encuentro?")) {
     const res = await fetch(`/api/encuentros/${index}`, {
@@ -522,6 +527,13 @@ async function cargarFestivalesAdmin() {
     contenedor.appendChild(div);
   });
 }
+
+document.getElementById("toggle-festivales").addEventListener("click", function () {
+  const lista = document.getElementById("lista-festivales");
+  const visible = lista.style.display !== "none";
+  lista.style.display = visible ? "none" : "block";
+  this.textContent = visible ? "Mostrar lista de festivales" : "Ocultar lista de festivales";
+});
 
 async function eliminarFestival(index) {
   if (confirm("¿Eliminar este festival?")) {

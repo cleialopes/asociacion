@@ -1216,30 +1216,7 @@
     ]
   },
   "2025": {
-    "Ganadora": [
-      {
-        "id": "pelicula-1748857511059",
-        "titulo": {
-          "es": "ESPAÑOL",
-          "en": "INGLES",
-          "eu": "EUSKERA"
-        },
-        "director": "cleia",
-        "pais": {
-          "es": "ESPAÑOL",
-          "en": "INGLES",
-          "eu": "EUSKERA"
-        },
-        "descripcion": {
-          "es": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
-          "en": "iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii",
-          "eu": "uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu"
-        },
-        "año": "2025 | 98'",
-        "imagen": "/img/1748857511050.JPG",
-        "video": "https://www.youtube.com/watch?v=ko-KaP8d100"
-      }
-    ],
+    "Ganadora": [],
     "New Directors": [],
     "Horizontes Latinos": [],
     "Zabaltegi": [],
