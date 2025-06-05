@@ -130,13 +130,38 @@ document.addEventListener("DOMContentLoaded", () => {
   const anioActual = new Date().getFullYear();
   const anioURL = parseInt(params.get("anio")) || (anioActual >= 2013 && anioActual <= 2025 ? anioActual : 2024);
 
-   mostrarInfo(anioURL, false); 
+  mostrarInfo(anioURL, false); 
   anioActivo = anioURL;
 
-const btns = document.querySelectorAll("#scroll-anios button");
-btns.forEach(btn => {
-  if (parseInt(btn.textContent) === anioURL) {
-    btn.classList.add("active");
-  }
-});
+  const btns = document.querySelectorAll("#scroll-anios button");
+  btns.forEach(btn => {
+    if (parseInt(btn.textContent) === anioURL) {
+      btn.classList.add("active");
+    }
+  });
+
+  fetch("bases_latino.json")
+  .then(response => response.json())
+  .then(data => {
+    function actualizarBasesPDF() {
+      const lang = getIdiomaActual();
+      const titulo = data.latino.titulo[lang] || data.latino.titulo.es;
+      const url = data.latino.bases_pdf[lang] || data.latino.bases_pdf.es;
+
+      const link = document.getElementById("bases-link");
+      if (link) {
+        link.textContent = titulo;
+        link.href = url;
+      }
+    }
+
+    // Ejecutar al cargar
+    actualizarBasesPDF();
+
+    // Y también al cambiar el idioma
+    const selector = document.getElementById("lang-selector");
+    if (selector) {
+      selector.addEventListener("change", actualizarBasesPDF);
+    }
+  });
 });

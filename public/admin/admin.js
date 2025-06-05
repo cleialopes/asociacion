@@ -731,6 +731,90 @@ document.getElementById("toggle-patrocinadores").addEventListener("click", funct
   cont.style.display = visible ? "none" : "block";
   this.textContent = visible ? "Mostrar lista" : "Ocultar lista";
 });
-
 cargarPatrocinadoresAdmin();
+
+document.getElementById("form-bases-latino").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const form = e.target;
+  const formData = new FormData(form);
+
+  const baseData = {
+  latino: {
+    id: new Date().getFullYear() - 2012,  
+      titulo: {
+        es: formData.get("titulo_es"),
+        en: formData.get("titulo_en"),
+        eu: formData.get("titulo_eu")
+      },
+      bases_pdf: {
+        es: "",
+        en: "",
+        eu: ""
+      }
+    }
+  };
+
+  // Subir los 3 archivos PDF (si los hay)
+  for (let lang of ["es", "en", "eu"]) {
+    const file = form[`pdf_${lang}`].files[0];
+    if (file) {
+      const pdfForm = new FormData();
+      pdfForm.append("imagen", file); // reutilizamos /api/upload
+      const res = await fetch("/api/upload", {
+        method: "POST",
+        body: pdfForm
+      });
+      const data = await res.json();
+      if (data?.url) baseData.latino.bases_pdf[lang] = data.url;
+    }
+  }
+
+  const res = await fetch("/api/bases_latino", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(baseData)
+  });
+
+  if (res.ok) {
+    alert("Bases actualizadas correctamente.");
+    form.reset();
+  } else {
+    alert("Error al guardar las bases.");
+  }
+});
+
+async function cargarBasesLatino() {
+  try {
+    const res = await fetch("/bases_latino.json");
+    const data = await res.json();
+    const base = data.latino;
+
+    const contenedor = document.getElementById("lista-bases");
+    contenedor.innerHTML = `
+      <p><strong>ID:</strong> ${base.id}</p>
+      <p><strong>Título ES:</strong> ${base.titulo.es}</p>
+      <p><strong>Título EN:</strong> ${base.titulo.en}</p>
+      <p><strong>Título EU:</strong> ${base.titulo.eu}</p>
+      <p><strong>PDF ES:</strong> ${base.bases_pdf.es ? `<a href="${base.bases_pdf.es}" target="_blank">Ver PDF</a>` : 'No disponible'}</p>
+      <p><strong>PDF EN:</strong> ${base.bases_pdf.en ? `<a href="${base.bases_pdf.en}" target="_blank">Ver PDF</a>` : 'No disponible'}</p>
+      <p><strong>PDF EU:</strong> ${base.bases_pdf.eu ? `<a href="${base.bases_pdf.eu}" target="_blank">Ver PDF</a>` : 'No disponible'}</p>
+    `;
+  } catch (err) {
+    console.error("Error cargando bases_latino.json:", err);
+    document.getElementById("lista-bases").innerHTML = "<p>No se pudieron cargar las bases.</p>";
+  }
+}
+cargarBasesLatino();
+
+document.getElementById("btn-eliminar-bases")?.addEventListener("click", async () => {
+  if (confirm("¿Seguro que deseas eliminar las bases actuales? Esta acción no se puede deshacer.")) {
+    const res = await fetch("/api/bases_latino", { method: "DELETE" });
+    if (res.ok) {
+      alert("Bases eliminadas correctamente.");
+      cargarBasesLatino();
+    } else {
+      alert("Error al eliminar las bases.");
+    }
+  }
+});
 

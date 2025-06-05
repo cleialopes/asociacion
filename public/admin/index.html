@@ -92,6 +92,30 @@
     </div>
   </div>
 
+  <h2>Gestión de Bases Sebastiane Latino</h2>
+  <div class="gestion-bases-latino">
+    <form id="form-bases-latino" enctype="multipart/form-data">
+      <label>Título:</label>
+      <input type="text" name="titulo_es" placeholder="Título (ES)" />
+      <input type="text" name="titulo_en" placeholder="Título (EN)" />
+      <input type="text" name="titulo_eu" placeholder="Título (EU)" />
+
+      <label>PDF (ES):</label>
+      <input type="file" name="pdf_es" accept="application/pdf" />
+      <label>PDF (EN):</label>
+      <input type="file" name="pdf_en" accept="application/pdf" />
+      <label>PDF (EU):</label>
+      <input type="file" name="pdf_eu" accept="application/pdf" />
+
+      <button type="submit">Guardar bases</button>
+    </form>
+    <div class="bases-listado">
+      <h3>Bases añadidas:</h3>
+      <div id="lista-bases"></div>
+      <button type="button" id="btn-eliminar-bases">Eliminar bases</button>
+    </div>
+  </div>
+
   <h2>Gestión Sebastiane Latino</h2>
   <div class="gestion-sebastiane">
     <form id="form-sebastiane-latino" class="form-sebastiane-latino" enctype="multipart/form-data">

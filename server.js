@@ -30,6 +30,7 @@ app.use('/encuentros.json', express.static(path.join(__dirname, 'encuentros.json
 app.use('/festivales.json', express.static(path.join(__dirname, 'festivales.json')));
 app.use('/eventos.json', express.static(path.join(__dirname, 'eventos.json')));
 app.use('/patrocinadores.json', express.static(path.join(__dirname, 'patrocinadores.json')));
+app.use('/bases_latino.json', express.static(path.join(__dirname, 'bases_latino.json')));
 
 app.use(cors());
 app.use(express.json());
@@ -467,6 +468,33 @@ app.delete('/api/patrocinadores/:tipo/:index', (req, res) => {
     res.status(500).json({ error: 'Error al eliminar' });
   }
 });
+
+app.post('/api/bases_latino', (req, res) => {
+  try {
+    fs.writeFileSync('bases_latino.json', JSON.stringify(req.body, null, 2));
+    res.json({ ok: true });
+  } catch (e) {
+    res.status(500).json({ error: 'No se pudo guardar bases_latino.json' });
+  }
+});
+
+app.delete('/api/bases_latino', (req, res) => {
+  const vacio = {
+    latino: {
+      id: "",
+      titulo: { es: "", en: "", eu: "" },
+      bases_pdf: { es: "", en: "", eu: "" }
+    }
+  };
+
+  try {
+    fs.writeFileSync('bases_latino.json', JSON.stringify(vacio, null, 2));
+    res.json({ ok: true });
+  } catch (err) {
+    res.status(500).json({ error: 'No se pudieron eliminar las bases' });
+  }
+});
+
 
 
 app.listen(3000, () => console.log('Servidor en http://localhost:3000'));

@@ -59,6 +59,7 @@ form button:hover {
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
+.gestion-bases-latino,
 .gestion-patrocinadores,
 .gestion-eventos,
 .gestion-festivales,
@@ -71,6 +72,8 @@ form button:hover {
   align-items: flex-start;
 }
 
+
+.bases-listado,
 .patrocinadores-listado,
 .eventos-listado,
 .peliculas-listado,
