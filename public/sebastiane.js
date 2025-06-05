@@ -45,12 +45,12 @@ document.addEventListener("DOMContentLoaded", () => {
     btn.onclick = () => {
       document.querySelectorAll("#scroll-anios button").forEach(b => b.classList.remove("active"));
       btn.classList.add("active");
-      mostrarInfo(anio);
-    };
+      mostrarInfo(anio, true);
+  };
     contenedor.appendChild(btn);
   }
 
-  function mostrarInfo(anio) {
+  function mostrarInfo(anio, hacerScroll = true)  {
     anioActivo = anio;
     fetch("/api/sebastiane")
       .then(response => response.json())
@@ -106,15 +106,16 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         }
 
-        contenedor.innerHTML = html;
-        contenedor.scrollIntoView({ behavior: "smooth" });
-        cambiarIdioma(getIdiomaActual());
+          contenedor.innerHTML = html;
+       if (hacerScroll) {
+          contenedor.scrollIntoView({ behavior: "smooth" });
+        }
       });
   }
 
   document.getElementById("lang-selector")?.addEventListener("change", () => {
     if (anioActivo) {
-      mostrarInfo(anioActivo);
+      mostrarInfo(anioActivo, false); // ✅ sin scroll
     }
   });
 
@@ -126,6 +127,12 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("scroll-anios").scrollLeft += 200;
   });
 
-  mostrarInfo(2024);
-  anioActivo = 2024;
+  const anioActual = new Date().getFullYear();
+  const anioPorDefecto = (anioActual >= 2000 && anioActual <= 2025) ? anioActual : 2024;
+  anioActivo = anioPorDefecto;
+
+  window.addEventListener("load", () => {
+    mostrarInfo(anioPorDefecto, false); 
+  });
 });
+

@@ -72,7 +72,7 @@
       <input type="text" name="pais_en" placeholder="País (EN)" />
       <input type="text" name="pais_eu" placeholder="País (EU)" />
       
-      <label>Descripción:<span style="color: #fc02ca">*</span></label>
+      <label>Sinopsis:<span style="color: #fc02ca">*</span></label>
       <textarea name="descripcion_es" placeholder="Descripción (ES)" required></textarea>
       <textarea name="descripcion_en" placeholder="Descripción (EN)"></textarea>
       <textarea name="descripcion_eu" placeholder="Descripción (EU)"></textarea>
@@ -120,19 +120,19 @@
               
       <label>Director:<span style="color: #fc02ca">*</span></label>
       <input type="text" name="director_es" placeholder="Director" required />
-              
-      <label>Video (URL):</label>
-      <input type="text" name="video" />
 
       <label>País:<span style="color: #fc02ca">*</span></label>
       <input type="text" name="pais_es" placeholder="País (ES)" required />
       <input type="text" name="pais_en" placeholder="País (EN)" />
       <input type="text" name="pais_eu" placeholder="País (EU)" />
               
-      <label>Descripción:<span style="color: #fc02ca">*</span></label>
+      <label>Sinopsis:<span style="color: #fc02ca">*</span></label>
       <textarea name="descripcion_es" placeholder="Descripción (ES)" required></textarea>
       <textarea name="descripcion_en" placeholder="Descripción (EN)"></textarea>
       <textarea name="descripcion_eu" placeholder="Descripción (EU)"></textarea>
+
+      <label>Video (URL):</label>
+      <input type="text" name="video" />
 
       <label>Imagen:</label>
       <input type="file" name="imagen" />
@@ -301,13 +301,13 @@
       <option value="colaboradores">Colaborador</option>
     </select>
 
-    <label>Enlace (href):</label>
+    <label>URL:<span style="color: #fc02ca">*</span></label>
     <input type="text" name="href" placeholder="https://..." required />
 
-    <label>Imagen:</label>
+    <label>Imagen:<span style="color: #fc02ca">*</span></label>
     <input type="file" name="img" accept="image/*" required />
 
-    <label>Texto alternativo (alt):</label>
+    <label>Descripción<span style="color: #fc02ca">*</span>:</label>
     <input type="text" name="alt" placeholder="Descripción" required />
 
     <button type="submit">Añadir patrocinador</button>

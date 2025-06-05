@@ -98,15 +98,15 @@ if (Array.isArray(noticiaGlobal.contenido)) {
       ? `<div class="video-contenedor">
           <iframe src="${videoURL}" frameborder="0" allowfullscreen></iframe>
         </div>`
-      : `<div class="carrusel">
-          <button class="carrusel-flecha izquierda">‹</button>
-          <div class="carrusel-contenedor">
-            ${imagenes.map((src, index) => `
-              <img src="${src}" alt="${titulo}" class="carrusel-imagen ${index === 0 ? 'activa' : ''}">
-            `).join('')}
-          </div>
-          <button class="carrusel-flecha derecha">›</button>
-        </div>`;
+      : `<div class="carrusel-encuentro">
+        <button class="carrusel-encuentro-flecha izquierda">‹</button>
+        <div class="carrusel-encuentro-contenedor">
+          ${imagenes.map((src, index) => `
+            <img src="${src}" alt="${titulo}" class="carrusel-encuentro-imagen ${index === 0 ? 'activa' : ''}">
+          `).join('')}
+        </div>
+        <button class="carrusel-encuentro-flecha derecha">›</button>
+      </div>`;
 
   contenedor.innerHTML = `
     <h1>${titulo}</h1>
@@ -119,26 +119,47 @@ if (Array.isArray(noticiaGlobal.contenido)) {
   `;
 cambiarIdioma(idioma);
   
-  const imagenesCarrusel = document.querySelectorAll(".carrusel-imagen");
-  const flechaIzquierda = document.querySelector(".carrusel-flecha.izquierda");
-  const flechaDerecha = document.querySelector(".carrusel-flecha.derecha");
+  const imagenesCarrusel = document.querySelectorAll(".carrusel-encuentro-imagen");
+  const flechaIzquierda = document.querySelector(".carrusel-encuentro-flecha.izquierda");
+  const flechaDerecha = document.querySelector(".carrusel-encuentro-flecha.derecha");
 
   if (imagenesCarrusel.length > 0 && flechaIzquierda && flechaDerecha) {
-    let indice = 0;
-    const mostrarImagen = (i) => {
-      imagenesCarrusel.forEach((img, index) =>
-        img.classList.toggle("activa", index === i)
-      );
-    };
-    flechaIzquierda.addEventListener("click", () => {
-      indice = (indice - 1 + imagenesCarrusel.length) % imagenesCarrusel.length;
-      mostrarImagen(indice);
-    });
-    flechaDerecha.addEventListener("click", () => {
-      indice = (indice + 1) % imagenesCarrusel.length;
-      mostrarImagen(indice);
-    });
-  }
+  let indice = 0;
+  let intervalo;
+
+  const mostrarImagen = (i) => {
+    imagenesCarrusel.forEach((img, index) =>
+      img.classList.toggle("activa", index === i)
+    );
+  };
+
+  const avanzar = () => {
+    indice = (indice + 1) % imagenesCarrusel.length;
+    mostrarImagen(indice);
+  };
+
+  const retroceder = () => {
+    indice = (indice - 1 + imagenesCarrusel.length) % imagenesCarrusel.length;
+    mostrarImagen(indice);
+  };
+
+  const iniciarCarrusel = () => {
+    if (intervalo) clearInterval(intervalo);
+    intervalo = setInterval(avanzar, 4000);
+  };
+
+  flechaIzquierda.addEventListener("click", () => {
+    retroceder();
+    iniciarCarrusel();
+  });
+
+  flechaDerecha.addEventListener("click", () => {
+    avanzar();
+    iniciarCarrusel();
+  });
+
+  iniciarCarrusel();
+}
 }
 function traducir(clave) {
   const idioma = localStorage.getItem("idioma") || "es";

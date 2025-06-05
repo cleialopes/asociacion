@@ -45,12 +45,12 @@ document.addEventListener("DOMContentLoaded", () => {
     btn.onclick = () => {
       document.querySelectorAll("#scroll-anios button").forEach(b => b.classList.remove("active"));
       btn.classList.add("active");
-      mostrarInfo(anio);
+      mostrarInfo(anio, true);
     };
     contenedor.appendChild(btn);
   }
 
-  function mostrarInfo(anio) {
+  function mostrarInfo(anio, hacerScroll = true) {
     anioActivo = anio;
     fetch("/api/sebastiane_latino")
       .then(response => response.json())
@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
             html += `<div class="peliculas-seccion">`;
 
            info[seccion]
-          .filter(pelicula => pelicula.titulo?.es?.trim()) // filtra películas con título en español no vacío
+          .filter(pelicula => pelicula.titulo?.es?.trim()) 
           .forEach(pelicula => {
             const img = pelicula.imagen;
 
@@ -107,12 +107,14 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         }
         contenedor.innerHTML = html;
-        contenedor.scrollIntoView({ behavior: "smooth" });
+        if (hacerScroll) {
+          contenedor.scrollIntoView({ behavior: "smooth" });
+        }
       });
     }
   document.getElementById("lang-selector")?.addEventListener("change", () => {
     if (anioActivo) {
-      mostrarInfo(anioActivo);
+      mostrarInfo(anioActivo, false);
     }
   });
 
@@ -124,13 +126,13 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("scroll-anios").scrollLeft += 200;
   });
 
- const params = new URLSearchParams(window.location.search);
-const anioURL = parseInt(params.get("anio")) || 2024;
+  const params = new URLSearchParams(window.location.search);
+  const anioActual = new Date().getFullYear();
+  const anioURL = parseInt(params.get("anio")) || (anioActual >= 2013 && anioActual <= 2025 ? anioActual : 2024);
 
-mostrarInfo(anioURL);
-anioActivo = anioURL;
+   mostrarInfo(anioURL, false); 
+  anioActivo = anioURL;
 
-// Activar botón del año correspondiente (opcional, solo para destacar el botón activo)
 const btns = document.querySelectorAll("#scroll-anios button");
 btns.forEach(btn => {
   if (parseInt(btn.textContent) === anioURL) {

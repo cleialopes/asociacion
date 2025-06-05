@@ -31,16 +31,16 @@ function mostrarEncuentro(lang) {
       const fecha = encuentro.fecha || "";
 
       const galeriaHTML = imagenes.length > 0
-        ? `<div class="carrusel">
-            <button class="carrusel-flecha izquierda">‹</button>
-            <div class="carrusel-contenedor">
-              ${imagenes.map((src, index) => `
-                <img src="${src}" alt="${titulo}" class="carrusel-imagen ${index === 0 ? 'activa' : ''}">
-              `).join('')}
-            </div>
-            <button class="carrusel-flecha derecha">›</button>
-          </div>`
-        : "";
+      ? `<div class="carrusel-encuentro">
+          <button class="carrusel-encuentro-flecha izquierda">‹</button>
+          <div class="carrusel-encuentro-contenedor">
+            ${imagenes.map((src, index) => `
+              <img src="${src}" alt="${titulo}" class="carrusel-encuentro-imagen ${index === 0 ? 'activa' : ''}">
+            `).join('')}
+          </div>
+          <button class="carrusel-encuentro-flecha derecha">›</button>
+        </div>`
+      : "";
 
       const contenedor = document.getElementById("contenido-encuentro");
       contenedor.innerHTML = `
@@ -52,9 +52,9 @@ function mostrarEncuentro(lang) {
         <a href="encuentros.html" class="btn-leer">← ${traducir("volver")}</a>
       `;
 
-      const imagenesCarrusel = document.querySelectorAll(".carrusel-imagen");
-      const flechaIzquierda = document.querySelector(".carrusel-flecha.izquierda");
-      const flechaDerecha = document.querySelector(".carrusel-flecha.derecha");
+      const imagenesCarrusel = document.querySelectorAll(".carrusel-encuentro-imagen");
+      const flechaIzquierda = document.querySelector(".carrusel-encuentro-flecha.izquierda");
+      const flechaDerecha = document.querySelector(".carrusel-encuentro-flecha.derecha");
 
       if (imagenesCarrusel.length > 0 && flechaIzquierda && flechaDerecha) {
         let indice = 0;

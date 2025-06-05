@@ -63,6 +63,7 @@ function mostrarDetalle(tituloBuscado, idioma, fuente) {
           <div class="video-contenedor">
             <iframe src="${video}" frameborder="0" allowfullscreen></iframe>
           </div>` : ""}
+        <a href="javascript:history.back()" class="btn-leer">← ${traducir("volver")}</a>
       `;
     });
 }
