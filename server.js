@@ -10,7 +10,7 @@ const storage = multer.diskStorage({
     cb(null, path.join(__dirname, 'uploads'));
   },
   filename: (req, file, cb) => {
-    const ext = path.extname(file.originalname); // conserva extensión
+    const ext = path.extname(file.originalname); 
     const filename = Date.now() + ext;
     cb(null, filename);
   }
@@ -35,19 +35,14 @@ app.use('/bases_latino.json', express.static(path.join(__dirname, 'bases_latino.
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
-// Sesión
+app.use(express.static('public'));
+app.use('/uploads', express.static('uploads'));
 app.use(session({
   secret: 'secreto-super-seguro',
   resave: false,
   saveUninitialized: true
 }));
 
-// Servir archivos estáticos
-app.use(express.static('public'));
-app.use('/uploads', express.static('uploads'));
-
-// Middleware para proteger /admin
 app.use('/admin', (req, res, next) => {
   if (req.session && req.session.usuario) {
     next();
@@ -56,7 +51,6 @@ app.use('/admin', (req, res, next) => {
   }
 });
 
-// Ruta de login (POST)
 app.post('/login', (req, res) => {
   const { usuario, password } = req.body;
   const datos = JSON.parse(fs.readFileSync('usuarios.json', 'utf-8'));
@@ -70,14 +64,44 @@ app.post('/login', (req, res) => {
   }
 });
 
-// Ruta logout
 app.get('/logout', (req, res) => {
   req.session.destroy(() => {
     res.redirect('/login.html');
   });
 });
 
-// Ruta GET del banner
+function eliminarArchivoSiExiste(rutaRelativa) {
+  const ruta = path.join(__dirname, 'public', rutaRelativa.replace(/^\/+/, ''));
+  if (fs.existsSync(ruta)) {
+    fs.unlinkSync(ruta);
+    console.log(`Archivo eliminado: ${ruta}`);
+  } else {
+    console.log(`Archivo no encontrado: ${ruta}`);
+  }
+}
+
+app.post('/api/upload', upload.single('imagen'), (req, res) => {
+  if (!req.file) return res.status(400).json({ error: 'No se recibió archivo' });
+
+  const ext = path.extname(req.file.originalname).toLowerCase();
+  const nombre = Date.now() + ext;
+
+  let destinoDir = '';
+  if (ext === '.pdf') {
+    destinoDir = path.join(__dirname, 'public', 'pdfs');
+  } else {
+    destinoDir = path.join(__dirname, 'public', 'img');
+  }
+
+  if (!fs.existsSync(destinoDir)) fs.mkdirSync(destinoDir, { recursive: true });
+
+  const destino = path.join(destinoDir, nombre);
+  fs.renameSync(req.file.path, destino);
+
+  const url = `/${path.relative(path.join(__dirname, 'public'), destino).replace(/\\/g, '/')}`;
+  res.json({ url });
+});
+
 app.get('/api/banner', (req, res) => {
   try {
     const data = fs.readFileSync('banner.json', 'utf-8');
@@ -87,7 +111,6 @@ app.get('/api/banner', (req, res) => {
   }
 });
 
-// Ruta POST del banner (con imagen o video)
 app.post('/api/banner', upload.single('archivo'), (req, res) => {
   const mostrar = req.body.mostrar === 'true';
   const tipo = req.body.tipo;
@@ -103,18 +126,24 @@ app.post('/api/banner', upload.single('archivo'), (req, res) => {
 
 });
 
-// Esto "elimina" el banner al dejarlo oculto y vacío.
 app.delete('/api/banner', (req, res) => {
-  const banner = {
-    mostrar: false,
-    tipo: "",
-    url: ""
-  };
-  fs.writeFileSync('banner.json', JSON.stringify(banner));
-  res.json({ ok: true });
+  try {
+    const data = JSON.parse(fs.readFileSync('banner.json', 'utf8'));
+
+    if (data.url) {
+      eliminarArchivoSiExiste(data.url);
+    }
+
+    const vacio = { url: "" };
+    fs.writeFileSync('banner.json', JSON.stringify(vacio, null, 2));
+
+    res.json({ ok: true });
+  } catch (err) {
+    console.error("Error eliminando banner:", err);
+    res.status(500).json({ error: 'No se pudo eliminar el banner' });
+  }
 });
 
-// API Sebastiane
 const SEBASTIANE_JSON = 'sebastiane.json';
 
 app.post('/api/sebastiane/:anio/:seccion', (req, res) => {
@@ -161,18 +190,27 @@ app.get('/api/sebastiane/:anio/:seccion', (req, res) => {
 
 app.delete('/api/sebastiane/:anio/:seccion/:index', (req, res) => {
   const { anio, seccion, index } = req.params;
-  try {
-    const data = JSON.parse(fs.readFileSync(SEBASTIANE_JSON, 'utf-8'));
-    if (data[anio] && data[anio][seccion]) {
-      data[anio][seccion].splice(index, 1);
-      fs.writeFileSync(SEBASTIANE_JSON, JSON.stringify(data, null, 2));
-      res.json({ ok: true });
-    } else {
-      res.status(404).json({ error: "No encontrado" });
-    }
-  } catch (e) {
-    res.status(500).json({ error: "Error al eliminar" });
+  const data = JSON.parse(fs.readFileSync('sebastiane.json', 'utf8'));
+
+  if (!data[anio] || !data[anio][seccion]) {
+    return res.status(404).json({ error: 'Sección o año no encontrados' });
   }
+
+  const idx = parseInt(index);
+  const item = data[anio][seccion][idx];
+
+  if (!item) {
+    return res.status(404).json({ error: 'Índice no válido' });
+  }
+
+  if (item.imagen) {
+    eliminarArchivoSiExiste(item.imagen);
+  }
+
+  data[anio][seccion].splice(idx, 1);
+
+  fs.writeFileSync('sebastiane.json', JSON.stringify(data, null, 2));
+  res.json({ ok: true });
 });
 
 app.get('/api/sebastiane', (req, res) => {
@@ -184,7 +222,6 @@ app.get('/api/sebastiane', (req, res) => {
   }
 });
 
-// API Sebastiane Latino
 app.get('/api/sebastiane_latino', (req, res) => {
   try {
     const data = fs.readFileSync('sebastiane_latino.json', 'utf-8');
@@ -239,24 +276,31 @@ app.post('/api/sebastiane_latino/:anio/:seccion', (req, res) => {
 
 app.delete('/api/sebastiane_latino/:anio/:seccion/:index', (req, res) => {
   const { anio, seccion, index } = req.params;
-  try {
-    const data = JSON.parse(fs.readFileSync(SEBASTIANE_LATINO_JSON, 'utf-8'));
-    if (data[anio] && data[anio][seccion]) {
-      data[anio][seccion].splice(index, 1);
-      fs.writeFileSync(SEBASTIANE_LATINO_JSON, JSON.stringify(data, null, 2));
-      res.json({ ok: true });
-    } else {
-      res.status(404).json({ error: "No encontrado" });
-    }
-  } catch (e) {
-    res.status(500).json({ error: "Error al eliminar" });
+  const data = JSON.parse(fs.readFileSync('sebastiane_latino.json', 'utf8'));
+
+  if (!data[anio] || !data[anio][seccion]) {
+    return res.status(404).json({ error: 'Sección o año no encontrados' });
   }
+
+  const idx = parseInt(index);
+  const item = data[anio][seccion][idx];
+
+  if (!item) {
+    return res.status(404).json({ error: 'Índice no válido' });
+  }
+
+  if (item.imagen) {
+    eliminarArchivoSiExiste(item.imagen);
+  }
+
+  data[anio][seccion].splice(idx, 1);
+
+  fs.writeFileSync('sebastiane_latino.json', JSON.stringify(data, null, 2));
+  res.json({ ok: true });
 });
 
-// API Noticias
 const NOTICIAS_JSON = 'noticias.json';
 
-// Obtener todas las noticias
 app.get('/api/noticias', (req, res) => {
   try {
     const data = fs.readFileSync(NOTICIAS_JSON, 'utf-8');
@@ -266,7 +310,6 @@ app.get('/api/noticias', (req, res) => {
   }
 });
 
-// Añadir una nueva noticia
 app.post('/api/noticias', (req, res) => {
   const noticia = req.body;
   let noticias = [];
@@ -275,43 +318,30 @@ app.post('/api/noticias', (req, res) => {
     noticias = JSON.parse(fs.readFileSync(NOTICIAS_JSON, 'utf-8'));
   } catch (e) {}
 
-  noticias.unshift(noticia); // Añadir al principio
+  noticias.unshift(noticia); 
   fs.writeFileSync(NOTICIAS_JSON, JSON.stringify(noticias, null, 2));
   res.json({ ok: true });
 });
 
-// Eliminar una noticia por índice
 app.delete('/api/noticias/:index', (req, res) => {
   const index = parseInt(req.params.index);
-  try {
-    let noticias = JSON.parse(fs.readFileSync(NOTICIAS_JSON, 'utf-8'));
-    if (index >= 0 && index < noticias.length) {
-      noticias.splice(index, 1);
-      fs.writeFileSync(NOTICIAS_JSON, JSON.stringify(noticias, null, 2));
-      res.json({ ok: true });
-    } else {
-      res.status(400).json({ error: 'Índice inválido' });
+  const data = JSON.parse(fs.readFileSync('noticias.json', 'utf8'));
+
+  if (index >= 0 && index < data.length) {
+    const noticia = data[index];
+
+    if (noticia.imagen) {
+      eliminarArchivoSiExiste(noticia.imagen);
     }
-  } catch (e) {
-    res.status(500).json({ error: 'No se pudo eliminar la noticia' });
+
+    data.splice(index, 1);
+
+    fs.writeFileSync('noticias.json', JSON.stringify(data, null, 2));
+    res.json({ ok: true });
+  } else {
+    res.status(404).json({ error: 'Índice inválido' });
   }
 });
-
-
-app.post('/api/upload', upload.single('imagen'), (req, res) => {
-  if (!req.file) {
-    return res.status(400).json({ error: 'No se recibió archivo' });
-  }
-  const extension = path.extname(req.file.originalname);
-  const nombreArchivo = `${Date.now()}${extension}`;
-  const destino = path.join(__dirname, 'public', 'img', nombreArchivo);
-
-  fs.renameSync(req.file.path, destino);
-
-  const url = `/img/${nombreArchivo}`;
-  res.json({ url });
-});
-
 
 const ENCUENTROS_JSON = 'encuentros.json';
 
@@ -339,19 +369,23 @@ app.post('/api/encuentros', (req, res) => {
 
 app.delete('/api/encuentros/:index', (req, res) => {
   const index = parseInt(req.params.index);
-  try {
-    let encuentros = JSON.parse(fs.readFileSync(ENCUENTROS_JSON, 'utf-8'));
-    if (index >= 0 && index < encuentros.length) {
-      encuentros.splice(index, 1);
-      fs.writeFileSync(ENCUENTROS_JSON, JSON.stringify(encuentros, null, 2));
-      res.json({ ok: true });
-    } else {
-      res.status(400).json({ error: 'Índice inválido' });
+  const data = JSON.parse(fs.readFileSync('encuentros.json', 'utf8'));
+
+  if (index >= 0 && index < data.length) {
+    const item = data[index];
+
+    if (item.imagen) {
+      eliminarArchivoSiExiste(item.imagen);
     }
-  } catch (e) {
-    res.status(500).json({ error: 'No se pudo eliminar el encuentro' });
+
+    data.splice(index, 1);
+    fs.writeFileSync('encuentros.json', JSON.stringify(data, null, 2));
+    res.json({ ok: true });
+  } else {
+    res.status(404).json({ error: 'Índice no válido' });
   }
 });
+
 
 const FESTIVALES_JSON = 'festivales.json';
 
@@ -369,16 +403,21 @@ app.post('/api/festivales', (req, res) => {
 });
 
 app.delete('/api/festivales/:index', (req, res) => {
-  const fs = require('fs');
-  const festivalesPath = path.join(__dirname, 'festivales.json');
   const index = parseInt(req.params.index);
-  const festivales = JSON.parse(fs.readFileSync(festivalesPath));
-  if (index >= 0 && index < festivales.length) {
-    festivales.splice(index, 1);
-    fs.writeFileSync(festivalesPath, JSON.stringify(festivales, null, 2));
+  const data = JSON.parse(fs.readFileSync('festivales.json', 'utf8'));
+
+  if (index >= 0 && index < data.length) {
+    const item = data[index];
+
+    if (item.imagen) {
+      eliminarArchivoSiExiste(item.imagen);
+    }
+
+    data.splice(index, 1);
+    fs.writeFileSync('festivales.json', JSON.stringify(data, null, 2));
     res.json({ ok: true });
   } else {
-    res.status(400).json({ error: "Índice inválido" });
+    res.status(404).json({ error: 'Índice no válido' });
   }
 });
 
@@ -450,24 +489,28 @@ app.post('/api/patrocinadores', (req, res) => {
 
 app.delete('/api/patrocinadores/:tipo/:index', (req, res) => {
   const { tipo, index } = req.params;
+  const data = JSON.parse(fs.readFileSync('patrocinadores.json', 'utf8'));
 
-  if (!['organizadores', 'patrocinios', 'colaboradores'].includes(tipo)) {
-    return res.status(400).json({ error: 'Tipo inválido' });
+  if (!data[tipo]) {
+    return res.status(404).json({ error: 'Tipo de patrocinador no válido' });
   }
 
-  try {
-    const data = JSON.parse(fs.readFileSync(PATROCINADORES_JSON, 'utf-8'));
-    if (!Array.isArray(data[tipo]) || index < 0 || index >= data[tipo].length) {
-      return res.status(400).json({ error: 'Índice inválido' });
-    }
+  const idx = parseInt(index);
+  const item = data[tipo][idx];
 
-    data[tipo].splice(index, 1);
-    fs.writeFileSync(PATROCINADORES_JSON, JSON.stringify(data, null, 2));
-    res.json({ ok: true });
-  } catch (e) {
-    res.status(500).json({ error: 'Error al eliminar' });
+  if (!item) {
+    return res.status(404).json({ error: 'Índice no válido' });
   }
+
+  if (item.imagen) {
+    eliminarArchivoSiExiste(item.imagen);
+  }
+
+  data[tipo].splice(idx, 1);
+  fs.writeFileSync('patrocinadores.json', JSON.stringify(data, null, 2));
+  res.json({ ok: true });
 });
+
 
 app.post('/api/bases_latino', (req, res) => {
   try {
@@ -479,22 +522,76 @@ app.post('/api/bases_latino', (req, res) => {
 });
 
 app.delete('/api/bases_latino', (req, res) => {
-  const vacio = {
-    latino: {
-      id: "",
-      titulo: { es: "", en: "", eu: "" },
-      bases_pdf: { es: "", en: "", eu: "" }
-    }
-  };
-
   try {
+    const data = JSON.parse(fs.readFileSync('bases_latino.json', 'utf8'));
+    const rutas = Object.values(data.latino.bases_pdf).filter(Boolean);
+
+    rutas.forEach(ruta => eliminarArchivoSiExiste(ruta));
+
+    const vacio = {
+      latino: {
+        id: "",
+        titulo: { es: "", en: "", eu: "" },
+        bases_pdf: { es: "", en: "", eu: "" }
+      }
+    };
+
     fs.writeFileSync('bases_latino.json', JSON.stringify(vacio, null, 2));
     res.json({ ok: true });
-  } catch (err) {
-    res.status(500).json({ error: 'No se pudieron eliminar las bases' });
+  } catch (e) {
+    console.error(e);
+    res.status(500).json({ error: 'No se pudieron eliminar las bases ni sus archivos' });
   }
 });
 
+const REVISTAS_JSON = 'revista.json';
 
+app.get('/api/revistas', (req, res) => {
+  try {
+    const data = fs.readFileSync(REVISTAS_JSON, 'utf-8');
+    res.json(JSON.parse(data));
+  } catch (e) {
+    res.status(500).json([]);
+  }
+});
+
+app.post('/api/revistas', (req, res) => {
+  const nueva = req.body;
+  let revistas = [];
+
+  try {
+    revistas = JSON.parse(fs.readFileSync(REVISTAS_JSON, 'utf-8'));
+  } catch (e) {}
+
+  revistas.unshift(nueva);
+  fs.writeFileSync(REVISTAS_JSON, JSON.stringify(revistas, null, 2));
+  res.json({ ok: true });
+});
+
+app.delete('/api/revistas/:index', (req, res) => {
+  const index = parseInt(req.params.index);
+  let revistas = [];
+
+  try {
+    revistas = JSON.parse(fs.readFileSync(REVISTAS_JSON, 'utf-8'));
+  } catch (e) {
+    return res.status(500).json({ error: 'Error leyendo revista.json' });
+  }
+
+  if (index < 0 || index >= revistas.length) {
+    return res.status(404).json({ error: 'Índice no válido' });
+  }
+
+  const revista = revistas[index];
+
+  if (revista.portada) eliminarArchivoSiExiste(revista.portada);
+  for (const lang of ["es", "en", "eu"]) {
+    if (revista.archivo?.[lang]) eliminarArchivoSiExiste(revista.archivo[lang]);
+  }
+
+  revistas.splice(index, 1);
+  fs.writeFileSync(REVISTAS_JSON, JSON.stringify(revistas, null, 2));
+  res.json({ ok: true });
+});
 
 app.listen(3000, () => console.log('Servidor en http://localhost:3000'));

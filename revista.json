@@ -1,157 +1,156 @@
 [
   {
-    "id":"11",
+    "id": "11",
     "titulo": {
-    "es": "Magazine 116",
-    "en": "Magazine 116",
-    "eu": "113. Alea"
-  },
+      "es": "Magazine 116",
+      "en": "Magazine 116",
+      "eu": "113. Alea"
+    },
     "portada": "img/magazine_116.png",
     "archivo": {
-    "es": "pdfs/magazine_116_es.pdf",
-    "en": "pdfs/magazine_116_en.pdf",
-    "eu": "pdfs/magazine_116_eu.pdf"
-  }
+      "es": "pdfs/magazine_116_es.pdf",
+      "en": "pdfs/magazine_116_en.pdf",
+      "eu": "pdfs/magazine_116_eu.pdf"
+    }
   },
   {
-    "id":"1",
+    "id": "1",
     "titulo": {
-    "es": "Magazine 113",
-    "en": "Magazine 113",
-    "eu": "113. Alea"
-  },
+      "es": "Magazine 113",
+      "en": "Magazine 113",
+      "eu": "113. Alea"
+    },
     "portada": "img/magazine_113.png",
     "archivo": {
-    "es": "pdfs/magazine_113.pdf",
-    "en": "",
-    "eu": ""
-  }
+      "es": "pdfs/magazine_113.pdf",
+      "en": "",
+      "eu": ""
+    }
   },
   {
-    "id":"2",
+    "id": "2",
     "titulo": {
-    "es": "Magazine 111",
-    "en": "Magazine 111",
-    "eu": "111. Alea"
-  },
+      "es": "Magazine 111",
+      "en": "Magazine 111",
+      "eu": "111. Alea"
+    },
     "portada": "img/magazine_111.png",
-     "archivo": {
-    "es": "pdfs/magazine_111.pdf",
-    "en": "",
-    "eu": ""
-  }
+    "archivo": {
+      "es": "pdfs/magazine_111.pdf",
+      "en": "",
+      "eu": ""
+    }
   },
   {
-    "id":"3",
+    "id": "3",
     "titulo": {
-    "es": "Magazine 108",
-    "en": "Magazine 108",
-    "eu": "108. Alea"
-  },
+      "es": "Magazine 108",
+      "en": "Magazine 108",
+      "eu": "108. Alea"
+    },
     "portada": "img/magazine_108.png",
-     "archivo": {
-    "es": "pdfs/magazine_108.pdf",
-    "en": "",
-    "eu": ""
-  }
+    "archivo": {
+      "es": "pdfs/magazine_108.pdf",
+      "en": "",
+      "eu": ""
+    }
   },
   {
-    "id":"4",
+    "id": "4",
     "titulo": {
-    "es": "Magazine 105",
-    "en": "Magazine 105",
-    "eu": "105. Alea"
-  },
+      "es": "Magazine 105",
+      "en": "Magazine 105",
+      "eu": "105. Alea"
+    },
     "portada": "img/magazine_105.png",
-     "archivo": {
-    "es": "pdfs/magazine_105.pdf",
-    "en": "",
-    "eu": ""
-  }
+    "archivo": {
+      "es": "pdfs/magazine_105.pdf",
+      "en": "",
+      "eu": ""
+    }
   },
   {
-    "id":"5",
+    "id": "5",
     "titulo": {
-    "es": "Magazine 102",
-    "en": "Magazine 102",
-    "eu": "102. Alea"
-  },
+      "es": "Magazine 102",
+      "en": "Magazine 102",
+      "eu": "102. Alea"
+    },
     "portada": "img/magazine_102.png",
-     "archivo": {
-    "es": "pdfs/magazine_102.pdf",
-    "en": "",
-    "eu": ""
-  }
+    "archivo": {
+      "es": "pdfs/magazine_102.pdf",
+      "en": "",
+      "eu": ""
+    }
   },
   {
-    "id":"6",
+    "id": "6",
     "titulo": {
-    "es": "Magazine 99",
-    "en": "Magazine 99",
-    "eu": "99. Alea"
-  },
+      "es": "Magazine 99",
+      "en": "Magazine 99",
+      "eu": "99. Alea"
+    },
     "portada": "img/magazine_99.png",
     "archivo": {
-    "es": "pdfs/magazine_99.pdf",
-    "en": "",
-    "eu": ""
-  }
+      "es": "pdfs/magazine_99.pdf",
+      "en": "",
+      "eu": ""
+    }
   },
   {
-    "id":"7",
+    "id": "7",
     "titulo": {
-    "es": "Magazine 96",
-    "en": "Magazine 96",
-    "eu": "96. Alea"
-  },
+      "es": "Magazine 96",
+      "en": "Magazine 96",
+      "eu": "96. Alea"
+    },
     "portada": "img/magazine_96.png",
     "archivo": {
-    "es": "pdfs/magazine_96.pdf",
-    "en": "",
-    "eu": ""
-  }
+      "es": "pdfs/magazine_96.pdf",
+      "en": "",
+      "eu": ""
+    }
   },
   {
-    "id":"8",
-    
+    "id": "8",
     "titulo": {
-    "es": "Magazine 93",
-    "en": "Magazine 93",
-    "eu": "93. Alea"
-  },
+      "es": "Magazine 93",
+      "en": "Magazine 93",
+      "eu": "93. Alea"
+    },
     "portada": "img/magazine_93.png",
     "archivo": {
-    "es": "pdfs/magazine_93.pdf",
-    "en": "",
-    "eu": ""
-  }
+      "es": "pdfs/magazine_93.pdf",
+      "en": "",
+      "eu": ""
+    }
   },
   {
-    "id":"9",
+    "id": "9",
     "titulo": {
-    "es": "Magazine 85",
-    "en": "Magazine 85",
-    "eu": "85. Alea"
-  },
+      "es": "Magazine 85",
+      "en": "Magazine 85",
+      "eu": "85. Alea"
+    },
     "portada": "img/magazine_85.png",
     "archivo": {
-    "es": "pdfs/magazine_85.pdf",
-    "en": "",
-    "eu": ""
-  }
+      "es": "pdfs/magazine_85.pdf",
+      "en": "",
+      "eu": ""
+    }
   },
   {
-    "id":"10",
+    "id": "10",
     "titulo": {
-    "es": "Magazine 60",
-    "en": "Magazine 60",
-    "eu": "60. Alea"
-  },
+      "es": "Magazine 60",
+      "en": "Magazine 60",
+      "eu": "60. Alea"
+    },
     "portada": "img/magazine_revista_septiembre.png",
     "archivo": {
-    "es": "pdfs/magazine_60.pdf",
-    "en": "",
-    "eu": ""
+      "es": "pdfs/magazine_60.pdf",
+      "en": "",
+      "eu": ""
+    }
   }
-  }    
 ]

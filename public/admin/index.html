@@ -282,70 +282,95 @@
   </div>
 
   <h2>Gestión de Eventos (Lista Pagina Nosotros)</h2>
-<div class="gestion-eventos">
-  <form id="form-evento">
-    <label>Nombre del evento:<span style="color: #fc02ca">*</span></label>
-    <input type="text" name="nombre" placeholder="Nombre" required />
+  <div class="gestion-eventos">
+    <form id="form-evento">
+      <label>Nombre del evento:<span style="color: #fc02ca">*</span></label>
+      <input type="text" name="nombre" placeholder="Nombre" required />
 
-    <label>Mes:</label>
-    <input type="text" name="mes_es" placeholder="Mes (ES)" />
-    <input type="text" name="mes_en" placeholder="Mes (EN)" />
-    <input type="text" name="mes_eu" placeholder="Mes (EU)" />
+      <label>Mes:</label>
+      <input type="text" name="mes_es" placeholder="Mes (ES)" />
+      <input type="text" name="mes_en" placeholder="Mes (EN)" />
+      <input type="text" name="mes_eu" placeholder="Mes (EU)" />
 
-    <label>Lugar:</label>
-    <input type="text" name="lugar_es" placeholder="Lugar (ES)" />
-    <input type="text" name="lugar_en" placeholder="Lugar (EN)" />
-    <input type="text" name="lugar_eu" placeholder="Lugar (EU)" />
+      <label>Lugar:</label>
+      <input type="text" name="lugar_es" placeholder="Lugar (ES)" />
+      <input type="text" name="lugar_en" placeholder="Lugar (EN)" />
+      <input type="text" name="lugar_eu" placeholder="Lugar (EU)" />
 
-    <label>URL:</label>
-    <input type="text" name="url" placeholder="https://..." />
+      <label>URL:</label>
+      <input type="text" name="url" placeholder="https://..." />
 
-    <label>Nota (opcional):</label>
-    <input type="text" name="nota_es" placeholder="Nota (ES)" />
-    <input type="text" name="nota_en" placeholder="Nota (EN)" />
-    <input type="text" name="nota_eu" placeholder="Nota (EU)" />
+      <label>Nota (opcional):</label>
+      <input type="text" name="nota_es" placeholder="Nota (ES)" />
+      <input type="text" name="nota_en" placeholder="Nota (EN)" />
+      <input type="text" name="nota_eu" placeholder="Nota (EU)" />
 
-    <button type="submit">Añadir evento</button>
-  </form>
+      <button type="submit">Añadir evento</button>
+    </form>
 
-  <div class="eventos-listado">
-    <h3>Eventos añadidos:</h3>
-    <button type="button" id="toggle-eventos">Mostrar/Ocultar lista de eventos</button>
-    <div id="lista-eventos" style="display: none;"></div>
+    <div class="eventos-listado">
+      <h3>Eventos añadidos:</h3>
+      <button type="button" id="toggle-eventos">Mostrar/Ocultar lista de eventos</button>
+      <div id="lista-eventos" style="display: none;"></div>
+    </div>
   </div>
-</div>
 
-<h2>Gestión de Patrocinadores</h2>
-<div class="gestion-patrocinadores">
-  <form id="form-patrocinador" enctype="multipart/form-data">
-    <label>Tipo:</label>
-    <select name="tipo">
-      <option value="organizadores">Organizador</option>
-      <option value="patrocinios">Patrocinador</option>
-      <option value="colaboradores">Colaborador</option>
-    </select>
+  <h2>Gestión de Patrocinadores</h2>
+  <div class="gestion-patrocinadores">
+    <form id="form-patrocinador" enctype="multipart/form-data">
+      <label>Tipo:</label>
+      <select name="tipo">
+        <option value="organizadores">Organizador</option>
+        <option value="patrocinios">Patrocinador</option>
+        <option value="colaboradores">Colaborador</option>
+      </select>
 
-    <label>URL:<span style="color: #fc02ca">*</span></label>
-    <input type="text" name="href" placeholder="https://..." required />
+      <label>URL:<span style="color: #fc02ca">*</span></label>
+      <input type="text" name="href" placeholder="https://..." required />
 
-    <label>Imagen:<span style="color: #fc02ca">*</span></label>
-    <input type="file" name="img" accept="image/*" required />
+      <label>Imagen:<span style="color: #fc02ca">*</span></label>
+      <input type="file" name="img" accept="image/*" required />
 
-    <label>Descripción<span style="color: #fc02ca">*</span>:</label>
-    <input type="text" name="alt" placeholder="Descripción" required />
+      <label>Descripción<span style="color: #fc02ca">*</span>:</label>
+      <input type="text" name="alt" placeholder="Descripción" required />
 
-    <button type="submit">Añadir patrocinador</button>
-  </form>
+      <button type="submit">Añadir patrocinador</button>
+    </form>
 
-  <div class="patrocinadores-listado">
-    <h3>Lista de patrocinadores:</h3>
-    <button type="button" id="toggle-patrocinadores">Mostrar/Ocultar lista</button>
-    <div id="lista-patrocinadores" style="display: none;"></div>
+    <div class="patrocinadores-listado">
+      <h3>Lista de patrocinadores:</h3>
+      <button type="button" id="toggle-patrocinadores">Mostrar/Ocultar lista</button>
+      <div id="lista-patrocinadores" style="display: none;"></div>
+    </div>
   </div>
-</div>
 
+  <h2>Gestión de Revistas</h2>
+  <div class="gestion-revistas">
+    <form id="form-revista" enctype="multipart/form-data">
+      <label>Título ES</label>
+      <input type="text" name="titulo_es" required />
+      <label>Título EN</label>
+      <input type="text" name="titulo_en" required />
+      <label>Título EU</label>
+      <input type="text" name="titulo_eu" required />
 
+      <label>Portada (imagen)</label>
+      <input type="file" name="portada" accept="image/*" />
 
+      <label>Archivo PDF ES</label>
+      <input type="file" name="archivo_es" accept="application/pdf" />
+      <label>Archivo PDF EN</label>
+      <input type="file" name="archivo_en" accept="application/pdf" />
+      <label>Archivo PDF EU</label>
+      <input type="file" name="archivo_eu" accept="application/pdf" />
+
+      <button type="submit">Guardar revista</button>
+    </form>
+    <div class="revista-listado">
+      <button id="toggle-revistas">Ocultar lista de revistas</button>
+      <div id="lista-revistas" class="revistas-listado" style="display: none;"></div>
+    </div>
+  </div>
 
   <script src="admin.js"></script>
 

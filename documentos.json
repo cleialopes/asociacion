@@ -1,5 +1,6 @@
 [
   {
+    "id": "1",
     "tipo": "programa",
     "anio": 2025,
     "archivos": {
@@ -9,48 +10,53 @@
     }
   },
   {
+    "id": "2",
     "tipo": "cartel",
     "anio": 2025,
     "archivos": {
-      "es": "pdfs/cartel_2025_es.pdf",
-      "eu": "pdfs/cartel_2025_eu.pdf",
-      "en": "pdfs/cartel_2025_en.pdf"
+      "es": "",
+      "eu": "",
+      "en": ""
     }
   },
   {
+    "id": "3",
     "tipo": "memoria",
     "anio": 2025,
     "archivos": {
-      "es": "pdfs/memoria_2025_es.pdf",
-      "eu": "pdfs/memoria_2025_eu.pdf",
-      "en": "pdfs/memoria_2025_en.pdf"
+      "es": "",
+      "eu": "",
+      "en": ""
     }
   },
  {
+  "id": "4",
     "tipo": "programa",
     "anio": 2024,
     "archivos": {
-      "es": "pdfs/programa_2024_es.pdf",
-      "eu": "pdfs/programa_2024_eu.pdf",
-      "en": "pdfs/programa_2024_en.pdf"
+      "es": "",
+      "eu": "",
+      "en": ""
     }
   },
   {
+    "id": "5",
     "tipo": "cartel",
     "anio": 2024,
     "archivos": {
-      "es": "pdfs/cartel_2024_es.pdf",
-      "eu": "pdfs/cartel_2024_eu.pdf",
-      "en": "pdfs/cartel_2024_en.pdf"
+      "es": "",
+      "eu": "",
+      "en": ""
     }
   },
   {
+    "id": "6",
     "tipo": "memoria",
     "anio": 2024,
     "archivos": {
-      "es": "pdfs/memoria_2024_es.pdf",
-      "eu": "pdfs/memoria_2024_eu.pdf",
-      "en": "pdfs/memoria_2024_en.pdf"
+      "es": "",
+      "eu": "",
+      "en": ""
     }
   }
 ]

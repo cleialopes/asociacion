@@ -432,7 +432,6 @@ async function cargarEncuentrosAdmin() {
     return;
   }
 
-  // Convertimos de "YYYY-MM-DD" a "DD/MM/YYYY"
   const [anio, mes, dia] = filtroFechaRaw.split("-");
   const filtroFecha = `${dia}/${mes}/${anio}`;
 
@@ -577,7 +576,6 @@ document.getElementById("form-evento").addEventListener("submit", async (e) => {
     }
   };
 
-  // Quitar nota si está vacía
   if (!nuevoEvento.nota.es && !nuevoEvento.nota.en && !nuevoEvento.nota.eu) {
     delete nuevoEvento.nota;
   }
@@ -642,7 +640,7 @@ document.getElementById("toggle-eventos").addEventListener("click", function () 
     lista.style.display = "none";
     this.textContent = "Mostrar lista de eventos";
   } else {
-    cargarEventosAdmin(); // solo cuando se va a mostrar
+    cargarEventosAdmin();
     lista.style.display = "block";
     this.textContent = "Ocultar lista de eventos";
   }
@@ -754,12 +752,11 @@ document.getElementById("form-bases-latino").addEventListener("submit", async (e
     }
   };
 
-  // Subir los 3 archivos PDF (si los hay)
   for (let lang of ["es", "en", "eu"]) {
     const file = form[`pdf_${lang}`].files[0];
     if (file) {
       const pdfForm = new FormData();
-      pdfForm.append("imagen", file); // reutilizamos /api/upload
+      pdfForm.append("imagen", file); 
       const res = await fetch("/api/upload", {
         method: "POST",
         body: pdfForm
@@ -818,3 +815,115 @@ document.getElementById("btn-eliminar-bases")?.addEventListener("click", async (
   }
 });
 
+// === GESTIÓN DE REVISTAS ===
+document.getElementById("form-revista").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const form = e.target;
+
+  const nuevaRevista = {
+    id: Date.now().toString(),
+    titulo: {
+      es: form.titulo_es.value.trim(),
+      en: form.titulo_en.value.trim(),
+      eu: form.titulo_eu.value.trim()
+    },
+    portada: "",
+    archivo: {
+      es: "",
+      en: "",
+      eu: ""
+    }
+  };
+
+  // Subir portada
+  const portadaFile = form.portada.files[0];
+  if (portadaFile) {
+    const portadaForm = new FormData();
+    portadaForm.append("imagen", portadaFile);
+    const res = await fetch("/api/upload", { method: "POST", body: portadaForm });
+    const data = await res.json();
+    if (data?.url?.includes("/img/")) {
+      nuevaRevista.portada = data.url;
+    }
+  }
+
+  // Subir PDFs por idioma
+  for (let lang of ["es", "en", "eu"]) {
+    const file = form[`archivo_${lang}`].files[0];
+    if (file) {
+      const pdfForm = new FormData();
+      pdfForm.append("imagen", file);
+      const res = await fetch("/api/upload", { method: "POST", body: pdfForm });
+      const data = await res.json();
+      if (data?.url?.includes("/pdfs/")) {
+        nuevaRevista.archivo[lang] = data.url;
+      }
+    }
+  }
+
+  // Guardar revista
+  const res = await fetch("/api/revistas", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(nuevaRevista)
+  });
+
+  if (res.ok) {
+    alert("Revista guardada.");
+    form.reset();
+    cargarRevistasAdmin();
+  } else {
+    alert("Error al guardar la revista.");
+  }
+});
+
+async function cargarRevistasAdmin() {
+  const res = await fetch("/revista.json");
+  const revistas = await res.json();
+  const contenedor = document.getElementById("lista-revistas");
+  contenedor.innerHTML = "";
+
+  if (!revistas || revistas.length === 0) {
+    contenedor.innerHTML = "<p>No hay revistas añadidas.</p>";
+    return;
+  }
+
+  revistas.forEach((r, index) => {
+    const div = document.createElement("div");
+    div.className = "revista-item";
+    div.innerHTML = `
+      <img src="${r.portada}" alt="Portada" style="max-height: 100px;"><br/>
+      <strong>${r.titulo.es}</strong><br/>
+      ${r.archivo.es ? `<a href="${r.archivo.es}" target="_blank">PDF ES</a>` : ''}
+      ${r.archivo.en ? ` | <a href="${r.archivo.en}" target="_blank">PDF EN</a>` : ''}
+      ${r.archivo.eu ? ` | <a href="${r.archivo.eu}" target="_blank">PDF EU</a>` : ''}
+      <br/>
+      <button onclick="eliminarRevista(${index})">Eliminar</button>
+      <hr/>
+    `;
+    contenedor.appendChild(div);
+  });
+}
+
+async function eliminarRevista(index) {
+  if (confirm("¿Eliminar esta revista?")) {
+    const res = await fetch(`/api/revistas/${index}`, {
+      method: "DELETE"
+    });
+    if (res.ok) {
+      alert("Revista eliminada.");
+      cargarRevistasAdmin();
+    } else {
+      alert("Error al eliminar la revista.");
+    }
+  }
+}
+
+document.getElementById("toggle-revistas").addEventListener("click", function () {
+  const lista = document.getElementById("lista-revistas");
+  const visible = lista.style.display !== "none";
+  lista.style.display = visible ? "none" : "block";
+  this.textContent = visible ? "Mostrar lista de revistas" : "Ocultar lista de revistas";
+});
+
+cargarRevistasAdmin();
