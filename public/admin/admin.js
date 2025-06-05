@@ -647,3 +647,90 @@ document.getElementById("toggle-eventos").addEventListener("click", function () 
     this.textContent = "Ocultar lista de eventos";
   }
 });
+
+document.getElementById("form-patrocinador").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const form = e.target;
+  const tipo = form.tipo.value;
+
+  const file = form.img.files[0];
+let imageUrl = "";
+
+if (file) {
+  const imgForm = new FormData();
+  imgForm.append("imagen", file);
+  const uploadRes = await fetch("/api/upload", {
+    method: "POST",
+    body: imgForm
+  });
+  const data = await uploadRes.json();
+  imageUrl = data.url || "";
+}
+
+const nuevo = {
+  href: form.href.value.trim(),
+  img: imageUrl,
+  alt: form.alt.value.trim()
+};
+
+const res = await fetch("/api/patrocinadores", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({ tipo, nuevo })
+});
+
+  if (res.ok) {
+    alert("Patrocinador guardado.");
+    form.reset();
+    cargarPatrocinadoresAdmin();
+  } else {
+    alert("Error al guardar patrocinador.");
+  }
+});
+
+async function cargarPatrocinadoresAdmin() {
+  const res = await fetch("/patrocinadores.json");
+  const data = await res.json();
+  const contenedor = document.getElementById("lista-patrocinadores");
+  contenedor.innerHTML = "";
+
+  ["organizadores", "patrocinios", "colaboradores"].forEach(tipo => {
+    const grupo = data[tipo] || [];
+    if (grupo.length === 0) return;
+    const section = document.createElement("section");
+    section.innerHTML = `<h4>${tipo}</h4>`;
+    grupo.forEach((p, i) => {
+      const div = document.createElement("div");
+      div.innerHTML = `
+        <a href="${p.href}" target="_blank"><img src="${p.img}" alt="${p.alt}" height="30"></a>
+        <button onclick="eliminarPatrocinador('${tipo}', ${i})">Eliminar</button>
+      `;
+      section.appendChild(div);
+    });
+    contenedor.appendChild(section);
+  });
+}
+
+window.eliminarPatrocinador = async function(tipo, index) {
+  if (confirm("¿Eliminar patrocinador?")) {
+    const res = await fetch(`/api/patrocinadores/${tipo}/${index}`, {
+      method: "DELETE"
+    });
+    if (res.ok) {
+      alert("Eliminado.");
+      cargarPatrocinadoresAdmin();
+    } else {
+      alert("Error al eliminar.");
+    }
+  }
+};
+
+document.getElementById("toggle-patrocinadores").addEventListener("click", function () {
+  const cont = document.getElementById("lista-patrocinadores");
+  const visible = cont.style.display !== "none";
+  cont.style.display = visible ? "none" : "block";
+  this.textContent = visible ? "Mostrar lista" : "Ocultar lista";
+});
+
+cargarPatrocinadoresAdmin();
+

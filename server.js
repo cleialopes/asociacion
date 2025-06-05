@@ -29,6 +29,7 @@ app.use('/documentos.json', express.static(path.join(__dirname, 'documentos.json
 app.use('/encuentros.json', express.static(path.join(__dirname, 'encuentros.json')));
 app.use('/festivales.json', express.static(path.join(__dirname, 'festivales.json')));
 app.use('/eventos.json', express.static(path.join(__dirname, 'eventos.json')));
+app.use('/patrocinadores.json', express.static(path.join(__dirname, 'patrocinadores.json')));
 
 app.use(cors());
 app.use(express.json());
@@ -420,6 +421,52 @@ app.delete('/api/eventos/:index', (req, res) => {
   }
 });
 
+const PATROCINADORES_JSON = 'patrocinadores.json';
+
+app.post('/api/patrocinadores', (req, res) => {
+  const { tipo, nuevo } = req.body;
+
+  if (!['organizadores', 'patrocinios', 'colaboradores'].includes(tipo)) {
+    return res.status(400).json({ error: 'Tipo inválido' });
+  }
+
+  let data = {};
+  try {
+    data = JSON.parse(fs.readFileSync(PATROCINADORES_JSON, 'utf-8'));
+  } catch (e) {
+    data = { organizadores: [], patrocinios: [], colaboradores: [] };
+  }
+
+  data[tipo].push(nuevo);
+
+  try {
+    fs.writeFileSync(PATROCINADORES_JSON, JSON.stringify(data, null, 2));
+    res.json({ ok: true });
+  } catch (e) {
+    res.status(500).json({ error: 'Error al guardar patrocinador' });
+  }
+});
+
+app.delete('/api/patrocinadores/:tipo/:index', (req, res) => {
+  const { tipo, index } = req.params;
+
+  if (!['organizadores', 'patrocinios', 'colaboradores'].includes(tipo)) {
+    return res.status(400).json({ error: 'Tipo inválido' });
+  }
+
+  try {
+    const data = JSON.parse(fs.readFileSync(PATROCINADORES_JSON, 'utf-8'));
+    if (!Array.isArray(data[tipo]) || index < 0 || index >= data[tipo].length) {
+      return res.status(400).json({ error: 'Índice inválido' });
+    }
+
+    data[tipo].splice(index, 1);
+    fs.writeFileSync(PATROCINADORES_JSON, JSON.stringify(data, null, 2));
+    res.json({ ok: true });
+  } catch (e) {
+    res.status(500).json({ error: 'Error al eliminar' });
+  }
+});
 
 
 app.listen(3000, () => console.log('Servidor en http://localhost:3000'));

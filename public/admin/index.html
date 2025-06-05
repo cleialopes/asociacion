@@ -291,6 +291,36 @@
   </div>
 </div>
 
+<h2>Gestión de Patrocinadores</h2>
+<div class="gestion-patrocinadores">
+  <form id="form-patrocinador" enctype="multipart/form-data">
+    <label>Tipo:</label>
+    <select name="tipo">
+      <option value="organizadores">Organizador</option>
+      <option value="patrocinios">Patrocinador</option>
+      <option value="colaboradores">Colaborador</option>
+    </select>
+
+    <label>Enlace (href):</label>
+    <input type="text" name="href" placeholder="https://..." required />
+
+    <label>Imagen:</label>
+    <input type="file" name="img" accept="image/*" required />
+
+    <label>Texto alternativo (alt):</label>
+    <input type="text" name="alt" placeholder="Descripción" required />
+
+    <button type="submit">Añadir patrocinador</button>
+  </form>
+
+  <div class="patrocinadores-listado">
+    <h3>Lista de patrocinadores:</h3>
+    <button type="button" id="toggle-patrocinadores">Mostrar/Ocultar lista</button>
+    <div id="lista-patrocinadores" style="display: none;"></div>
+  </div>
+</div>
+
+
 
 
   <script src="admin.js"></script>

@@ -1,0 +1,98 @@
+{
+  "organizadores": [
+    {
+      "href": "https://www.gehitu.org/",
+      "img": "img/patrocinador_gehitu.png",
+      "alt": "Organizador 1"
+    },
+    {
+      "href": "https://www.sansebastianfestival.com/es/",
+      "img": "img/patrocinador_ssiff.png",
+      "alt": "Organizador 2"
+    }
+  ],
+  "patrocinios": [
+    {
+      "href": "https://www.igualdad.gob.es/",
+      "img": "img/patrocinador-ministerio-igualdad.jpg",
+      "alt": "Patrocinador 1"
+    },
+    {
+      "href": "https://www.accioncultural.es/es/",
+      "img": "img/patrocinador-ace_vtrans.png",
+      "alt": "Patrocinador 2"
+    },
+    {
+      "href": "https://mugengainetik.org/",
+      "img": "img/patrocinador-mugenelan.png",
+      "alt": "Patrocinador 4"
+    }
+  ],
+  "colaboradores": [
+    {
+      "href": "https://www.gipuzkoa.eus/es/inicio",
+      "img": "img/patrocinado-galdundia.png",
+      "alt": "Colaborador 1"
+    },
+    {
+      "href": "https://www.zine-eskola.eus/es/inicio",
+      "img": "img/patrocinador-elias-querejeta.png",
+      "alt": "Colaborador 2"
+    },
+    {
+      "href": "https://oda.org.es/",
+      "img": "img/patrocinador-oda.png",
+      "alt": "Colaborador 3"
+    },
+    {
+      "href": "https://donostia.eus/",
+      "img": "img/patrocinador-ayuntamiento.png",
+      "alt": "Colaborador 4"
+    },
+    {
+      "href": "https://www.elankidetza.euskadi.eus/inicio/",
+      "img": "img/patrocinador-govierno-vasco.png",
+      "alt": "Colaborador 5"
+    },
+    {
+      "href": "https://filmoteka.eus/es",
+      "img": "img/patrocinador-filmoteca.png",
+      "alt": "Colaborador 6"
+    },
+    {
+      "href": "https://www.nereakortabitarte.com/",
+      "img": "img/patrocinador-factoria.png",
+      "alt": "Colaborador 7"
+    },
+    {
+      "href": "https://www.emaus.com/es",
+      "img": "img/patrocinador-emaus.png",
+      "alt": "Colaborador 8"
+    },
+    {
+      "href": "https://fotomambru.myportfolio.com/",
+      "img": "img/patrocinador-mambru.jpg",
+      "alt": "Colaborador 9"
+    },
+    {
+      "href": "https://www.hotelavenidasansebastian.com/",
+      "img": "img/patrocinador-hotel-avenida.png",
+      "alt": "Colaborador 10"
+    },
+    {
+      "href": "https://bidassoa.es/",
+      "img": "img/patrocinador-Bidassoa.png",
+      "alt": "Colaborador 11"
+    },
+    {
+      "href": "https://www.youtube.com/@CanalTxingudi",
+      "img": "img/patrocinador-teledonosti.jpg",
+      "alt": "Colaborador 12"
+    },
+    {
+      "href": "https://kutxafundazioa.eus/es/artebidea",
+      "img": "img/patrocinador-kutxa-fundazioa.png",
+      "alt": "Colaborador 13"
+    }
+  ]
+}

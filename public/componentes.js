@@ -92,92 +92,103 @@ document.getElementById('footer').innerHTML = `
   </footer>
 `;
 
-function crearGrupoPatrocinadores(titulo, lista) {
-  let clase = titulo.toLowerCase();
-  const esCarrusel = clase === "patrocinios" || clase === "colaboradores";
+function crearGrupoPatrocinadores(tituloClave, lista) {
+  if (!lista || lista.length === 0) return '';
+  
+  let html = `<h2 data-i18n="${tituloClave}">${tituloClave}</h2>`;
+  html += `<div class="patrocinadores-grupo">`;
 
-  if (esCarrusel) {
-    let html = `<h2 data-i18n="${titulo.toLowerCase()}">${titulo}</h2>
-      <div class="swiper ${clase}-swiper">
-        <div class="swiper-wrapper">`;
-    lista.forEach(p => {
-      html += `
-        <div class="swiper-slide">
-          <a href="${p.href}" target="_blank">
-            <img src="${p.img}" alt="${p.alt}">
-          </a>
-        </div>`;
-    });
-    html += `</div>
-        <div class="swiper-pagination"></div>
-      </div>`;
-    return html;
-  }
-
-  let html = `<h2 data-i18n="${titulo.toLowerCase()}">${titulo}</h2><div class="grupo-patrocinadores ${clase}">`;
   lista.forEach(p => {
     html += `
-      <a href="${p.href}" target="_blank">
-        <img src="${p.img}" alt="${p.alt}">
-      </a>`;
+      <div class="patrocinador">
+        <a href="${p.href}" target="_blank">
+          <img src="${p.img}" alt="${p.alt}">
+        </a>
+      </div>`;
   });
+
   html += `</div>`;
   return html;
 }
 
-fetch('patrocinadores.json')
+fetch("patrocinadores.json")
   .then(res => res.json())
   .then(data => {
-    const contenedor = document.getElementById('patrocinadores');
-    if (contenedor) {
-      contenedor.classList.add('patrocinadores');
-      contenedor.innerHTML =
-        crearGrupoPatrocinadores("organizadores", data.organizadores) +
-        crearCarruselUnificado([...data.patrocinios, ...data.colaboradores]);
+    const contenedor = document.getElementById("patrocinadores");
+    contenedor.innerHTML =
+      crearGrupoPatrocinadores("organizadores", data.organizadores) +
+      `<div id="carrusel-patrocinadores"></div>`;
 
-      function crearCarruselUnificado(lista) {
-        let html = `<h2 data-i18n="patrocinios_colaboradores">Patrocinios y Colaboradores</h2>
-          <div class="swiper unificado-swiper">
-            <div class="swiper-wrapper">`;
-        lista.forEach(p => {
-          html += `
-            <div class="swiper-slide">
-              <a href="${p.href}" target="_blank">
-                <img src="${p.img}" alt="${p.alt}">
-              </a>
-            </div>`;
-        });
-        html += `</div>
-            <div class="swiper-pagination"></div>
-          </div>`;
-        return html;
-      }
-
-      cambiarIdioma(localStorage.getItem("idioma") || "es");
-
-      new Swiper('.unificado-swiper', {
-        slidesPerView: 4,
-        spaceBetween: 30,
-        loop: true,
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false
-        },
-        pagination: {
-          el: '.unificado-swiper .swiper-pagination',
-          clickable: true
-        },
-        breakpoints: {
-          0: { slidesPerView: 1 },
-          480: { slidesPerView: 2 },
-          768: { slidesPerView: 4 }
-        }
-      });
-    }
-  })
-  .catch(error => {
-    console.error("Error cargando patrocinadores:", error);
+    renderCarruselPersonalizado([...data.patrocinios, ...data.colaboradores]);
   });
+
+  function renderCarruselPersonalizado(lista) {
+  const contenedor = document.getElementById("carrusel-patrocinadores");
+  if (!contenedor) return;
+
+  let html = `
+    <h2 data-i18n="patrocinios_colaboradores">Patrocinios y Colaboradores</h2>
+    <div class="carrusel">
+      <button class="carrusel-prev">&#10094;</button>
+      <div class="carrusel-contenido">`;
+
+  lista.forEach(p => {
+    html += `
+      <div class="carrusel-slide">
+        <a href="${p.href}" target="_blank"><img src="${p.img}" alt="${p.alt}" /></a>
+      </div>`;
+  });
+
+  html += `</div>
+      <button class="carrusel-next">&#10095;</button>
+      <div class="carrusel-bullets"></div>
+    </div>`;
+
+  contenedor.innerHTML = html;
+
+  const slidesPerPage = 3;
+const slides = contenedor.querySelectorAll(".carrusel-slide");
+const totalPages = Math.ceil(slides.length / slidesPerPage);
+const contenidoSlides = contenedor.querySelector(".carrusel-contenido");
+const bullets = contenedor.querySelector(".carrusel-bullets");
+
+// ✅ Solución: inicializar slideIndex correctamente
+let slideIndex = 0;
+
+setInterval(() => {
+  slideIndex = (slideIndex + 1) % totalPages;
+  actualizarVista();
+}, 5000);
+
+  function actualizarVista() {
+    contenidoSlides.style.transform = `translateX(-${slideIndex * 100}%)`;
+    bullets.querySelectorAll("span").forEach((b, i) => {
+      b.classList.toggle("activo", i === slideIndex);
+    });
+  }
+
+  slides.forEach((_, i) => {
+    const span = document.createElement("span");
+    span.addEventListener("click", () => {
+      slideIndex = i;
+      actualizarVista();
+    });
+    bullets.appendChild(span);
+  });
+
+  contenedor.querySelector(".carrusel-prev").addEventListener("click", () => {
+    slideIndex = (slideIndex - 1 + totalPages) % totalPages;
+    actualizarVista();
+  });
+
+  contenedor.querySelector(".carrusel-next").addEventListener("click", () => {
+    slideIndex = (slideIndex + 1) % totalPages;
+    actualizarVista();
+  });
+
+  actualizarVista();
+}
+
 
 document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.getElementById("menu-toggle");
