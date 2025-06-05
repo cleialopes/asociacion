@@ -59,32 +59,18 @@ form button:hover {
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
+.gestion-eventos,
+.gestion-festivales,
 .gestion-encuentros,
 .gestion-noticias,
 .contenedor-banner,
 .gestion-sebastiane {
   display: flex;
-  gap: 40px;
-  align-items: flex-start;
-}
-/* 
-.pelicula-admin {
-  background: #fff;
-  padding: 12px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-} */
-
-.gestion-festivales,
-.festivales-listado,
-.gestion-encuentros,
-.gestion-noticias {
-  display: flex;
-  gap: 4px; 
+  gap: 20px;
   align-items: flex-start;
 }
 
+.eventos-listado,
 .peliculas-listado,
 .festivales-listado,
 .encuentros-listado,

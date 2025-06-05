@@ -28,6 +28,7 @@ app.use('/revista.json', express.static(path.join(__dirname, 'revista.json')));
 app.use('/documentos.json', express.static(path.join(__dirname, 'documentos.json')));
 app.use('/encuentros.json', express.static(path.join(__dirname, 'encuentros.json')));
 app.use('/festivales.json', express.static(path.join(__dirname, 'festivales.json')));
+app.use('/eventos.json', express.static(path.join(__dirname, 'eventos.json')));
 
 app.use(cors());
 app.use(express.json());
@@ -378,6 +379,47 @@ app.delete('/api/festivales/:index', (req, res) => {
     res.status(400).json({ error: "Índice inválido" });
   }
 });
+
+const EVENTOS_JSON = 'eventos.json';
+
+app.get('/api/eventos', (req, res) => {
+  try {
+    const data = fs.readFileSync(EVENTOS_JSON, 'utf-8');
+    res.json(JSON.parse(data));
+  } catch (e) {
+    res.status(500).json([]);
+  }
+});
+
+app.post('/api/eventos', (req, res) => {
+  const evento = req.body;
+  let eventos = [];
+
+  try {
+    eventos = JSON.parse(fs.readFileSync(EVENTOS_JSON, 'utf-8'));
+  } catch (e) {}
+
+  eventos.push(evento);
+  fs.writeFileSync(EVENTOS_JSON, JSON.stringify(eventos, null, 2));
+  res.json({ ok: true });
+});
+
+app.delete('/api/eventos/:index', (req, res) => {
+  const index = parseInt(req.params.index);
+  try {
+    let eventos = JSON.parse(fs.readFileSync(EVENTOS_JSON, 'utf-8'));
+    if (index >= 0 && index < eventos.length) {
+      eventos.splice(index, 1);
+      fs.writeFileSync(EVENTOS_JSON, JSON.stringify(eventos, null, 2));
+      res.json({ ok: true });
+    } else {
+      res.status(400).json({ error: 'Índice inválido' });
+    }
+  } catch (e) {
+    res.status(500).json({ error: 'No se pudo eliminar el evento' });
+  }
+});
+
 
 
 app.listen(3000, () => console.log('Servidor en http://localhost:3000'));

@@ -38,9 +38,6 @@ const traducciones = {
     "latino.objetivo.descripcion": "El Sebastiane Latino busca premiar el largometraje latinoamericano estrenado en el año que mejor refleje los valores o realidades de las personas LGTBIQA+, mediante un premio que se entrega durante el Festival de Cine de San Sebastián.",
     "latino.jurado.titulo": "Jurado:",
     "latino.jurado.descripcion": "El Premio Sebastiane Latino será otorgado por un jurado de socies de GEHITU y las personas invitadas por este como integrantes especiales del jurado.",
-    
-    "latino.bases": "BASES DEL 13º PREMIO SEBASTIANE LATINO 2024-25",
-    
     "encuentros.titulo": "Encuentros",
     "encuentros.parrafo1": "Durante la segunda semana del Festival Internacional de Cine de San Sebastián y aprovechando la cobertura que ofrece la reunión de profesionales de Industria dentro del mismo, se da anualmente el Encuentro de Festivales LGBTIQA+ Iberoamericanos.",
     "encuentros.parrafo2": "Con la intención de hacer de lazo de unión entre festivales del colectivo tanto de Latinoamérica como de la península Ibérica, la comisión ofrece su espacio y contactos para fortalecer las relaciones entre los mismos, generar nuevas sinergias y, a su vez, ser un espacio para compartir. Así, durante dos días, los profesionales se reúnen en diferentes charlas que debaten la actualidad tanto de la comunidad LGBTIQA+ en el cine como su representación.",
@@ -96,9 +93,6 @@ const traducciones = {
     "latino.objetivo.descripcion": "Urtean estreinatu den eta LGTBIQA+ pertsonen balioak edo errealitateak ondoen islatzen dituen Latinoamerikako film luzea saritu nahi du Sebastiane Latinok, Donostiako Zinemaldian ematen den sari baten bidez.",
     "latino.jurado.titulo": "Epaimahaia:",
     "latino.jurado.descripcion": "GEHITUko zenbait bazkidek eta GEHITUk epaimahaikide berezi gisa gonbidatutako pertsonek osatzen duten epaimahaiak emango dute Sebastiane Latino saria.",
-  
-    "latino.bases": "2024-2025eko 13. SEBASTIANE LATINO SARIAREN OINARRIAK",
-    
     "encuentros.titulo": "Topaketak",
     "encuentros.parrafo1": "Donostiako Nazioarteko Zinemaldiaren bigarren astean, bertan Industriako profesionalen bilerak eskaintzen duen estaldura aprobetxatuz, LGTBIQA+ Jaialdi Iberoamerikarren Topaketa egiten da urtero.",
     "encuentros.parrafo2": "Latinoamerikako zein Iberiar penintsulako zinema-jaialdien arteko lotura izateko asmoz, Sebastiane batzordeak bere espazioa eta dituen kontaktuak eskaintzen ditu jaialdien arteko harremanak sendotzeko, sinergia berriak sortzeko eta, aldi berean, partekatzeko gunea izateko. Hala, bi egunez, profesionalak zenbait hitzalditan biltzen dira, zinemako LGTBIQA+ komunitatearen eta haren irudikapenaren gaurkotasuna eztabaidatzeko.",
@@ -146,7 +140,6 @@ const traducciones = {
     "footer.companeros": "Partners",
     "footer.redes": "Social Media",
     "sebastiane.titulo": "Sebastiane",
-
     "sebastiane.quees": "What is it?",
     "sebastiane.descripcion": "The Sebastiane Award recognizes the best LGTBIAQ+ film at the San Sebastian Festival in any of the official competition sections that reflects the values or realities of LGTBIAQ+ people.",
     "latino.quees.titulo": "What is it?",
@@ -155,9 +148,6 @@ const traducciones = {
     "latino.objetivo.descripcion": "The Sebastiane Latino Award aims to recognize the Latin American feature film released that year that best reflects the values or realities of LGBTQIA+ people, through an award presented during the San Sebastian Film Festival.",
     "latino.jurado.titulo": "The Jury:",
     "latino.jurado.descripcion": "The Sebastiane Latino Award will be awarded by a jury composed of GEHITU members and individuals invited by GEHITU as special jury members.",
-    
-    "latino.bases": "RULES OF THE 13th SEBASTIANE LATINO AWARD 2024-2025 (IN SPANISH)",
-    
     "encuentros.titulo": "Meetings",
     "encuentros.parrafo1": "During the second week of the San Sebastian International Film Festival and during it’s professional and Industry market days we celebrate our annual Meeting of Ibero-American LGBTIQA+ Festivals.",
     "encuentros.parrafo2": "With the main goal of acting as a connection link between LGBTIQA+ festivals both from Latin-America as well as from the Iberian Peninsula, the commission offers its contacts and venue for networking, generating new synergies and, at the same time, be a space to share. This way, for two days, professionals meet through different lectures that debate actuality surrounding the LGBTIQA+ community in cinema and its representation.",
@@ -221,6 +211,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if (pathname.includes('encuentros.html')) {
+      document.dispatchEvent(new CustomEvent("cambioIdioma", { detail: { idioma } }));
+    }
+    
+    if (pathname.includes('nosotros.html')) {
       document.dispatchEvent(new CustomEvent("cambioIdioma", { detail: { idioma } }));
     }
 

@@ -257,6 +257,41 @@
     </div>
   </div>
 
+  <h2>Gestión de Eventos (Lista Pagina Nosotros)</h2>
+<div class="gestion-eventos">
+  <form id="form-evento">
+    <label>Nombre del evento:<span style="color: #fc02ca">*</span></label>
+    <input type="text" name="nombre" placeholder="Nombre" required />
+
+    <label>Mes:</label>
+    <input type="text" name="mes_es" placeholder="Mes (ES)" />
+    <input type="text" name="mes_en" placeholder="Mes (EN)" />
+    <input type="text" name="mes_eu" placeholder="Mes (EU)" />
+
+    <label>Lugar:</label>
+    <input type="text" name="lugar_es" placeholder="Lugar (ES)" />
+    <input type="text" name="lugar_en" placeholder="Lugar (EN)" />
+    <input type="text" name="lugar_eu" placeholder="Lugar (EU)" />
+
+    <label>URL:</label>
+    <input type="text" name="url" placeholder="https://..." />
+
+    <label>Nota (opcional):</label>
+    <input type="text" name="nota_es" placeholder="Nota (ES)" />
+    <input type="text" name="nota_en" placeholder="Nota (EN)" />
+    <input type="text" name="nota_eu" placeholder="Nota (EU)" />
+
+    <button type="submit">Añadir evento</button>
+  </form>
+
+  <div class="eventos-listado">
+    <h3>Eventos añadidos:</h3>
+    <button type="button" id="toggle-eventos">Mostrar/Ocultar lista de eventos</button>
+    <div id="lista-eventos" style="display: none;"></div>
+  </div>
+</div>
+
+
 
   <script src="admin.js"></script>
 

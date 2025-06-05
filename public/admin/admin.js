@@ -551,3 +551,99 @@ async function eliminarFestival(index) {
 window.eliminarFestival = eliminarFestival;
 cargarFestivalesAdmin();
 
+// =====Gestion eventos pagina nosotros
+document.getElementById("form-evento").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const form = e.target;
+
+  const nuevoEvento = {
+    id: Date.now().toString(),
+    nombre: form.nombre.value.trim(),
+    mes: {
+      es: form.mes_es.value.trim(),
+      en: form.mes_en.value.trim(),
+      eu: form.mes_eu.value.trim()
+    },
+    lugar: {
+      es: form.lugar_es.value.trim(),
+      en: form.lugar_en.value.trim(),
+      eu: form.lugar_eu.value.trim()
+    },
+    url: form.url.value.trim(),
+    nota: {
+      es: form.nota_es.value.trim(),
+      en: form.nota_en.value.trim(),
+      eu: form.nota_eu.value.trim()
+    }
+  };
+
+  // Quitar nota si está vacía
+  if (!nuevoEvento.nota.es && !nuevoEvento.nota.en && !nuevoEvento.nota.eu) {
+    delete nuevoEvento.nota;
+  }
+
+  const res = await fetch("/api/eventos", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(nuevoEvento)
+  });
+
+  if (res.ok) {
+    alert("Evento guardado.");
+    form.reset();
+    cargarEventosAdmin();
+  } else {
+    alert("Error al guardar el evento.");
+  }
+});
+
+async function cargarEventosAdmin() {
+  const res = await fetch("/eventos.json");
+  const eventos = await res.json();
+  const contenedor = document.getElementById("lista-eventos");
+  contenedor.innerHTML = "";
+
+  if (!eventos || eventos.length === 0) {
+    contenedor.innerHTML = "<p>No hay eventos añadidos.</p>";
+    return;
+  }
+
+  eventos.forEach((ev, index) => {
+    const div = document.createElement("div");
+    div.innerHTML = `
+      <strong>${ev.nombre}</strong><br/>
+      <small>${ev.url || "Sin URL"}</small><br/>
+      <button onclick="eliminarEvento(${index})">Eliminar</button>
+      <hr/>
+    `;
+    contenedor.appendChild(div);
+  });
+}
+window.eliminarEvento = async function(index) {
+  if (confirm("¿Eliminar este evento?")) {
+    const res = await fetch(`/api/eventos/${index}`, {
+      method: "DELETE"
+    });
+    if (res.ok) {
+      alert("Evento eliminado.");
+      cargarEventosAdmin();
+    } else {
+      alert("Error al eliminar.");
+    }
+  }
+};
+cargarEventosAdmin();
+
+document.getElementById("toggle-eventos").addEventListener("click", function () {
+  const lista = document.getElementById("lista-eventos");
+  const visible = lista.style.display !== "none";
+
+  if (visible) {
+    lista.style.display = "none";
+    this.textContent = "Mostrar lista de eventos";
+  } else {
+    cargarEventosAdmin(); // solo cuando se va a mostrar
+    lista.style.display = "block";
+    this.textContent = "Ocultar lista de eventos";
+  }
+});
