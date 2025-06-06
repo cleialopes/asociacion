@@ -3,6 +3,9 @@ $(document).ready(function () {
     let html = '';
     const idioma = localStorage.getItem("idioma") || "es";
 
+    cargarEncuentros(idioma);
+    renderizarListaFestivales(idioma);
+
     data.forEach(encuentros => {
       const titulo = encuentros.titulo?.[idioma] || encuentros.titulo?.es || "Sin título";
       const primeraImagen = encuentros.imagenes?.[0];
@@ -20,12 +23,27 @@ $(document).ready(function () {
     });
     $('#contenedor-encuentros').html(html);
   });
-});
+  fetch("/api/banner-encuentros")
+  .then(res => res.json())
+  .then(data => {
+    if (data.mostrar && data.url) {
+      const banner = document.getElementById("banner-encuentros");
+      if (!banner) return;
+      banner.classList.remove("oculto");
 
-$(document).ready(function () {
-  const idioma = localStorage.getItem("idioma") || "es";
-  cargarEncuentros(idioma);
-  renderizarListaFestivales(idioma);
+      if (data.tipo === "imagen") {
+        banner.innerHTML = `<img src="${data.url}" alt="Banner Encuentros" />`;
+      } else if (data.tipo === "video") {
+        banner.innerHTML = `
+          <video autoplay muted loop playsinline>
+            <source src="${data.url}" type="video/mp4">
+            Tu navegador no admite el video.
+          </video>`;
+        const video = banner.querySelector("video");
+        video.addEventListener("pause", () => video.play());
+      }
+    }
+  });
 });
 
 function cargarEncuentros(idioma) {
@@ -54,7 +72,7 @@ function cargarEncuentros(idioma) {
 
 function renderizarListaFestivales(idioma) {
   $.getJSON("festivales.json", function (data) {
-    $(".eventos-lista").remove(); // Elimina la lista anterior
+    $(".eventos-lista").remove();
 
     let listaHtml = "<ul class='eventos-lista'>";
 
@@ -75,7 +93,6 @@ function renderizarListaFestivales(idioma) {
   });
 }
 
-// ✅ Este bloque escucha el evento de cambio de idioma
 document.addEventListener("cambioIdioma", function (e) {
   const nuevoIdioma = e.detail.idioma;
   cargarEncuentros(nuevoIdioma);

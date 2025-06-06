@@ -343,6 +343,73 @@ async function cargarBannerSebastianeLatino() {
 }
 cargarBannerSebastianeLatino();
 
+// =====Gestión del banner de Encuentros=====
+document.getElementById("form-banner-encuentros").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const formData = new FormData(e.target);
+  const archivo = e.target.archivo.files[0];
+  const tipo = formData.get("tipo");
+  const esVideo = tipo === "video";
+  const extensionesValidas = esVideo ? ["mp4"] : ["jpg", "jpeg", "png", "webp"];
+  const extension = archivo?.name?.split(".").pop().toLowerCase();
+
+  if (archivo && !extensionesValidas.includes(extension)) {
+    alert(`Formato inválido. Solo se permiten: ${extensionesValidas.join(", ")}`);
+    return;
+  }
+
+  formData.set("mostrar", e.target.mostrar.checked);
+
+  const res = await fetch('/api/banner-encuentros', {
+    method: 'POST',
+    body: formData
+  });
+
+  if (res.ok) {
+    alert("Banner de Encuentros actualizado correctamente");
+    e.target.reset();
+    cargarBannerEncuentros();
+  } else {
+    alert("Error al actualizar el banner de Encuentros");
+  }
+});
+
+document.getElementById("btn-eliminar-banner-encuentros").addEventListener("click", async () => {
+  if (confirm("¿Seguro que deseas eliminar el banner de Encuentros?")) {
+    const res = await fetch("/api/banner-encuentros", { method: "DELETE" });
+    if (res.ok) {
+      alert("Banner de Encuentros eliminado correctamente");
+      cargarBannerEncuentros();
+    } else {
+      alert("Error al eliminar el banner de Encuentros");
+    }
+  }
+});
+
+async function cargarBannerEncuentros() {
+  const res = await fetch('/api/banner-encuentros');
+  const data = await res.json();
+  const preview = document.getElementById('preview-banner-encuentros');
+  preview.innerHTML = '';
+
+  if (data.url) {
+    if (data.tipo === "imagen") {
+      preview.innerHTML = `<img src="${data.url}" style="max-width: 100%; border: 1px solid #ccc; border-radius: 6px;" />`;
+    } else if (data.tipo === "video") {
+      preview.innerHTML = `
+        <video controls autoplay muted loop style="max-width: 100%; border: 1px solid #ccc; border-radius: 6px;">
+          <source src="${data.url}" type="video/mp4">
+          Tu navegador no admite el video.
+        </video>
+      `;
+    }
+  } else {
+    preview.innerHTML = '<p>No hay banner activo.</p>';
+  }
+}
+cargarBannerEncuentros();
+
+
 // =====Gestion Sebastiane=====
 document.getElementById("form-sebastiane").addEventListener("submit", async (e) => {
   e.preventDefault();
