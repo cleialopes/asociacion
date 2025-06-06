@@ -1,72 +1,70 @@
-// =====Gestion Banner index=====
-document.getElementById("form-banner").addEventListener("submit", async (e) => {
+// =====Gestión Banner Index=====
+document.getElementById("form-banner-index").addEventListener("submit", async (e) => {
   e.preventDefault();
-  const form = e.target;
-  const archivo = form.archivo.files[0];
-  const tipo = form.tipo.value;
+  const formData = new FormData(e.target);
+  const tipo = formData.get("tipo");
+  const archivo = formData.get("archivo");
+  formData.set("mostrar", e.target.mostrar.checked);
 
-  if (archivo) {
-    const esVideo = tipo === "video";
-    const extensionesValidas = esVideo ? ["mp4"] : ["jpg", "jpeg", "png", "webp"];
-    const extension = archivo.name.split(".").pop().toLowerCase();
+  // Validación de extensión
+  const esVideo = tipo === "video";
+  const extensionesValidas = esVideo ? ["mp4"] : ["jpg", "jpeg", "png", "webp"];
+  const extension = archivo.name.split(".").pop().toLowerCase();
 
-    if (!extensionesValidas.includes(extension)) {
-      alert(`Formato inválido. Solo se permiten: ${extensionesValidas.join(", ")}`);
-      return;
-    }
+  if (!extensionesValidas.includes(extension)) {
+    alert(`Formato inválido. Solo se permiten: ${extensionesValidas.join(", ")}`);
+    return;
   }
 
-  const formData = new FormData(form);
-  formData.set("mostrar", form.mostrar.checked);
-
-  const res = await fetch('/api/banner', {
+  const res = await fetch('/api/banner-index', {
     method: 'POST',
     body: formData
   });
 
   if (res.ok) {
-    alert("Banner actualizado correctamente");
-    form.reset();
-    cargarBannerActual();
+    alert("Banner de la home actualizado correctamente");
+    e.target.reset();
+    cargarBannerIndex();
   } else {
-    alert("Error al actualizar el banner");
+    alert("Error al actualizar el banner de la home");
   }
 });
 
-document.getElementById("btn-eliminar-banner").addEventListener("click", async () => {
-  if (confirm("¿Seguro que deseas eliminar el banner?")) {
-    const res = await fetch("/api/banner", { method: "DELETE" });
+document.getElementById("btn-eliminar-banner-index").addEventListener("click", async () => {
+  if (confirm("¿Seguro que deseas eliminar el banner de la home?")) {
+    const res = await fetch("/api/banner-index", { method: "DELETE" });
     if (res.ok) {
       alert("Banner eliminado correctamente");
+      cargarBannerIndex();
     } else {
       alert("Error al eliminar el banner");
     }
   }
 });
 
-async function cargarBannerActual() {
-  const res = await fetch('/api/banner');
+async function cargarBannerIndex() {
+  const res = await fetch('/api/banner-index');
   const data = await res.json();
 
-  const preview = document.getElementById('preview-banner');
+  const preview = document.getElementById('preview-banner-index');
   preview.innerHTML = '';
 
   if (data.url) {
     if (data.tipo === "imagen") {
-      preview.innerHTML = `<img src="${data.url}" style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 6px;" />`;
+      preview.innerHTML = `<img src="${data.url}" style="max-width: 100%; border-radius: 6px; border: 1px solid #ccc;" />`;
     } else if (data.tipo === "video") {
       preview.innerHTML = `
-        <video controls autoplay muted loop style="max-width: 100%; border: 1px solid #ccc; border-radius: 6px;">
+        <video autoplay muted loop controls style="max-width: 100%; border-radius: 6px; border: 1px solid #ccc;">
           <source src="${data.url}" type="video/mp4">
           Tu navegador no admite el video.
         </video>
       `;
     }
   } else {
-    preview.innerHTML = '<p>No hay banner activo.</p>';
+    preview.innerHTML = '<p>No hay banner cargado.</p>';
   }
 }
-cargarBannerActual();
+cargarBannerIndex();
 
 // ====Gestion Banner Nosotos=====
 document.getElementById("form-banner-nosotros").addEventListener("submit", async (e) => {
@@ -210,7 +208,140 @@ async function cargarBannerVoluntaries() {
 
 cargarBannerVoluntaries();
 
+// =====Gestion Banner Sebastiane=====
+document.getElementById("form-banner").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const form = e.target;
+  const archivo = form.archivo.files[0];
+  const tipo = form.tipo.value;
 
+  if (archivo) {
+    const esVideo = tipo === "video";
+    const extensionesValidas = esVideo ? ["mp4"] : ["jpg", "jpeg", "png", "webp"];
+    const extension = archivo.name.split(".").pop().toLowerCase();
+
+    if (!extensionesValidas.includes(extension)) {
+      alert(`Formato inválido. Solo se permiten: ${extensionesValidas.join(", ")}`);
+      return;
+    }
+  }
+
+  const formData = new FormData(form);
+  formData.set("mostrar", form.mostrar.checked);
+
+  const res = await fetch('/api/banner', {
+    method: 'POST',
+    body: formData
+  });
+
+  if (res.ok) {
+    alert("Banner actualizado correctamente");
+    form.reset();
+    cargarBannerActual();
+  } else {
+    alert("Error al actualizar el banner");
+  }
+});
+
+document.getElementById("btn-eliminar-banner").addEventListener("click", async () => {
+  if (confirm("¿Seguro que deseas eliminar el banner?")) {
+    const res = await fetch("/api/banner", { method: "DELETE" });
+    if (res.ok) {
+      alert("Banner eliminado correctamente");
+    } else {
+      alert("Error al eliminar el banner");
+    }
+  }
+});
+
+async function cargarBannerActual() {
+  const res = await fetch('/api/banner');
+  const data = await res.json();
+
+  const preview = document.getElementById('preview-banner');
+  preview.innerHTML = '';
+
+  if (data.url) {
+    if (data.tipo === "imagen") {
+      preview.innerHTML = `<img src="${data.url}" style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 6px;" />`;
+    } else if (data.tipo === "video") {
+      preview.innerHTML = `
+        <video controls autoplay muted loop style="max-width: 100%; border: 1px solid #ccc; border-radius: 6px;">
+          <source src="${data.url}" type="video/mp4">
+          Tu navegador no admite el video.
+        </video>
+      `;
+    }
+  } else {
+    preview.innerHTML = '<p>No hay banner activo.</p>';
+  }
+}
+cargarBannerActual();
+
+// =====Gestion banner sabastiane latino=====
+document.getElementById("form-banner-sebastiane-latino").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const formData = new FormData(e.target);
+  const archivo = formData.get("archivo");
+  const tipo = formData.get("tipo");
+  const esVideo = tipo === "video";
+  const extensionesValidas = esVideo ? ["mp4"] : ["jpg", "jpeg", "png", "webp"];
+  const extension = archivo?.name?.split(".").pop().toLowerCase();
+
+  if (archivo && !extensionesValidas.includes(extension)) {
+    alert(`Formato inválido. Solo se permiten: ${extensionesValidas.join(", ")}`);
+    return;
+  }
+
+  formData.set("mostrar", e.target.mostrar.checked);
+
+  const res = await fetch("/api/banner-sebastiane-latino", {
+    method: "POST",
+    body: formData
+  });
+
+  if (res.ok) {
+    alert("Banner actualizado correctamente");
+    e.target.reset();
+    cargarBannerSebastianeLatino();
+  } else {
+    alert("Error al actualizar el banner");
+  }
+});
+
+document.getElementById("btn-eliminar-banner-sebastiane-latino").addEventListener("click", async () => {
+  if (confirm("¿Seguro que deseas eliminar el banner?")) {
+    const res = await fetch("/api/banner-sebastiane-latino", { method: "DELETE" });
+    if (res.ok) {
+      alert("Banner eliminado correctamente");
+      cargarBannerSebastianeLatino();
+    } else {
+      alert("Error al eliminar el banner");
+    }
+  }
+});
+
+async function cargarBannerSebastianeLatino() {
+  const res = await fetch("/api/banner-sebastiane-latino");
+  const data = await res.json();
+  const preview = document.getElementById("preview-banner-sebastiane-latino");
+  preview.innerHTML = "";
+
+  if (data.url) {
+    if (data.tipo === "imagen") {
+      preview.innerHTML = `<img src="${data.url}" style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 6px;" />`;
+    } else if (data.tipo === "video") {
+      preview.innerHTML = `
+        <video controls autoplay muted loop style="max-width: 100%; border: 1px solid #ccc; border-radius: 6px;">
+          <source src="${data.url}" type="video/mp4">
+          Tu navegador no admite el video.
+        </video>`;
+    }
+  } else {
+    preview.innerHTML = "<p>No hay banner activo.</p>";
+  }
+}
+cargarBannerSebastianeLatino();
 
 // =====Gestion Sebastiane=====
 document.getElementById("form-sebastiane").addEventListener("submit", async (e) => {

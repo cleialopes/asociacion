@@ -80,6 +80,59 @@ function eliminarArchivoSiExiste(rutaRelativa) {
   }
 }
 
+app.get('/api/banner-index', (req, res) => {
+  try {
+    const data = fs.readFileSync('banner_index.json', 'utf-8');
+    res.json(JSON.parse(data));
+  } catch (e) {
+    res.json({ mostrar: false, tipo: "", url: "" });
+  }
+});
+
+app.post('/api/banner-index', upload.single('archivo'), (req, res) => {
+  const mostrar = req.body.mostrar === true || req.body.mostrar === 'true';
+  const tipo = req.body.tipo;
+  let url = req.body.url || "";
+
+  if (req.file) {
+    const ext = path.extname(req.file.originalname).toLowerCase();
+    const nombre = Date.now() + ext;
+
+    let destinoDir = ext === '.mp4'
+      ? path.join(__dirname, 'public', 'videos')
+      : path.join(__dirname, 'public', 'img');
+
+    if (!fs.existsSync(destinoDir)) fs.mkdirSync(destinoDir, { recursive: true });
+
+    const destino = path.join(destinoDir, nombre);
+    fs.renameSync(req.file.path, destino);
+
+    url = `/${path.relative(path.join(__dirname, 'public'), destino).replace(/\\/g, '/')}`;
+  }
+
+  const banner = { mostrar, tipo, url };
+  fs.writeFileSync('banner_index.json', JSON.stringify(banner, null, 2));
+  res.json({ ok: true });
+});
+
+app.delete('/api/banner-index', (req, res) => {
+  try {
+    const data = JSON.parse(fs.readFileSync('banner_index.json', 'utf8'));
+
+    if (data.url) {
+      eliminarArchivoSiExiste(data.url);
+    }
+
+    const vacio = { mostrar: false, tipo: "", url: "" };
+    fs.writeFileSync('banner_index.json', JSON.stringify(vacio, null, 2));
+
+    res.json({ ok: true });
+  } catch (err) {
+    console.error("Error eliminando banner index:", err);
+    res.status(500).json({ error: 'No se pudo eliminar el banner de index' });
+  }
+});
+
 app.post('/api/upload', upload.single('imagen'), (req, res) => {
   if (!req.file) return res.status(400).json({ error: 'No se recibió archivo' });
 
@@ -234,6 +287,53 @@ app.delete('/api/banner-voluntaries', (req, res) => {
     res.status(500).json({ error: 'No se pudo eliminar el banner de voluntaries' });
   }
 });
+
+app.get('/api/banner-sebastiane-latino', (req, res) => {
+  try {
+    const data = fs.readFileSync('banner_sebastiane_latino.json', 'utf-8');
+    res.json(JSON.parse(data));
+  } catch {
+    res.json({ mostrar: false, tipo: "", url: "" });
+  }
+});
+
+app.post('/api/banner-sebastiane-latino', upload.single('archivo'), (req, res) => {
+  const mostrar = req.body.mostrar === 'true' || req.body.mostrar === true;
+  const tipo = req.body.tipo;
+  let url = req.body.url || "";
+
+  if (req.file) {
+    const ext = path.extname(req.file.originalname).toLowerCase();
+    const nombre = Date.now() + ext;
+
+    let destinoDir = ext === '.mp4'
+      ? path.join(__dirname, 'public', 'videos')
+      : path.join(__dirname, 'public', 'img');
+
+    if (!fs.existsSync(destinoDir)) fs.mkdirSync(destinoDir, { recursive: true });
+
+    const destino = path.join(destinoDir, nombre);
+    fs.renameSync(req.file.path, destino);
+    url = `/${path.relative(path.join(__dirname, 'public'), destino).replace(/\\/g, '/')}`;
+  }
+
+  const banner = { mostrar, tipo, url };
+  fs.writeFileSync('banner_sebastiane_latino.json', JSON.stringify(banner, null, 2));
+  res.json({ ok: true });
+});
+
+app.delete('/api/banner-sebastiane-latino', (req, res) => {
+  try {
+    const data = JSON.parse(fs.readFileSync('banner_sebastiane_latino.json', 'utf-8'));
+    if (data.url) eliminarArchivoSiExiste(data.url);
+    fs.writeFileSync('banner_sebastiane_latino.json', JSON.stringify({ mostrar: false, tipo: "", url: "" }, null, 2));
+    res.json({ ok: true });
+  } catch (err) {
+    console.error("Error eliminando banner:", err);
+    res.status(500).json({ error: "No se pudo eliminar el banner" });
+  }
+});
+
 
 const SEBASTIANE_JSON = 'sebastiane.json';
 

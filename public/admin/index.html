@@ -10,7 +10,7 @@
 
   <h2>Actualizar banner de la Home</h2>
   <div class="contenedor-banner">
-    <form id="form-banner" class="form-banner" enctype="multipart/form-data">
+    <form id="form-banner-index" class="form-banner" enctype="multipart/form-data">
       <label>Tipo:
         <select name="tipo">
           <option value="imagen">Imagen</option>
@@ -24,12 +24,12 @@
         <input type="checkbox" name="mostrar" /> Mostrar
       </label><br>
       <button type="submit">Guardar</button>
-      <button id="btn-eliminar-banner">Eliminar banner</button>
+      <button id="btn-eliminar-banner-index" type="button">Eliminar banner</button>
     </form>
 
     <div class="vista-banner">
-      <h3>Vista previa del banner:</h3>
-      <div id="preview-banner"></div>
+      <h3>Vista previa:</h3>
+      <div id="preview-banner-index"></div>
     </div>
   </div>
 
@@ -83,7 +83,57 @@
     </div>
   </div>
 
-  <h2>Gestión Sebastiane Pelicula</h2>
+  <h2>Actualizar banner Sebastiane</h2>
+  <div class="contenedor-banner">
+    <form id="form-banner" class="form-banner" enctype="multipart/form-data">
+      <label>Tipo:
+        <select name="tipo">
+          <option value="imagen">Imagen</option>
+          <option value="video">Video</option>
+        </select>
+      </label><br>
+      <label>Archivo:
+        <input type="file" name="archivo" />
+      </label><br>
+      <label>
+        <input type="checkbox" name="mostrar" /> Mostrar
+      </label><br>
+      <button type="submit">Guardar</button>
+      <button id="btn-eliminar-banner">Eliminar banner</button>
+    </form>
+
+    <div class="vista-banner">
+      <h3>Vista previa:</h3>
+      <div id="preview-banner"></div>
+    </div>
+  </div>
+
+  <h2>Actualizar banner de Sebastiane Latino</h2>
+  <div class="contenedor-banner">
+    <form id="form-banner-sebastiane-latino" class="form-banner" enctype="multipart/form-data">
+      <label>Tipo:
+        <select name="tipo">
+          <option value="imagen">Imagen</option>
+          <option value="video">Video</option>
+        </select>
+      </label><br>
+      <label>Archivo:
+        <input type="file" name="archivo" />
+      </label><br>
+      <label>
+        <input type="checkbox" name="mostrar" /> Mostrar
+      </label><br>
+      <button type="submit">Guardar</button>
+      <button id="btn-eliminar-banner-sebastiane-latino" type="button">Eliminar banner</button>
+    </form>
+
+    <div class="vista-banner">
+      <h3>Vista previa:</h3>
+      <div id="preview-banner-sebastiane-latino"></div>
+    </div>
+  </div>
+
+  <h2>Gestión Sebastiane Películas</h2>
   <div class="gestion-sebastiane">
     <form id="form-sebastiane" class="form-sebastiane" enctype="multipart/form-data">
       <label>Año:</label>
@@ -166,7 +216,7 @@
     </div>
   </div>
 
-  <h2>Gestión Sebastiane Latino Peliculas</h2>
+  <h2>Gestión Sebastiane Latino Películas</h2>
   <div class="gestion-sebastiane">
     <form id="form-sebastiane-latino" class="form-sebastiane-latino" enctype="multipart/form-data">
       <label>Año:</label>
@@ -305,7 +355,7 @@
     </div>
   </div>
 
-  <h2>Gestión de Festivales (pagina Encuentros)</h2>
+  <h2>Gestión de Festivales (página Encuentros)</h2>
   <div class="gestion-festivales">
     <form id="form-festival">
       <label>Nombre:<span style="color: #fc02ca">*</span></label>
@@ -331,7 +381,7 @@
     </div>
   </div>
 
-  <h2>Gestión de Eventos (Lista Pagina Nosotros)</h2>
+  <h2>Gestión de Eventos (página Nosotros)</h2>
   <div class="gestion-eventos">
     <form id="form-evento">
       <label>Nombre del evento:<span style="color: #fc02ca">*</span></label>
@@ -422,7 +472,7 @@
     </div>
   </div>
 
-  <h2>Gestión de Documentos</h2>
+  <h2>Gestión de Documentos (página Revistas)</h2>
   <div class="gestion-documentos">
     <form id="form-documento" enctype="multipart/form-data">
       <label>Tipo de documento:</label>

@@ -1075,6 +1075,8 @@ form button:hover {
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
+#banner-sebastiane-latino,
+#banner-index,
 #banner-voluntaries,
 #banner-nosotros,
 #banner-sebastiane {
@@ -1084,6 +1086,8 @@ form button:hover {
   padding: 20px 0;
 }
 
+#banner-sebastiane-latino video,
+#banner-index video,
 #banner-voluntaries video,
 #banner-nosotros video,
 #banner-sebastiane video {
