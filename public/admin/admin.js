@@ -927,3 +927,90 @@ document.getElementById("toggle-revistas").addEventListener("click", function ()
 });
 
 cargarRevistasAdmin();
+
+// =====Gestion Documentos pg Revista=====
+document.getElementById("form-documento").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const form = e.target;
+
+  const nuevoDocumento = {
+    id: Date.now().toString(),
+    tipo: form.tipo.value,
+    anio: parseInt(form.anio.value),
+    archivos: { es: "", en: "", eu: "" }
+  };
+
+  for (let lang of ["es", "en", "eu"]) {
+    const file = form[`archivo_${lang}`].files[0];
+    if (file) {
+      const pdfForm = new FormData();
+      pdfForm.append("imagen", file);
+      const res = await fetch("/api/upload", { method: "POST", body: pdfForm });
+      const data = await res.json();
+      if (data?.url) nuevoDocumento.archivos[lang] = data.url;
+    }
+  }
+
+  const res = await fetch("/api/documentos", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(nuevoDocumento)
+  });
+
+  if (res.ok) {
+    alert("Documento guardado.");
+    form.reset();
+    cargarDocumentosAdmin();
+  } else {
+    alert("Error al guardar el documento.");
+  }
+});
+
+async function cargarDocumentosAdmin() {
+  const res = await fetch("/api/documentos");
+  const documentos = await res.json();
+  const contenedor = document.getElementById("lista-documentos");
+  contenedor.innerHTML = "";
+
+  const anioFiltro = document.getElementById("filtro-anio-documento").value;
+  if (!anioFiltro) {
+    contenedor.innerHTML = "<p>Selecciona un año para ver documentos.</p>";
+    return;
+  }
+
+  const filtrados = documentos.filter(doc => doc.anio.toString() === anioFiltro);
+
+  if (filtrados.length === 0) {
+    contenedor.innerHTML = "<p>No hay documentos para este año.</p>";
+    return;
+  }
+
+  filtrados.forEach((doc, index) => {
+    const div = document.createElement("div");
+    div.innerHTML = `
+      <strong>${doc.tipo} - ${doc.anio}</strong><br/>
+      ${doc.archivos.es ? `<a href="${doc.archivos.es}" target="_blank">ES</a>` : ''}
+      ${doc.archivos.en ? ` | <a href="${doc.archivos.en}" target="_blank">EN</a>` : ''}
+      ${doc.archivos.eu ? ` | <a href="${doc.archivos.eu}" target="_blank">EU</a>` : ''}
+      <br/>
+      <button onclick="eliminarDocumento(${index})">Eliminar</button>
+      <hr/>
+    `;
+    contenedor.appendChild(div);
+  });
+}
+
+async function eliminarDocumento(index) {
+  if (confirm("¿Eliminar este documento?")) {
+    const res = await fetch(`/api/documentos/${index}`, { method: "DELETE" });
+    if (res.ok) {
+      alert("Documento eliminado.");
+      cargarDocumentosAdmin();
+    } else {
+      alert("Error al eliminar el documento.");
+    }
+  }
+}
+
+window.eliminarDocumento = eliminarDocumento;
+cargarDocumentosAdmin();

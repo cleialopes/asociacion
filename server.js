@@ -594,4 +594,58 @@ app.delete('/api/revistas/:index', (req, res) => {
   res.json({ ok: true });
 });
 
+const DOCUMENTOS_JSON = 'documentos.json';
+
+// Obtener lista de documentos
+app.get('/api/documentos', (req, res) => {
+  try {
+    const data = fs.readFileSync(DOCUMENTOS_JSON, 'utf-8');
+    res.json(JSON.parse(data));
+  } catch (e) {
+    res.status(500).json([]);
+  }
+});
+
+// Guardar nuevo documento
+app.post('/api/documentos', (req, res) => {
+  const nuevo = req.body;
+  let documentos = [];
+
+  try {
+    documentos = JSON.parse(fs.readFileSync(DOCUMENTOS_JSON, 'utf-8'));
+  } catch (e) {}
+
+  documentos.unshift(nuevo);
+  fs.writeFileSync(DOCUMENTOS_JSON, JSON.stringify(documentos, null, 2));
+  res.json({ ok: true });
+});
+
+// Eliminar documento por índice
+app.delete('/api/documentos/:index', (req, res) => {
+  const index = parseInt(req.params.index);
+  let documentos = [];
+
+  try {
+    documentos = JSON.parse(fs.readFileSync(DOCUMENTOS_JSON, 'utf-8'));
+  } catch (e) {
+    return res.status(500).json({ error: 'Error leyendo documentos.json' });
+  }
+
+  if (index < 0 || index >= documentos.length) {
+    return res.status(404).json({ error: 'Índice no válido' });
+  }
+
+  const doc = documentos[index];
+  for (const lang of ["es", "en", "eu"]) {
+    if (doc.archivos?.[lang]) {
+      eliminarArchivoSiExiste(doc.archivos[lang]);
+    }
+  }
+
+  documentos.splice(index, 1);
+  fs.writeFileSync(DOCUMENTOS_JSON, JSON.stringify(documentos, null, 2));
+  res.json({ ok: true });
+});
+
+
 app.listen(3000, () => console.log('Servidor en http://localhost:3000'));

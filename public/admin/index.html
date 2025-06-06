@@ -372,6 +372,46 @@
     </div>
   </div>
 
+  <h2>Gestión de Documentos</h2>
+  <div class="gestion-documentos">
+    <form id="form-documento" enctype="multipart/form-data">
+      <label>Tipo de documento:</label>
+      <select name="tipo" required>
+        <option value="programa">Programa</option>
+        <option value="cartel">Cartel</option>
+        <option value="memoria">Memoria</option>
+      </select>
+
+      <label>Año:</label>
+      <input type="number" name="anio" required min="2000" max="2100" />
+      <br>
+      <label>Archivo PDF ES:</label>
+      <input type="file" name="archivo_es" accept="application/pdf" />
+      <label>Archivo PDF EN:</label>
+      <input type="file" name="archivo_en" accept="application/pdf" />
+      <label>Archivo PDF EU:</label>
+      <input type="file" name="archivo_eu" accept="application/pdf" />
+
+      <button type="submit">Guardar documento</button>
+    </form>
+
+    <div class="documentos-listado">
+      <h3>Documentos añadidos:</h3>
+      <label>Filtrar por año:</label>
+      <select id="filtro-anio-documento">
+        <option value="">-- Selecciona un año --</option>
+        <script>
+          for (let a = 2025; a >= 2000; a--) {
+            document.write(`<option value="${a}">${a}</option>`);
+          }
+        </script>
+      </select>
+      <button type="button" onclick="cargarDocumentosAdmin()">Buscar</button>
+      <div id="lista-documentos"></div>
+    </div>
+  </div>
+
+
   <script src="admin.js"></script>
 
 </body>

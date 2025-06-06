@@ -19,43 +19,24 @@ window.etiquetas = window.etiquetas || {
 function cargarRevistas() {
   const idioma = localStorage.getItem("idioma") || "es";
   fetch("revista.json")
-    .then(res => res.json())
-    .then(data => {
-      const contenedor = document.getElementById("lista-revistas");
-      contenedor.innerHTML = "";
+  .then(res => res.json())
+  .then(data => {
+    const contenedor = document.getElementById("lista-revistas");
+    contenedor.innerHTML = "";
 
-      data.forEach(revista => {
-        const div = document.createElement("div");
-        div.className = "revista modo-claro-oscuro";
-        const archivoPDF = revista.archivo[idioma] || revista.archivo["es"];
+    data.forEach(revista => {
+      const div = document.createElement("div");
+      div.className = "revista modo-claro-oscuro";
+      const archivoPDF = revista.archivo[idioma] || revista.archivo["es"];
 
-        div.innerHTML = `
-          <img src="${revista.portada}" alt="${revista.titulo[idioma]}" class="portada-revista" data-pdf="${archivoPDF}">
-          <h2>${revista.titulo[idioma] || revista.titulo["es"]}</h2>
-        `;
-        contenedor.appendChild(div);
-      });
-
-      document.querySelectorAll(".portada-revista").forEach(img => {
-        img.addEventListener("click", () => {
-          const archivo = img.getAttribute("data-pdf");
-          if (!archivo) return;
-          const visor = document.getElementById("visor-flowpaper");
-          const contenedorFlip = document.getElementById("flipbook-container");
-          visor.classList.remove("oculto");
-          contenedorFlip.innerHTML = `
-            <iframe 
-              src="pdfjs/web/viewer.html?file=${encodeURIComponent(location.origin + '/' + archivo)}"
-              style="width:100%; height:100%; border:none; overflow:hidden;" 
-              scrolling="no">
-            </iframe>
-          `;
-          document.getElementById("cerrar-visor").addEventListener("click", () => {
-            visor.classList.add("oculto");
-            contenedorFlip.innerHTML = "";
-          });
-        });
-      });;
+     div.innerHTML = `
+      <a href="${archivoPDF}" target="_blank">
+        <img src="${revista.portada}" alt="${revista.titulo[idioma]}" class="portada-revista">
+      </a>
+      <h2>${revista.titulo[idioma] || revista.titulo["es"]}</h2>
+    `;
+      contenedor.appendChild(div);
+    });
   });
 }
 
@@ -92,14 +73,6 @@ function cargarDocumentos() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-const cerrarBtn = document.getElementById("cerrar-visor");
-  const visor = document.getElementById("visor-flowpaper");
-  const contenedorFlip = document.getElementById("flipbook-container");
-
-  cerrarBtn.addEventListener("click", () => {
-    visor.classList.add("oculto");
-    contenedorFlip.innerHTML = "";
-  });
 
   if (typeof cargarRevistas === 'function') {
     cargarRevistas();

@@ -1,62 +1,12 @@
 [
   {
-    "id": "1",
-    "tipo": "programa",
-    "anio": 2025,
-    "archivos": {
-      "es": "img/10 ENCUENTRO_festivales_LGTBIAQ+_iberoamericanos-ES.pdf",
-      "eu": "img/10.TOPAKETA_festivales_LGTBIAQ+_iberoamericanos-EU.pdf",
-      "en": "img/10th MEETING_festivales_LGTBIAQ+_iberoamericanos-EN.pdf"
-    }
-  },
-  {
-    "id": "2",
-    "tipo": "cartel",
-    "anio": 2025,
-    "archivos": {
-      "es": "",
-      "eu": "",
-      "en": ""
-    }
-  },
-  {
-    "id": "3",
-    "tipo": "memoria",
-    "anio": 2025,
-    "archivos": {
-      "es": "",
-      "eu": "",
-      "en": ""
-    }
-  },
- {
-  "id": "4",
-    "tipo": "programa",
-    "anio": 2024,
-    "archivos": {
-      "es": "",
-      "eu": "",
-      "en": ""
-    }
-  },
-  {
-    "id": "5",
-    "tipo": "cartel",
-    "anio": 2024,
-    "archivos": {
-      "es": "",
-      "eu": "",
-      "en": ""
-    }
-  },
-  {
-    "id": "6",
+    "id": "1749192779583",
     "tipo": "memoria",
     "anio": 2024,
     "archivos": {
-      "es": "",
-      "eu": "",
-      "en": ""
+      "es": "/pdfs/1749192779636.pdf",
+      "en": "/pdfs/1749192779689.pdf",
+      "eu": "/pdfs/1749192779780.pdf"
     }
   }
 ]
