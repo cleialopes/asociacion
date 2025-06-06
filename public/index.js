@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
 fetch("/api/banner-index")
   .then(res => res.json())
   .then(data => {
-    if (data.mostrar && data.url) {
+    if (data.url) {
       const banner = document.getElementById("banner-index");
       if (!banner) return;
       banner.classList.remove("oculto");

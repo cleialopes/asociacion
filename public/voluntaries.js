@@ -1,7 +1,7 @@
 fetch("/api/banner-voluntaries")
   .then(res => res.json())
   .then(data => {
-    if (data.mostrar && data.url) {
+    if (data.url) {
       const banner = document.getElementById("banner-voluntaries");
       if (!banner) return;
       banner.classList.remove("oculto");
@@ -19,3 +19,4 @@ fetch("/api/banner-voluntaries")
       }
     }
   });
+

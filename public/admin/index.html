@@ -19,10 +19,7 @@
       </label><br>
       <label>Archivo:
         <input type="file" name="archivo" />
-      </label><br>
-      <label>
-        <input type="checkbox" name="mostrar" /> Mostrar
-      </label><br>
+      </label>
       <button type="submit">Guardar</button>
       <button id="btn-eliminar-banner-index" type="button">Eliminar banner</button>
     </form>
@@ -44,10 +41,7 @@
       </label><br>
       <label>Archivo:
         <input type="file" name="archivo" />
-      </label><br>
-      <label>
-        <input type="checkbox" name="mostrar" /> Mostrar
-      </label><br>
+      </label>
       <button type="submit">Guardar</button>
       <button id="btn-eliminar-banner-nosotros" type="button">Eliminar banner</button>
     </form>
@@ -66,17 +60,13 @@
           <option value="imagen">Imagen</option>
           <option value="video">Video</option>
         </select>
-      </label><br>
+      </label>
       <label>Archivo:
         <input type="file" name="archivo" />
-      </label><br>
-      <label>
-        <input type="checkbox" name="mostrar" /> Mostrar
-      </label><br>
+      </label>
       <button type="submit">Guardar</button>
       <button id="btn-eliminar-banner-voluntaries" type="button">Eliminar banner</button>
     </form>
-
     <div class="vista-banner">
       <h3>Vista previa:</h3>
       <div id="preview-banner-voluntaries"></div>
@@ -94,10 +84,7 @@
       </label><br>
       <label>Archivo:
         <input type="file" name="archivo" />
-      </label><br>
-      <label>
-        <input type="checkbox" name="mostrar" /> Mostrar
-      </label><br>
+      </label>
       <button type="submit">Guardar</button>
       <button id="btn-eliminar-banner">Eliminar banner</button>
     </form>
@@ -119,10 +106,7 @@
       </label><br>
       <label>Archivo:
         <input type="file" name="archivo" />
-      </label><br>
-      <label>
-        <input type="checkbox" name="mostrar" /> Mostrar
-      </label><br>
+      </label>
       <button type="submit">Guardar</button>
       <button id="btn-eliminar-banner-sebastiane-latino" type="button">Eliminar banner</button>
     </form>
@@ -144,10 +128,7 @@
       </label><br>
       <label>Archivo:
         <input type="file" name="archivo" />
-      </label><br>
-      <label>
-        <input type="checkbox" name="mostrar" /> Mostrar
-      </label><br>
+      </label>
       <button type="submit">Guardar</button>
       <button id="btn-eliminar-banner-encuentros" type="button">Eliminar banner</button>
     </form>
@@ -472,21 +453,21 @@
   <h2>Gestión de Revistas</h2>
   <div class="gestion-revistas">
     <form id="form-revista" enctype="multipart/form-data">
-      <label>Título ES</label>
-      <input type="text" name="titulo_es" required />
-      <label>Título EN</label>
-      <input type="text" name="titulo_en" required />
-      <label>Título EU</label>
-      <input type="text" name="titulo_eu" required />
+      <label>Título ES:<span style="color: #fc02ca">*</span></label>
+      <input type="text" name="titulo_es" placeholder="Título (ES)" required />
+      <label>Título EN:<span style="color: #fc02ca">*</span></label>
+      <input type="text" name="titulo_en" placeholder="Título (EN)" required />
+      <label>Título EU:<span style="color: #fc02ca">*</span></label>
+      <input type="text" name="titulo_eu" placeholder="Título (EU)" required />
 
-      <label>Portada (imagen)</label>
-      <input type="file" name="portada" accept="image/*" />
+      <label>Portada (imagen):<span style="color: #fc02ca">*</span></label>
+      <input type="file" name="portada" accept="image/*" required />
 
-      <label>Archivo PDF ES</label>
-      <input type="file" name="archivo_es" accept="application/pdf" />
-      <label>Archivo PDF EN</label>
+      <label>Archivo PDF ES:<span style="color: #fc02ca">*</span></label>
+      <input type="file" name="archivo_es" accept="application/pdf" required />
+      <label>Archivo PDF EN:</label>
       <input type="file" name="archivo_en" accept="application/pdf" />
-      <label>Archivo PDF EU</label>
+      <label>Archivo PDF EU:</label>
       <input type="file" name="archivo_eu" accept="application/pdf" />
 
       <button type="submit">Guardar revista</button>
@@ -500,18 +481,18 @@
   <h2>Gestión de Documentos (página Revistas)</h2>
   <div class="gestion-documentos">
     <form id="form-documento" enctype="multipart/form-data">
-      <label>Tipo de documento:</label>
+      <label>Tipo de documento:<span style="color: #fc02ca">*</span></label>
       <select name="tipo" required>
         <option value="programa">Programa</option>
         <option value="cartel">Cartel</option>
         <option value="memoria">Memoria</option>
       </select>
 
-      <label>Año:</label>
+      <label>Año:<span style="color: #fc02ca">*</span></label>
       <input type="number" name="anio" required min="2000" max="2100" />
       <br>
-      <label>Archivo PDF ES:</label>
-      <input type="file" name="archivo_es" accept="application/pdf" />
+      <label>Archivo PDF ES:<span style="color: #fc02ca">*</span></label>
+      <input type="file" name="archivo_es" accept="application/pdf" required />
       <label>Archivo PDF EN:</label>
       <input type="file" name="archivo_en" accept="application/pdf" />
       <label>Archivo PDF EU:</label>

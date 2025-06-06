@@ -35,7 +35,7 @@ document.addEventListener("cambioIdioma", function (e) {
 fetch("/api/banner-nosotros")
   .then(res => res.json())
   .then(data => {
-    if (data.mostrar && data.url) {
+    if (data.url) {
       const banner = document.getElementById("banner-nosotros");
       if (!banner) return;
       banner.classList.remove("oculto");
@@ -54,3 +54,4 @@ fetch("/api/banner-nosotros")
       }
     }
   });
+

@@ -80,59 +80,6 @@ function eliminarArchivoSiExiste(rutaRelativa) {
   }
 }
 
-app.get('/api/banner-index', (req, res) => {
-  try {
-    const data = fs.readFileSync('banner_index.json', 'utf-8');
-    res.json(JSON.parse(data));
-  } catch (e) {
-    res.json({ mostrar: false, tipo: "", url: "" });
-  }
-});
-
-app.post('/api/banner-index', upload.single('archivo'), (req, res) => {
-  const mostrar = req.body.mostrar === true || req.body.mostrar === 'true';
-  const tipo = req.body.tipo;
-  let url = req.body.url || "";
-
-  if (req.file) {
-    const ext = path.extname(req.file.originalname).toLowerCase();
-    const nombre = Date.now() + ext;
-
-    let destinoDir = ext === '.mp4'
-      ? path.join(__dirname, 'public', 'videos')
-      : path.join(__dirname, 'public', 'img');
-
-    if (!fs.existsSync(destinoDir)) fs.mkdirSync(destinoDir, { recursive: true });
-
-    const destino = path.join(destinoDir, nombre);
-    fs.renameSync(req.file.path, destino);
-
-    url = `/${path.relative(path.join(__dirname, 'public'), destino).replace(/\\/g, '/')}`;
-  }
-
-  const banner = { mostrar, tipo, url };
-  fs.writeFileSync('banner_index.json', JSON.stringify(banner, null, 2));
-  res.json({ ok: true });
-});
-
-app.delete('/api/banner-index', (req, res) => {
-  try {
-    const data = JSON.parse(fs.readFileSync('banner_index.json', 'utf8'));
-
-    if (data.url) {
-      eliminarArchivoSiExiste(data.url);
-    }
-
-    const vacio = { mostrar: false, tipo: "", url: "" };
-    fs.writeFileSync('banner_index.json', JSON.stringify(vacio, null, 2));
-
-    res.json({ ok: true });
-  } catch (err) {
-    console.error("Error eliminando banner index:", err);
-    res.status(500).json({ error: 'No se pudo eliminar el banner de index' });
-  }
-});
-
 app.post('/api/upload', upload.single('imagen'), (req, res) => {
   if (!req.file) return res.status(400).json({ error: 'No se recibió archivo' });
 
@@ -155,17 +102,70 @@ app.post('/api/upload', upload.single('imagen'), (req, res) => {
   res.json({ url });
 });
 
+// Banner index
+app.get('/api/banner-index', (req, res) => {
+  try {
+    const data = fs.readFileSync('banner_index.json', 'utf-8');
+    res.json(JSON.parse(data));
+  } catch (e) {
+    res.json({ tipo: "", url: "" });
+  }
+});
+
+app.post('/api/banner-index', upload.single('archivo'), (req, res) => {
+  const tipo = req.body.tipo;
+  let url = req.body.url || "";
+
+  if (req.file) {
+    const ext = path.extname(req.file.originalname).toLowerCase();
+    const nombre = Date.now() + ext;
+
+    let destinoDir = ext === '.mp4'
+      ? path.join(__dirname, 'public', 'videos')
+      : path.join(__dirname, 'public', 'img');
+
+    if (!fs.existsSync(destinoDir)) fs.mkdirSync(destinoDir, { recursive: true });
+
+    const destino = path.join(destinoDir, nombre);
+    fs.renameSync(req.file.path, destino);
+
+    url = `/${path.relative(path.join(__dirname, 'public'), destino).replace(/\\/g, '/')}`;
+  }
+
+  const banner = { tipo, url };
+  fs.writeFileSync('banner_index.json', JSON.stringify(banner, null, 2));
+  res.json({ ok: true });
+});
+
+app.delete('/api/banner-index', (req, res) => {
+  try {
+    const data = JSON.parse(fs.readFileSync('banner_index.json', 'utf8'));
+
+    if (data.url) {
+      eliminarArchivoSiExiste(data.url);
+    }
+
+    const vacio = { tipo: "", url: "" };
+    fs.writeFileSync('banner_index.json', JSON.stringify(vacio, null, 2));
+
+    res.json({ ok: true });
+  } catch (err) {
+    console.error("Error eliminando banner index:", err);
+    res.status(500).json({ error: 'No se pudo eliminar el banner de index' });
+  }
+});
+
+// Banner Sebastiane
 app.get('/api/banner', (req, res) => {
   try {
     const data = fs.readFileSync('banner.json', 'utf-8');
     res.json(JSON.parse(data));
   } catch (e) {
-    res.json({ mostrar: false, tipo: "", url: "" });
+    res.json({ tipo: "", url: "" });
   }
 });
 
 app.post('/api/banner', upload.single('archivo'), (req, res) => {
-  const mostrar = req.body.mostrar === 'true';
   const tipo = req.body.tipo;
   let url = req.body.url || "";
 
@@ -173,10 +173,9 @@ app.post('/api/banner', upload.single('archivo'), (req, res) => {
     url = `/uploads/${req.file.filename}`;
   }
 
-  const banner = { mostrar, tipo, url };
-  fs.writeFileSync('banner.json', JSON.stringify(banner));
+  const banner = { tipo, url };
+  fs.writeFileSync('banner.json', JSON.stringify(banner, null, 2));
   res.json({ ok: true });
-
 });
 
 app.delete('/api/banner', (req, res) => {
@@ -187,7 +186,7 @@ app.delete('/api/banner', (req, res) => {
       eliminarArchivoSiExiste(data.url);
     }
 
-    const vacio = { url: "" };
+    const vacio = { tipo: "", url: "" };
     fs.writeFileSync('banner.json', JSON.stringify(vacio, null, 2));
 
     res.json({ ok: true });
@@ -197,6 +196,7 @@ app.delete('/api/banner', (req, res) => {
   }
 });
 
+//Banner Nosotros
 app.get('/api/banner-nosotros', (req, res) => {
   try {
     const data = fs.readFileSync('banner_nosotros.json', 'utf-8');
@@ -206,10 +206,28 @@ app.get('/api/banner-nosotros', (req, res) => {
   }
 });
 
-app.post('/api/banner-nosotros', (req, res) => {
-  const mostrar = req.body.mostrar === true || req.body.mostrar === 'true';
+app.post('/api/banner-nosotros', upload.single('archivo'), (req, res) => {
+  const mostrar = req.body.mostrar === 'true' || req.body.mostrar === true;
   const tipo = req.body.tipo;
-  const url = req.body.url || "";
+  let url = req.body.url || "";
+
+  if (req.file) {
+    const ext = path.extname(req.file.originalname).toLowerCase();
+    const nombre = Date.now() + ext;
+
+    const destinoDir = ext === '.mp4'
+      ? path.join(__dirname, 'public', 'videos')
+      : path.join(__dirname, 'public', 'img');
+
+    if (!fs.existsSync(destinoDir)) {
+      fs.mkdirSync(destinoDir, { recursive: true });
+    }
+
+    const destino = path.join(destinoDir, nombre);
+    fs.renameSync(req.file.path, destino);
+
+    url = `/${path.relative(path.join(__dirname, 'public'), destino).replace(/\\/g, '/')}`;
+  }
 
   const banner = { mostrar, tipo, url };
   fs.writeFileSync('banner_nosotros.json', JSON.stringify(banner, null, 2));
@@ -234,17 +252,17 @@ app.delete('/api/banner-nosotros', (req, res) => {
   }
 });
 
+// Banner voluntaries
 app.get('/api/banner-voluntaries', (req, res) => {
   try {
     const data = fs.readFileSync('banner_voluntaries.json', 'utf-8');
     res.json(JSON.parse(data));
   } catch (e) {
-    res.json({ mostrar: false, tipo: "", url: "" });
+    res.json({ tipo: "", url: "" });
   }
 });
 
 app.post('/api/banner-voluntaries', upload.single('archivo'), (req, res) => {
-  const mostrar = req.body.mostrar === true || req.body.mostrar === 'true';
   const tipo = req.body.tipo;
   let url = req.body.url || "";
 
@@ -252,7 +270,7 @@ app.post('/api/banner-voluntaries', upload.single('archivo'), (req, res) => {
     const ext = path.extname(req.file.originalname).toLowerCase();
     const nombre = Date.now() + ext;
 
-    let destinoDir = ext === '.mp4'
+    const destinoDir = ext === '.mp4'
       ? path.join(__dirname, 'public', 'videos')
       : path.join(__dirname, 'public', 'img');
 
@@ -264,11 +282,10 @@ app.post('/api/banner-voluntaries', upload.single('archivo'), (req, res) => {
     url = `/${path.relative(path.join(__dirname, 'public'), destino).replace(/\\/g, '/')}`;
   }
 
-  const banner = { mostrar, tipo, url };
+  const banner = { tipo, url };
   fs.writeFileSync('banner_voluntaries.json', JSON.stringify(banner, null, 2));
   res.json({ ok: true });
 });
-
 
 app.delete('/api/banner-voluntaries', (req, res) => {
   try {
@@ -278,7 +295,7 @@ app.delete('/api/banner-voluntaries', (req, res) => {
       eliminarArchivoSiExiste(data.url);
     }
 
-    const vacio = { mostrar: false, tipo: "", url: "" };
+    const vacio = { tipo: "", url: "" };
     fs.writeFileSync('banner_voluntaries.json', JSON.stringify(vacio, null, 2));
 
     res.json({ ok: true });
@@ -288,17 +305,17 @@ app.delete('/api/banner-voluntaries', (req, res) => {
   }
 });
 
+// Banner sebastiane Latino
 app.get('/api/banner-sebastiane-latino', (req, res) => {
   try {
     const data = fs.readFileSync('banner_sebastiane_latino.json', 'utf-8');
     res.json(JSON.parse(data));
   } catch {
-    res.json({ mostrar: false, tipo: "", url: "" });
+    res.json({ tipo: "", url: "" });
   }
 });
 
 app.post('/api/banner-sebastiane-latino', upload.single('archivo'), (req, res) => {
-  const mostrar = req.body.mostrar === 'true' || req.body.mostrar === true;
   const tipo = req.body.tipo;
   let url = req.body.url || "";
 
@@ -306,7 +323,7 @@ app.post('/api/banner-sebastiane-latino', upload.single('archivo'), (req, res) =
     const ext = path.extname(req.file.originalname).toLowerCase();
     const nombre = Date.now() + ext;
 
-    let destinoDir = ext === '.mp4'
+    const destinoDir = ext === '.mp4'
       ? path.join(__dirname, 'public', 'videos')
       : path.join(__dirname, 'public', 'img');
 
@@ -317,7 +334,7 @@ app.post('/api/banner-sebastiane-latino', upload.single('archivo'), (req, res) =
     url = `/${path.relative(path.join(__dirname, 'public'), destino).replace(/\\/g, '/')}`;
   }
 
-  const banner = { mostrar, tipo, url };
+  const banner = { tipo, url };
   fs.writeFileSync('banner_sebastiane_latino.json', JSON.stringify(banner, null, 2));
   res.json({ ok: true });
 });
@@ -326,7 +343,9 @@ app.delete('/api/banner-sebastiane-latino', (req, res) => {
   try {
     const data = JSON.parse(fs.readFileSync('banner_sebastiane_latino.json', 'utf-8'));
     if (data.url) eliminarArchivoSiExiste(data.url);
-    fs.writeFileSync('banner_sebastiane_latino.json', JSON.stringify({ mostrar: false, tipo: "", url: "" }, null, 2));
+
+    const vacio = { tipo: "", url: "" };
+    fs.writeFileSync('banner_sebastiane_latino.json', JSON.stringify(vacio, null, 2));
     res.json({ ok: true });
   } catch (err) {
     console.error("Error eliminando banner:", err);
@@ -334,17 +353,17 @@ app.delete('/api/banner-sebastiane-latino', (req, res) => {
   }
 });
 
+// Banner Encuentros
 app.get('/api/banner-encuentros', (req, res) => {
   try {
     const data = fs.readFileSync('banner_encuentros.json', 'utf8');
     res.json(JSON.parse(data));
   } catch {
-    res.json({ mostrar: false, tipo: "", url: "" });
+    res.json({ tipo: "", url: "" });
   }
 });
 
 app.post('/api/banner-encuentros', upload.single('archivo'), (req, res) => {
-  const mostrar = req.body.mostrar === 'true' || req.body.mostrar === true;
   const tipo = req.body.tipo;
   let url = req.body.url || "";
 
@@ -362,7 +381,7 @@ app.post('/api/banner-encuentros', upload.single('archivo'), (req, res) => {
     url = `/${path.relative(path.join(__dirname, 'public'), destino).replace(/\\/g, '/')}`;
   }
 
-  const banner = { mostrar, tipo, url };
+  const banner = { tipo, url };
   fs.writeFileSync('banner_encuentros.json', JSON.stringify(banner, null, 2));
   res.json({ ok: true });
 });
@@ -371,7 +390,9 @@ app.delete('/api/banner-encuentros', (req, res) => {
   try {
     const data = JSON.parse(fs.readFileSync('banner_encuentros.json', 'utf8'));
     if (data.url) eliminarArchivoSiExiste(data.url);
-    fs.writeFileSync('banner_encuentros.json', JSON.stringify({ mostrar: false, tipo: "", url: "" }, null, 2));
+
+    const vacio = { tipo: "", url: "" };
+    fs.writeFileSync('banner_encuentros.json', JSON.stringify(vacio, null, 2));
     res.json({ ok: true });
   } catch (err) {
     res.status(500).json({ error: "No se pudo eliminar el banner de encuentros" });

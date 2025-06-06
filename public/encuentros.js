@@ -26,7 +26,7 @@ $(document).ready(function () {
   fetch("/api/banner-encuentros")
   .then(res => res.json())
   .then(data => {
-    if (data.mostrar && data.url) {
+    if (data.url) {
       const banner = document.getElementById("banner-encuentros");
       if (!banner) return;
       banner.classList.remove("oculto");
@@ -44,6 +44,7 @@ $(document).ready(function () {
       }
     }
   });
+
 });
 
 function cargarEncuentros(idioma) {

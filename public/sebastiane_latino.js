@@ -168,7 +168,7 @@ document.addEventListener("DOMContentLoaded", () => {
   fetch("/api/banner-sebastiane-latino")
   .then(res => res.json())
   .then(data => {
-    if (data.mostrar && data.url) {
+    if (data.url) {
       const banner = document.getElementById("banner-sebastiane-latino");
       if (!banner) return;
       banner.classList.remove("oculto");
