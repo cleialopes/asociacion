@@ -32,7 +32,7 @@ document.addEventListener("cambioIdioma", function (e) {
   cargarEventos(nuevoIdioma);
 });
 
-fetch("banner_nosotros.json")
+fetch("/api/banner-nosotros")
   .then(res => res.json())
   .then(data => {
     if (data.mostrar && data.url) {

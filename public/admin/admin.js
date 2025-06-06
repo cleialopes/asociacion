@@ -1,8 +1,23 @@
 // =====Gestion Banner index=====
 document.getElementById("form-banner").addEventListener("submit", async (e) => {
   e.preventDefault();
-  const formData = new FormData(e.target);
-  formData.set("mostrar", e.target.mostrar.checked);
+  const form = e.target;
+  const archivo = form.archivo.files[0];
+  const tipo = form.tipo.value;
+
+  if (archivo) {
+    const esVideo = tipo === "video";
+    const extensionesValidas = esVideo ? ["mp4"] : ["jpg", "jpeg", "png", "webp"];
+    const extension = archivo.name.split(".").pop().toLowerCase();
+
+    if (!extensionesValidas.includes(extension)) {
+      alert(`Formato inválido. Solo se permiten: ${extensionesValidas.join(", ")}`);
+      return;
+    }
+  }
+
+  const formData = new FormData(form);
+  formData.set("mostrar", form.mostrar.checked);
 
   const res = await fetch('/api/banner', {
     method: 'POST',
@@ -11,11 +26,13 @@ document.getElementById("form-banner").addEventListener("submit", async (e) => {
 
   if (res.ok) {
     alert("Banner actualizado correctamente");
-    e.target.reset();
+    form.reset();
+    cargarBannerActual();
   } else {
     alert("Error al actualizar el banner");
   }
 });
+
 document.getElementById("btn-eliminar-banner").addEventListener("click", async () => {
   if (confirm("¿Seguro que deseas eliminar el banner?")) {
     const res = await fetch("/api/banner", { method: "DELETE" });
@@ -51,7 +68,7 @@ async function cargarBannerActual() {
 }
 cargarBannerActual();
 
-// ====Gestion Banner Nosotos
+// ====Gestion Banner Nosotos=====
 document.getElementById("form-banner-nosotros").addEventListener("submit", async (e) => {
   e.preventDefault();
   const form = e.target;
@@ -62,11 +79,14 @@ document.getElementById("form-banner-nosotros").addEventListener("submit", async
   let url = "";
 
   if (archivo) {
-    const formData = new FormData();
-    formData.append("imagen", archivo);
-    const res = await fetch("/api/upload", { method: "POST", body: formData });
-    const data = await res.json();
-    url = data?.url || "";
+    const esVideo = tipo === "video";
+    const extensionesValidas = esVideo ? ["mp4"] : ["jpg", "jpeg", "png", "webp"];
+    const extension = archivo.name.split(".").pop().toLowerCase();
+
+    if (!extensionesValidas.includes(extension)) {
+      alert(`Formato inválido. Solo se permiten: ${extensionesValidas.join(", ")}`);
+      return;
+    }
   }
 
   const bannerData = { tipo, mostrar, url };
@@ -92,7 +112,7 @@ document.getElementById("btn-eliminar-banner-nosotros").addEventListener("click"
 });
 
 async function cargarBannerNosotros() {
-  const res = await fetch("banner_nosotros.json");
+  const res = await fetch("/api/banner-nosotros");
   if (!res.ok) return;
   const data = await res.json();
 
@@ -101,16 +121,95 @@ async function cargarBannerNosotros() {
 
   if (data?.mostrar && data.url) {
     if (data.tipo === "imagen") {
-      contenedor.innerHTML = `<img src="${data.url}" alt="banner" style="max-width:100%">`;
+      contenedor.innerHTML = `<img src="${data.url}" alt="banner" style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 6px;" >`;
     } else if (data.tipo === "video") {
       contenedor.innerHTML = `
-        <video autoplay muted loop playsinline style="max-width:100%">
-          <source src="${data.url}" type="video/mp4">
-        </video>`;
+      <video autoplay muted loop playsinline controls style="max-width: 100%; border: 1px solid #ccc; border-radius: 6px;">
+        <source src="${data.url}" type="video/mp4">
+        Tu navegador no soporta el video.
+      </video>`;
     }
   }
 }
 cargarBannerNosotros();
+
+document.getElementById("form-banner-voluntaries").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const form = e.target;
+  const tipo = form.tipo.value;
+  const mostrar = form.mostrar.checked;
+  const archivo = form.archivo.files[0];
+
+  let url = "";
+
+  if (archivo) {
+    const esVideo = tipo === "video";
+    const extensionesValidas = esVideo ? ["mp4"] : ["jpg", "jpeg", "png", "webp"];
+    const extension = archivo.name.split(".").pop().toLowerCase();
+
+    if (!extensionesValidas.includes(extension)) {
+      alert(`Formato inválido. Solo se permiten: ${extensionesValidas.join(", ")}`);
+      return;
+    }
+
+    const formData = new FormData();
+    formData.append("imagen", archivo);
+
+    const uploadRes = await fetch("/api/upload", {
+      method: "POST",
+      body: formData
+    });
+
+    const uploadData = await uploadRes.json();
+    url = uploadData.url || "";
+  }
+
+  const bannerData = { tipo, mostrar, url };
+
+  await fetch("/api/banner-voluntaries", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(bannerData)
+  });
+
+  alert("Banner actualizado.");
+  cargarBannerVoluntaries();
+});
+
+document.getElementById("btn-eliminar-banner-voluntaries").addEventListener("click", async () => {
+  if (confirm("¿Eliminar el banner de Voluntaries?")) {
+    await fetch("/api/banner-voluntaries", { method: "DELETE" });
+    alert("Banner eliminado.");
+    cargarBannerVoluntaries();
+  }
+});
+
+async function cargarBannerVoluntaries() {
+  const res = await fetch("/api/banner-voluntaries");
+  if (!res.ok) return;
+  const data = await res.json();
+
+  const contenedor = document.getElementById("preview-banner-voluntaries");
+  contenedor.innerHTML = "";
+
+  if (data?.mostrar && data.url) {
+    if (data.tipo === "imagen") {
+      contenedor.innerHTML = `<img src="${data.url}" alt="banner" style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 6px;" >`;
+    } else if (data.tipo === "video") {
+      contenedor.innerHTML = `
+        <video autoplay muted loop playsinline controls style="max-width: 100%; border: 1px solid #ccc; border-radius: 6px;">
+          <source src="${data.url}" type="video/mp4">
+          Tu navegador no soporta el video.
+        </video>`;
+    }
+  }
+  const form = document.getElementById("form-banner-voluntaries");
+  form.mostrar.checked = !!data.mostrar;
+  form.tipo.value = data.tipo || "imagen";
+}
+
+cargarBannerVoluntaries();
+
 
 
 // =====Gestion Sebastiane=====

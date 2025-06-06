@@ -8,7 +8,7 @@
 </head>
 <body>
 
-  <h2>Actualizar banner</h2>
+  <h2>Actualizar banner de la Home</h2>
   <div class="contenedor-banner">
     <form id="form-banner" class="form-banner" enctype="multipart/form-data">
       <label>Tipo:
@@ -58,7 +58,32 @@
     </div>
   </div>
 
-  <h2>Gestión Sebastiane</h2>
+  <h2>Actualizar banner de Voluntaries</h2>
+  <div class="contenedor-banner">
+    <form id="form-banner-voluntaries" class="form-banner" enctype="multipart/form-data">
+      <label>Tipo:
+        <select name="tipo">
+          <option value="imagen">Imagen</option>
+          <option value="video">Video</option>
+        </select>
+      </label><br>
+      <label>Archivo:
+        <input type="file" name="archivo" />
+      </label><br>
+      <label>
+        <input type="checkbox" name="mostrar" /> Mostrar
+      </label><br>
+      <button type="submit">Guardar</button>
+      <button id="btn-eliminar-banner-voluntaries" type="button">Eliminar banner</button>
+    </form>
+
+    <div class="vista-banner">
+      <h3>Vista previa:</h3>
+      <div id="preview-banner-voluntaries"></div>
+    </div>
+  </div>
+
+  <h2>Gestión Sebastiane Pelicula</h2>
   <div class="gestion-sebastiane">
     <form id="form-sebastiane" class="form-sebastiane" enctype="multipart/form-data">
       <label>Año:</label>
@@ -141,7 +166,7 @@
     </div>
   </div>
 
-  <h2>Gestión Sebastiane Latino</h2>
+  <h2>Gestión Sebastiane Latino Peliculas</h2>
   <div class="gestion-sebastiane">
     <form id="form-sebastiane-latino" class="form-sebastiane-latino" enctype="multipart/form-data">
       <label>Año:</label>
@@ -280,7 +305,7 @@
     </div>
   </div>
 
-  <h2>Gestión de Festivales</h2>
+  <h2>Gestión de Festivales (pagina Encuentros)</h2>
   <div class="gestion-festivales">
     <form id="form-festival">
       <label>Nombre:<span style="color: #fc02ca">*</span></label>
