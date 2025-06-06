@@ -33,6 +33,31 @@
     </div>
   </div>
 
+  <h2>Actualizar banner de Nosotros</h2>
+  <div class="contenedor-banner">
+    <form id="form-banner-nosotros" class="form-banner" enctype="multipart/form-data">
+      <label>Tipo:
+        <select name="tipo">
+          <option value="imagen">Imagen</option>
+          <option value="video">Video</option>
+        </select>
+      </label><br>
+      <label>Archivo:
+        <input type="file" name="archivo" />
+      </label><br>
+      <label>
+        <input type="checkbox" name="mostrar" /> Mostrar
+      </label><br>
+      <button type="submit">Guardar</button>
+      <button id="btn-eliminar-banner-nosotros" type="button">Eliminar banner</button>
+    </form>
+
+    <div class="vista-banner">
+      <h3>Vista previa:</h3>
+      <div id="preview-banner-nosotros"></div>
+    </div>
+  </div>
+
   <h2>Gestión Sebastiane</h2>
   <div class="gestion-sebastiane">
     <form id="form-sebastiane" class="form-sebastiane" enctype="multipart/form-data">

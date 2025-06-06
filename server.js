@@ -144,6 +144,44 @@ app.delete('/api/banner', (req, res) => {
   }
 });
 
+app.get('/api/banner-nosotros', (req, res) => {
+  try {
+    const data = fs.readFileSync('banner_nosotros.json', 'utf-8');
+    res.json(JSON.parse(data));
+  } catch (e) {
+    res.json({ mostrar: false, tipo: "", url: "" });
+  }
+});
+
+app.post('/api/banner-nosotros', (req, res) => {
+  const mostrar = req.body.mostrar === true || req.body.mostrar === 'true';
+  const tipo = req.body.tipo;
+  const url = req.body.url || "";
+
+  const banner = { mostrar, tipo, url };
+  fs.writeFileSync('banner_nosotros.json', JSON.stringify(banner, null, 2));
+  res.json({ ok: true });
+});
+
+app.delete('/api/banner-nosotros', (req, res) => {
+  try {
+    const data = JSON.parse(fs.readFileSync('banner_nosotros.json', 'utf8'));
+
+    if (data.url) {
+      eliminarArchivoSiExiste(data.url);
+    }
+
+    const vacio = { mostrar: false, tipo: "", url: "" };
+    fs.writeFileSync('banner_nosotros.json', JSON.stringify(vacio, null, 2));
+
+    res.json({ ok: true });
+  } catch (err) {
+    console.error("Error eliminando banner nosotros:", err);
+    res.status(500).json({ error: 'No se pudo eliminar el banner de nosotros' });
+  }
+});
+
+
 const SEBASTIANE_JSON = 'sebastiane.json';
 
 app.post('/api/sebastiane/:anio/:seccion', (req, res) => {

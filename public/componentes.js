@@ -147,12 +147,11 @@ fetch("patrocinadores.json")
   contenedor.innerHTML = html;
 
   const slidesPerPage = 3;
-const slides = contenedor.querySelectorAll(".carrusel-slide");
-const totalPages = Math.ceil(slides.length / slidesPerPage);
-const contenidoSlides = contenedor.querySelector(".carrusel-contenido");
-const bullets = contenedor.querySelector(".carrusel-bullets");
+  const slides = contenedor.querySelectorAll(".carrusel-slide");
+  const totalPages = Math.ceil(slides.length / slidesPerPage);
+  const contenidoSlides = contenedor.querySelector(".carrusel-contenido");
+  const bullets = contenedor.querySelector(".carrusel-bullets");
 
-// ✅ Solución: inicializar slideIndex correctamente
 let slideIndex = 0;
 
 setInterval(() => {
@@ -226,30 +225,6 @@ document.addEventListener('DOMContentLoaded', () => {
       localStorage.setItem('modo', oscuro ? 'oscuro' : 'claro');
     });
   }
-
-  fetch("/api/banner")
-    .then(res => res.json())
-    .then(data => {
-      if (data.mostrar && data.url) {
-        const banner = document.getElementById("banner-sebastiane");
-        if (!banner) return;
-        banner.classList.remove("oculto");
-
-        if (data.tipo === "imagen") {
-          banner.innerHTML = `<img src="${data.url}" alt="Banner" />`;
-        } else if (data.tipo === "video") {
-          banner.innerHTML = `
-            <video autoplay muted loop playsinline>
-              <source src="${data.url}" type="video/mp4">
-              Tu navegador no admite el video.
-            </video>`;
-
-          const video = banner.querySelector("video");
-          video.addEventListener("pause", () => video.play());
-        }
-      }
-    });
-
     const infoEnlace = document.querySelector('.menu-info > a');
     const infoBloque = document.querySelector('.menu-info');
 

@@ -1,4 +1,4 @@
-// =====Gestion Banner=====
+// =====Gestion Banner index=====
 document.getElementById("form-banner").addEventListener("submit", async (e) => {
   e.preventDefault();
   const formData = new FormData(e.target);
@@ -50,6 +50,68 @@ async function cargarBannerActual() {
   }
 }
 cargarBannerActual();
+
+// ====Gestion Banner Nosotos
+document.getElementById("form-banner-nosotros").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const form = e.target;
+  const tipo = form.tipo.value;
+  const mostrar = form.mostrar.checked;
+  const archivo = form.archivo.files[0];
+
+  let url = "";
+
+  if (archivo) {
+    const formData = new FormData();
+    formData.append("imagen", archivo);
+    const res = await fetch("/api/upload", { method: "POST", body: formData });
+    const data = await res.json();
+    url = data?.url || "";
+  }
+
+  const bannerData = { tipo, mostrar, url };
+
+  await fetch("/api/banner-nosotros", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(bannerData)
+  });
+
+  alert("Banner actualizado.");
+  cargarBannerNosotros();
+});
+
+document.getElementById("btn-eliminar-banner-nosotros").addEventListener("click", async () => {
+  if (confirm("¿Eliminar el banner de Nosotros?")) {
+    await fetch("/api/banner-nosotros", {
+      method: "DELETE"
+    });
+    alert("Banner eliminado.");
+    cargarBannerNosotros();
+  }
+});
+
+async function cargarBannerNosotros() {
+  const res = await fetch("banner_nosotros.json");
+  if (!res.ok) return;
+  const data = await res.json();
+
+  const contenedor = document.getElementById("preview-banner-nosotros");
+  contenedor.innerHTML = "";
+
+  if (data?.mostrar && data.url) {
+    if (data.tipo === "imagen") {
+      contenedor.innerHTML = `<img src="${data.url}" alt="banner" style="max-width:100%">`;
+    } else if (data.tipo === "video") {
+      contenedor.innerHTML = `
+        <video autoplay muted loop playsinline style="max-width:100%">
+          <source src="${data.url}" type="video/mp4">
+        </video>`;
+    }
+  }
+}
+cargarBannerNosotros();
+
 
 // =====Gestion Sebastiane=====
 document.getElementById("form-sebastiane").addEventListener("submit", async (e) => {
