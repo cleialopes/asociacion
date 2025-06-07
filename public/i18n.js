@@ -180,8 +180,11 @@ function cambiarIdioma(lang) {
   });
   
   if (document.getElementById("contenedor-noticias") && typeof window.reiniciarNoticiasDesdeI18n === "function") {
-  window.reiniciarNoticiasDesdeI18n(lang);
-}
+    window.reiniciarNoticiasDesdeI18n(lang);
+  }
+  if (document.getElementById("enlaces-imagenes") && typeof window.cargarImagenes === "function") {
+    window.cargarImagenes();
+  }
 }
 
 document.addEventListener('DOMContentLoaded', () => {

@@ -31,6 +31,7 @@ app.use('/festivales.json', express.static(path.join(__dirname, 'festivales.json
 app.use('/eventos.json', express.static(path.join(__dirname, 'eventos.json')));
 app.use('/patrocinadores.json', express.static(path.join(__dirname, 'patrocinadores.json')));
 app.use('/bases_latino.json', express.static(path.join(__dirname, 'bases_latino.json')));
+app.use('/imagenes.json', express.static(path.join(__dirname, 'imagenes.json')));
 
 app.use(cors());
 app.use(express.json());
@@ -398,6 +399,62 @@ app.delete('/api/banner-encuentros', (req, res) => {
     res.status(500).json({ error: "No se pudo eliminar el banner de encuentros" });
   }
 });
+
+const IMAGENES_JSON = 'imagenes.json';
+
+// Añadir nueva imagen al index
+app.post('/api/imagenes', upload.single('imagen'), (req, res) => {
+  const { alt, titulo_es, titulo_en, titulo_eu, link } = req.body;
+  const archivo = req.file;
+
+  if (!archivo) return res.status(400).json({ ok: false, error: "Falta archivo." });
+
+  const src = `/uploads/${archivo.filename}`;
+
+  const nuevaImagen = {
+    src,
+    alt,
+    link,
+    titulo: {
+      es: titulo_es || "",
+      en: titulo_en || "",
+      eu: titulo_eu || ""
+    }
+  };
+
+  let imagenes = [];
+  try {
+    imagenes = JSON.parse(fs.readFileSync(IMAGENES_JSON, "utf-8"));
+  } catch (e) {}
+
+  imagenes.push(nuevaImagen);
+  fs.writeFileSync(IMAGENES_JSON, JSON.stringify(imagenes, null, 2));
+
+  res.json({ ok: true });
+});
+
+app.delete('/api/imagenes/:index', (req, res) => {
+  const index = parseInt(req.params.index);
+  if (isNaN(index)) return res.status(400).json({ ok: false, error: "Índice inválido" });
+
+  let imagenes = [];
+  try {
+    imagenes = JSON.parse(fs.readFileSync(IMAGENES_JSON, "utf-8"));
+  } catch (e) {
+    return res.status(500).json({ ok: false, error: "Error leyendo imagenes.json" });
+  }
+
+  const imagen = imagenes[index];
+  if (!imagen) return res.status(404).json({ ok: false, error: "Imagen no encontrada" });
+
+  const ruta = path.join(__dirname, "public", imagen.src.replace(/^\/+/, ""));
+  if (fs.existsSync(ruta)) fs.unlinkSync(ruta);
+
+  imagenes.splice(index, 1);
+  fs.writeFileSync(IMAGENES_JSON, JSON.stringify(imagenes, null, 2));
+  res.json({ ok: true });
+});
+
 
 const SEBASTIANE_JSON = 'sebastiane.json';
 

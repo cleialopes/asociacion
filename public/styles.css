@@ -609,6 +609,20 @@ a[data-i18n="email"]:hover,
   transform: scale(1.05);
 }
 
+.imagen-con-titulo {
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.titulo-imagen {
+  margin-top: 5px;
+  color: var(--color-negro);
+  font-weight: bold;
+   font-size: 1.5rem;
+}
+
 /*===== info =====*/
 .info-layout {
   display: flex;

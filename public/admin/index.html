@@ -67,6 +67,7 @@
       <button type="submit">Guardar</button>
       <button id="btn-eliminar-banner-voluntaries" type="button">Eliminar banner</button>
     </form>
+    
     <div class="vista-banner">
       <h3>Vista previa:</h3>
       <div id="preview-banner-voluntaries"></div>
@@ -136,6 +137,33 @@
     <div class="vista-banner">
       <h3>Vista previa:</h3>
       <div id="preview-banner-encuentros"></div>
+    </div>
+  </div>
+
+  <h2>Gestión de Imágenes Home</h2>
+  <div class="gestion-imagenes">
+    <form id="form-imagen" enctype="multipart/form-data">
+      <label>Imagen:<span style="color: #fc02ca">*</span></label>
+      <input type="file" name="imagen" accept="image/*" required />
+
+      <label>Texto alternativo (alt):</label>
+      <input type="text" name="alt" placeholder="Descripción" />
+
+      <label>Título:<span style="color: #fc02ca">*</span></label>
+      <input type="text" name="titulo_es" placeholder="Título ES" required/>
+      <input type="text" name="titulo_en" placeholder="Título EN" />
+      <input type="text" name="titulo_eu" placeholder="Título EU" />
+
+      <label>Enlace:</label>
+      <input type="text" name="link" placeholder="ej: sebastiane.com" />
+
+      <button type="submit">Guardar imagen</button>
+    </form>
+
+    <div class="imagenes-listado">
+      <h3>Imágenes añadidas:</h3>
+      <button type="button" id="toggle-imagenes-home">Mostrar/Ocultar imágenes</button>
+      <div id="lista-imagenes" style="display: none;"></div>
     </div>
   </div>
 

@@ -59,6 +59,7 @@ form button:hover {
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
+.gestion-imagenes,
 .gestion-documentos,
 .gestion-revistas,
 .gestion-bases-latino,
@@ -74,6 +75,7 @@ form button:hover {
   align-items: flex-start;
 }
 
+.imagenes-listado,
 .documentos-listado,
 .revista-listado,
 .bases-listado,
