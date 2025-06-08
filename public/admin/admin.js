@@ -112,7 +112,7 @@ async function cargarBannerIndex() {
 }
 cargarBannerIndex();
 
-// ===== Gestión Banner Nosotros =====
+// ===== Gestión Banner Nosotros=====
 document.getElementById("form-banner-nosotros")?.addEventListener("submit", async (e) => {
   e.preventDefault();
   const form = e.target;
@@ -415,6 +415,76 @@ async function cargarBannerSebastianeLatino() {
   if (form.tipo) form.tipo.value = data.tipo || "imagen";
 }
 cargarBannerSebastianeLatino();
+
+// ====Gestion banner encuentros
+document.getElementById("form-banner-encuentros")?.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const formData = new FormData(e.target);
+  const archivo = formData.get("archivo");
+  const tipo = formData.get("tipo");
+  const esVideo = tipo === "video";
+  const extensionesValidas = esVideo ? ["mp4"] : ["jpg", "jpeg", "png", "webp"];
+  const extension = archivo?.name?.split(".").pop().toLowerCase();
+
+  if (archivo && !extensionesValidas.includes(extension)) {
+    alert(`Formato inválido. Solo se permiten: ${extensionesValidas.join(", ")}`);
+    return;
+  }
+
+  const res = await fetch("/api/banner-encuentros", {
+    method: "POST",
+    body: formData
+  });
+
+  if (res.ok) {
+    alert("Banner actualizado correctamente");
+    e.target.reset();
+    cargarBannerEncuentros();
+  } else {
+    alert("Error al actualizar el banner");
+  }
+});
+
+document.getElementById("btn-eliminar-banner-encuentros")?.addEventListener("click", async () => {
+  if (!confirm("¿Seguro que deseas eliminar el banner de encuentros?")) return;
+
+  const res = await fetch("/api/banner-encuentros", {
+    method: "DELETE",
+  });
+
+  if (res.ok) {
+    alert("Banner eliminado correctamente");
+    cargarBannerEncuentros();
+  } else {
+    alert("Error al eliminar el banner");
+  }
+});
+
+async function cargarBannerEncuentros() {
+  const res = await fetch("/api/banner-encuentros");
+  const data = await res.json();
+
+  const preview = document.getElementById("preview-banner-encuentros");
+  preview.innerHTML = "";
+
+  if (data.url) {
+    if (data.tipo === "imagen") {
+      preview.innerHTML = `<img src="${data.url}" style="max-width: 100%; border-radius: 6px; border: 1px solid #ccc;" />`;
+    } else if (data.tipo === "video") {
+      preview.innerHTML = `
+        <video autoplay muted loop controls style="max-width: 100%; border-radius: 6px; border: 1px solid #ccc;">
+          <source src="${data.url}" type="video/mp4">
+          Tu navegador no admite el video.
+        </video>`;
+    }
+  } else {
+    preview.innerHTML = "<p>No hay banner cargado.</p>";
+  }
+
+  const form = document.getElementById("form-banner-encuentros");
+  if (form?.tipo) form.tipo.value = data.tipo || "imagen";
+}
+cargarBannerEncuentros();
 
 // === Gestión de Imágenes Home ===
 document.getElementById("form-imagen")?.addEventListener("submit", async (e) => {
