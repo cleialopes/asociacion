@@ -7,9 +7,34 @@
   <link rel="icon" type="image/x-icon" href="img/cropped-icono_favicon.png" />
 </head>
 <body>
-<a href="/cambiar-password" class="btn-cambiar-password">🔒 Cambiar contraseña</a>
-<a href="/logout" class="btn-cerrar-sesion">🚪 Cerrar sesión</a>
-  <h2>Actualizar banner de la Home</h2>
+  <nav class="menu-lateral">
+    <ul>
+      <li><a href="#banner-home">Banner Home</a></li>
+      <li><a href="#banner-nosotros">Banner Nosotros</a></li>
+      <li><a href="#banner-voluntaries">Banner Voluntaries</a></li>
+      <li><a href="#banner-sebastiane">Banner Sebastiane</a></li>
+      <li><a href="#banner-sebastiane-latino">Banner Sebastiane Latino</a></li>
+      <li><a href="#banner-encuentros">Banner Encuentros</a></li>
+      <li><a href="#eventos">Eventos</a></li>
+      <li><a href="#imagenes-home">Imágenes Home</a></li>
+      <li><a href="#sebastiane">Películas Sebastiane</a></li>
+      <li><a href="#bases-latino">Bases Sebastiane Latino</a></li>
+      <li><a href="#sebastiane-latino">Películas Latino</a></li>
+      <li><a href="#noticias">Noticias</a></li>
+      <li><a href="#encuentros">Encuentros</a></li>
+      <li><a href="#festivales">Festivales</a></li>
+      <li><a href="#revistas">Revistas</a></li>
+      <li><a href="#documentos">Documentos</a></li>
+      <li><a href="#patrocinadores">Patrocinadores</a></li>
+    </ul>
+    <button id="modo-tema">🌙 Noche</button>
+    <div class="acciones-usuario">
+      <a href="/cambiar-password" class="btn-cambiar-password">🔒 Cambiar contraseña</a>
+      <a href="/logout" class="btn-cerrar-sesion">🚪 Cerrar sesión</a>
+    </div>
+  </nav>
+
+  <h2 id="banner-home">Actualizar banner de la Home</h2>
   <div class="contenedor-banner">
     <form id="form-banner-index" class="form-banner" enctype="multipart/form-data">
       <label>Tipo:
@@ -31,7 +56,7 @@
     </div>
   </div>
 
-  <h2>Actualizar banner de Nosotros</h2>
+  <h2 id="banner-nosotros">Actualizar banner de Nosotros</h2>
   <div class="contenedor-banner">
     <form id="form-banner-nosotros" class="form-banner" enctype="multipart/form-data">
       <label>Tipo:
@@ -53,7 +78,7 @@
     </div>
   </div>
 
-  <h2>Actualizar banner de Voluntaries</h2>
+  <h2 id="banner-voluntaries">Actualizar banner de Voluntaries</h2>
   <div class="contenedor-banner">
     <form id="form-banner-voluntaries" class="form-banner" enctype="multipart/form-data">
       <label>Tipo:
@@ -75,7 +100,7 @@
     </div>
   </div>
 
-  <h2>Actualizar banner Sebastiane</h2>
+  <h2 id="banner-sebastiane">Actualizar banner Sebastiane</h2>
   <div class="contenedor-banner">
     <form id="form-banner" class="form-banner" enctype="multipart/form-data">
       <label>Tipo:
@@ -97,7 +122,7 @@
     </div>
   </div>
 
-  <h2>Actualizar banner de Sebastiane Latino</h2>
+  <h2 id="banner-sebastiane-latino">Actualizar banner de Sebastiane Latino</h2>
   <div class="contenedor-banner">
     <form id="form-banner-sebastiane-latino" class="form-banner" enctype="multipart/form-data">
       <label>Tipo:
@@ -119,7 +144,7 @@
     </div>
   </div>
 
-  <h2>Actualizar banner de Encuentros</h2>
+  <h2 id="banner-encuentros">Actualizar banner de Encuentros</h2>
   <div class="contenedor-banner">
     <form id="form-banner-encuentros" class="form-banner" enctype="multipart/form-data">
       <label>Tipo:
@@ -141,7 +166,41 @@
     </div>
   </div>
 
-  <h2>Gestión de Imágenes Home</h2>
+  <h2 id="eventos">Gestión de Eventos (página Nosotros)</h2>
+  <div class="gestion-eventos">
+    <form id="form-evento">
+      <label>Nombre del evento:<span style="color: #fc02ca">*</span></label>
+      <input type="text" name="nombre" placeholder="Nombre" required />
+
+      <label>Mes:</label>
+      <input type="text" name="mes_es" placeholder="Mes (ES)" />
+      <input type="text" name="mes_en" placeholder="Mes (EN)" />
+      <input type="text" name="mes_eu" placeholder="Mes (EU)" />
+
+      <label>Lugar:</label>
+      <input type="text" name="lugar_es" placeholder="Lugar (ES)" />
+      <input type="text" name="lugar_en" placeholder="Lugar (EN)" />
+      <input type="text" name="lugar_eu" placeholder="Lugar (EU)" />
+
+      <label>URL:</label>
+      <input type="text" name="url" placeholder="https://..." />
+
+      <label>Nota (opcional):</label>
+      <input type="text" name="nota_es" placeholder="Nota (ES)" />
+      <input type="text" name="nota_en" placeholder="Nota (EN)" />
+      <input type="text" name="nota_eu" placeholder="Nota (EU)" />
+
+      <button type="submit">Añadir evento</button>
+    </form>
+
+    <div class="eventos-listado">
+      <h3>Eventos añadidos:</h3>
+      <button type="button" id="toggle-eventos">Mostrar/Ocultar lista de eventos</button>
+      <div id="lista-eventos" style="display: none;"></div>
+    </div>
+  </div>
+
+  <h2 id="imagenes-home">Gestión de Imágenes Home</h2>
   <div class="gestion-imagenes">
     <form id="form-imagen" enctype="multipart/form-data">
       <label>Imagen:<span style="color: #fc02ca">*</span></label>
@@ -168,7 +227,7 @@
     </div>
   </div>
 
-  <h2>Gestión Sebastiane Películas</h2>
+  <h2 id="sebastiane">Gestión Sebastiane Películas</h2>
   <div class="gestion-sebastiane">
     <form id="form-sebastiane" class="form-sebastiane" enctype="multipart/form-data">
       <label>Año:</label>
@@ -227,7 +286,7 @@
     </div>
   </div>
 
-  <h2>Gestión de Bases Sebastiane Latino</h2>
+  <h2 id="bases-latino">Gestión de Bases Sebastiane Latino</h2>
   <div class="gestion-bases-latino">
     <form id="form-bases-latino" enctype="multipart/form-data">
       <label>Título:</label>
@@ -251,7 +310,7 @@
     </div>
   </div>
 
-  <h2>Gestión Sebastiane Latino Películas</h2>
+  <h2 id="sebastiane-latino">Gestión Sebastiane Latino Películas</h2>
   <div class="gestion-sebastiane">
     <form id="form-sebastiane-latino" class="form-sebastiane-latino" enctype="multipart/form-data">
       <label>Año:</label>
@@ -305,7 +364,7 @@
     </div>
   </div>
 
-  <h2>Gestión de Noticias</h2>
+  <h2 id="noticias">Gestión de Noticias</h2>
   <div class="gestion-noticias">
     <form id="form-noticia" class="form-noticia" enctype="multipart/form-data">
       <label>Título:<span style="color: #fc02ca">*</span></label>
@@ -320,7 +379,6 @@
       <textarea name="descripcion_en" placeholder="Descripción (EN) con salto de lineas"></textarea>
       <small><em>Tip:</em> Escribe <code>**texto**</code> para ponerlo en <strong>negrita</strong>.</small>
       <textarea name="descripcion_eu" placeholder="Descripción (EU) con salto de lineas"></textarea>
-        
         
       <label>Contenido:</label><br>
       <small><em>Tip:</em> Escribe <code>**texto**</code> para ponerlo en <strong>negrita</strong>.</small>
@@ -356,7 +414,7 @@
     </div>
   </div>
 
-  <h2>Gestión de Encuentros</h2>
+  <h2 id="encuentros">Gestión de Encuentros</h2>
   <div class="gestion-encuentros">
     <form id="form-encuentro" enctype="multipart/form-data">
       <label>Título:<span style="color: #fc02ca">*</span></label>
@@ -390,7 +448,7 @@
     </div>
   </div>
 
-  <h2>Gestión de Festivales (página Encuentros)</h2>
+  <h2 id="festivales">Gestión de Festivales (página Encuentros)</h2>
   <div class="gestion-festivales">
     <form id="form-festival">
       <label>Nombre:<span style="color: #fc02ca">*</span></label>
@@ -416,70 +474,7 @@
     </div>
   </div>
 
-  <h2>Gestión de Eventos (página Nosotros)</h2>
-  <div class="gestion-eventos">
-    <form id="form-evento">
-      <label>Nombre del evento:<span style="color: #fc02ca">*</span></label>
-      <input type="text" name="nombre" placeholder="Nombre" required />
-
-      <label>Mes:</label>
-      <input type="text" name="mes_es" placeholder="Mes (ES)" />
-      <input type="text" name="mes_en" placeholder="Mes (EN)" />
-      <input type="text" name="mes_eu" placeholder="Mes (EU)" />
-
-      <label>Lugar:</label>
-      <input type="text" name="lugar_es" placeholder="Lugar (ES)" />
-      <input type="text" name="lugar_en" placeholder="Lugar (EN)" />
-      <input type="text" name="lugar_eu" placeholder="Lugar (EU)" />
-
-      <label>URL:</label>
-      <input type="text" name="url" placeholder="https://..." />
-
-      <label>Nota (opcional):</label>
-      <input type="text" name="nota_es" placeholder="Nota (ES)" />
-      <input type="text" name="nota_en" placeholder="Nota (EN)" />
-      <input type="text" name="nota_eu" placeholder="Nota (EU)" />
-
-      <button type="submit">Añadir evento</button>
-    </form>
-
-    <div class="eventos-listado">
-      <h3>Eventos añadidos:</h3>
-      <button type="button" id="toggle-eventos">Mostrar/Ocultar lista de eventos</button>
-      <div id="lista-eventos" style="display: none;"></div>
-    </div>
-  </div>
-
-  <h2>Gestión de Patrocinadores</h2>
-  <div class="gestion-patrocinadores">
-    <form id="form-patrocinador" enctype="multipart/form-data">
-      <label>Tipo:</label>
-      <select name="tipo">
-        <option value="organizadores">Organizador</option>
-        <option value="patrocinios">Patrocinador</option>
-        <option value="colaboradores">Colaborador</option>
-      </select>
-
-      <label>URL:<span style="color: #fc02ca">*</span></label>
-      <input type="text" name="href" placeholder="https://..." required />
-
-      <label>Imagen:<span style="color: #fc02ca">*</span></label>
-      <input type="file" name="img" accept="image/*" required />
-
-      <label>Descripción<span style="color: #fc02ca">*</span>:</label>
-      <input type="text" name="alt" placeholder="Descripción" required />
-
-      <button type="submit">Añadir patrocinador</button>
-    </form>
-
-    <div class="patrocinadores-listado">
-      <h3>Lista de patrocinadores:</h3>
-      <button type="button" id="toggle-patrocinadores">Mostrar/Ocultar lista</button>
-      <div id="lista-patrocinadores" style="display: none;"></div>
-    </div>
-  </div>
-
-  <h2>Gestión de Revistas</h2>
+  <h2 id="revistas">Gestión de Revistas</h2>
   <div class="gestion-revistas">
     <form id="form-revista" enctype="multipart/form-data">
       <label>Título ES:<span style="color: #fc02ca">*</span></label>
@@ -507,7 +502,7 @@
     </div>
   </div>
 
-  <h2>Gestión de Documentos (página Revistas)</h2>
+  <h2 id="documentos">Gestión de Documentos (página Revistas)</h2>
   <div class="gestion-documentos">
     <form id="form-documento" enctype="multipart/form-data">
       <label>Tipo de documento:<span style="color: #fc02ca">*</span></label>
@@ -546,8 +541,35 @@
     </div>
   </div>
 
+   <h2 id="patrocinadores">Gestión de Patrocinadores</h2>
+  <div class="gestion-patrocinadores">
+    <form id="form-patrocinador" enctype="multipart/form-data">
+      <label>Tipo:</label>
+      <select name="tipo">
+        <option value="organizadores">Organizador</option>
+        <option value="patrocinios">Patrocinador</option>
+        <option value="colaboradores">Colaborador</option>
+      </select>
+
+      <label>URL:<span style="color: #fc02ca">*</span></label>
+      <input type="text" name="href" placeholder="https://..." required />
+
+      <label>Imagen:<span style="color: #fc02ca">*</span></label>
+      <input type="file" name="img" accept="image/*" required />
+
+      <label>Descripción<span style="color: #fc02ca">*</span>:</label>
+      <input type="text" name="alt" placeholder="Descripción" required />
+
+      <button type="submit">Añadir patrocinador</button>
+    </form>
+
+    <div class="patrocinadores-listado">
+      <h3>Lista de patrocinadores:</h3>
+      <button type="button" id="toggle-patrocinadores">Mostrar/Ocultar lista</button>
+      <div id="lista-patrocinadores" style="display: none;"></div>
+    </div>
+  </div>
 
   <script src="admin.js"></script>
-
 </body>
 </html>

@@ -1540,3 +1540,21 @@ async function eliminarDocumento(index) {
 }
 window.eliminarDocumento = eliminarDocumento;
 cargarDocumentosAdmin();
+
+document.getElementById("modo-tema")?.addEventListener("click", () => {
+  document.body.classList.toggle("modo-noche");
+
+  const enModoNoche = document.body.classList.contains("modo-noche");
+  localStorage.setItem("modo-tema", enModoNoche ? "noche" : "dia");
+
+  document.getElementById("modo-tema").textContent = enModoNoche ? "☀️ Día" : "🌙 Noche";
+});
+
+// Al cargar, aplica el modo guardado
+window.addEventListener("DOMContentLoaded", () => {
+  const modoGuardado = localStorage.getItem("modo-tema");
+  if (modoGuardado === "noche") {
+    document.body.classList.add("modo-noche");
+    document.getElementById("modo-tema").textContent = "☀️ Día";
+  }
+});
