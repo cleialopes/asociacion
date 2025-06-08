@@ -1,3 +1,22 @@
+// Mostrar notificación de contraseña cambiada con éxito
+const params = new URLSearchParams(window.location.search);
+if (params.get('cambio') === 'ok') {
+  const msg = document.createElement('div');
+  msg.textContent = '✅ Contraseña actualizada con éxito';
+  msg.style.position = 'fixed';
+  msg.style.top = '10px';
+  msg.style.right = '10px';
+  msg.style.background = '#d4edda';
+  msg.style.color = '#155724';
+  msg.style.border = '1px solid #c3e6cb';
+  msg.style.padding = '10px 15px';
+  msg.style.borderRadius = '5px';
+  msg.style.zIndex = '9999';
+  document.body.appendChild(msg);
+
+  setTimeout(() => msg.remove(), 4000);
+}
+
 // ===== Gestión Banner Index =====
 document.getElementById("form-banner-index").addEventListener("submit", async (e) => {
   e.preventDefault();
@@ -483,10 +502,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const lista = document.getElementById("lista-imagenes");
 
   if (toggleBtn && lista) {
-    // Establecer texto inicial del botón
     toggleBtn.textContent = lista.style.display !== "none" ? "Ocultar imágenes" : "Mostrar imágenes";
-
-    // Agregar evento de clic
     toggleBtn.addEventListener("click", function () {
       const visible = lista.style.display !== "none";
       lista.style.display = visible ? "none" : "block";
@@ -1280,7 +1296,6 @@ document.getElementById("form-revista").addEventListener("submit", async (e) => 
     }
   };
 
-  // Subir portada
   const portadaFile = form.portada.files[0];
   if (portadaFile) {
     const portadaForm = new FormData();
@@ -1292,7 +1307,6 @@ document.getElementById("form-revista").addEventListener("submit", async (e) => 
     }
   }
 
-  // Subir PDFs por idioma
   for (let lang of ["es", "en", "eu"]) {
     const file = form[`archivo_${lang}`].files[0];
     if (file) {
@@ -1305,8 +1319,6 @@ document.getElementById("form-revista").addEventListener("submit", async (e) => 
       }
     }
   }
-
-  // Guardar revista
   const res = await fetch("/api/revistas", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
@@ -1456,6 +1468,5 @@ async function eliminarDocumento(index) {
     }
   }
 }
-
 window.eliminarDocumento = eliminarDocumento;
 cargarDocumentosAdmin();

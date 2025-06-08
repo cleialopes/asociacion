@@ -1,16 +1,22 @@
 const express = require('express');
-const app = express();
+const session = require('express-session');
+const fs = require('fs');
+const path = require('path');
+const bcrypt = require('bcrypt');
+const rateLimit = require('express-rate-limit');
 const multer = require('multer');
 const cors = require('cors');
-const fs = require('fs');
-const session = require('express-session');
-const path = require('path');
+
+const app = express();
+const PORT = 3000;
+
+// Configurar multer para subida de archivos
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
     cb(null, path.join(__dirname, 'uploads'));
   },
   filename: (req, file, cb) => {
-    const ext = path.extname(file.originalname); 
+    const ext = path.extname(file.originalname);
     const filename = Date.now() + ext;
     cb(null, filename);
   }
@@ -21,7 +27,55 @@ if (!fs.existsSync(uploadDir)) {
 }
 const upload = multer({ storage });
 
-app.use(express.static('public'));
+// Middleware global
+app.use(cors());
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+// Configuración de sesión
+app.use(session({
+  secret: 'secreto-super-seguro',
+  resave: false,
+  saveUninitialized: false,
+  cookie: {
+    maxAge: 60 * 60 * 1000, // 1 hora
+    httpOnly: true
+  }
+}));
+
+// Protección de rutas /admin
+app.use('/admin', (req, res, next) => {
+  if (req.session && req.session.usuario) {
+    next();
+  } else {
+    res.redirect('/login.html');
+  }
+});
+
+// Middleware global y sesión
+app.use(cors());
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(session({
+  secret: 'secreto-super-seguro',
+  resave: false,
+  saveUninitialized: false,
+  cookie: {
+    maxAge: 60 * 60 * 1000,
+    httpOnly: true
+  }
+}));
+
+// ✅ Protección de rutas /admin
+app.use('/admin', (req, res, next) => {
+  if (req.session && req.session.usuario) {
+    next();
+  } else {
+    res.redirect('/login.html');
+  }
+});
+
+// Archivos estáticos (después de proteger /admin)
 app.use('/uploads', express.static('uploads'));
 app.use('/noticias.json', express.static(path.join(__dirname, 'noticias.json')));
 app.use('/revista.json', express.static(path.join(__dirname, 'revista.json')));
@@ -32,17 +86,14 @@ app.use('/eventos.json', express.static(path.join(__dirname, 'eventos.json')));
 app.use('/patrocinadores.json', express.static(path.join(__dirname, 'patrocinadores.json')));
 app.use('/bases_latino.json', express.static(path.join(__dirname, 'bases_latino.json')));
 app.use('/imagenes.json', express.static(path.join(__dirname, 'imagenes.json')));
-
-app.use(cors());
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
-app.use('/uploads', express.static('uploads'));
-app.use(session({
-  secret: 'secreto-super-seguro',
-  resave: false,
-  saveUninitialized: true
-}));
+
+// Limitar intentos de login
+const loginLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 5,
+  message: '<h3>Demasiados intentos. Intenta más tarde. <a href="/login.html">Volver</a></h3>'
+});
 
 app.use('/admin', (req, res, next) => {
   if (req.session && req.session.usuario) {
@@ -52,24 +103,68 @@ app.use('/admin', (req, res, next) => {
   }
 });
 
-app.post('/login', (req, res) => {
+// Ruta login
+app.post('/login', loginLimiter, (req, res) => {
   const { usuario, password } = req.body;
   const datos = JSON.parse(fs.readFileSync('usuarios.json', 'utf-8'));
+  const user = datos.find(u => u.usuario === usuario);
 
-  const existe = datos.find(u => u.usuario === usuario && u.password === password);
-  if (existe) {
+  if (user && bcrypt.compareSync(password, user.password)) {
     req.session.usuario = usuario;
-    res.redirect('/admin/index.html');
+    res.redirect('/admin');
   } else {
-    res.send('<h3>Credenciales inválidas. <a href="/login.html">Intentar de nuevo</a></h3>');
+    res.send('<h3>Acceso denegado. <a href="/login.html">Volver</a></h3>');
   }
 });
 
+// Ruta logout
 app.get('/logout', (req, res) => {
   req.session.destroy(() => {
     res.redirect('/login.html');
   });
 });
+
+// Redirección desde /admin
+app.get('/admin', (req, res) => {
+  if (req.session.usuario) {
+    res.redirect('/admin/index.html');
+  } else {
+    res.redirect('/login.html');
+  }
+});
+
+// Redirección principal
+app.get('/', (req, res) => {
+  res.redirect('/admin');
+});
+
+// Cambio de contraseña
+app.get('/cambiar-password', (req, res) => {
+  if (!req.session.usuario) return res.redirect('/login.html');
+  res.sendFile(path.join(__dirname, 'public', 'cambiar-password.html'));
+});
+
+app.post('/cambiar-password', (req, res) => {
+  if (!req.session.usuario) return res.redirect('/login.html');
+
+  const { anterior, nueva } = req.body;
+  const datos = JSON.parse(fs.readFileSync('usuarios.json', 'utf-8'));
+  const index = datos.findIndex(u => u.usuario === req.session.usuario);
+
+  if (index === -1) return res.send('Usuario no encontrado');
+
+  const user = datos[index];
+  if (!bcrypt.compareSync(anterior, user.password)) {
+    return res.send('<h3>Contraseña actual incorrecta. <a href="/cambiar-password">Intentar de nuevo</a></h3>');
+  }
+
+  const nuevoHash = bcrypt.hashSync(nueva, 10);
+  datos[index].password = nuevoHash;
+
+  fs.writeFileSync('usuarios.json', JSON.stringify(datos, null, 2));
+  res.redirect('/admin/index.html?cambio=ok');
+});
+
 
 function eliminarArchivoSiExiste(rutaRelativa) {
   const ruta = path.join(__dirname, 'public', rutaRelativa.replace(/^\/+/, ''));
@@ -409,7 +504,16 @@ app.post('/api/imagenes', upload.single('imagen'), (req, res) => {
 
   if (!archivo) return res.status(400).json({ ok: false, error: "Falta archivo." });
 
-  const src = `/uploads/${archivo.filename}`;
+  const ext = path.extname(archivo.originalname).toLowerCase();
+  const nombre = Date.now() + ext;
+  const destinoDir = path.join(__dirname, 'public', 'img');
+
+  if (!fs.existsSync(destinoDir)) fs.mkdirSync(destinoDir, { recursive: true });
+
+  const destino = path.join(destinoDir, nombre);
+  fs.renameSync(archivo.path, destino);
+
+  const src = `/img/${nombre}`;
 
   const nuevaImagen = {
     src,
@@ -432,6 +536,7 @@ app.post('/api/imagenes', upload.single('imagen'), (req, res) => {
 
   res.json({ ok: true });
 });
+
 
 app.delete('/api/imagenes/:index', (req, res) => {
   const index = parseInt(req.params.index);
@@ -867,10 +972,52 @@ app.get('/api/revistas', (req, res) => {
   }
 });
 
-app.post('/api/revistas', (req, res) => {
-  const nueva = req.body;
-  let revistas = [];
+app.post('/api/revistas', upload.fields([
+  { name: 'portada', maxCount: 1 },
+  { name: 'archivo_es', maxCount: 1 },
+  { name: 'archivo_en', maxCount: 1 },
+  { name: 'archivo_eu', maxCount: 1 }
+]), (req, res) => {
+  const { titulo_es, titulo_en, titulo_eu } = req.body;
+  const archivos = req.files || {};
 
+  const nueva = {
+    titulo: {
+      es: titulo_es || "",
+      en: titulo_en || "",
+      eu: titulo_eu || ""
+    },
+    portada: "",
+    archivo: {
+      es: "",
+      en: "",
+      eu: ""
+    }
+  };
+
+  const moverArchivo = (archivo, destinoCarpeta) => {
+    const ext = path.extname(archivo.originalname).toLowerCase();
+    const nombre = Date.now() + ext;
+    const destinoDir = path.join(__dirname, 'public', destinoCarpeta);
+
+    if (!fs.existsSync(destinoDir)) fs.mkdirSync(destinoDir, { recursive: true });
+
+    const destino = path.join(destinoDir, nombre);
+    fs.renameSync(archivo.path, destino);
+    return `/${destinoCarpeta}/${nombre}`;
+  };
+
+  if (archivos.portada?.[0]) {
+    nueva.portada = moverArchivo(archivos.portada[0], 'img');
+  }
+
+  for (const lang of ['es', 'en', 'eu']) {
+    if (archivos[`archivo_${lang}`]?.[0]) {
+      nueva.archivo[lang] = moverArchivo(archivos[`archivo_${lang}`][0], 'pdfs');
+    }
+  }
+
+  let revistas = [];
   try {
     revistas = JSON.parse(fs.readFileSync(REVISTAS_JSON, 'utf-8'));
   } catch (e) {}
@@ -879,6 +1026,7 @@ app.post('/api/revistas', (req, res) => {
   fs.writeFileSync(REVISTAS_JSON, JSON.stringify(revistas, null, 2));
   res.json({ ok: true });
 });
+
 
 app.delete('/api/revistas/:index', (req, res) => {
   const index = parseInt(req.params.index);
@@ -908,7 +1056,6 @@ app.delete('/api/revistas/:index', (req, res) => {
 
 const DOCUMENTOS_JSON = 'documentos.json';
 
-// Obtener lista de documentos
 app.get('/api/documentos', (req, res) => {
   try {
     const data = fs.readFileSync(DOCUMENTOS_JSON, 'utf-8');
@@ -918,7 +1065,6 @@ app.get('/api/documentos', (req, res) => {
   }
 });
 
-// Guardar nuevo documento
 app.post('/api/documentos', (req, res) => {
   const nuevo = req.body;
   let documentos = [];
@@ -932,7 +1078,6 @@ app.post('/api/documentos', (req, res) => {
   res.json({ ok: true });
 });
 
-// Eliminar documento por índice
 app.delete('/api/documentos/:index', (req, res) => {
   const index = parseInt(req.params.index);
   let documentos = [];
@@ -958,6 +1103,5 @@ app.delete('/api/documentos/:index', (req, res) => {
   fs.writeFileSync(DOCUMENTOS_JSON, JSON.stringify(documentos, null, 2));
   res.json({ ok: true });
 });
-
 
 app.listen(3000, () => console.log('Servidor en http://localhost:3000'));
