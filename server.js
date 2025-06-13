@@ -6,7 +6,7 @@ const path = require('path');
 const app = express();
 const PORT = 3000;
 
-const authMiddleware = require('./middlewares/authMiddleware');
+const authMiddleware = require('./server/middlewares/authMiddleware');
 
 
 app.use(cors());
@@ -21,22 +21,22 @@ app.use(session({
 
 
 app.use('/admin', authMiddleware);
-app.use('/api', require('./routes/contacto'));
+app.use('/api', require('./server/routes/contacto'));
 app.use('/uploads', express.static('uploads'));
 app.use(express.static(path.join(__dirname, '..', 'public')));
-app.use('/api', require('./routes/auth'));
-app.use('/api', require('./routes/banners'));
-app.use('/api', require('./routes/imagenes'));
-app.use('/api', require('./routes/sebastiane'));
-app.use('/api', require('./routes/upload'));
-app.use('/api', require('./routes/sebastiane_latino'));
-app.use('/api/noticias', require('./routes/noticias'));
-app.use('/api/encuentros', require('./routes/encuentros'));
-app.use('/api/festivales', require('./routes/festivales'));
-app.use('/api/eventos', require('./routes/eventos'));
-app.use('/api/patrocinadores', require('./routes/patrocinadores'));
-app.use('/api/bases_latino', require('./routes/basesLatino'));
-app.use('/api/revistas', require('./routes/revistas'));
-app.use('/api/documentos', require('./routes/documentos'));
+app.use('/api', require('./server/routes/auth'));
+app.use('/api', require('./server/routes/banners'));
+app.use('/api', require('./server/routes/imagenes'));
+app.use('/api', require('./server/routes/sebastiane'));
+app.use('/api', require('./server/routes/upload'));
+app.use('/api', require('./server/routes/sebastiane_latino'));
+app.use('/api/noticias', require('./server/routes/noticias'));
+app.use('/api/encuentros', require('./server/routes/encuentros'));
+app.use('/api/festivales', require('./server/routes/festivales'));
+app.use('/api/eventos', require('./server/routes/eventos'));
+app.use('/api/patrocinadores', require('./server/routes/patrocinadores'));
+app.use('/api/bases_latino', require('./server/routes/basesLatino'));
+app.use('/api/revistas', require('./server/routes/revistas'));
+app.use('/api/documentos', require('./server/routes/documentos'));
 
 app.listen(PORT, () => console.log(`Servidor en http://localhost:${PORT}`));
