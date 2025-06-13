@@ -1,5 +1,5 @@
 function mostrarNoticias(idioma) {
-  fetch("noticias.json")
+  fetch("/api/noticias")
   .then(res => res.json())
   .then(noticias => {
     const contenedor = document.getElementById("contenedor-noticias");
@@ -61,13 +61,13 @@ fetch("/api/banner-index")
 });
 
 function cargarImagenes() {
-  fetch("imagenes.json")
+  fetch("/api/imagenes")
     .then(res => res.json())
     .then(imagenes => {
       const contenedor = document.getElementById("enlaces-imagenes");
       if (!contenedor) return;
 
-      contenedor.innerHTML = ""; // 🟩 Vaciar antes de volver a cargar
+      contenedor.innerHTML = ""; 
 
       const idioma = localStorage.getItem("idioma") || "es";
 

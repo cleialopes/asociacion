@@ -1,5 +1,5 @@
 function cargarEventos(idioma) {
-  $.getJSON("eventos.json", function (data) {
+  $.getJSON("/api/eventos", function (data) {
     let html = "<ul class='eventos-lista'>";
 
     data.forEach(evento => {

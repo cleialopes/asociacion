@@ -29,8 +29,8 @@
     </ul>
     <button id="modo-tema">🌙 Noche</button>
     <div class="acciones-usuario">
-      <a href="/cambiar-password" class="btn-cambiar-password">🔒 Cambiar contraseña</a>
-      <a href="/logout" class="btn-cerrar-sesion">🚪 Cerrar sesión</a>
+      <a href="/api/cambiar-password" class="btn-cambiar-password">🔒 Cambiar contraseña</a>
+      <a href="/api/logout" class="btn-cerrar-sesion">🚪 Cerrar sesión</a>
     </div>
   </nav>
 
@@ -400,7 +400,7 @@
       <input type="text" name="fotografo" />
   
       <label>Año URL:</label>
-      <input type="text" name="anio_url" placeholder="Ej: https://sebastiane.com?anio=2024 o https://sebastiane_latino.com?anio=2024"/>
+      <input type="text" name="anio_url" placeholder="Ej: sebastiane.html?anio=2024 o sebastiane_latino.html?anio=2024"/>
 
       <button type="submit">Añadir noticia</button>
     </form>
@@ -570,6 +570,6 @@
     </div>
   </div>
 
-  <script src="admin.js"></script>
+  <script src="admin.js" defer></script>
 </body>
 </html>

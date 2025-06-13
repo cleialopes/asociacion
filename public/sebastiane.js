@@ -127,13 +127,20 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("scroll-anios").scrollLeft += 200;
   });
 
-  const anioActual = new Date().getFullYear();
-  const anioPorDefecto = (anioActual >= 2000 && anioActual <= 2025) ? anioActual : 2024;
-  anioActivo = anioPorDefecto;
+  function obtenerAnioDesdeURL() {
+    const params = new URLSearchParams(window.location.search);
+    const anio = parseInt(params.get("anio"), 10);
+    return (anio >= 2000 && anio <= 2025) ? anio : null;
+  }
 
-  window.addEventListener("load", () => {
-    mostrarInfo(anioPorDefecto, false); 
-  });
+  const anioActual = new Date().getFullYear();
+  const anioDesdeURL = obtenerAnioDesdeURL();
+const anioPorDefecto = anioDesdeURL || ((anioActual >= 2000 && anioActual <= 2025) ? anioActual : 2024);
+anioActivo = anioPorDefecto;
+
+window.addEventListener("load", () => {
+  mostrarInfo(anioPorDefecto, false);
+});
 });
 
 fetch("/api/banner")

@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  fetch("bases_latino.json")
+  fetch('/api/bases_latino')
   .then(response => response.json())
   .then(data => {
     function actualizarBasesPDF() {

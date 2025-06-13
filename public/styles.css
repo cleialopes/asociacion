@@ -151,7 +151,7 @@ main h1 {
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 20px;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -1119,8 +1119,8 @@ form button:hover {
 .banner img {
   display: block;
   width: 100%;
-  height: 300px;
-  border-radius: 15px;
+  height: 400px;
+  margin-top: -25px;
 }
 
 /*===== sebastiane latinnno =====*/

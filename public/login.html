@@ -9,16 +9,21 @@
 <body>
   <div class="container">
     <h2>Acceso Administrador</h2>
-    <form method="POST" action="/login">
+    <form method="POST" action="/api/login">
       <label for="usuario">Usuario:</label>
       <input type="text" name="usuario" id="usuario" required />
 
       <label for="password">Contraseña:</label>
-      <input type="password" name="password" id="password" required />
+      <div class="password-wrapper">
+        <input type="password" name="password" id="password" required />
+        <span id="togglePassword" class="toggle-icon">👁️</span>
+      </div>
 
       <button type="submit">Entrar</button>
     </form>
   </div>
+
+  <script src="/login.js"></script>
 </body>
 </html>
 

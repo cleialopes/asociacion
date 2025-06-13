@@ -15,7 +15,7 @@ function mostrarEncuentro(lang) {
   const params = new URLSearchParams(window.location.search);
   const id = parseInt(params.get("id"));
 
-  fetch("encuentros.json")
+  fetch("/api/encuentros")
     .then(res => res.json())
     .then(encuentros => {
       const encuentro = encuentros.find(e => e.id === id);

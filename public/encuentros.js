@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $.getJSON("encuentros.json", function (data) {
+  $.getJSON("/api/encuentros", function (data) {
     let html = '';
     const idioma = localStorage.getItem("idioma") || "es";
 
@@ -48,7 +48,7 @@ $(document).ready(function () {
 });
 
 function cargarEncuentros(idioma) {
-  $.getJSON("encuentros.json", function (data) {
+  $.getJSON("/api/encuentros", function (data) {
     let html = '';
 
     data.forEach(encuentros => {
@@ -72,7 +72,7 @@ function cargarEncuentros(idioma) {
 }
 
 function renderizarListaFestivales(idioma) {
-  $.getJSON("festivales.json", function (data) {
+  $.getJSON("/api/festivales", function (data) {
     $(".eventos-lista").remove();
 
     let listaHtml = "<ul class='eventos-lista'>";

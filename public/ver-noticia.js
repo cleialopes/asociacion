@@ -4,7 +4,7 @@ const idioma = localStorage.getItem("idioma") || "es";
 
 let noticiaGlobal = null;
 
-fetch("/noticias.json")
+fetch("/api/noticias")
   .then(res => res.json())
   .then(noticias => {
     const noticia = noticias.find(n => String(n.id) === id);

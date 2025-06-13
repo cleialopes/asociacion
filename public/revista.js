@@ -18,7 +18,7 @@ window.etiquetas = window.etiquetas || {
 
 function cargarRevistas() {
   const idioma = localStorage.getItem("idioma") || "es";
-  fetch("revista.json")
+  fetch('/api/revistas')
   .then(res => res.json())
   .then(data => {
     const contenedor = document.getElementById("lista-revistas");
@@ -42,7 +42,7 @@ function cargarRevistas() {
 
 function cargarDocumentos() {
   const idioma = localStorage.getItem("idioma") || "es";
-  fetch("documentos.json")
+  fetch('/api/documentos')
     .then(res => res.json())
     .then(data => {
       const columnas = {
@@ -56,18 +56,17 @@ function cargarDocumentos() {
       columnas.memoria.innerHTML = "";
 
       data.forEach(doc => {
-        const li = document.createElement("li");
-        li.innerHTML = `
-          <span>${etiquetas[doc.tipo][idioma]} ${doc.anio}</span>
-          <ul class="idiomas">
-            ${doc.archivos[idioma]
-              ? `<li><a href="${doc.archivos[idioma]}" target="_blank">${idioma.toUpperCase()}</a></li>`
-              : Object.entries(doc.archivos).map(([lang, path]) =>
-                  `<li><a href="${path}" target="_blank">${lang.toUpperCase()}</a></li>`
-                ).join('')}
-          </ul>
-        `;
-        columnas[doc.tipo].appendChild(li);
+        const archivo = doc.archivos[idioma] || doc.archivos["es"];
+        if (archivo) {
+          const li = document.createElement("li");
+          li.innerHTML = `
+            <span>${etiquetas[doc.tipo][idioma]} ${doc.anio}</span>
+            <ul class="idiomas">
+              <li><a href="${archivo}" target="_blank">${(doc.archivos[idioma] ? idioma : "es").toUpperCase()}</a></li>
+            </ul>
+          `;
+          columnas[doc.tipo].appendChild(li);
+        }
       });
     });
 }

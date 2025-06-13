@@ -116,9 +116,9 @@ cargarBannerIndex();
 document.getElementById("form-banner-nosotros")?.addEventListener("submit", async (e) => {
   e.preventDefault();
   const form = e.target;
-  const tipo = form.tipo.value;
-  const archivo = form.archivo.files[0];
-  const url = form.url.value;
+  const tipo = form.querySelector("[name='tipo']")?.value;
+const archivo = form.querySelector("[name='archivo']")?.files[0];
+const url = form.querySelector("[name='url']")?.value;
 
   if (archivo) {
     const esVideo = tipo === "video";
@@ -199,9 +199,9 @@ cargarBannerNosotros();
 document.getElementById("form-banner-voluntaries")?.addEventListener("submit", async (e) => {
   e.preventDefault();
   const form = e.target;
-  const tipo = form.tipo.value;
-  const archivo = form.archivo.files[0];
-  const url = form.url.value;
+  const tipo = form.querySelector("[name='tipo']")?.value;
+  const archivo = form.querySelector("[name='archivo']")?.files[0];
+  const url = form.querySelector("[name='url']")?.value;
 
   if (archivo) {
     const esVideo = tipo === "video";
@@ -533,7 +533,7 @@ async function cargarImagenesAdmin() {
 
   contenedor.innerHTML = "";
 
-  const res = await fetch("/imagenes.json?" + Date.now());
+  const res = await fetch("/api/imagenes?" + Date.now());
   const imagenes = await res.json();
 
   imagenes.forEach((img, index) => {
@@ -951,7 +951,7 @@ document.getElementById("form-encuentro").addEventListener("submit", async (e) =
 });
 
 async function cargarEncuentrosAdmin() {
-  const res = await fetch("/encuentros.json");
+  const res = await fetch("/api/encuentros?");
   const encuentros = await res.json();
   const contenedor = document.getElementById("lista-encuentros");
   contenedor.innerHTML = "";
@@ -963,10 +963,12 @@ async function cargarEncuentrosAdmin() {
     return;
   }
 
-  const [anio, mes, dia] = filtroFechaRaw.split("-");
-  const filtroFecha = `${dia}/${mes}/${anio}`;
-
-  const filtrados = encuentros.filter(e => e.fecha === filtroFecha);
+  const filtrados = encuentros.filter(e => {
+    const normalizada = e.fecha.includes("/")
+      ? e.fecha.split("/").reverse().join("-")
+      : e.fecha;
+    return normalizada === filtroFechaRaw;
+  });
 
   if (filtrados.length === 0) {
     contenedor.innerHTML = "<p>No hay encuentros para esta fecha.</p>";
@@ -978,16 +980,16 @@ async function cargarEncuentrosAdmin() {
     div.innerHTML = `
       <strong>${e.titulo?.es || "Sin título"}</strong><br/>
       <small>${e.fecha || "Sin fecha"}</small><br/>
-      <button onclick="eliminarEncuentro(${index})">Eliminar</button>
+      <button onclick="eliminarEncuentro(${e.id})">Eliminar</button>
       <hr/>
     `;
     contenedor.appendChild(div);
   });
 }
 
-async function eliminarEncuentro(index) {
+async function eliminarEncuentro(id) {
   if (confirm("¿Eliminar este encuentro?")) {
-    const res = await fetch(`/api/encuentros/${index}`, {
+    const res = await fetch(`/api/encuentros/${id}`, {
       method: "DELETE"
     });
     if (res.ok) {
@@ -1000,7 +1002,7 @@ async function eliminarEncuentro(index) {
 }
 cargarEncuentrosAdmin();
 
-// =====Gestion Lista encuentros=====
+// =====Gestion festivale Lista encuentros=====
 document.getElementById("form-festival").addEventListener("submit", async (e) => {
   e.preventDefault();
   const form = e.target;
@@ -1036,7 +1038,7 @@ document.getElementById("form-festival").addEventListener("submit", async (e) =>
 });
 
 async function cargarFestivalesAdmin() {
-  const res = await fetch("/festivales.json");
+  const res = await fetch("/api/festivales?");
   const festivales = await res.json();
   const contenedor = document.getElementById("lista-festivales");
   contenedor.innerHTML = "";
@@ -1051,7 +1053,7 @@ async function cargarFestivalesAdmin() {
     div.innerHTML = `
       <strong>${f.nombre?.es || "Sin nombre"}</strong><br/>
       <small>${f.url || "Sin URL"}</small><br/>
-      <button onclick="eliminarFestival(${index})">Eliminar</button>
+      <button onclick="eliminarFestival(${f.id})">Eliminar</button>
       <hr/>
     `;
     contenedor.appendChild(div);
@@ -1065,9 +1067,9 @@ document.getElementById("toggle-festivales").addEventListener("click", function 
   this.textContent = visible ? "Mostrar lista de festivales" : "Ocultar lista de festivales";
 });
 
-async function eliminarFestival(index) {
+async function eliminarFestival(id) {
   if (confirm("¿Eliminar este festival?")) {
-    const res = await fetch(`/api/festivales/${index}`, {
+    const res = await fetch(`/api/festivales/${id}`, {
       method: "DELETE"
     });
     if (res.ok) {
@@ -1111,7 +1113,7 @@ document.getElementById("form-evento").addEventListener("submit", async (e) => {
     delete nuevoEvento.nota;
   }
 
-  const res = await fetch("/api/eventos", {
+  const res = await fetch("/api/eventos?", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(nuevoEvento)
@@ -1127,7 +1129,7 @@ document.getElementById("form-evento").addEventListener("submit", async (e) => {
 });
 
 async function cargarEventosAdmin() {
-  const res = await fetch("/eventos.json");
+  const res = await fetch("/api/eventos?" + Date.now());
   const eventos = await res.json();
   const contenedor = document.getElementById("lista-eventos");
   contenedor.innerHTML = "";
@@ -1177,91 +1179,7 @@ document.getElementById("toggle-eventos").addEventListener("click", function () 
   }
 });
 
-document.getElementById("form-patrocinador").addEventListener("submit", async (e) => {
-  e.preventDefault();
-  const form = e.target;
-  const tipo = form.tipo.value;
-
-  const file = form.img.files[0];
-let imageUrl = "";
-
-if (file) {
-  const imgForm = new FormData();
-  imgForm.append("imagen", file);
-  const uploadRes = await fetch("/api/upload", {
-    method: "POST",
-    body: imgForm
-  });
-  const data = await uploadRes.json();
-  imageUrl = data.url || "";
-}
-
-const nuevo = {
-  href: form.href.value.trim(),
-  img: imageUrl,
-  alt: form.alt.value.trim()
-};
-
-const res = await fetch("/api/patrocinadores", {
-  method: "POST",
-  headers: { "Content-Type": "application/json" },
-  body: JSON.stringify({ tipo, nuevo })
-});
-
-  if (res.ok) {
-    alert("Patrocinador guardado.");
-    form.reset();
-    cargarPatrocinadoresAdmin();
-  } else {
-    alert("Error al guardar patrocinador.");
-  }
-});
-
-async function cargarPatrocinadoresAdmin() {
-  const res = await fetch("/patrocinadores.json");
-  const data = await res.json();
-  const contenedor = document.getElementById("lista-patrocinadores");
-  contenedor.innerHTML = "";
-
-  ["organizadores", "patrocinios", "colaboradores"].forEach(tipo => {
-    const grupo = data[tipo] || [];
-    if (grupo.length === 0) return;
-    const section = document.createElement("section");
-    section.innerHTML = `<h4>${tipo}</h4>`;
-    grupo.forEach((p, i) => {
-      const div = document.createElement("div");
-      div.innerHTML = `
-        <a href="${p.href}" target="_blank"><img src="${p.img}" alt="${p.alt}" height="30"></a>
-        <button onclick="eliminarPatrocinador('${tipo}', ${i})">Eliminar</button>
-      `;
-      section.appendChild(div);
-    });
-    contenedor.appendChild(section);
-  });
-}
-
-window.eliminarPatrocinador = async function(tipo, index) {
-  if (confirm("¿Eliminar patrocinador?")) {
-    const res = await fetch(`/api/patrocinadores/${tipo}/${index}`, {
-      method: "DELETE"
-    });
-    if (res.ok) {
-      alert("Eliminado.");
-      cargarPatrocinadoresAdmin();
-    } else {
-      alert("Error al eliminar.");
-    }
-  }
-};
-
-document.getElementById("toggle-patrocinadores").addEventListener("click", function () {
-  const cont = document.getElementById("lista-patrocinadores");
-  const visible = cont.style.display !== "none";
-  cont.style.display = visible ? "none" : "block";
-  this.textContent = visible ? "Mostrar lista" : "Ocultar lista";
-});
-cargarPatrocinadoresAdmin();
-
+// === GESTIÓN DE BASES LATINO ===
 document.getElementById("form-bases-latino").addEventListener("submit", async (e) => {
   e.preventDefault();
   const form = e.target;
@@ -1313,7 +1231,7 @@ document.getElementById("form-bases-latino").addEventListener("submit", async (e
 
 async function cargarBasesLatino() {
   try {
-    const res = await fetch("/bases_latino.json");
+    const res = await fetch("/api/bases_latino?");
     const data = await res.json();
     const base = data.latino;
 
@@ -1351,48 +1269,25 @@ document.getElementById("form-revista").addEventListener("submit", async (e) => 
   e.preventDefault();
   const form = e.target;
 
-  const nuevaRevista = {
-    id: Date.now().toString(),
-    titulo: {
-      es: form.titulo_es.value.trim(),
-      en: form.titulo_en.value.trim(),
-      eu: form.titulo_eu.value.trim()
-    },
-    portada: "",
-    archivo: {
-      es: "",
-      en: "",
-      eu: ""
-    }
-  };
+  const formData = new FormData();
+  formData.append("titulo_es", form.titulo_es.value.trim());
+  formData.append("titulo_en", form.titulo_en.value.trim());
+  formData.append("titulo_eu", form.titulo_eu.value.trim());
 
-  const portadaFile = form.portada.files[0];
-  if (portadaFile) {
-    const portadaForm = new FormData();
-    portadaForm.append("imagen", portadaFile);
-    const res = await fetch("/api/upload", { method: "POST", body: portadaForm });
-    const data = await res.json();
-    if (data?.url?.includes("/img/")) {
-      nuevaRevista.portada = data.url;
-    }
+  if (form.portada.files[0]) {
+    formData.append("portada", form.portada.files[0]);
   }
 
   for (let lang of ["es", "en", "eu"]) {
     const file = form[`archivo_${lang}`].files[0];
     if (file) {
-      const pdfForm = new FormData();
-      pdfForm.append("imagen", file);
-      const res = await fetch("/api/upload", { method: "POST", body: pdfForm });
-      const data = await res.json();
-      if (data?.url?.includes("/pdfs/")) {
-        nuevaRevista.archivo[lang] = data.url;
-      }
+      formData.append(`archivo_${lang}`, file);
     }
   }
+
   const res = await fetch("/api/revistas", {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(nuevaRevista)
+    body: formData
   });
 
   if (res.ok) {
@@ -1405,7 +1300,7 @@ document.getElementById("form-revista").addEventListener("submit", async (e) => 
 });
 
 async function cargarRevistasAdmin() {
-  const res = await fetch("/revista.json");
+  const res = await fetch("/api/revistas?");
   const revistas = await res.json();
   const contenedor = document.getElementById("lista-revistas");
   contenedor.innerHTML = "";
@@ -1425,16 +1320,16 @@ async function cargarRevistasAdmin() {
       ${r.archivo.en ? ` | <a href="${r.archivo.en}" target="_blank">PDF EN</a>` : ''}
       ${r.archivo.eu ? ` | <a href="${r.archivo.eu}" target="_blank">PDF EU</a>` : ''}
       <br/>
-      <button onclick="eliminarRevista(${index})">Eliminar</button>
+      <button onclick="eliminarRevista('${r.id}')">Eliminar</button>
       <hr/>
     `;
     contenedor.appendChild(div);
   });
 }
 
-async function eliminarRevista(index) {
+async function eliminarRevista(id) {
   if (confirm("¿Eliminar esta revista?")) {
-    const res = await fetch(`/api/revistas/${index}`, {
+    const res = await fetch(`/api/revistas/${id}`, {
       method: "DELETE"
     });
     if (res.ok) {
@@ -1452,7 +1347,6 @@ document.getElementById("toggle-revistas").addEventListener("click", function ()
   lista.style.display = visible ? "none" : "block";
   this.textContent = visible ? "Mostrar lista de revistas" : "Ocultar lista de revistas";
 });
-
 cargarRevistasAdmin();
 
 // =====Gestion Documentos pg Revista=====
@@ -1520,16 +1414,16 @@ async function cargarDocumentosAdmin() {
       ${doc.archivos.en ? ` | <a href="${doc.archivos.en}" target="_blank">EN</a>` : ''}
       ${doc.archivos.eu ? ` | <a href="${doc.archivos.eu}" target="_blank">EU</a>` : ''}
       <br/>
-      <button onclick="eliminarDocumento(${index})">Eliminar</button>
+      <button onclick="eliminarDocumento('${doc.id}')">Eliminar</button>
       <hr/>
     `;
     contenedor.appendChild(div);
   });
 }
 
-async function eliminarDocumento(index) {
+async function eliminarDocumento(id) {
   if (confirm("¿Eliminar este documento?")) {
-    const res = await fetch(`/api/documentos/${index}`, { method: "DELETE" });
+    const res = await fetch(`/api/documentos/${id}`, { method: "DELETE" });
     if (res.ok) {
       alert("Documento eliminado.");
       cargarDocumentosAdmin();
@@ -1558,3 +1452,90 @@ window.addEventListener("DOMContentLoaded", () => {
     document.getElementById("modo-tema").textContent = "☀️ Día";
   }
 });
+
+// =====Gestion Patrocinadores=====
+document.getElementById("form-patrocinador").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const form = e.target;
+  const tipo = form.tipo.value;
+
+  const file = form.img.files[0];
+let imageUrl = "";
+
+if (file) {
+  const imgForm = new FormData();
+  imgForm.append("imagen", file);
+  const uploadRes = await fetch("/api/upload", {
+    method: "POST",
+    body: imgForm
+  });
+  const data = await uploadRes.json();
+  imageUrl = data.url || "";
+}
+
+const nuevo = {
+   id: Date.now(),
+  href: form.href.value.trim(),
+  img: imageUrl,
+  alt: form.alt.value.trim()
+};
+
+const res = await fetch("/api/patrocinadores", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({ tipo, nuevo })
+});
+
+  if (res.ok) {
+    alert("Patrocinador guardado.");
+    form.reset();
+    cargarPatrocinadoresAdmin();
+  } else {
+    alert("Error al guardar patrocinador.");
+  }
+});
+
+async function cargarPatrocinadoresAdmin() {
+  const res = await fetch("/api/patrocinadores?");
+  const data = await res.json();
+  const contenedor = document.getElementById("lista-patrocinadores");
+  contenedor.innerHTML = "";
+
+  ["organizadores", "patrocinios", "colaboradores"].forEach(tipo => {
+    const grupo = data[tipo] || [];
+    if (grupo.length === 0) return;
+    const section = document.createElement("section");
+    section.innerHTML = `<h4>${tipo}</h4>`;
+    grupo.forEach((p, i) => {
+      const div = document.createElement("div");
+      div.innerHTML = `
+        <a href="${p.href}" target="_blank"><img src="${p.img}" alt="${p.alt}" height="30"></a>
+        <button onclick="eliminarPatrocinador('${tipo}', ${p.id})">Eliminar</button>
+      `;
+      section.appendChild(div);
+    });
+    contenedor.appendChild(section);
+  });
+}
+
+window.eliminarPatrocinador = async function(tipo, index) {
+  if (confirm("¿Eliminar patrocinador?")) {
+    const res = await fetch(`/api/patrocinadores/${tipo}/${index}`, {
+      method: "DELETE"
+    });
+    if (res.ok) {
+      alert("Eliminado.");
+      cargarPatrocinadoresAdmin();
+    } else {
+      alert("Error al eliminar.");
+    }
+  }
+};
+
+document.getElementById("toggle-patrocinadores").addEventListener("click", function () {
+  const cont = document.getElementById("lista-patrocinadores");
+  const visible = cont.style.display !== "none";
+  cont.style.display = visible ? "none" : "block";
+  this.textContent = visible ? "Mostrar lista" : "Ocultar lista";
+});
+cargarPatrocinadoresAdmin();

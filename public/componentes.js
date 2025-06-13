@@ -83,7 +83,6 @@ document.getElementById('footer').innerHTML = `
           </div>
         </div>
       </div>
-
     </div>
 
     <div class="footer-copy">
@@ -111,12 +110,12 @@ function crearGrupoPatrocinadores(tituloClave, lista) {
   return html;
 }
 
-fetch("patrocinadores.json")
+fetch("/api/patrocinadores")
   .then(res => res.json())
   .then(data => {
     const contenedor = document.getElementById("patrocinadores");
     contenedor.innerHTML =
-      crearGrupoPatrocinadores("organizadores", data.organizadores) +
+      crearGrupoPatrocinadores("Organizadores", data.organizadores) +
       `<div id="carrusel-patrocinadores"></div>`;
 
     renderCarruselPersonalizado([...data.patrocinios, ...data.colaboradores]);
