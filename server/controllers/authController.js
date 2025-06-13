@@ -6,9 +6,9 @@ const bcrypt = require('bcrypt');
 exports.login = (req, res) => {
   const { usuario, password } = req.body;
   let datos = [];
-
-  try {
-    datos = JSON.parse(fs.readFileSync('usuarios.json', 'utf-8'));
+  const rutaUsuarios = path.join(__dirname, '..', '..', 'usuarios.json');
+  try { 
+    datos = JSON.parse(fs.readFileSync(rutaUsuarios, 'utf-8'));
   } catch (e) {
     return res.send('<h3>Error leyendo archivo de usuarios. <a href="/login.html">Volver</a></h3>');
   }
@@ -50,8 +50,10 @@ exports.cambiarPassword = (req, res) => {
   const { anterior, nueva } = req.body;
   let datos = [];
 
+  const rutaUsuarios = path.join(__dirname, '..', '..', 'usuarios.json');
+
   try {
-    datos = JSON.parse(fs.readFileSync('usuarios.json', 'utf-8'));
+    datos = JSON.parse(fs.readFileSync(rutaUsuarios, 'utf-8'));
   } catch (e) {
     return res.send('<h3>Error leyendo usuarios. <a href="/cambiar-password">Volver</a></h3>');
   }
@@ -65,9 +67,10 @@ exports.cambiarPassword = (req, res) => {
   }
 
   datos[index].password = bcrypt.hashSync(nueva, 10);
-  fs.writeFileSync('usuarios.json', JSON.stringify(datos, null, 2));
+  fs.writeFileSync(rutaUsuarios, JSON.stringify(datos, null, 2));
   res.redirect('/admin/index.html?cambio=ok');
 };
+
 
 // ==== GET CAMBIO DE PASSWORD ====
 exports.formCambiarPassword = (req, res) => {

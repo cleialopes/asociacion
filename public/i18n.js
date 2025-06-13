@@ -120,7 +120,7 @@ const traducciones = {
     "menu.sebastiane": "Sebastiane",
     "menu.latino": "Sebastiane Latino",
     "menu.revista": "Magazine",
-    "menu.encuentros": "Gatherings",
+    "menu.encuentros": "Meetings",
     "menu.noticias":"News",
     "noticias.titulo": "News",
     "noticias.mas": "More News",
