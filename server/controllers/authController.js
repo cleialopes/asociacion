@@ -50,7 +50,7 @@ exports.cambiarPassword = (req, res) => {
   const { anterior, nueva } = req.body;
   let datos = [];
 
-  const rutaUsuarios = path.join(__dirname, '..', '..', 'usuarios.json');
+  const rutaUsuarios = path.join(__dirname, '..', 'usuarios.json');
 
   try {
     datos = JSON.parse(fs.readFileSync(rutaUsuarios, 'utf-8'));
