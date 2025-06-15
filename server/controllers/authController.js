@@ -6,10 +6,13 @@ const bcrypt = require('bcrypt');
 exports.login = (req, res) => {
   const { usuario, password } = req.body;
   let datos = [];
+
   const rutaUsuarios = path.join(__dirname, '..', 'usuarios.json');
+    console.log('Ruta usada para leer usuarios:', rutaUsuarios);
   try { 
     datos = JSON.parse(fs.readFileSync(rutaUsuarios, 'utf-8'));
   } catch (e) {
+    console.error('Error al leer usuarios.json:', e);
     return res.send('<h3>Error leyendo archivo de usuarios. <a href="/login.html">Volver</a></h3>');
   }
 
@@ -53,7 +56,7 @@ exports.cambiarPassword = (req, res) => {
   const rutaUsuarios = path.join(__dirname, '..', 'usuarios.json');
 
   try {
-    datos = JSON.parse(fs.readFileSync(rutaUsuarios, 'utf-8'));
+    datos = JSON.parse(fs.readFileSync(rutaUsuarios, 'utf-8'))
   } catch (e) {
     return res.send('<h3>Error leyendo usuarios. <a href="/cambiar-password">Volver</a></h3>');
   }

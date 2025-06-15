@@ -3,7 +3,7 @@ const path = require('path');
 const fs = require('fs');
 
 // Crear carpeta uploads si no existe
-const uploadDir = path.join(__dirname, '../uploads');
+const uploadDir = path.join(__dirname, '../public/img');
 if (!fs.existsSync(uploadDir)) {
   fs.mkdirSync(uploadDir, { recursive: true });
 }

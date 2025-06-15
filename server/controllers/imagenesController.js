@@ -19,7 +19,7 @@ function subirImagen(req, res) {
 
   if (!archivo) return res.status(400).json({ ok: false, error: "Falta archivo." });
 
-  const src = moverArchivoTempAPublico(archivo, 'img');
+  const src = `/img/${archivo.filename}`;
 
   const nuevaImagen = {
     src,
